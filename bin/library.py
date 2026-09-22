@@ -25,7 +25,7 @@ IDX = os.path.join(TB, "index"); os.makedirs(IDX, exist_ok=True)
 LIB, EMB, HEALTH = (os.path.join(IDX, f) for f in ("library.jsonl", "embeddings.json", "health.json"))
 CFG_F = os.path.join(TB, "library-sources.json")
 DEFAULT_CFG = {
-    "skill_roots": ["~/.claude/skills", "(local plugin cache)
+    "skill_roots": ["~/.claude/skills", "~/.claude/plugins/cache/*/*/skills"],
     "design_skill_roots": ["~/Design-Tools/open-design/skills",
                            # Open Design plugins sit one level deeper (plugins/_official/<group>/<name>,
                            # plugins/community/<name>); 431 skills here were invisible until 2026-09-21,
