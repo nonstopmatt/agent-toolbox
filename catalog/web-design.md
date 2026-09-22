@@ -1,0 +1,188 @@
+# web-design
+
+Generated: 2026-09-21 22:30 
+Count: 179
+
+Line format: `- kind | name | what it is | path` — and for kind `application` or
+`agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
+Kinds: skill, agent, plugin, mcp-mine, mcp-discovered, application, agent-tool.
+Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session-launch it.
+
+- agent | Statistician | Expert in quantitative research methodology, experimental design, and statistical inference — pressure-tests claims, des | agents/academic-statistician.md | 11508
+- agent | Agentic Identity & Trust Architect | Designs identity, authentication, and trust verification systems for autonomous AI agents operating in multi-agent envir | agents/agentic-identity-trust.md | 18398
+- agent | audit-amazon | "Amazon Ads evidence and controls specialist. Returns schema-valid findings for profiles and regions, portfolios, Sponso | agents/audit-amazon.md | 1804
+- agent | audit-pinterest | "Pinterest Ads evidence and controls specialist. Returns schema-valid findings for Pinterest Tag and CAPI, catalog and s | agents/audit-pinterest.md | 1775
+- agent | audit-policy-compliance | "Platform policy specialist. Returns schema-valid findings covering platform eligibility, regulated categories, creative | agents/audit-policy-compliance.md | 1685
+- agent | audit-reddit | "Reddit Ads evidence and controls specialist. Returns schema-valid findings for Pixel and CAPI, community and interest t | agents/audit-reddit.md | 1818
+- agent | audit-snapchat | "Snapchat Ads evidence and controls specialist. Returns schema-valid findings for Snap Pixel and CAPI, mobile-first crea | agents/audit-snapchat.md | 1784
+- agent | audit-x | "X Ads evidence and controls specialist. Returns schema-valid findings for website and app measurement, objectives, keyw | agents/audit-x.md | 1781
+- agent | audit-youtube | "YouTube Ads evidence and controls specialist. Returns schema-valid findings for video campaign setup, hooks and formats | agents/audit-youtube.md | 1773
+- agent | Business Strategist | Senior management consulting specialist for competitive analysis, market entry strategy, business model design, growth p | agents/business-strategist.md | 25296
+- agent | Corporate Training Designer | Expert in enterprise training system design and curriculum development — proficient in training needs analysis, instruct | agents/corporate-training-designer.md | 15673
+- agent | Brand Guardian | Expert brand strategist and guardian specializing in brand identity development, consistency maintenance, and strategic  | agents/design-brand-guardian.md | 11641
+- agent | UI Designer | Expert UI designer specializing in visual design systems, component libraries, and pixel-perfect interface creation. Cre | agents/design-ui-designer.md | 13339
+- agent | UI Finish-Gate Reviewer | Product-interface reviewer who catches generic, interchangeable UI before it ships by grounding critique in real product | agents/design-ui-finish-gate-reviewer.md | 8988
+- agent | UX Architect | Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implemen | agents/design-ux-architect.md | 15758
+- agent | UX Researcher | Expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insi | agents/design-ux-researcher.md | 13030
+- agent | Visual Storyteller | Expert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand s | agents/design-visual-storyteller.md | 7416
+- agent | Whimsy Injector | Expert creative specialist focused on adding personality, delight, and playful elements to brand experiences. Creates me | agents/design-whimsy-injector.md | 15851
+- agent | Economy Designer | Virtual economy architect - Masters currency systems, sources and sinks, monetization modeling, inflation control, and d | agents/economy-designer.md | 8844
+- agent | API Platform Engineer | Expert API platform engineer for public and partner APIs — contract-first design (OpenAPI/gRPC), versioning and deprecat | agents/engineering-api-platform-engineer.md | 13584
+- agent | ATS Validator Architect | Architect and validator for Applicant Tracking Systems (ATS) and resume parsers. Combines deterministic information retr | agents/engineering-ats-validator-architect.md | 28170
+- agent | Backend Architect | Senior backend architect specializing in scalable system design, database architecture, API development, and cloud infra | agents/engineering-backend-architect.md | 10928
+- agent | CMS Developer | Drupal and WordPress specialist for theme development, custom plugins/modules, content architecture, and code-first CMS  | agents/engineering-cms-developer.md | 19520
+- agent | Data Visualization Engineer | Expert data visualization engineer — chart-type selection by data and question, perceptually honest encodings, colorblin | agents/engineering-data-visualization-engineer.md | 13797
+- agent | Database Optimizer | Expert database specialist focusing on schema design, query optimization, indexing strategies, and performance tuning fo | agents/engineering-database-optimizer.md | 5533
+- agent | Developer Tooling Engineer | "Expert developer-tooling and CLI engineer — building command-line tools and internal developer platforms with great DX: | agents/engineering-developer-tooling-engineer.md | 13041
+- agent | Drupal Performance Engineer | Expert Drupal 10/11 performance engineer specializing in Core Web Vitals, render and dynamic page caching, BigPipe, cach | agents/engineering-drupal-performance.md | 23523
+- agent | Drupal Shopping Cart Engineer | Expert Drupal e-commerce engineer specializing in Drupal Commerce for product catalog management, payment gateway integr | agents/engineering-drupal-shopping-cart.md | 21461
+- agent | Frontend Developer | Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and  | agents/engineering-frontend-developer.md | 9283
+- agent | GaussDB Expert Engineer | Expert database specialist focusing on GaussDB OLTP — Huawei's self-developed enterprise-grade relational database (NOT  | agents/engineering-gaussdb-expert.md | 15613
+- agent | Internationalization Engineer | Expert i18n engineer for ICU MessageFormat, CLDR plural rules, RTL and bidirectional layouts, locale-aware date/number/c | agents/engineering-i18n-engineer.md | 12728
+- agent | Incident Response Commander | Expert incident commander specializing in production incident management, structured response coordination, post-mortem  | agents/engineering-incident-response-commander.md | 21121
+- agent | IT Service Manager | Expert IT service management specialist using ITIL 4 framework for service catalog design, incident and problem manageme | agents/engineering-it-service-manager.md | 27663
+- agent | Multi-Agent Systems Architect | Systems architect specializing in the design, coordination, and governance of multi-agent AI pipelines — covering topolo | agents/engineering-multi-agent-systems-architect.md | 29301
+- agent | OrgScript Engineer | Expert in designing, parsing, and implementing OrgScript grammar, AST validation, and business logic definitions. | agents/engineering-orgscript-engineer.md | 5611
+- agent | PDF Engine Architect | Architect and specialist in deterministic HTML-to-PDF document compilation, Playwright browser context pools, dynamic Eu | agents/engineering-pdf-engine-architect.md | 31446
+- agent | Search Relevance Engineer | Expert search engineer for Elasticsearch and OpenSearch — index and analyzer design, BM25 query tuning, hybrid lexical+v | agents/engineering-search-relevance-engineer.md | 15023
+- agent | Section 508 Accessibility Specialist | Expert U.S. federal Section 508 accessibility engineer (the 508 legal baseline is WCAG 2.0 Level AA; WCAG 2.1/2.2 AA are | agents/engineering-section-508-specialist.md | 26617
+- agent | Senior Developer | Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced CSS, Three.js integration | agents/engineering-senior-developer.md | 6252
+- agent | Software Architect | Expert software architect specializing in system design, domain-driven design, architectural patterns, and technical dec | agents/engineering-software-architect.md | 6485
+- agent | Solidity Smart Contract Engineer | Expert Solidity developer specializing in EVM smart contract architecture, gas optimization, upgradeable proxy patterns, | agents/engineering-solidity-smart-contract-engineer.md | 21719
+- agent | Universal Document Compiler | Architect of schema-agnostic document ASTs, algorithmic data-shape layout inference, bidirectional CST-to-canvas synchro | agents/engineering-universal-document-compiler.md | 18717
+- agent | USWDS Developer | Expert U.S. Web Design System frontend developer specializing in USWDS components and design tokens, accessible-by-defau | agents/engineering-uswds-developer.md | 24213
+- agent | WordPress Performance Engineer | Expert WordPress performance engineer specializing in Core Web Vitals, object caching (Redis/Memcached), page caching, d | agents/engineering-wordpress-performance.md | 24292
+- agent | Game Designer | Systems and mechanics architect - Masters GDD authorship, player psychology, economy balancing, and gameplay loop design | agents/game-designer.md | 8433
+- agent | Cartography Designer | Map aesthetics specialist who designs beautiful, readable, and effective maps — color theory, typography, label placemen | agents/gis-cartography-designer.md | 6968
+- agent | Godot Gameplay Scripter | Composition and signal integrity specialist - Masters GDScript 2.0, C# integration, node-based architecture, and type-sa | agents/godot-gameplay-scripter.md | 15538
+- agent | Godot Shader Developer | Godot 4 visual effects specialist - Masters the Godot Shading Language (GLSL-like), VisualShader editor, CanvasItem and  | agents/godot-shader-developer.md | 13392
+- agent | Government Digital Presales Consultant | Presales expert for China's government digital transformation market (ToG), proficient in policy interpretation, solutio | agents/government-digital-presales-consultant.md | 22759
+- agent | Level Designer | Spatial storytelling and flow specialist - Masters layout theory, pacing architecture, encounter design, and environment | agents/level-designer.md | 10340
+- agent | M&A Integration Manager | Mergers and acquisitions integration specialist who designs and executes post-merger integration programs — covering Day | agents/ma-integration-manager.md | 21438
+- agent | AI Citation Strategist | Expert in AI recommendation engine optimization (AEO/GEO) — audits brand visibility across ChatGPT, Claude, Gemini, and  | agents/marketing-ai-citation-strategist.md | 9414
+- agent | Bilibili Content Strategist | Expert Bilibili marketing specialist focused on UP主 growth, danmaku culture mastery, B站 algorithm optimization, communit | agents/marketing-bilibili-content-strategist.md | 11647
+- agent | Carousel Growth Engine | Autonomous TikTok and Instagram carousel generation specialist. Analyzes any website URL with Playwright, generates vira | agents/marketing-carousel-growth-engine.md | 14840
+- agent | Content Creator | Expert content strategist and creator for multi-platform campaigns. Develops editorial calendars, creates compelling cop | agents/marketing-content-creator.md | 3140
+- agent | Cross-Border E-Commerce Specialist | Full-funnel cross-border e-commerce strategist covering Amazon, Shopee, Lazada, AliExpress, Temu, and TikTok Shop operat | agents/marketing-cross-border-ecommerce.md | 17415
+- agent | Douyin Strategist | Short-video marketing expert specializing in the Douyin platform, with deep expertise in recommendation algorithm mechan | agents/marketing-douyin-strategist.md | 6954
+- agent | Email Marketing Strategist | Expert email marketing strategist for CRM-driven campaigns, lifecycle automation, segmentation architecture, and deliver | agents/marketing-email-strategist.md | 16198
+- agent | Global Podcast Strategist | Expert podcast growth specialist focused on show positioning, audience development, content strategy, and monetisation.  | agents/marketing-global-podcast-strategist.md | 21857
+- agent | LinkedIn Content Creator | Expert LinkedIn content strategist focused on thought leadership, personal brand building, and high-engagement professio | agents/marketing-linkedin-content-creator.md | 13361
+- agent | Livestream Commerce Coach | Veteran livestream e-commerce coach specializing in host training and live room operations across Douyin, Kuaishou, Taob | agents/marketing-livestream-commerce-coach.md | 17166
+- agent | PR & Communications Manager | Strategic public relations and communications specialist for media relations, press releases, crisis communications, exe | agents/marketing-pr-communications-manager.md | 24692
+- agent | Short-Video Editing Coach | Hands-on short-video editing coach covering the full post-production pipeline, with mastery of CapCut Pro, Premiere Pro, | agents/marketing-short-video-editing-coach.md | 30779
+- agent | TikTok Strategist | Expert TikTok marketing specialist focused on viral content creation, algorithm optimization, and community building. Ma | agents/marketing-tiktok-strategist.md | 7559
+- agent | Twitter Engager | Expert Twitter marketing specialist focused on real-time engagement, thought leadership building, and community-driven g | agents/marketing-twitter-engager.md | 7760
+- agent | Weibo Strategist | Full-spectrum operations expert for Sina Weibo, with deep expertise in trending topic mechanics, Super Topic community m | agents/marketing-weibo-strategist.md | 15697
+- agent | Zhihu Strategist | Expert Zhihu marketing specialist focused on thought leadership, community credibility, and knowledge-driven engagement. | agents/marketing-zhihu-strategist.md | 12006
+- agent | Narrative Designer | Story systems and dialogue architect - Masters GDD-aligned narrative design, branching dialogue, lore architecture, and  | agents/narrative-designer.md | 13160
+- agent | Ad Creative Strategist | Paid media creative specialist focused on ad copywriting, RSA optimization, asset group design, and creative testing fra | agents/paid-media-creative-strategist.md | 5162
+- agent | Paid Social Strategist | Cross-platform paid social advertising specialist covering Meta (Facebook/Instagram), LinkedIn, TikTok, Pinterest, X, an | agents/paid-media-paid-social-strategist.md | 5451
+- agent | PPC Campaign Strategist | Senior paid media strategist specializing in large-scale search, shopping, and performance max campaign architecture acr | agents/paid-media-ppc-strategist.md | 4995
+- agent | Personal Growth Mentor | Cross-domain personal development mentor for goal clarity, habit design, strategic decisions, and accountability without | agents/personal-growth-mentor.md | 7833
+- agent | Product Manager | Holistic product leader who owns the full product lifecycle — from discovery and strategy through roadmap, stakeholder a | agents/product-manager.md | 22687
+- agent | Experiment Tracker | Expert project manager specializing in experiment design, execution tracking, and data-driven decision making. Focused o | agents/project-management-experiment-tracker.md | 9455
+- agent | Project Shepherd | Expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder align | agents/project-management-project-shepherd.md | 9825
+- agent | Resume Tailor | Candidate-side resume optimization specialist who analyzes job descriptions, maps real experience to role requirements,  | agents/resume-tailor.md | 11214
+- agent | Roblox Experience Designer | Roblox platform UX and monetization specialist - Masters engagement loop design, DataStore-driven progression, Roblox mo | agents/roblox-experience-designer.md | 14863
+- agent | Discovery Coach | Coaches sales teams on elite discovery methodology — question design, current-state mapping, gap quantification, and cal | agents/sales-discovery-coach.md | 13591
+- agent | Offer & Lead Gen Strategist | Top-of-funnel architect who designs irresistible offers and lead magnets that attract qualified buyers at scale. Special | agents/sales-offer-lead-gen-strategist.md | 16126
+- agent | Outbound Strategist | Signal-based outbound specialist who designs multi-channel prospecting sequences, defines ICPs, and builds pipeline thro | agents/sales-outbound-strategist.md | 10744
+- agent | Proposal Strategist | Strategic proposal architect who transforms RFPs and sales opportunities into compelling win narratives. Specializes in  | agents/sales-proposal-strategist.md | 14295
+- agent | Security Architect | Expert security architect specializing in threat modeling, secure-by-design architecture, trust-boundary analysis, defen | agents/security-architect.md | 18029
+- agent | Cloud Security Architect | Cloud-native security specialist designing zero trust architectures, implementing defense-in-depth across AWS, Azure, an | agents/security-cloud-security-architect.md | 23042
+- agent | Civil Engineer | Expert civil and structural engineer with global standards coverage — Eurocode, DIN, ACI, AISC, ASCE, AS/NZS, CSA, GB, I | agents/specialized-civil-engineer.md | 17068
+- agent | MCP Builder | Expert Model Context Protocol developer who designs, builds, and tests MCP servers that extend AI agent capabilities wit | agents/specialized-mcp-builder.md | 12062
+- agent | Salesforce Architect | Solution architecture for Salesforce platform — multi-cloud design, integration patterns, governor limits, deployment st | agents/specialized-salesforce-architect.md | 9943
+- agent | Workflow Architect | Workflow design specialist who maps complete workflow trees for every system, user journey, and agent interaction — cove | agents/specialized-workflow-architect.md | 26479
+- agent | Support Responder | Expert customer support specialist delivering exceptional customer service, issue resolution, and user experience optimi | agents/support-support-responder.md | 24683
+- agent | Accessibility Auditor | Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive technologies, and ens | agents/testing-accessibility-auditor.md | 15300
+- agent | trailer-script-doctor | Write, critique, and tighten trailer scripts and beat sheets for short-form promotional video (30s–120s). Use when the u | agents/trailer-script-doctor.md | 6402
+- agent | Unity Architect | Data-driven modularity specialist - Masters ScriptableObjects, decoupled systems, and single-responsibility component de | agents/unity-architect.md | 12244
+- agent | visionOS Spatial Engineer | Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Glass design implementation | agents/visionos-spatial-engineer.md | 3411
+- agent | visual-designer | "Bounded provider-neutral visual candidate worker. Uses only declared capabilities and returns run-scoped candidates to  | agents/visual-designer.md | 2225
+- agent | XR Cockpit Interaction Specialist | Specialist in designing and developing immersive cockpit-based control systems for XR environments | agents/xr-cockpit-interaction-specialist.md | 1795
+- agent | XR Interface Architect | Spatial interaction designer and interface strategist for immersive AR/VR/XR environments | agents/xr-interface-architect.md | 1700
+- mcp-mine | framer | sse/http | tools: ? | mcp/mine/framer.json
+- mcp-mine | magicui | stdio | tools: ? | mcp/mine/magicui.json
+- mcp-mine | mobbin | sse/http | tools: ? | mcp/mine/mobbin.json
+- mcp-mine | pencil | stdio | tools: ? | mcp/mine/pencil.json
+- mcp-discovered | canva | sse/http | tools: ? | mcp/discovered/canva.json
+- mcp-discovered | figma | sse/http | tools: ? | mcp/discovered/figma.json
+- mcp-discovered | figma | sse/http | tools: ? | mcp/discovered/figma__b2f156f9.json
+- mcp-discovered | wix | sse/http | tools: ? | mcp/discovered/wix.json
+- mcp-discovered | zoom-whiteboard-mcp | sse/http | tools: ? | mcp/discovered/zoom-whiteboard-mcp.json
+- skill | skills | "Audit YouTube Ads campaign setup, video and Demand Gen inventory, Shorts, in-stream, CTV, creative, audiences, brand sa | skills/SKILL.md
+- skill | apple-design | Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing  | skills/apple-design/SKILL.md
+- skill | blog-audio | Generate audio narration of blog posts using Google Gemini TTS. Supports summary narration, full article read-aloud, and | skills/blog/blog-audio/SKILL.md
+- skill | blog-google | Google API integration for blog performance: PageSpeed Insights, CrUX Core Web Vitals with 25-week history, Search Conso | skills/blog/blog-google/SKILL.md
+- skill | blog-strategy | Blog strategy development including topic cluster architecture with hub-and-spoke design, audience mapping, competitive  | skills/blog/blog-strategy/SKILL.md
+- skill | bolder | Amplify safe or boring designs to make them more visually interesting and stimulating. Increases impact while maintainin | skills/bolder/SKILL.md
+- skill | clarify | Improve unclear UX copy, error messages, microcopy, labels, and instructions to make interfaces easier to understand. Us | skills/clarify/SKILL.md
+- skill | codebase-design | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find de | skills/codebase-design/SKILL.md
+- skill | colorize | Add strategic color to features that are too monochromatic or lack visual interest, making interfaces more engaging and  | skills/colorize/SKILL.md
+- skill | design-motion-principles | "Motion and interaction design expert based on Emil Kowalski, Jakub Krehel, and Jhey Tompkins' techniques. Two modes — b | skills/design-motion-principles/SKILL.md
+- skill | distill | Strip designs to their essence by removing unnecessary complexity. Great design is simple, powerful, and clean. Use when | skills/distill/SKILL.md
+- skill | emil-design-eng | This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible det | skills/emil-design-eng/SKILL.md
+- skill | faceless-explainer | "Turn arbitrary text — an article, notes, a topic, a brief — into a faceless explainer video: there is no site or footag | skills/faceless-explainer/SKILL.md
+- skill | figma | Import Figma content into a HyperFrames composition — rendered assets, brand tokens, components, storyboard sections → r | skills/figma/SKILL.md
+- skill | find-animation-opportunities | Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it pr | skills/find-animation-opportunities/SKILL.md
+- skill | firecrawl-build-scrape | Integrate Firecrawl `/scrape` into product code for single-page extraction. Use when an app already has a URL and needs  | skills/firecrawl-build-scrape/SKILL.md
+- skill | firecrawl-demo-walkthrough | Walk through a product's key flows with Firecrawl browser and produce a structured UX/product walkthrough. Use for signu | skills/firecrawl-demo-walkthrough/SKILL.md
+- skill | firecrawl-parse | Efficiently extract and convert the contents of any local file—such as PDF, DOCX, DOC, ODT, RTF, XLSX, XLS, or HTML—into | skills/firecrawl-parse/SKILL.md
+- skill | firecrawl-website-design-clone | Extract any website's design system into an agent-ready DESIGN.md using Firecrawl scrape evidence. Use when the user wan | skills/firecrawl-website-design-clone/SKILL.md
+- skill | firecrawl-workflows | Run outcome-focused Firecrawl workflows that produce deliverables such as research reports, SEO audits, QA reports, lead | skills/firecrawl-workflows/SKILL.md
+- skill | frame-logo-outro | "Segmented logo assembly, glow bloom, and tagline reveal for video outros or brand closing frames." | skills/frame-logo-outro/SKILL.md
+- skill | frame-macos-notification | "Realistic macOS notification banner with app icon, title, and body, suited to video overlays or product teasers." | skills/frame-macos-notification/SKILL.md
+- skill | frontend-slides | "Build a self-contained HTML presentation as a single zero-dependency file on a fixed 1920x1080 stage that scales whole  | skills/frontend-slides/SKILL.md
+- skill | general-video | Author or edit a custom HyperFrames composition when no specialized workflow fits, or when BRIEF.md sets flow: companion | skills/general-video/SKILL.md
+- skill | grill-me | A relentless interview to sharpen a plan or design. disable-model-invocation: true | skills/grill-me/SKILL.md
+- skill | grill-with-docs | A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go. disable-model | skills/grill-with-docs/SKILL.md
+- skill | gstack-autoplan | Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with a | skills/gstack-autoplan/SKILL.md
+- skill | gstack-design-consultation | "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic,  | skills/gstack-design-consultation/SKILL.md
+- skill | gstack-design-html | "Design finalization: generates production-quality Pretext-native HTML/CSS. (gstack)" | skills/gstack-design-html/SKILL.md
+- skill | gstack-design-review | "Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interacti | skills/gstack-design-review/SKILL.md
+- skill | gstack-design-shotgun | "Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate | skills/gstack-design-shotgun/SKILL.md
+- skill | gstack-ios-design-review | Visual design audit for iOS apps on real hardware. (gstack) allowed-tools: - Bash - Read - Glob - Grep - AskUserQuestion | skills/gstack-ios-design-review/SKILL.md
+- skill | gstack-ios-qa | Live-device iOS QA for SwiftUI apps. (gstack) allowed-tools: - Bash - Read - Write - Edit - Grep - Glob - AskUserQuestio | skills/gstack-ios-qa/SKILL.md
+- skill | gstack-plan-design-review | Designer's eye plan review — interactive, like CEO and Eng review. (gstack) allowed-tools: - Read - Edit - Grep - Glob - | skills/gstack-plan-design-review/SKILL.md
+- skill | hyperframes-animation | "All animation knowledge for HyperFrames — atomic motion rules, multi-phase scene blueprints, scene transitions, broader | skills/hyperframes-animation/SKILL.md
+- skill | hyperframes-creative | Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes,  | skills/hyperframes-creative/SKILL.md
+- skill | hyperframes-keyframes | Use when a HyperFrames composition needs a punch-in, punch-out, zoom, reframe, Ken Burns treatment, camera move, visual  | skills/hyperframes-keyframes/SKILL.md
+- skill | ig-carousel | - Build an Instagram carousel - the cover that earns the swipe, slide-by-slide copy, and the 1080x1350 files to upload.  | skills/ig-carousel/SKILL.md
+- skill | improve-codebase-architecture | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you  | skills/improve-codebase-architecture/SKILL.md
+- skill | instantly-reference-architecture | Implement Instantly reference architecture with best-practice project layout. Use when designing new Instantly integrati | skills/instantly-reference-architecture/SKILL.md
+- skill | interaction-design | Design and implement microinteractions, motion design, transitions, and user feedback patterns. Use when adding polish t | skills/interaction-design/SKILL.md
+- skill | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing  | skills/interface-design/SKILL.md
+- skill | loop-me | Grill me about specs for the workflows I want to build, within this workspace. disable-model-invocation: true argument-h | skills/loop-me/SKILL.md
+- skill | magic-ui | Use this skill when users want to add, customize, or troubleshoot Magic UI components in React/Next.js projects. It cove | skills/magic-ui/SKILL.md
+- skill | media-use | Agent Media OS, the single skill for every media need in a HyperFrames project. Resolve BGM, SFX, image, icon, brand log | skills/media-use/SKILL.md
+- skill | mobile-native | Make a web app feel native on a phone — the small CSS and meta-tag fixes that separate "a website in a browser" from som | skills/mobile-native/SKILL.md
+- skill | mockup-device-3d | "Static iPhone and MacBook 3D-style showcase with real HTML embedded on screens, glass-lens refraction, and 360-degree t | skills/mockup-device-3d/SKILL.md
+- skill | motion-graphics | A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit,  | skills/motion-graphics/SKILL.md
+- skill | music-to-video | "Turn a music track (an audio file, a video to pull audio from, or a track generated from a mood brief) into a beat-sync | skills/music-to-video/SKILL.md
+- skill | pick-ui-library | Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command | skills/pick-ui-library/SKILL.md
+- skill | polish | Performs a final quality pass fixing alignment, spacing, consistency, and micro-detail issues before shipping. Use when  | skills/polish/SKILL.md
+- skill | prototype | Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip  | skills/prototype/SKILL.md
+- skill | prototype-legacy | Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model o | skills/prototype-legacy/SKILL.md
+- skill | quieter | Tones down visually aggressive or overstimulating designs, reducing intensity while preserving quality. Use when the use | skills/quieter/SKILL.md
+- skill | remotion-to-hyperframes | 'Port an existing Remotion (React) composition''s source to HyperFrames HTML. Use ONLY on an explicit ask to port/conver | skills/remotion-to-hyperframes/SKILL.md
+- skill | review-animations | Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. D | skills/review-animations/SKILL.md
+- skill | setup-matt-pocock-skills | "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layou | skills/setup-matt-pocock-skills/SKILL.md
+- skill | shape | Plan the UX and UI for a feature before writing code. Runs a structured discovery interview, then produces a design brie | skills/shape/SKILL.md
+- skill | slideshow | "Author a HyperFrames deck for presenting live: discrete slides with fragment reveals, branching paths, hotspot navigati | skills/slideshow/SKILL.md
+- skill | source-command-interface-design | "This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing | skills/source-command-interface-design/SKILL.md
+- skill | source-command-web-design-guidelines | "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \" | skills/source-command-web-design-guidelines/SKILL.md
+- skill | spline-interactive | Browser-based 3D design tool with visual editor, animation, and web export. Use this skill when creating 3D scenes witho | skills/spline-interactive/SKILL.md
+- skill | bad-to-good-homepage-redesign | Rebuild a prospect's ugly homepage as a cold-outreach pitch asset. Use whenever the user provides screenshots (or a URL) | skills/synced/85db74e3-76a3-48a0-876f-c239652a5108_68586651-6f3d-4164-8a0f-076d8fc4ffed/bad-to-good-homepage-redesign/SKILL.md
+- skill | morning | "Render the user's morning brief as a styled HTML artifact, or set it up as a recurring weekday task. Use only when the  | skills/synced/85db74e3-76a3-48a0-876f-c239652a5108_68586651-6f3d-4164-8a0f-076d8fc4ffed/morning/SKILL.md
+- skill | tailwindcss-mobile-first | 'Mobile-first responsive design patterns with Tailwind CSS v4 (2025-2026). PROACTIVELY activate for: (1) mobile-first de | skills/tailwindcss-mobile-first/SKILL.md
+- skill | talking-head-recut | Package an existing talking-head / interview / podcast video with timed, designed GRAPHIC OVERLAY cards — kinetic titles | skills/talking-head-recut/SKILL.md
+- skill | understand-figma | Analyze a Figma file via the Figma REST API and generate an interactive design knowledge graph (pages, screens, componen | skills/understand-figma/SKILL.md
+- skill | video-shotcraft | Create cinematic product videos from shot recipe cards, a validated template, and code/audio assets (Remotion + real pag | skills/video-shotcraft/SKILL.md
+- skill | web-design-guidelines | Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit  | skills/web-design-guidelines/SKILL.md
+- skill | website-design-evaluation | Use when evaluating an existing small-business website (med spa, dentist, attorney, salon, clinic, boutique service) for | skills/website-design-evaluation/SKILL.md
+- agent-tool | nexu-io__open-design | Local-first design workspace driven by coding agents. Ships 277 skill dirs (163 skills/, 114 design-templates/) and one MCP server. 11 skills extracted to toolbox/skills; borrow the rest by path. | parked/app-sources/nexu-io__open-design | Apache-2.0 | WARN: Its MCP server needs the `od` daemon on PATH (brew/npm/DMG). Not installed, and installing it is the user's call. | risks: its MCP server needs the `od` daemon on PATH (brew/npm/DMG) - not installed, do not install to use it; BYOK to model APIs; the agent gets terminal power; 277 vendored skills, many are other people's work re-hosted: 11 duplicate skills the user already has; loo
+- agent-tool | nexu-io__open-design/skills | 266 design and content skills left in the repo, not copied into toolbox/skills. Borrow one by reading <path>/<name>/SKILL.md, or ../design-templates/<name>/SKILL.md. Decks, html-ppt, wireframes, poste | parked/app-sources/nexu-io__open-design/skills | Apache-2.0 | WARN: Read-only borrow: most are standalone HTML/CSS recipes, but anything naming the `od` daemon or an MCP tool needs OpenDesign installed, which it is not. 11 duplicate skills the user already has. | risks: 277 vendored skills, much of it other people's work re-hosted: check the source credit before client use; 11 duplicate names the user already has, incl. taste-skill, ui-ux-pro-max, hyperframes
+- agent-tool | JCodesMore__ai-website-cloner-template | Next.js template plus a clone-website skill: point an agent at a homepage and it rebuilds it as a working site. 34.7k stars. | repos/JCodesMore__ai-website-cloner-template | MIT | WARN: Relevant to prospect redesign mockups; overlaps image-to-code and bad-to-good-website-redesign. Rival-skills rule: one per task. | risks: skill only works inside this template repo: borrow by opening the repo, not copied; Docker/npm scaffold not installed
+

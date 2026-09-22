@@ -1,0 +1,27 @@
+name: Suggest a tool
+description: A skill, agent, plugin or MCP server worth putting on the shelf
+labels: ["tool suggestion"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repo link
+      placeholder: https://github.com/owner/name
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What does it actually do?
+      description: In your own words, not the README's.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where did you find it? (video or post link, optional)
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [skill, agent, plugin, MCP server, app, reference list, not sure]

@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "dramaclaw": {
+      "command": "docker",
+      "args": [
+        "compose",
+        "-f",
+        "docker-compose.release.yml",
+        "exec",
+        "-T",
+        "-e",
+        "DRAMACLAW_API_URL=http://localhost:8780",
+        "-e",
+        "DRAMACLAW_CE_OWNER=1",
+        "api",
+        "python",
+        "-m",
+        "novelvideo.chat.dramaclaw_mcp"
+      ]
+    }
+  }
+}

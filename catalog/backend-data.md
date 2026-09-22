@@ -1,0 +1,138 @@
+# backend-data
+
+Generated: 2026-09-21 22:30 
+Count: 131
+
+Line format: `- kind | name | what it is | path` — and for kind `application` or
+`agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
+Kinds: skill, agent, plugin, mcp-mine, mcp-discovered, application, agent-tool.
+Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session-launch it.
+
+- agent | Historian | Expert in historical analysis, periodization, material culture, and historiography — validates historical coherence and  | agents/academic-historian.md | 7272
+- agent | Agentic Identity & Trust Architect | Designs identity, authentication, and trust verification systems for autonomous AI agents operating in multi-agent envir | agents/agentic-identity-trust.md | 18398
+- agent | audit-apple | "Apple Ads evidence and controls specialist. Returns schema-valid findings for campaign and keyword structure, Search Ma | agents/audit-apple.md | 1783
+- agent | audit-budget | "Budget and finance specialist. Returns schema-valid findings covering budget sufficiency, pacing, bids, marginal return | agents/audit-budget.md | 1652
+- agent | audit-creative | "Cross-platform creative specialist. Returns schema-valid findings covering creative fit, concept diversity, fatigue, fo | agents/audit-creative.md | 1686
+- agent | audit-google | "Google Ads evidence and controls specialist. Returns schema-valid findings for conversion tracking, search terms, campa | agents/audit-google.md | 1760
+- agent | audit-linkedin | "LinkedIn Ads evidence and controls specialist. Returns schema-valid findings for Insight Tag and conversions, professio | agents/audit-linkedin.md | 1774
+- agent | audit-meta | "Meta Ads evidence and controls specialist. Returns schema-valid findings for Pixel and CAPI, attribution, creative dive | agents/audit-meta.md | 1780
+- agent | audit-microsoft | "Microsoft Advertising evidence and controls specialist. Returns schema-valid findings for UET and conversions, syndicat | agents/audit-microsoft.md | 1789
+- agent | audit-pinterest | "Pinterest Ads evidence and controls specialist. Returns schema-valid findings for Pinterest Tag and CAPI, catalog and s | agents/audit-pinterest.md | 1775
+- agent | audit-policy-compliance | "Platform policy specialist. Returns schema-valid findings covering platform eligibility, regulated categories, creative | agents/audit-policy-compliance.md | 1685
+- agent | audit-reddit | "Reddit Ads evidence and controls specialist. Returns schema-valid findings for Pixel and CAPI, community and interest t | agents/audit-reddit.md | 1818
+- agent | audit-regulatory-compliance | "Regulatory and privacy specialist. Returns schema-valid findings covering applicable privacy, disclosure, consent, data | agents/audit-regulatory-compliance.md | 1729
+- agent | audit-snapchat | "Snapchat Ads evidence and controls specialist. Returns schema-valid findings for Snap Pixel and CAPI, mobile-first crea | agents/audit-snapchat.md | 1784
+- agent | audit-tiktok | "TikTok Ads evidence and controls specialist. Returns schema-valid findings for Pixel and Events API, creative-native fi | agents/audit-tiktok.md | 1756
+- agent | audit-tracking | "Tracking and attribution specialist. Returns schema-valid findings covering conversion taxonomy, tags and pixels, serve | agents/audit-tracking.md | 1717
+- agent | audit-x | "X Ads evidence and controls specialist. Returns schema-valid findings for website and app measurement, objectives, keyw | agents/audit-x.md | 1781
+- agent | audit-youtube | "YouTube Ads evidence and controls specialist. Returns schema-valid findings for video campaign setup, hooks and formats | agents/audit-youtube.md | 1773
+- agent | AI Data Remediation Engineer | "Specialist in self-healing data pipelines — uses air-gapped local SLMs and semantic clustering to automatically detect, | agents/engineering-ai-data-remediation-engineer.md | 10691
+- agent | AI Engineer | Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production sy | agents/engineering-ai-engineer.md | 7383
+- agent | API Platform Engineer | Expert API platform engineer for public and partner APIs — contract-first design (OpenAPI/gRPC), versioning and deprecat | agents/engineering-api-platform-engineer.md | 13584
+- agent | Autonomous Optimization Architect | Intelligent system governor that continuously shadow-tests APIs for performance while enforcing strict financial and sec | agents/engineering-autonomous-optimization-architect.md | 7953
+- agent | Backend Architect | Senior backend architect specializing in scalable system design, database architecture, API development, and cloud infra | agents/engineering-backend-architect.md | 10928
+- agent | China Network Engineer | Expert in mainland China's mainstream enterprise networking stacks — Huawei VRP, H3C Comware, Ruijie RGOS, and Hillstone | agents/engineering-china-network-engineer.md | 17646
+- agent | CMS Developer | Drupal and WordPress specialist for theme development, custom plugins/modules, content architecture, and code-first CMS  | agents/engineering-cms-developer.md | 19520
+- agent | Data Engineer | Expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infras | agents/engineering-data-engineer.md | 14687
+- agent | Database Optimizer | Expert database specialist focusing on schema design, query optimization, indexing strategies, and performance tuning fo | agents/engineering-database-optimizer.md | 5533
+- agent | Database Reliability Engineer | Expert database reliability engineer (DBRE) — high availability and replication, automated failover, backup and point-in | agents/engineering-database-reliability-engineer.md | 14392
+- agent | DevOps Automator | Expert DevOps engineer specializing in infrastructure automation, CI/CD pipeline development, and cloud operations | agents/engineering-devops-automator.md | 12879
+- agent | Drupal Performance Engineer | Expert Drupal 10/11 performance engineer specializing in Core Web Vitals, render and dynamic page caching, BigPipe, cach | agents/engineering-drupal-performance.md | 23523
+- agent | Embedded Firmware Engineer | Specialist in bare-metal and RTOS firmware - ESP32/ESP-IDF, PlatformIO, Arduino, ARM Cortex-M, STM32 HAL/LL, Nordic nRF5 | agents/engineering-embedded-firmware-engineer.md | 6562
+- agent | Feishu Integration Developer | Full-stack integration expert specializing in the Feishu (Lark) Open Platform — proficient in Feishu bots, mini programs | agents/engineering-feishu-integration-developer.md | 21127
+- agent | Filament Optimization Specialist | Expert in restructuring and optimizing Filament PHP admin interfaces for maximum usability and efficiency. Focuses on im | agents/engineering-filament-optimization-specialist.md | 14269
+- agent | GaussDB Expert Engineer | Expert database specialist focusing on GaussDB OLTP — Huawei's self-developed enterprise-grade relational database (NOT  | agents/engineering-gaussdb-expert.md | 15613
+- agent | Identity & Access Engineer | Expert identity engineer for OAuth 2.0/OIDC flows, enterprise SSO (SAML/OIDC) and SCIM provisioning, passkeys/WebAuthn,  | agents/engineering-identity-access-engineer.md | 14866
+- agent | Incident Response Commander | Expert incident commander specializing in production incident management, structured response coordination, post-mortem  | agents/engineering-incident-response-commander.md | 21121
+- agent | IoT Fleet Engineer | Expert IoT and edge fleet engineer — device provisioning and identity, MQTT/telemetry pipelines, staged over-the-air (OT | agents/engineering-iot-fleet-engineer.md | 13587
+- agent | Multi-Agent Systems Architect | Systems architect specializing in the design, coordination, and governance of multi-agent AI pipelines — covering topolo | agents/engineering-multi-agent-systems-architect.md | 29301
+- agent | Network Engineer | Expert network engineer for Cisco IOS/IOS-XE, Cisco ASA/FTD, Juniper Junos, and Palo Alto PAN-OS routing, switching, fir | agents/engineering-network-engineer.md | 13365
+- agent | Platform Engineer | Expert internal developer platform (IDP) engineer specializing in golden paths, paved roads, and self-serve infrastructu | agents/engineering-platform-engineer.md | 11688
+- agent | Privacy Engineer | Expert privacy engineer who implements privacy in code — PII discovery and classification, data minimization, consent en | agents/engineering-privacy-engineer.md | 14229
+- agent | Rust Refactoring Specialist | Expert Rust engineer for repository-scale refactoring, safe renames, module restructuring, duplication removal, panic ha | agents/engineering-rust-refactoring-specialist.md | 14863
+- agent | SRE (Site Reliability Engineer) | Expert site reliability engineer specializing in SLOs, error budgets, observability, chaos engineering, and toil reducti | agents/engineering-sre.md | 3882
+- agent | Technical Writer | Expert technical writer specializing in developer documentation, API references, README files, and tutorials. Transforms | agents/engineering-technical-writer.md | 14210
+- agent | Universal Document Compiler | Architect of schema-agnostic document ASTs, algorithmic data-shape layout inference, bidirectional CST-to-canvas synchro | agents/engineering-universal-document-compiler.md | 18717
+- agent | WebAssembly Engineer | Expert WebAssembly engineer — compiling Rust/C++/Go to Wasm, JS interop and the boundary marshalling cost, WASI and serv | agents/engineering-webassembly-engineer.md | 13110
+- agent | WeChat Mini Program Developer | Expert WeChat Mini Program developer specializing in 小程序 development with WXML/WXSS/WXS, WeChat API integration, payment | agents/engineering-wechat-mini-program-developer.md | 15566
+- agent | WordPress Performance Engineer | Expert WordPress performance engineer specializing in Core Web Vitals, object caching (Redis/Memcached), page caching, d | agents/engineering-wordpress-performance.md | 24292
+- agent | WordPress Shopping Cart Engineer | Expert WordPress e-commerce engineer specializing in WooCommerce for product catalog management, payment gateway integra | agents/engineering-wordpress-shopping-cart.md | 22177
+- agent | Game Designer | Systems and mechanics architect - Masters GDD authorship, player psychology, economy balancing, and gameplay loop design | agents/game-designer.md | 8433
+- agent | Spatial Data Engineer | ETL specialist who transforms messy geospatial data from any source into clean, standardized, production-ready datasets  | agents/gis-spatial-data-engineer.md | 4949
+- agent | Web GIS Developer | Full-stack web GIS engineer who builds interactive mapping applications — MapLibre GL JS, ArcGIS JS API, Leaflet, real-t | agents/gis-web-gis-developer.md | 5324
+- agent | Godot Multiplayer Engineer | Godot 4 networking specialist - Masters the MultiplayerAPI, scene replication, ENet/WebRTC transport, RPCs, and authorit | agents/godot-multiplayer-engineer.md | 13918
+- agent | Legal Billing & Time Tracking | Comprehensive legal billing and time tracking specialist for accurate time capture, invoice generation, billing narrativ | agents/legal-billing-time-tracking.md | 27280
+- agent | LSP/Index Engineer | Language Server Protocol specialist building unified code intelligence systems through LSP client orchestration and sema | agents/lsp-index-engineer.md | 11197
+- agent | Book Co-Author | Strategic thought-leadership book collaborator for founders, experts, and operators turning voice notes, fragments, and  | agents/marketing-book-co-author.md | 5083
+- agent | Global Podcast Strategist | Expert podcast growth specialist focused on show positioning, audience development, content strategy, and monetisation.  | agents/marketing-global-podcast-strategist.md | 21857
+- agent | Kuaishou Strategist | Expert Kuaishou marketing strategist specializing in short-video content for China's lower-tier city markets, live comme | agents/marketing-kuaishou-strategist.md | 13889
+- agent | Reddit Community Builder | Expert Reddit marketing specialist focused on authentic community engagement, value-driven content creation, and long-te | agents/marketing-reddit-community-builder.md | 7498
+- agent | SEO Specialist | Expert search engine optimization strategist specializing in technical SEO, content optimization, link authority buildin | agents/marketing-seo-specialist.md | 21310
+- agent | Twitter Engager | Expert Twitter marketing specialist focused on real-time engagement, thought leadership building, and community-driven g | agents/marketing-twitter-engager.md | 7760
+- agent | Xiaohongshu Specialist | Expert Xiaohongshu marketing specialist focused on lifestyle content, trend-driven strategies, and authentic community e | agents/marketing-xiaohongshu-specialist.md | 9609
+- agent | Zhihu Strategist | Expert Zhihu marketing specialist focused on thought leadership, community credibility, and knowledge-driven engagement. | agents/marketing-zhihu-strategist.md | 12006
+- agent | Programmatic & Display Buyer | Display advertising and programmatic media buying specialist covering managed placements, Google Display Network, DV360, | agents/paid-media-programmatic-buyer.md | 5282
+- agent | Tracking & Measurement Specialist | Expert in conversion tracking architecture, tag management, and attribution modeling across Google Tag Manager, GA4, Goo | agents/paid-media-tracking-specialist.md | 5326
+- agent | research-worker | "Paid-media research worker for one bounded platform, policy, API, issue, pull-request, or repository slice. Produces so | agents/research-worker.md | 974
+- agent | Roblox Systems Scripter | Roblox platform engineering specialist - Masters Luau, the client-server security model, RemoteEvents/RemoteFunctions, D | agents/roblox-systems-scripter.md | 15204
+- agent | Security Architect | Expert security architect specializing in threat modeling, secure-by-design architecture, trust-boundary analysis, defen | agents/security-architect.md | 18029
+- agent | Cloud Security Architect | Cloud-native security specialist designing zero trust architectures, implementing defense-in-depth across AWS, Azure, an | agents/security-cloud-security-architect.md | 23042
+- agent | Penetration Tester | Offensive security specialist conducting authorized penetration tests, red team operations, and vulnerability assessment | agents/security-penetration-tester.md | 21436
+- agent | Cultural Intelligence Strategist | CQ specialist that detects invisible exclusion, researches global context, and ensures software resonates authentically  | agents/specialized-cultural-intelligence-strategist.md | 6643
+- agent | Developer Advocate | Expert developer advocate specializing in building developer communities, creating compelling technical content, optimiz | agents/specialized-developer-advocate.md | 14829
+- agent | Document Generator | Expert document creation specialist who generates professional PDF, PPTX, DOCX, and XLSX files using code-based approach | agents/specialized-document-generator.md | 2437
+- agent | FedRAMP & RMF Compliance Engineer | Expert FedRAMP and NIST Risk Management Framework compliance engineer specializing in both FedRAMP authorization pathway | agents/specialized-fedramp-rmf-compliance.md | 32568
+- agent | MCP Builder | Expert Model Context Protocol developer who designs, builds, and tests MCP servers that extend AI agent capabilities wit | agents/specialized-mcp-builder.md | 12062
+- agent | API Tester | Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across | agents/testing-api-tester.md | 12539
+- agent | Unity Multiplayer Engineer | Networked gameplay specialist - Masters Netcode for GameObjects, Unity Gaming Services (Relay/Lobby), client-server auth | agents/unity-multiplayer-engineer.md | 14947
+- agent | Unity Shader Graph Artist | Visual effects and material specialist - Masters Unity Shader Graph, HLSL, URP/HDRP rendering pipelines, and custom pass | agents/unity-shader-graph-artist.md | 13080
+- agent | Unreal Multiplayer Architect | Unreal Engine networking specialist - Masters Actor replication, GameMode/GameState architecture, server-authoritative g | agents/unreal-multiplayer-architect.md | 14039
+- mcp-mine | graft | stdio | tools: ? | mcp/mine/graft.json
+- mcp-mine | transcript-api | sse/http | tools: ? | mcp/mine/transcript-api.json
+- mcp-discovered | airtable | sse/http | tools: ? | mcp/discovered/airtable.json
+- mcp-discovered | cloudflare-api | sse/http | tools: ? | mcp/discovered/cloudflare-api.json
+- mcp-discovered | datadog | sse/http | tools: ? | mcp/discovered/datadog.json
+- mcp-discovered | example-server | sse/http | tools: ? | mcp/discovered/example-server.json
+- mcp-discovered | firebase | stdio | tools: ? | mcp/discovered/firebase.json
+- mcp-discovered | github | sse/http | tools: ? | mcp/discovered/github.json
+- mcp-discovered | github | sse/http | tools: ? | mcp/discovered/github__74ec75ac.json
+- mcp-discovered | github | stdio | tools: ? | mcp/discovered/github__f4b8ac92.json
+- mcp-discovered | gitlab | sse/http | tools: ? | mcp/discovered/gitlab.json
+- mcp-discovered | laravel-boost | stdio | tools: ? | mcp/discovered/laravel-boost.json
+- mcp-discovered | openai-api-key-local-confirmation | stdio | tools: ? | mcp/discovered/openai-api-key-local-confirmation.json
+- mcp-discovered | sentry | sse/http | tools: ? | mcp/discovered/sentry.json
+- mcp-discovered | supabase-ro | sse/http | tools: ? | mcp/discovered/supabase-ro.json
+- mcp-discovered | supabase | sse/http | tools: ? | mcp/discovered/supabase.json
+- mcp-discovered | supabase | sse/http | tools: ? | mcp/discovered/supabase__0957dae8.json
+- mcp-discovered | supabase | sse/http | tools: ? | mcp/discovered/supabase__502ff1a3.json
+- mcp-discovered | supabase | sse/http | tools: ? | mcp/discovered/supabase__c4561f1d.json
+- mcp-discovered | supabase | sse/http | tools: ? | mcp/discovered/supabase__da5b6720.json
+- mcp-discovered | supabase | sse/http | tools: ? | mcp/discovered/supabase__f1626fed.json
+- mcp-discovered | terraform | stdio | tools: ? | mcp/discovered/terraform.json
+- mcp-discovered | vercel | sse/http | tools: ? | mcp/discovered/vercel.json
+- mcp-discovered | vercel | sse/http | tools: ? | mcp/discovered/vercel__60d27080.json
+- plugin | claude-plugins-official/supabase | skills=2, agents=0, hooks=no, mcp=yes, commands=0 | (local plugin cache)
+- skill | blog-google | Google API integration for blog performance: PageSpeed Insights, CrUX Core Web Vitals with 25-week history, Search Conso | skills/blog/blog-google/SKILL.md
+- skill | blog-notebooklm | Query Google NotebookLM notebooks for source-grounded, citation-backed answers from user-uploaded documents. Manages not | skills/blog/blog-notebooklm/SKILL.md
+- skill | blog-schema | Generate complete JSON-LD schema markup for blog posts including BlogPosting, Person, Organization, BreadcrumbList, FAQP | skills/blog/blog-schema/SKILL.md
+- skill | blog-taxonomy | Extract, suggest, and sync tags and categories for blog posts across all major CMS platforms. Supports WordPress REST AP | skills/blog/blog-taxonomy/SKILL.md
+- skill | embedded-captions | Add captions or subtitles to an existing single-subject talking-head video without editing the footage. Use for plain ve | skills/embedded-captions/SKILL.md
+- skill | firecrawl-build-interact | Integrate Firecrawl `/interact` into product code for dynamic pages and browser actions after scraping. Use when a featu | skills/firecrawl-build-interact/SKILL.md
+- skill | firecrawl-build-onboarding | Get Firecrawl credentials and SDK setup into a project. Use when an application needs `FIRECRAWL_API_KEY`, when an agent | skills/firecrawl-build-onboarding/SKILL.md
+- skill | firecrawl-company-directories | Extract structured company lists from directories with Firecrawl. Use for scraping YC, Crunchbase, Product Hunt, G2, sta | skills/firecrawl-company-directories/SKILL.md
+- skill | firecrawl-dashboard-reporting | Pull metrics from analytics dashboards and internal web tools with Firecrawl browser. Use when the user needs dashboard  | skills/firecrawl-dashboard-reporting/SKILL.md
+- skill | firecrawl-knowledge-ingest | Ingest public or authenticated knowledge bases and docs portals with Firecrawl browser. Use for JS-heavy docs, login-gat | skills/firecrawl-knowledge-ingest/SKILL.md
+- skill | firecrawl-lead-gen | Generate structured lead lists from prospect databases and web directories with Firecrawl browser. Use for finding prosp | skills/firecrawl-lead-gen/SKILL.md
+- skill | firecrawl-parse | Efficiently extract and convert the contents of any local file—such as PDF, DOCX, DOC, ODT, RTF, XLSX, XLS, or HTML—into | skills/firecrawl-parse/SKILL.md
+- skill | general-video | Author or edit a custom HyperFrames composition when no specialized workflow fits, or when BRIEF.md sets flow: companion | skills/general-video/SKILL.md
+- skill | git-guardrails-claude-code | Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execut | skills/git-guardrails-claude-code/SKILL.md
+- skill | gstack-careful | Safety guardrails for destructive commands. (gstack) | skills/gstack-careful/SKILL.md
+- skill | gstack-setup-gbrain | "Set up gbrain for this coding agent: install the CLI, initialize a local PGLite or Supabase brain, register MCP, captur | skills/gstack-setup-gbrain/SKILL.md
+- skill | mockup-device-3d | "Static iPhone and MacBook 3D-style showcase with real HTML embedded on screens, glass-lens refraction, and 360-degree t | skills/mockup-device-3d/SKILL.md
+- skill | pr-to-video | "Turn a GitHub pull request (a PR URL, owner/repo#N, or 'this PR' in a checked-out repo) into a code-change explainer vi | skills/pr-to-video/SKILL.md
+- skill | research | Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use w | skills/research/SKILL.md
+- skill | slideshow | "Author a HyperFrames deck for presenting live: discrete slides with fragment reveals, branching paths, hotspot navigati | skills/slideshow/SKILL.md
+- skill | stop-slop | "Gate long-form prose on a numeric score before it ships. Applies 8 prose rules (cut filler, break formulaic structures, | skills/stop-slop/SKILL.md
+- agent-tool | D4Vinci__Scrapling | Adaptive scraping with anti-bot bypass (Cloudflare Turnstile), stealth headless browsing and a spiders framework. Ships its own agent skill, extracted as toolbox/skills/scrapling-official. | parked/app-sources/D4Vinci__Scrapling | BSD-3-Clause | WARN: ToS risk: the anti-bot bypass is the point of this tool. Fine for the user's own research; a decision to make before any client-facing use. | risks: anti-bot bypass carries ToS risk: not for client work without a decision; needs `pip install scrapling` plus browser binaries before anything runs; its MCP server is the `scrapling-mcp` console script from that same install
+- application | langflow-ai__langflow | Visual builder for AI agent and RAG workflows. Not installed (358M clone). | parked/app-sources/langflow-ai__langflow | MIT | risks: stores provider API keys; can expose network services on the machine
+

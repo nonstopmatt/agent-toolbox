@@ -1,0 +1,135 @@
+# research
+
+Generated: 2026-09-21 22:30 
+Count: 124
+
+Line format: `- kind | name | what it is | path` — and for kind `application` or
+`agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
+Kinds: skill, agent, plugin, mcp-mine, mcp-discovered, application, agent-tool.
+Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session-launch it.
+
+- agent | Anthropologist | Expert in cultural systems, rituals, kinship, belief systems, and ethnographic method — builds culturally coherent socie | agents/academic-anthropologist.md | 7878
+- agent | Geographer | Expert in physical and human geography, climate systems, cartography, and spatial analysis — builds geographically coher | agents/academic-geographer.md | 7740
+- agent | Narratologist | Expert in narrative theory, story structure, character arcs, and literary analysis — grounds advice in established frame | agents/academic-narratologist.md | 6797
+- agent | Psychologist | Expert in human behavior, personality theory, motivation, and cognitive patterns — builds psychologically credible chara | agents/academic-psychologist.md | 7833
+- agent | Statistician | Expert in quantitative research methodology, experimental design, and statistical inference — pressure-tests claims, des | agents/academic-statistician.md | 11508
+- agent | audit-creative | "Cross-platform creative specialist. Returns schema-valid findings covering creative fit, concept diversity, fatigue, fo | agents/audit-creative.md | 1686
+- agent | audit-meta | "Meta Ads evidence and controls specialist. Returns schema-valid findings for Pixel and CAPI, attribution, creative dive | agents/audit-meta.md | 1780
+- agent | Persona Walkthrough Specialist | Simulate cognitive walkthroughs of web pages from a defined persona's psychological perspective — captures emotional rea | agents/design-persona-walkthrough.md | 16759
+- agent | UI Finish-Gate Reviewer | Product-interface reviewer who catches generic, interchangeable UI before it ships by grounding critique in real product | agents/design-ui-finish-gate-reviewer.md | 8988
+- agent | UX Researcher | Expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insi | agents/design-ux-researcher.md | 13030
+- agent | LLM Post-Training Engineer | Evidence-driven owner for SFT, preference optimization, RLHF/RLVR, MoE post-training, and the release gates that turn a  | agents/engineering-llm-post-training-engineer.md | 10947
+- agent | RAG Pipeline Engineer | Production RAG specialist focused on chunking strategy, retrieval quality, hybrid search, re-ranking, and eval-driven it | agents/engineering-rag-pipeline-engineer.md | 18250
+- agent | Search Relevance Engineer | Expert search engineer for Elasticsearch and OpenSearch — index and analyzer design, BM25 query tuning, hybrid lexical+v | agents/engineering-search-relevance-engineer.md | 15023
+- agent | Investment Researcher | Expert investment researcher specializing in market research, due diligence, portfolio analysis, and asset valuation. Co | agents/finance-investment-researcher.md | 15678
+- agent | Game Audio Engineer | Interactive audio specialist - Masters FMOD/Wwise integration, adaptive music systems, spatial audio, and audio performa | agents/game-audio-engineer.md | 12298
+- agent | 3D & Scene Developer | Web 3D visualization specialist who creates immersive 3D scenes, terrain models, point cloud visualizations, and interac | agents/gis-3d-scene-developer.md | 5628
+- agent | GIS Analyst | Day-to-day GIS operator who creates maps, manages layers, performs spatial queries, and maintains geospatial data integr | agents/gis-analyst.md | 4487
+- agent | BIM/GIS Specialist | Integration specialist who bridges Building Information Modeling and Geographic Information Systems — Revit/IFC data con | agents/gis-bim-specialist.md | 5594
+- agent | Cartography Designer | Map aesthetics specialist who designs beautiful, readable, and effective maps — color theory, typography, label placemen | agents/gis-cartography-designer.md | 6968
+- agent | Drone/Reality Mapping Specialist | Photogrammetry and reality capture expert who processes drone imagery into orthomosaics, digital terrain models, point c | agents/gis-drone-reality-mapping.md | 6007
+- agent | GeoAI/ML Engineer | Geospatial machine learning specialist who builds models for feature extraction, object detection, image segmentation, a | agents/gis-geoai-ml-engineer.md | 4947
+- agent | Geoprocessing Specialist | ArcPy and Python toolbox expert who automates spatial workflows — builds .pyt toolboxes, Model Builder processes, batch  | agents/gis-geoprocessing-specialist.md | 4817
+- agent | GIS QA Engineer | Quality assurance specialist who validates geospatial data integrity — topology checks, metadata audits, CRS consistency | agents/gis-qa-engineer.md | 5400
+- agent | Solution Engineer | Hands-on GIS prototype builder who takes strategy from Technical Consultant and turns it into working demos, proof-of-co | agents/gis-solution-engineer.md | 4591
+- agent | Spatial Data Scientist | Advanced spatial analytics specialist who applies statistical modeling, spatial econometrics, clustering, and predictive | agents/gis-spatial-data-scientist.md | 5840
+- agent | Technical Consultant | Strategic GIS advisor who translates business problems into geospatial solutions — gap analysis, technology roadmaps, RF | agents/gis-technical-consultant.md | 4525
+- agent | Web GIS Developer | Full-stack web GIS engineer who builds interactive mapping applications — MapLibre GL JS, ArcGIS JS API, Leaflet, real-t | agents/gis-web-gis-developer.md | 5324
+- agent | Clinical Evidence Agent | Evidence standards and clinical credibility framework for AI agents operating in healthcare contexts. Defines how to dis | agents/healthcare-clinical-evidence-agent.md | 10273
+- agent | Healthcare Customer Service | Empathetic healthcare customer service specialist for patient support, billing inquiries, appointment management, insura | agents/healthcare-customer-service.md | 22100
+- agent | Healthcare Innovation Strategist | Strategic narrative architect for healthcare founders operating at the intersection of clinical credibility, healthcare  | agents/healthcare-innovation-strategist.md | 20366
+- agent | Level Designer | Spatial storytelling and flow specialist - Masters layout theory, pacing architecture, encounter design, and environment | agents/level-designer.md | 10340
+- agent | AEO Foundations Architect | Expert in AI Engine Optimization infrastructure — implements llms.txt, AI-aware robots.txt, token-budgeted content, stru | agents/marketing-aeo-foundations.md | 15548
+- agent | Agentic Search Optimizer | Expert in WebMCP readiness and agentic task completion — audits whether AI agents can actually accomplish tasks on your  | agents/marketing-agentic-search-optimizer.md | 15702
+- agent | Baidu SEO Specialist | Expert Baidu search optimization specialist focused on Chinese search engine ranking, Baidu ecosystem integration, ICP c | agents/marketing-baidu-seo-specialist.md | 12968
+- agent | X/Twitter Intelligence Analyst | Social intelligence specialist for X/Twitter research, trend detection, account monitoring, and evidence-backed audience | agents/marketing-x-twitter-intelligence-analyst.md | 9730
+- agent | Organizational Psychologist | Applied organizational psychologist who diagnoses team dynamics, psychological safety, burnout risk, and culture health  | agents/organizational-psychologist.md | 22579
+- agent | Search Query Analyst | Specialist in search term analysis, negative keyword architecture, and query-to-intent mapping. Turns raw search query d | agents/paid-media-search-query-analyst.md | 4941
+- agent | Behavioral Nudge Engine | Behavioral psychology specialist that adapts software interaction cadences and styles to maximize user motivation and su | agents/product-behavioral-nudge-engine.md | 5335
+- agent | Feedback Synthesizer | Expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product ins | agents/product-feedback-synthesizer.md | 7271
+- agent | Trend Researcher | Expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity as | agents/product-trend-researcher.md | 10493
+- agent | release-verifier | "Fresh-context Claude Ads release verifier. Audits acceptance criteria, diffs, tests, packages, evidence freshness, priv | agents/release-verifier.md | 893
+- agent | Research Synthesist | Expert in literature review, source evaluation, and evidence synthesis — turns a scattered pile of sources into a struct | agents/research-synthesist.md | 10739
+- agent | research-worker | "Paid-media research worker for one bounded platform, policy, API, issue, pull-request, or repository slice. Produces so | agents/research-worker.md | 974
+- agent | Retail Customer Returns | Comprehensive retail customer returns specialist for processing returns, exchanges, and refunds across in-store, online, | agents/retail-customer-returns.md | 27700
+- agent | Compliance Auditor | Expert technical compliance auditor specializing in SOC 2, ISO 27001, HIPAA, and PCI-DSS audits — from readiness assessm | agents/security-compliance-auditor.md | 7213
+- agent | source-verifier | "Adversarial source and claim verifier for paid-media facts, thresholds, policies, APIs, benchmarks, and repository evid | agents/source-verifier.md | 850
+- agent | Cultural Intelligence Strategist | CQ specialist that detects invisible exclusion, researches global context, and ensures software resonates authentically  | agents/specialized-cultural-intelligence-strategist.md | 6643
+- agent | Pricing Analyst | Specialized pricing analyst who develops optimal pricing models through market research, competitor analysis, cost struc | agents/specialized-pricing-analyst.md | 12770
+- agent | Study Abroad Advisor | Full-spectrum study abroad planning expert covering the US, UK, Canada, Australia, Europe, Hong Kong, and Singapore — pr | agents/study-abroad-advisor.md | 16984
+- agent | Analytics Reporter | Expert data analyst transforming raw data into actionable business insights. Creates dashboards, performs statistical an | agents/support-analytics-reporter.md | 15796
+- agent | Evidence Collector | Screenshot-obsessed, fantasy-allergic QA specialist - Default to finding 3-5 issues, requires visual proof for everythin | agents/testing-evidence-collector.md | 8354
+- agent | Performance Benchmarker | Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance | agents/testing-performance-benchmarker.md | 12224
+- agent | Reality Checker | Stops fantasy approvals, evidence-based certification - Default to "NEEDS WORK", requires overwhelming proof for product | agents/testing-reality-checker.md | 10854
+- agent | Tool Evaluator | Expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms  | agents/testing-tool-evaluator.md | 17542
+- agent | XR Immersive Developer | Expert WebXR and immersive technology developer with specialization in browser-based AR/VR/XR applications | agents/xr-immersive-developer.md | 1847
+- agent | XR Interface Architect | Spatial interaction designer and interface strategist for immersive AR/VR/XR environments | agents/xr-interface-architect.md | 1700
+- mcp-mine | quiverquant | stdio | tools: ? | mcp/mine/quiverquant.json
+- mcp-discovered | benchling | http | tools: ? | mcp/discovered/benchling.json
+- mcp-discovered | biorender | sse/http | tools: ? | mcp/discovered/biorender.json
+- mcp-discovered | biorxiv | sse/http | tools: ? | mcp/discovered/biorxiv.json
+- mcp-discovered | c-trials | sse/http | tools: ? | mcp/discovered/c-trials.json
+- mcp-discovered | chembl | sse/http | tools: ? | mcp/discovered/chembl.json
+- mcp-discovered | consensus | sse/http | tools: ? | mcp/discovered/consensus.json
+- mcp-discovered | crunchbase | sse/http | tools: ? | mcp/discovered/crunchbase.json
+- mcp-discovered | dataAnalyticsWidgets | stdio | tools: ? | mcp/discovered/dataAnalyticsWidgets.json
+- mcp-discovered | exa | sse/http | tools: ? | mcp/discovered/exa.json
+- mcp-discovered | firecrawl | stdio | tools: ? | mcp/discovered/firecrawl.json
+- mcp-discovered | mcp-search | stdio | tools: ? | mcp/discovered/mcp-search.json
+- mcp-discovered | owkin | sse/http | tools: ? | mcp/discovered/owkin.json
+- mcp-discovered | pubmed | sse/http | tools: ? | mcp/discovered/pubmed.json
+- mcp-discovered | similarweb | sse/http | tools: ? | mcp/discovered/similarweb.json
+- mcp-discovered | synapse | sse/http | tools: ? | mcp/discovered/synapse.json
+- mcp-discovered | wiley | sse/http | tools: ? | mcp/discovered/wiley.json
+- skill | code-research | Research open-source repositories to understand how something is built or works. | skills/code-research/SKILL.md
+- skill | explore | Use this skill when the user asks you something that requires searching a code base | skills/explore/SKILL.md
+- skill | feature-research | Research existing architecture before implementing a complex feature. | skills/feature-research/SKILL.md
+- skill | firecrawl-agent | AI-powered autonomous data extraction that navigates complex sites and returns structured JSON. Use this skill when the  | skills/firecrawl-agent/SKILL.md
+- skill | firecrawl-build-onboarding | Get Firecrawl credentials and SDK setup into a project. Use when an application needs `FIRECRAWL_API_KEY`, when an agent | skills/firecrawl-build-onboarding/SKILL.md
+- skill | firecrawl-build-scrape | Integrate Firecrawl `/scrape` into product code for single-page extraction. Use when an app already has a URL and needs  | skills/firecrawl-build-scrape/SKILL.md
+- skill | firecrawl-build-search | Integrate Firecrawl `/search` into product code and agent workflows. Use when an app needs discovery before extraction,  | skills/firecrawl-build-search/SKILL.md
+- skill | firecrawl-competitive-intel | Monitor competitor pricing, features, changelogs, dashboards, and product changes with Firecrawl. Use for recurring comp | skills/firecrawl-competitive-intel/SKILL.md
+- skill | firecrawl-crawl | Bulk extract content from an entire website or site section. Use this skill when the user wants to crawl a site, extract | skills/firecrawl-crawl/SKILL.md
+- skill | firecrawl-deep-research | Run multi-source deep research with Firecrawl. Use when the user asks to research a topic, compare perspectives, produce | skills/firecrawl-deep-research/SKILL.md
+- skill | firecrawl-download | Download an entire website as local files — markdown, screenshots, or multiple formats per page. Use this skill when the | skills/firecrawl-download/SKILL.md
+- skill | firecrawl-interact | Control and interact with a live browser session on any scraped page — click buttons, fill forms, navigate flows, and ex | skills/firecrawl-interact/SKILL.md
+- skill | firecrawl-knowledge-base | Build a knowledge base from web content with Firecrawl. Use for local reference docs, RAG-ready chunks, fine-tuning data | skills/firecrawl-knowledge-base/SKILL.md
+- skill | firecrawl-lead-research | Produce pre-meeting lead intelligence briefs with Firecrawl. Use when the user needs company research, person research,  | skills/firecrawl-lead-research/SKILL.md
+- skill | firecrawl-map | Discover and list all URLs on a website, with optional search filtering. Use this skill when the user wants to find a sp | skills/firecrawl-map/SKILL.md
+- skill | firecrawl-market-research | Extract market, financial, earnings, industry, and company metrics with Firecrawl. Use when the user asks for market res | skills/firecrawl-market-research/SKILL.md
+- skill | firecrawl-qa | QA test a live website with Firecrawl browser and scrape evidence. Use when the user wants exploratory QA, form testing, | skills/firecrawl-qa/SKILL.md
+- skill | firecrawl-research-papers | Find and synthesize research papers, whitepapers, PDFs, technical reports, and academic sources with Firecrawl. Use when | skills/firecrawl-research-papers/SKILL.md
+- skill | firecrawl-search | Web search with full page content extraction. Use this skill whenever the user asks to search the web, find articles, re | skills/firecrawl-search/SKILL.md
+- skill | firecrawl-seo-audit | Audit a website's SEO with Firecrawl. Use when the user asks for an SEO audit, metadata and heading review, sitemap/site | skills/firecrawl-seo-audit/SKILL.md
+- skill | firecrawl-shop | Research products across the web with Firecrawl and produce a shopping recommendation or cart-ready summary. Use when th | skills/firecrawl-shop/SKILL.md
+- skill | gstack-benchmark | Performance regression detection. (gstack) | skills/gstack-benchmark/SKILL.md
+- skill | gstack-benchmark-models | Cross-model benchmark for gstack skills. (gstack) | skills/gstack-benchmark-models/SKILL.md
+- skill | gstack-browse | "Drive a real browser through Aside: open a page, read it, click through a flow, take screenshots, check console errors. | skills/gstack-browse/SKILL.md
+- skill | gstack-connect-chrome | Launch GStack Browser — AI-controlled Chromium with the sidebar extension baked in. | skills/gstack-connect-chrome/SKILL.md
+- skill | gstack-cso | Chief Security Officer mode. (gstack) allowed-tools: - Bash - Read - Grep - Glob - Write - Agent - WebSearch - AskUserQu | skills/gstack-cso/SKILL.md
+- skill | gstack-investigate | Systematic debugging with root cause investigation. (gstack) allowed-tools: - Bash - Read - Write - Edit - Grep - Glob - | skills/gstack-investigate/SKILL.md
+- skill | gstack-open-gstack-browser | Launch GStack Browser — AI-controlled Chromium with the sidebar extension baked in. | skills/gstack-open-gstack-browser/SKILL.md
+- skill | gstack-pair-agent | Pair a remote AI agent with your browser. (gstack) | skills/gstack-pair-agent/SKILL.md
+- skill | gstack-plan-ceo-review | CEO/founder-mode plan review. (gstack) allowed-tools: - Read - Grep - Glob - Bash - AskUserQuestion - WebSearch | skills/gstack-plan-ceo-review/SKILL.md
+- skill | gstack-plan-devex-review | Interactive developer experience plan review. (gstack) allowed-tools: - Read - Edit - Grep - Glob - Bash - AskUserQuesti | skills/gstack-plan-devex-review/SKILL.md
+- skill | gstack-qa | Systematically QA test a web application and fix bugs found. (gstack) allowed-tools: - Bash - Read - Write - Edit - Glob | skills/gstack-qa/SKILL.md
+- skill | gstack-qa-only | Report-only QA testing. (gstack) allowed-tools: - Bash - Read - Write - AskUserQuestion - WebSearch | skills/gstack-qa-only/SKILL.md
+- skill | gstack-review | Pre-landing PR review. (gstack) allowed-tools: - Bash - Read - Edit - Write - Grep - Glob - Agent - AskUserQuestion - We | skills/gstack-review/SKILL.md
+- skill | gstack-scrape | Pull data from a web page through the Aside browser — your real, already signed-in sessions. (gstack) allowed-tools: - B | skills/gstack-scrape/SKILL.md
+- skill | gstack-setup-browser-cookies | Import cookies from your real Chromium browser into the headless browse session. (gstack) | skills/gstack-setup-browser-cookies/SKILL.md
+- skill | gstack-skillify | Codify the most recent successful /scrape flow into a permanent browser-skill on disk. (gstack) allowed-tools: - Bash -  | skills/gstack-skillify/SKILL.md
+- skill | gstack-sync-gbrain | Keep gbrain current with this repo's code and refresh agent search guidance in CLAUDE.md. (gstack) | skills/gstack-sync-gbrain/SKILL.md
+- skill | hyperframes-registry | Search, install, and wire registry blocks and components into HyperFrames compositions. Use BEFORE hand-building any nam | skills/hyperframes-registry/SKILL.md
+- skill | ig-caption | - Write the Instagram caption - the line that survives the "... more" cut, the body, the single ask, the search terms an | skills/ig-caption/SKILL.md
+- skill | market-research | Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution | skills/market-research/SKILL.md
+- skill | marketing-psychology | "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when | skills/marketing-psychology/SKILL.md
+- skill | research | Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use w | skills/research/SKILL.md
+- skill | wayfinder | Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue track | skills/wayfinder/SKILL.md
+- application | ollama__ollama | Run open LLMs locally. ALREADY INSTALLED at ~/.local/bin/ollama, daemon answering on 127.0.0.1:11434 (HTTP 200). Rung 1 of the free-LLM fallback chain. | parked/app-sources/ollama__ollama | MIT | risks: already installed: never re-run its install script; 14B-class quality, not a Claude substitute for client work
+- agent-tool | D4Vinci__Scrapling | Adaptive scraping with anti-bot bypass (Cloudflare Turnstile), stealth headless browsing and a spiders framework. Ships its own agent skill, extracted as toolbox/skills/scrapling-official. | parked/app-sources/D4Vinci__Scrapling | BSD-3-Clause | WARN: ToS risk: the anti-bot bypass is the point of this tool. Fine for the user's own research; a decision to make before any client-facing use. | risks: anti-bot bypass carries ToS risk: not for client work without a decision; needs `pip install scrapling` plus browser binaries before anything runs; its MCP server is the `scrapling-mcp` console script from that same install
+- application | bilawalsidhu__gods-eye-view | Browser map of live public data (traffic, CCTV, flights) on a 3D globe. Web app; also on Pinokio. https://maptheworld.ai/ 39.9k stars. | (not cloned) | MIT | risks: needs its own data API keys to be useful; lookalike: uhrichsam4/gods-eye-view (227 stars), not chosen
+- application | dgtlmoon__changedetection.io | Watches web pages and alerts on changes; sold as competitor and price monitoring. Docker. 34.4k stars. | (not cloned) | Apache-2.0 | risks: self-hosted service; notifications need a channel config
+- application | PaddlePaddle__PaddleOCR | OCR toolkit that turns PDFs and scans into structured data; ships skills and an MCP server. 89.9k stars. | (not cloned) | Apache-2.0 | risks: 1.9 GB repo: not cloned; pip install + model downloads
+- application | Fincept-Corporation__FinceptTerminal | Open financial terminal: market data, portfolio analysis, charts, news. 31.9k stars. | (not cloned) | AGPL-3.0 | risks: AGPL-3.0: network use triggers source-sharing; 773 MB repo
+- application | jo-inc__camofox-browser | Stealth headless browser for agents (Camoufox-based anti-detection), with an MCP server. 11.1k stars. | (not cloned) | MIT | risks: anti-bot evasion is the point: ToS risk, not for client work without a decision; ambiguous kind (app + MCP); catalogued as application
+

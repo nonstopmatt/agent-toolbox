@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "facebook-ads": {
+      "type": "stdio",
+      "command": "${HOME}/facebook-ads-library-mcp/venv/bin/python",
+      "args": [
+        "${HOME}/facebook-ads-library-mcp/facebook_ads_mcp_complete.py"
+      ],
+      "env": {
+        "FASTMCP_CHECK_FOR_UPDATES": "off"
+      }
+    }
+  }
+}

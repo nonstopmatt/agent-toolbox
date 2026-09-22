@@ -1,0 +1,25 @@
+{
+  "generated": "2026-09-21T22:30:44.310472",
+  "counts": {
+    "web-design": 179,
+    "frontend-code": 100,
+    "backend-data": 131,
+    "marketing-copy": 129,
+    "social-content": 53,
+    "video-audio": 80,
+    "research": 124,
+    "security-review": 76,
+    "memory-context": 59,
+    "agent-orchestration": 142,
+    "business-ops": 146,
+    "misc": 4
+  },
+  "total_lines_tools_memory": 88,
+  "unmatched": 4,
+  "unmatched_sample": [
+    "mcp-discovered:ot",
+    "mcp-discovered:tools",
+    "skill:i-have-adhd",
+    "skill:wt-switch-create"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "davinci-resolve": {
+      "type": "stdio",
+      "command": "${HOME}/davinci-resolve-mcp/venv/bin/python",
+      "args": [
+        "${HOME}/davinci-resolve-mcp/src/server.py"
+      ],
+      "env": {
+        "RESOLVE_SCRIPT_API": "${RESOLVE_SCRIPT_API}",
+        "RESOLVE_SCRIPT_LIB": "${RESOLVE_SCRIPT_LIB}",
+        "PYTHONPATH": "${PYTHONPATH}"
+      }
+    }
+  }
+}

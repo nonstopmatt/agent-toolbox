@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "computer-agents": {
+      "type": "stdio",
+      "command": "${HOME}/computer-agents/ui-tars/.venv/bin/python",
+      "args": [
+        "${HOME}/computer-agents/mcp_server.py"
+      ],
+      "env": {
+        "COMPUTER_AGENTS_ENABLE_AGENT_S": "1"
+      }
+    }
+  }
+}

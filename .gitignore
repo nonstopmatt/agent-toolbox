@@ -1,0 +1,43 @@
+# Other people's work (mixed licenses) and anything local. manifest.json records where
+# every upstream came from; bin/bootstrap.sh re-clones them.
+mcp/
+parked/
+repos/
+sources/
+inbox/
+agents/
+skills/
+
+# Credentials and data
+*.env
+.env*
+*.key
+*.pem
+*.sqlite
+*.db
+
+# Ledgers and logs
+*ledger*
+*.log
+*.jsonl
+pick-log.md
+
+# bin/: only the three scripts the repo documents
+bin/*
+!bin/build-catalog.sh
+!bin/sync.sh
+!bin/bootstrap.sh
+!bin/secret-allowlist.txt
+!bin/library.py
+
+# Local search index: holds memory-note text and embeddings, never committed
+index/
+
+# Full plugin index (cache paths) and parking notes. sync.sh commits plugins/INDEX.public.md instead.
+plugins/INDEX.md
+plugins/notes.json
+
+# Build by-products
+catalog/_unmatched.txt
+__pycache__/
+.DS_Store

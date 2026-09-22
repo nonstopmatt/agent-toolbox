@@ -1,0 +1,137 @@
+# agent-orchestration
+
+Generated: 2026-09-21 22:30 
+Count: 142
+
+Line format: `- kind | name | what it is | path` — and for kind `application` or
+`agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
+Kinds: skill, agent, plugin, mcp-mine, mcp-discovered, application, agent-tool.
+Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session-launch it.
+
+- agent | Accounts Payable Agent | Autonomous payment processing specialist that executes vendor payments, contractor invoices, and recurring bills across  | agents/accounts-payable-agent.md | 6795
+- agent | Agents Orchestrator | Autonomous pipeline manager that orchestrates the entire development workflow. You are the leader of this process. | agents/agents-orchestrator.md | 15725
+- agent | Automation Governance Architect | Governance-first architect for business automations (n8n-first) who audits value, risk, and maintainability before imple | agents/automation-governance-architect.md | 5831
+- agent | Blender Add-on Engineer | Blender tooling specialist - Builds Python add-ons, asset validators, exporters, and pipeline automations that turn repe | agents/blender-addon-engineer.md | 10954
+- agent | Change Management Consultant | Expert change management specialist using ADKAR, Kotter, and Prosci frameworks to guide organizations through technology | agents/change-management-consultant.md | 27377
+- agent | copy-writer | "Bounded paid-media copy worker. Returns substantiated, current-spec-validated copy candidates to the conductor without  | agents/copy-writer.md | 2082
+- agent | Data Consolidation Agent | AI agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summari | agents/data-consolidation-agent.md | 2393
+- agent | Image Prompt Engineer | Expert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image generation. Masters | agents/design-image-prompt-engineer.md | 11160
+- agent | UX Architect | Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implemen | agents/design-ux-architect.md | 15758
+- agent | Email Intelligence Engineer | Expert in extracting structured, reasoning-ready data from raw email threads for AI agents and automation systems | agents/engineering-email-intelligence-engineer.md | 16550
+- agent | Feishu Integration Developer | Full-stack integration expert specializing in the Feishu (Lark) Open Platform — proficient in Feishu bots, mini programs | agents/engineering-feishu-integration-developer.md | 21127
+- agent | Git Workflow Master | Expert in Git workflows, branching strategies, and version control best practices including conventional commits, rebasi | agents/engineering-git-workflow-master.md | 3342
+- agent | OrgScript Engineer | Expert in designing, parsing, and implementing OrgScript grammar, AST validation, and business logic definitions. | agents/engineering-orgscript-engineer.md | 5611
+- agent | Payments & Billing Engineer | Expert payments engineer for PSP integrations (Stripe, Adyen, Braintree, PayPal), idempotent payment flows, webhook proc | agents/engineering-payments-billing-engineer.md | 12574
+- agent | Prompt Engineer | Specialist in crafting, testing, and systematically optimizing prompts for LLMs — turning vague instructions into reliab | agents/engineering-prompt-engineer.md | 9477
+- agent | Geoprocessing Specialist | ArcPy and Python toolbox expert who automates spatial workflows — builds .pyt toolboxes, Model Builder processes, batch  | agents/gis-geoprocessing-specialist.md | 4817
+- agent | Aging Parent Care Companion | Compassionate, HIPAA-aligned care coordination and decision-support agent for family caregivers managing an aging parent | agents/healthcare-aging-parent-care-companion.md | 25248
+- agent | Sovereign Health Systems Agent | Government health mandate engagement framework for AI agents operating at the intersection of national health infrastruc | agents/healthcare-sovereign-health-systems-agent.md | 14891
+- agent | Identity Graph Operator | Operates a shared identity graph that multiple AI agents resolve against. Ensures every agent in a multi-agent system ge | agents/identity-graph-operator.md | 14122
+- agent | LSP/Index Engineer | Language Server Protocol specialist building unified code intelligence systems through LSP client orchestration and sema | agents/lsp-index-engineer.md | 11197
+- agent | AEO Foundations Architect | Expert in AI Engine Optimization infrastructure — implements llms.txt, AI-aware robots.txt, token-budgeted content, stru | agents/marketing-aeo-foundations.md | 15548
+- agent | Multi-Platform Publisher | Expert orchestrator for one-click Chinese blog publishing. Routes a single article to 知乎 / 小红书 / CSDN / B站 / 公众号 / 掘金 vi | agents/marketing-multi-platform-publisher.md | 14660
+- agent | Jira Workflow Steward | Expert delivery operations specialist who enforces Jira-linked Git workflows, traceable commits, structured pull request | agents/project-management-jira-workflow-steward.md | 13498
+- agent | Studio Producer | Senior strategic leader specializing in high-level creative and technical project orchestration, resource allocation, an | agents/project-management-studio-producer.md | 10905
+- agent | Senior Project Manager | Converts specs to tasks and remembers previous projects. Focused on realistic scope, no background processes, exact spec | agents/project-manager-senior.md | 5308
+- agent | Real Estate Buyer & Seller | Comprehensive real estate agent assistant for buyer representation, seller representation, listing management, offer neg | agents/real-estate-buyer-seller.md | 31124
+- agent | Report Distribution Agent | AI agent that automates distribution of consolidated sales reports to representatives based on territorial parameters | agents/report-distribution-agent.md | 2653
+- agent | Sales Data Extraction Agent | AI agent specialized in monitoring Excel files and extracting key sales metrics (MTD, YTD, Year End) for internal live r | agents/sales-data-extraction-agent.md | 2697
+- agent | AI-Generated Code Security Auditor | Security reviewer for AI-generated and vibe-coded apps — hunts the hardcoded secrets, broken row-level security, and pro | agents/security-ai-generated-code-auditor.md | 17126
+- agent | Senior SecOps Engineer | Defensive application security specialist who scans every code submission for secrets and sensitive data exposure before | agents/security-senior-secops.md | 31340
+- agent | skill-reviewer | "Fresh-context reviewer for Claude Ads skill and agent routing, progressive disclosure, prompt contracts, safety boundar | agents/skill-reviewer.md | 862
+- agent | Focus Music Architect | Instrumental focus music specialist and neuroacoustic prompt engineer — crafts high-yield prompts, soundscape architectu | agents/specialized-focus-music-architect.md | 10361
+- agent | Master Plan Architect | Master planning architect, technical educator, and ruthless plan critic who specializes in deep architectural teaching,  | agents/specialized-master-plan-architect.md | 10622
+- agent | Strategy Duel Agent | Conducts live strategy duels using game theory and the 36 Chinese stratagems | agents/specialized-strategy-duel-agent.md | 5946
+- agent | Workflow Architect | Workflow design specialist who maps complete workflow trees for every system, user journey, and agent interaction — cove | agents/specialized-workflow-architect.md | 26479
+- agent | Workflow Optimizer | Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business fun | agents/testing-workflow-optimizer.md | 22050
+- mcp-mine | agentmail | sse/http | tools: ? | mcp/mine/agentmail.json
+- mcp-mine | computer-agents | stdio | tools: ? | mcp/mine/computer-agents.json
+- mcp-mine | morph-mcp | stdio | tools: ? | mcp/mine/morph-mcp.json
+- mcp-discovered | airwallex-agentos | sse/http | tools: ? | mcp/discovered/airwallex-agentos.json
+- mcp-discovered | emergent | sse/http | tools: ? | mcp/discovered/emergent.json
+- mcp-discovered | sequential-thinking | stdio | tools: ? | mcp/discovered/sequential-thinking.json
+- mcp-discovered | tessl | stdio | tools: ? | mcp/discovered/tessl.json
+- plugin | claude-plugins-official/claude-code-setup | skills=1, agents=0, hooks=no, mcp=no, commands=0 | (local plugin cache)
+- plugin | claude-plugins-official/supabase | skills=2, agents=0, hooks=no, mcp=yes, commands=0 | (local plugin cache)
+- plugin | ponytail/ponytail | skills=6, agents=0, hooks=yes, mcp=no, commands=6 | (local plugin cache)
+- plugin | superpowers-dev/superpowers | skills=14, agents=0, hooks=yes, mcp=no, commands=0 | (local plugin cache)
+- skill | _gstack-command | Router for the gstack skill suite. (gstack) allowed-tools: - Bash - Read - AskUserQuestion | skills/_gstack-command/SKILL.md
+- skill | ai-image-prompts | Recommend curated prompts from a 10,000+ real-world image generation prompt library. Works with ANY AI image model — Nan | skills/ai-image-prompts/SKILL.md
+- skill | ask-matt | Ask which skill or flow fits your situation. A router over the skills in this repo. disable-model-invocation: true | skills/ask-matt/SKILL.md
+- skill | blog | Full-lifecycle blog engine with 21 commands, 12 content templates, 5-category 100-point scoring, and 4 specialized agent | skills/blog/SKILL.md
+- skill | blog | Full-lifecycle blog engine with 21 commands, 12 content templates, 5-category 100-point scoring, and 4 specialized agent | skills/blog/blog/SKILL.md
+- skill | claude-handoff | Hand the current conversation off to a fresh background agent that picks up the work immediately. argument-hint: "What w | skills/claude-handoff/SKILL.md
+- skill | code-review | "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code fo | skills/code-review/SKILL.md
+- skill | feature-research | Research existing architecture before implementing a complex feature. | skills/feature-research/SKILL.md
+- skill | firecrawl-agent | AI-powered autonomous data extraction that navigates complex sites and returns structured JSON. Use this skill when the  | skills/firecrawl-agent/SKILL.md
+- skill | firecrawl-build-search | Integrate Firecrawl `/search` into product code and agent workflows. Use when an app needs discovery before extraction,  | skills/firecrawl-build-search/SKILL.md
+- skill | git-guardrails-claude-code | Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execut | skills/git-guardrails-claude-code/SKILL.md
+- skill | grill-me | A relentless interview to sharpen a plan or design. disable-model-invocation: true | skills/grill-me/SKILL.md
+- skill | grilling | Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or u | skills/grilling/SKILL.md
+- skill | gstack-autoplan | Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with a | skills/gstack-autoplan/SKILL.md
+- skill | gstack-benchmark | Performance regression detection. (gstack) | skills/gstack-benchmark/SKILL.md
+- skill | gstack-benchmark-models | Cross-model benchmark for gstack skills. (gstack) | skills/gstack-benchmark-models/SKILL.md
+- skill | gstack-canary | Post-deploy canary monitoring. (gstack) allowed-tools: - Bash - Read - Write - Glob - AskUserQuestion | skills/gstack-canary/SKILL.md
+- skill | gstack-careful | Safety guardrails for destructive commands. (gstack) | skills/gstack-careful/SKILL.md
+- skill | gstack-codex | OpenAI Codex CLI wrapper — three modes. (gstack) | skills/gstack-codex/SKILL.md
+- skill | gstack-context-restore | Restore working context saved earlier by /context-save. (gstack) allowed-tools: - Bash - Read - Glob - Grep - AskUserQue | skills/gstack-context-restore/SKILL.md
+- skill | gstack-context-save | Save working context. (gstack) allowed-tools: - Bash - Read - Write - Glob - Grep - AskUserQuestion | skills/gstack-context-save/SKILL.md
+- skill | gstack-design-html | "Design finalization: generates production-quality Pretext-native HTML/CSS. (gstack)" | skills/gstack-design-html/SKILL.md
+- skill | gstack-design-shotgun | "Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate | skills/gstack-design-shotgun/SKILL.md
+- skill | gstack-devex-review | Live developer experience audit. (gstack) | skills/gstack-devex-review/SKILL.md
+- skill | gstack-diagram | "Turn an English description (or mermaid source) into a diagram triplet: the source, an editable .excalidraw file you ca | skills/gstack-diagram/SKILL.md
+- skill | gstack-document-generate | Generate missing documentation from scratch for a feature, module, or entire project. (gstack) allowed-tools: - Bash - R | skills/gstack-document-generate/SKILL.md
+- skill | gstack-document-release | Post-ship documentation update. (gstack) allowed-tools: - Bash - Read - Write - Edit - Grep - Glob - AskUserQuestion | skills/gstack-document-release/SKILL.md
+- skill | gstack-freeze | Restrict file edits to a specific directory for the session. (gstack) | skills/gstack-freeze/SKILL.md
+- skill | gstack-guard | "Full safety mode: destructive command warnings + directory-scoped edits. (gstack)" | skills/gstack-guard/SKILL.md
+- skill | gstack-health | Code quality dashboard. (gstack) | skills/gstack-health/SKILL.md
+- skill | gstack-land-and-deploy | Land and deploy workflow. (gstack) allowed-tools: - Bash - Read - Write - Glob - AskUserQuestion | skills/gstack-land-and-deploy/SKILL.md
+- skill | gstack-landing-report | Read-only queue dashboard for workspace-aware ship. (gstack) | skills/gstack-landing-report/SKILL.md
+- skill | gstack-learn | Manage project learnings. | skills/gstack-learn/SKILL.md
+- skill | gstack-plan-ceo-review | CEO/founder-mode plan review. (gstack) allowed-tools: - Read - Grep - Glob - Bash - AskUserQuestion - WebSearch | skills/gstack-plan-ceo-review/SKILL.md
+- skill | gstack-plan-design-review | Designer's eye plan review — interactive, like CEO and Eng review. (gstack) allowed-tools: - Read - Edit - Grep - Glob - | skills/gstack-plan-design-review/SKILL.md
+- skill | gstack-plan-devex-review | Interactive developer experience plan review. (gstack) allowed-tools: - Read - Edit - Grep - Glob - Bash - AskUserQuesti | skills/gstack-plan-devex-review/SKILL.md
+- skill | gstack-plan-tune | "Self-tuning question sensitivity + developer psychographic for gstack (v1: observational). (gstack)" | skills/gstack-plan-tune/SKILL.md
+- skill | gstack-retro | Weekly engineering retrospective. (gstack) allowed-tools: - Bash - Read - Write - Glob - AskUserQuestion | skills/gstack-retro/SKILL.md
+- skill | gstack-setup-deploy | Configure deployment settings for /land-and-deploy. | skills/gstack-setup-deploy/SKILL.md
+- skill | gstack-setup-gbrain | "Set up gbrain for this coding agent: install the CLI, initialize a local PGLite or Supabase brain, register MCP, captur | skills/gstack-setup-gbrain/SKILL.md
+- skill | gstack-ship | "Ship workflow: detect + merge base branch, run tests, review diff, bump VERSION, update CHANGELOG, commit, push, create | skills/gstack-ship/SKILL.md
+- skill | gstack-spec | Turn vague intent into a precise, executable spec in five phases. (gstack) allowed-tools: - Bash - Read - Grep - Glob -  | skills/gstack-spec/SKILL.md
+- skill | gstack-sync-gbrain | Keep gbrain current with this repo's code and refresh agent search guidance in CLAUDE.md. (gstack) | skills/gstack-sync-gbrain/SKILL.md
+- skill | gstack-unfreeze | Clear the freeze boundary set by /freeze, allowing edits to all directories again. (gstack) | skills/gstack-unfreeze/SKILL.md
+- skill | gstack-upgrade | Upgrade gstack to the latest version. | skills/gstack-upgrade/SKILL.md
+- skill | handoff | Compact the current conversation into a handoff document for another agent to pick up. argument-hint: "What will the nex | skills/handoff/SKILL.md
+- skill | ig-viral | - Go and find the reels that are actually working right now in the user's niche, rank them by how far each beat its own  | skills/ig-viral/SKILL.md
+- skill | implement | "Implement a piece of work based on a spec or set of tickets." disable-model-invocation: true | skills/implement/SKILL.md
+- skill | implement-spec | "Implement a specification in code." disable-model-invocation: true | skills/implement-spec/SKILL.md
+- skill | instantly-reference-architecture | Implement Instantly reference architecture with best-practice project layout. Use when designing new Instantly integrati | skills/instantly-reference-architecture/SKILL.md
+- skill | lead-magnets | When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the u | skills/lead-magnets/SKILL.md
+- skill | loop-me | Grill me about specs for the workflows I want to build, within this workspace. disable-model-invocation: true argument-h | skills/loop-me/SKILL.md
+- skill | open-code-review-delegate | Delegation mode for open-code-review (OCR). Instead of OCR calling an LLM endpoint, this skill instructs the host agent  | skills/open-code-review-delegate/SKILL.md
+- skill | overdrive | Pushes interfaces past conventional limits with technically ambitious implementations — shaders, spring physics, scroll- | skills/overdrive/SKILL.md
+- skill | retro | "Conduct a retrospective on a coding session." disable-model-invocation: true | skills/retro/SKILL.md
+- skill | scaffold-exercises | Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user | skills/scaffold-exercises/SKILL.md
+- skill | setup-pre-commit | Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user w | skills/setup-pre-commit/SKILL.md
+- skill | setup-ts-deep-modules | Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolder | skills/setup-ts-deep-modules/SKILL.md
+- skill | docs | 'docs (living docs people share, comment on and edit; use only when the user asks for one: names a doc, document, page,  | skills/synced/85db74e3-76a3-48a0-876f-c239652a5108_68586651-6f3d-4164-8a0f-076d8fc4ffed/docs/SKILL.md
+- skill | skill-creator | Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a sk | skills/synced/85db74e3-76a3-48a0-876f-c239652a5108_68586651-6f3d-4164-8a0f-076d8fc4ffed/skill-creator/SKILL.md
+- skill | tdd | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor" | skills/tdd/SKILL.md
+- skill | teach | Teach the user a new skill or concept, within this workspace. disable-model-invocation: true argument-hint: "What would  | skills/teach/SKILL.md
+- skill | to-questionnaire | Turn a decision you can't fully answer into a questionnaire for someone else to fill in. disable-model-invocation: true | skills/to-questionnaire/SKILL.md
+- skill | to-spec | "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of  | skills/to-spec/SKILL.md
+- skill | to-tickets | Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges,  | skills/to-tickets/SKILL.md
+- skill | triage | Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write age | skills/triage/SKILL.md
+- skill | wait-what | "Stop. That last message did not land: re-pitch it." disable-model-invocation: true | skills/wait-what/SKILL.md
+- skill | worktrunk | Guidance for Worktrunk (the `wt` CLI) — git worktree management, hooks, and config. Load when working out which worktree | skills/worktrunk/SKILL.md
+- skill | yt-script | - Write a YouTube video script from a raw idea - hook options off 21 formulas, scored, then the full spoken script with  | skills/yt-script/SKILL.md
+- application | ollama__ollama | Run open LLMs locally. ALREADY INSTALLED at ~/.local/bin/ollama, daemon answering on 127.0.0.1:11434 (HTTP 200). Rung 1 of the free-LLM fallback chain. | parked/app-sources/ollama__ollama | MIT | risks: already installed: never re-run its install script; 14B-class quality, not a Claude substitute for client work
+- application | OpenHands__OpenHands | Autonomous coding agent with an Agent Canvas UI. Not installed. | parked/app-sources/OpenHands__OpenHands | MIT (enterprise/ may differ) | risks: needs LLM API keys and a Docker runtime with shell and filesystem power; paid cloud and enterprise tiers exist; old org URL All-Hands-AI redirects here
+- application | langflow-ai__langflow | Visual builder for AI agent and RAG workflows. Not installed (358M clone). | parked/app-sources/langflow-ai__langflow | MIT | risks: stores provider API keys; can expose network services on the machine
+- application | Shubhamsaboo__awesome-llm-apps | Runnable agent and RAG example apps, read as reference rather than installed. | parked/app-sources/Shubhamsaboo__awesome-llm-apps | Apache-2.0 | risks: each example wants its own API keys and pip install; lookalike fork exists: stvn101/awesome-llm-apps
+- agent-tool | msitarzewski__agency-agents | 285 agent personas. The copies parked in agents/ came from this repo's installer (./scripts/install.sh --tool claude-code), moved out of the live agents folder. | repos/msitarzewski__agency-agents | MIT | risks: markdown only; installer is a plain copy; some specialized/ files install without their prefix
+- agent-tool | ayghri__i-have-adhd | One skill that makes the agent answer short and scannable, answer first. 49.4k stars. | repos/ayghri__i-have-adhd | MIT | WARN: BORROW-ONLY: read the SKILL.md; never promote to live (no global npm install, no plugin/hook enable) without asking the user first. | risks: plugin form adds an always-on SessionStart hook (node, every startup/resume/compact); borrow the SKILL.md instead; lookalike: leondebeer/i-have-adhd, not chosen
+- agent-tool | max-sixty__worktrunk | `wt` CLI for git worktrees so several agents can work on separate copies of one repo; ships 2 skills and a Claude Code plugin. 8.2k stars. | repos/max-sixty__worktrunk | MIT OR Apache-2.0 | WARN: BORROW-ONLY: read the SKILL.md; never promote to live (no global npm install, no plugin/hook enable) without asking the user first. Overlaps superpowers:using-git-worktrees, which is live. | risks: needs the `wt` binary (Rust; cargo or brew): not installed; plugin hooks 7 events and its PermissionRequest hook auto-approves entering worktrees; says it sends no telemetry
+- agent-tool | openai__plugins | OpenAI's Codex plugin packs (62+: Figma, Temporal, Higgsfield and more), readable as skill references. 7.1k stars. | repos/openai__plugins | none found | risks: NO LICENSE: unlicensed, so nothing copied into skills/ and not for client reuse; built for Codex; Claude would need a converted copy; 88 MB clone
+- application | SuperLogicAI__Logic-Loop | macOS app (Tauri) that groups agent terminals by project. Audience submission, 27 stars. | (not cloned) | GPL-3.0 | risks: GPL-3.0; very new, tiny user base
+- application | JonImmsWordpressDev__claude-dashboard | Local dashboard of Claude Code sessions, transcripts and costs. Audience submission, 19 stars. | (not cloned) | MIT | risks: ships install.sh: not run; reads local session transcripts
+

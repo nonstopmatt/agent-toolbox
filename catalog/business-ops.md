@@ -1,0 +1,155 @@
+# business-ops
+
+Generated: 2026-09-21 22:30 
+Count: 146
+
+Line format: `- kind | name | what it is | path` — and for kind `application` or
+`agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
+Kinds: skill, agent, plugin, mcp-mine, mcp-discovered, application, agent-tool.
+Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session-launch it.
+
+- agent | Agents Orchestrator | Autonomous pipeline manager that orchestrates the entire development workflow. You are the leader of this process. | agents/agents-orchestrator.md | 15725
+- agent | Blender Add-on Engineer | Blender tooling specialist - Builds Python add-ons, asset validators, exporters, and pipeline automations that turn repe | agents/blender-addon-engineer.md | 10954
+- agent | Chief Financial Officer | Strategic finance executive who governs capital allocation, treasury operations, financial planning, M&A finance, invest | agents/chief-financial-officer.md | 18628
+- agent | creative-strategist | "Bounded paid-media concept worker. Returns source-labelled campaign-brief candidates to the conductor without writing c | agents/creative-strategist.md | 2004
+- agent | Customer Service | Friendly, professional customer service specialist for any industry — handling inquiries, complaints, account support, F | agents/customer-service.md | 19184
+- agent | Customer Success Manager | Strategic customer success specialist for onboarding, health scoring, QBR facilitation, churn prevention, expansion iden | agents/customer-success-manager.md | 23313
+- agent | AI Data Remediation Engineer | "Specialist in self-healing data pipelines — uses air-gapped local SLMs and semantic clustering to automatically detect, | agents/engineering-ai-data-remediation-engineer.md | 10691
+- agent | AI Engineer | Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production sy | agents/engineering-ai-engineer.md | 7383
+- agent | ATS Validator Architect | Architect and validator for Applicant Tracking Systems (ATS) and resume parsers. Combines deterministic information retr | agents/engineering-ats-validator-architect.md | 28170
+- agent | Codebase Onboarding Engineer | Expert developer onboarding specialist who helps new engineers understand unfamiliar codebases fast by reading source co | agents/engineering-codebase-onboarding-engineer.md | 9569
+- agent | Data Engineer | Expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infras | agents/engineering-data-engineer.md | 14687
+- agent | Desktop App Engineer | Expert desktop application engineer for Electron and Tauri — secure IPC and process isolation, code signing and notariza | agents/engineering-desktop-app-engineer.md | 14557
+- agent | DevOps Automator | Expert DevOps engineer specializing in infrastructure automation, CI/CD pipeline development, and cloud operations | agents/engineering-devops-automator.md | 12879
+- agent | FinOps Engineer | Expert cloud cost engineer for AWS/GCP/Azure — cost allocation and tagging, rightsizing, commitment planning (reserved i | agents/engineering-finops-engineer.md | 12918
+- agent | Internationalization Engineer | Expert i18n engineer for ICU MessageFormat, CLDR plural rules, RTL and bidirectional layouts, locale-aware date/number/c | agents/engineering-i18n-engineer.md | 12728
+- agent | IoT Fleet Engineer | Expert IoT and edge fleet engineer — device provisioning and identity, MQTT/telemetry pipelines, staged over-the-air (OT | agents/engineering-iot-fleet-engineer.md | 13587
+- agent | Mobile Release Engineer | Expert mobile release and distribution engineer for iOS and Android — code signing, provisioning, fastlane pipelines, Ap | agents/engineering-mobile-release-engineer.md | 13642
+- agent | Payments & Billing Engineer | Expert payments engineer for PSP integrations (Stripe, Adyen, Braintree, PayPal), idempotent payment flows, webhook proc | agents/engineering-payments-billing-engineer.md | 12574
+- agent | SRE (Site Reliability Engineer) | Expert site reliability engineer specializing in SLOs, error budgets, observability, chaos engineering, and toil reducti | agents/engineering-sre.md | 3882
+- agent | Voice AI Integration Engineer | Expert in building end-to-end speech transcription pipelines using Whisper-style models and cloud ASR services — from ra | agents/engineering-voice-ai-integration-engineer.md | 27288
+- agent | ESG & Sustainability Officer | Corporate sustainability strategist and ESG reporting specialist who builds environmental, social, and governance progra | agents/esg-sustainability-officer.md | 20839
+- agent | Bookkeeper & Controller | Expert bookkeeper and controller specializing in day-to-day accounting operations, financial reconciliations, month-end  | agents/finance-bookkeeper-controller.md | 15247
+- agent | Financial Analyst | Expert financial analyst specializing in financial modeling, forecasting, scenario analysis, and data-driven decision su | agents/finance-financial-analyst.md | 13448
+- agent | FP&A Analyst | Expert Financial Planning & Analysis (FP&A) analyst specializing in budgeting, variance analysis, financial planning, ro | agents/finance-fpa-analyst.md | 16614
+- agent | Tax Strategist | Expert tax strategist specializing in tax optimization, multi-jurisdictional compliance, transfer pricing, and strategic | agents/finance-tax-strategist.md | 13731
+- agent | footage-reviewer | Inventory a folder of video clips and produce a shot log. Use when the user points at a footage folder and wants a fast  | agents/footage-reviewer.md | 4250
+- agent | format-adapter | "Bounded creative-format verification worker. Inspects run-scoped candidates against current official specifications and | agents/format-adapter.md | 2102
+- agent | Technical Consultant | Strategic GIS advisor who translates business problems into geospatial solutions — gap analysis, technology roadmaps, RF | agents/gis-technical-consultant.md | 4525
+- agent | Healthcare Customer Service | Empathetic healthcare customer service specialist for patient support, billing inquiries, appointment management, insura | agents/healthcare-customer-service.md | 22100
+- agent | HR Onboarding | Comprehensive HR onboarding specialist for employee orientation, documentation management, compliance tracking, benefits | agents/hr-onboarding.md | 23923
+- agent | Loan Officer Assistant | Comprehensive loan officer assistant for mortgage and lending professionals — covering borrower intake, pre-qualificatio | agents/loan-officer-assistant.md | 28515
+- agent | China E-Commerce Operator | Expert China e-commerce operations specialist covering Taobao, Tmall, Pinduoduo, and JD ecosystems with deep expertise i | agents/marketing-china-ecommerce-operator.md | 16791
+- agent | China Market Localization Strategist | Full-stack China market localization expert who transforms real-time trend signals into executable go-to-market strategi | agents/marketing-china-market-localization-strategist.md | 16913
+- agent | Growth Hacker | Expert growth strategist specializing in rapid user acquisition through data-driven experimentation. Develops viral loop | agents/marketing-growth-hacker.md | 3055
+- agent | PR & Communications Manager | Strategic public relations and communications specialist for media relations, press releases, crisis communications, exe | agents/marketing-pr-communications-manager.md | 24692
+- agent | WeChat Official Account Manager | Expert WeChat Official Account (OA) strategist specializing in content marketing, subscriber engagement, and conversion  | agents/marketing-wechat-official-account.md | 9832
+- agent | Medical Billing & Coding Specialist | Expert medical billing and coding specialist for ICD-10-CM/PCS, CPT, and HCPCS coding, claim submission, denial manageme | agents/medical-billing-coding-specialist.md | 24636
+- agent | Operations Manager | Business operations specialist who applies Lean, Six Sigma, and systems thinking to process mapping, capacity planning,  | agents/operations-manager.md | 19209
+- agent | Search Query Analyst | Specialist in search term analysis, negative keyword architecture, and query-to-intent mapping. Turns raw search query d | agents/paid-media-search-query-analyst.md | 4941
+- agent | Behavioral Nudge Engine | Behavioral psychology specialist that adapts software interaction cadences and styles to maximize user motivation and su | agents/product-behavioral-nudge-engine.md | 5335
+- agent | Sprint Prioritizer | Expert product manager specializing in agile sprint planning, feature prioritization, and resource allocation. Focused o | agents/product-sprint-prioritizer.md | 9464
+- agent | Experiment Tracker | Expert project manager specializing in experiment design, execution tracking, and data-driven decision making. Focused o | agents/project-management-experiment-tracker.md | 9455
+- agent | Jira Workflow Steward | Expert delivery operations specialist who enforces Jira-linked Git workflows, traceable commits, structured pull request | agents/project-management-jira-workflow-steward.md | 13498
+- agent | Project Shepherd | Expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder align | agents/project-management-project-shepherd.md | 9825
+- agent | Studio Operations | Expert operations manager specializing in day-to-day studio efficiency, process optimization, and resource coordination. | agents/project-management-studio-operations.md | 9926
+- agent | Studio Producer | Senior strategic leader specializing in high-level creative and technical project orchestration, resource allocation, an | agents/project-management-studio-producer.md | 10905
+- agent | Senior Project Manager | Converts specs to tasks and remembers previous projects. Focused on realistic scope, no background processes, exact spec | agents/project-manager-senior.md | 5308
+- agent | Real Estate Buyer & Seller | Comprehensive real estate agent assistant for buyer representation, seller representation, listing management, offer neg | agents/real-estate-buyer-seller.md | 31124
+- agent | Recruitment Specialist | Expert recruitment operations and talent acquisition specialist — skilled in China's major hiring platforms, talent asse | agents/recruitment-specialist.md | 29401
+- agent | Report Distribution Agent | AI agent that automates distribution of consolidated sales reports to representatives based on territorial parameters | agents/report-distribution-agent.md | 2653
+- agent | Resume Tailor | Candidate-side resume optimization specialist who analyzes job descriptions, maps real experience to role requirements,  | agents/resume-tailor.md | 11214
+- agent | Retail Customer Returns | Comprehensive retail customer returns specialist for processing returns, exchanges, and refunds across in-store, online, | agents/retail-customer-returns.md | 27700
+- agent | Roblox Avatar Creator | Roblox UGC and avatar pipeline specialist - Masters Roblox's avatar system, UGC item creation, accessory rigging, textur | agents/roblox-avatar-creator.md | 14116
+- agent | Account Strategist | Expert post-sale account strategist specializing in land-and-expand execution, stakeholder mapping, QBR facilitation, an | agents/sales-account-strategist.md | 14844
+- agent | Sales Coach | Expert sales coaching specialist focused on rep development, pipeline review facilitation, call coaching, deal strategy, | agents/sales-coach.md | 21009
+- agent | Sales Data Extraction Agent | AI agent specialized in monitoring Excel files and extracting key sales metrics (MTD, YTD, Year End) for internal live r | agents/sales-data-extraction-agent.md | 2697
+- agent | Deal Strategist | Senior deal strategist specializing in MEDDPICC qualification, competitive positioning, and win planning for complex B2B | agents/sales-deal-strategist.md | 13698
+- agent | Discovery Coach | Coaches sales teams on elite discovery methodology — question design, current-state mapping, gap quantification, and cal | agents/sales-discovery-coach.md | 13591
+- agent | Sales Engineer | Senior pre-sales engineer specializing in technical discovery, demo engineering, POC scoping, competitive battlecards, a | agents/sales-engineer.md | 13948
+- agent | Sales Outreach | Consultative B2B sales outreach specialist for cold prospecting, lead follow-up, objection handling, proposal writing, a | agents/sales-outreach.md | 20656
+- agent | Pipeline Analyst | Revenue operations analyst specializing in pipeline health diagnostics, deal velocity analysis, forecast accuracy, and d | agents/sales-pipeline-analyst.md | 18765
+- agent | Threat Detection Engineer | Expert detection engineer specializing in SIEM rule development, MITRE ATT&CK coverage mapping, threat hunting, alert tu | agents/security-threat-detection-engineer.md | 24873
+- agent | Chief of Staff | Master coordinator for founders and executives — filters noise, owns processes, enforces consistency, routes decisions,  | agents/specialized-chief-of-staff.md | 18190
+- agent | Korean Business Navigator | Korean business culture for foreign professionals — 품의 decision process, nunchi reading, KakaoTalk business etiquette, h | agents/specialized-korean-business-navigator.md | 14071
+- agent | Salesforce Architect | Solution architecture for Salesforce platform — multi-cloud design, integration patterns, governor limits, deployment st | agents/specialized-salesforce-architect.md | 9943
+- agent | Supply Chain Strategist | Expert supply chain management and procurement strategy specialist — skilled in supplier development, strategic sourcing | agents/supply-chain-strategist.md | 32397
+- agent | Finance Tracker | Expert financial analyst and controller specializing in financial planning, budget management, and business performance  | agents/support-finance-tracker.md | 19249
+- agent | Infrastructure Maintainer | Expert infrastructure specialist focused on system reliability, performance optimization, and technical operations manag | agents/support-infrastructure-maintainer.md | 22365
+- agent | Legal Compliance Checker | Expert legal and compliance specialist ensuring business operations, data handling, and content creation comply with rel | agents/support-legal-compliance-checker.md | 26545
+- agent | Support Responder | Expert customer support specialist delivering exceptional customer service, issue resolution, and user experience optimi | agents/support-support-responder.md | 24683
+- agent | Technical Artist | Art-to-engine pipeline specialist - Masters shaders, VFX systems, LOD pipelines, performance budgeting, and cross-engine | agents/technical-artist.md | 11220
+- agent | Reality Checker | Stops fantasy approvals, evidence-based certification - Default to "NEEDS WORK", requires overwhelming proof for product | agents/testing-reality-checker.md | 10854
+- agent | Unity Editor Tool Developer | Unity editor automation specialist - Masters custom EditorWindows, PropertyDrawers, AssetPostprocessors, ScriptedImporte | agents/unity-editor-tool-developer.md | 14889
+- agent | Unity Multiplayer Engineer | Networked gameplay specialist - Masters Netcode for GameObjects, Unity Gaming Services (Relay/Lobby), client-server auth | agents/unity-multiplayer-engineer.md | 14947
+- agent | Unreal Technical Artist | Unreal Engine visual pipeline specialist - Masters the Material Editor, Niagara VFX, Procedural Content Generation, and  | agents/unreal-technical-artist.md | 11854
+- agent | visual-designer | "Bounded provider-neutral visual candidate worker. Uses only declared capabilities and returns run-scoped candidates to  | agents/visual-designer.md | 2225
+- mcp-discovered | asana | sse/http | tools: ? | mcp/discovered/asana.json
+- mcp-discovered | atlassian-rovo | sse/http | tools: ? | mcp/discovered/atlassian-rovo.json
+- mcp-discovered | atlassian-rovo | sse/http | tools: ? | mcp/discovered/atlassian-rovo__68208cf2.json
+- mcp-discovered | atlassian | sse/http | tools: ? | mcp/discovered/atlassian.json
+- mcp-discovered | box | sse/http | tools: ? | mcp/discovered/box.json
+- mcp-discovered | calendly | sse/http | tools: ? | mcp/discovered/calendly.json
+- mcp-discovered | clickup | sse/http | tools: ? | mcp/discovered/clickup.json
+- mcp-discovered | close | sse/http | tools: ? | mcp/discovered/close.json
+- mcp-discovered | docusign | sse/http | tools: ? | mcp/discovered/docusign.json
+- mcp-discovered | dropbox | sse/http | tools: ? | mcp/discovered/dropbox.json
+- mcp-discovered | expensify | sse/http | tools: ? | mcp/discovered/expensify.json
+- mcp-discovered | gmail | http | tools: ? | mcp/discovered/gmail.json
+- mcp-discovered | gmail | sse/http | tools: ? | mcp/discovered/gmail__0a80f309.json
+- mcp-discovered | gmail | sse/http | tools: ? | mcp/discovered/gmail__7f524a8c.json
+- mcp-discovered | gong | sse/http | tools: ? | mcp/discovered/gong.json
+- mcp-discovered | google-calendar | sse/http | tools: ? | mcp/discovered/google-calendar.json
+- mcp-discovered | google-calendar | sse/http | tools: ? | mcp/discovered/google-calendar__fbe4e459.json
+- mcp-discovered | google-drive | sse/http | tools: ? | mcp/discovered/google-drive.json
+- mcp-discovered | google-drive | sse/http | tools: ? | mcp/discovered/google-drive__da767f04.json
+- mcp-discovered | google calendar | http | tools: ? | mcp/discovered/google_calendar.json
+- mcp-discovered | google drive | http | tools: ? | mcp/discovered/google_drive.json
+- mcp-discovered | gusto | sse/http | tools: ? | mcp/discovered/gusto.json
+- mcp-discovered | hubspot | sse/http | tools: ? | mcp/discovered/hubspot.json
+- mcp-discovered | imessage | stdio | tools: ? | mcp/discovered/imessage.json
+- mcp-discovered | intercom | sse/http | tools: ? | mcp/discovered/intercom.json
+- mcp-discovered | intuit-quickbooks | sse/http | tools: ? | mcp/discovered/intuit-quickbooks.json
+- mcp-discovered | linear | sse/http | tools: ? | mcp/discovered/linear.json
+- mcp-discovered | linear | sse/http | tools: ? | mcp/discovered/linear__86d67b4a.json
+- mcp-discovered | microsoft-365 | sse/http | tools: ? | mcp/discovered/microsoft-365.json
+- mcp-discovered | monday-com | sse/http | tools: ? | mcp/discovered/monday-com.json
+- mcp-discovered | monday | sse/http | tools: ? | mcp/discovered/monday.json
+- mcp-discovered | myob | sse/http | tools: ? | mcp/discovered/myob.json
+- mcp-discovered | notion | sse/http | tools: ? | mcp/discovered/notion.json
+- mcp-discovered | notion | sse/http | tools: ? | mcp/discovered/notion__a9441077.json
+- mcp-discovered | paypal | sse/http | tools: ? | mcp/discovered/paypal.json
+- mcp-discovered | ramp | sse/http | tools: ? | mcp/discovered/ramp.json
+- mcp-discovered | remote | sse/http | tools: ? | mcp/discovered/remote.json
+- mcp-discovered | ringex-chat | sse/http | tools: ? | mcp/discovered/ringex-chat.json
+- mcp-discovered | salesforce | sse/http | tools: ? | mcp/discovered/salesforce.json
+- mcp-discovered | shopify | sse/http | tools: ? | mcp/discovered/shopify.json
+- mcp-discovered | shopify | sse/http | tools: ? | mcp/discovered/shopify__7713b898.json
+- mcp-discovered | slack | sse/http | tools: ? | mcp/discovered/slack.json
+- mcp-discovered | square | sse/http | tools: ? | mcp/discovered/square.json
+- mcp-discovered | stripe | sse/http | tools: ? | mcp/discovered/stripe.json
+- mcp-discovered | telegram | stdio | tools: ? | mcp/discovered/telegram.json
+- mcp-discovered | trello | sse/http | tools: ? | mcp/discovered/trello.json
+- mcp-discovered | xero | sse/http | tools: ? | mcp/discovered/xero.json
+- mcp-discovered | zapier | sse/http | tools: ? | mcp/discovered/zapier.json
+- mcp-discovered | zoho-books | sse/http | tools: ? | mcp/discovered/zoho-books.json
+- mcp-discovered | zoho-crm | sse/http | tools: ? | mcp/discovered/zoho-crm.json
+- mcp-discovered | zoho-desk | sse/http | tools: ? | mcp/discovered/zoho-desk.json
+- mcp-discovered | zoho-projects | sse/http | tools: ? | mcp/discovered/zoho-projects.json
+- mcp-discovered | zoom-docs-mcp | sse/http | tools: ? | mcp/discovered/zoom-docs-mcp.json
+- skill | blog-calendar | Generate editorial calendars for blogs with topic clusters, publishing schedules, content decay detection, freshness upd | skills/blog/blog-calendar/SKILL.md
+- skill | frame-light-leak-cinema | "Film light leaks, grain, 16:9 letterbox, and large serif type for cinematic openings or chapter cards." | skills/frame-light-leak-cinema/SKILL.md
+- skill | hyperframes-core | The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing  | skills/hyperframes-core/SKILL.md
+- skill | onboarding | When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also us | skills/onboarding/SKILL.md
+- skill | resume-modern | "Modern minimal resume, single A4 page, ready for print or PDF export." | skills/resume-modern/SKILL.md
+- skill | signup | When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the use | skills/signup/SKILL.md
+- skill | understand-onboard | "Generate an onboarding guide for someone joining a project, from an EXISTING understand knowledge graph. LANE: requires | skills/understand-onboard/SKILL.md
+- skill | yt-retention | - Read a YouTube Studio audience-retention export and find where viewers actually leave, then say what to change. Use fo | skills/yt-retention/SKILL.md
+- agent-tool | trainingsites__campus-ai-os | "AI staff" pack for a course or coaching business: 45 skills (content scanner, course builder, email sequence, morning brief). 30 stars. | repos/trainingsites__campus-ai-os | MIT | risks: 45 skills NOT extracted: niche to course businesses, catalogued at repo level only; borrow by path; several skills expect the buyer's CRM, analytics or payment connectors
+- application | Codpal-Limited__deckgauge | Engineering board over Jira, GitHub and Azure DevOps. Audience submission, 21 stars. https://deckgauge.com | (not cloned) | FSL-1.1-ALv2 (source-available) | risks: FSL: source-available, converts to Apache-2.0 later; needs tokens for Jira/GitHub
+- application | CaptainASIC__reckoner | Single-page dashboard of AI service credits and cloud spend. Audience submission, 63 stars. | (not cloned) | GPL-3.0 | risks: GPL-3.0; needs a key per provider it tracks
+- agent-tool | hugohe3__ppt-master | Skill that turns a document or topic into a native PowerPoint deck (shapes, charts, animations). 55.7k stars. | repos/hugohe3__ppt-master | MIT | risks: 254 MB clone; the skill folder alone is 121 MB, so it is borrowed in place, not copied; optional OPENAI/QWEN/DASHSCOPE/MINIMAX keys and Pexels/Pixabay keys for images
+- application | The-Swarm-Corporation__AutoHedge | Multi-agent trading framework (analysis, risk, execution). 6.2k stars. | (not cloned) | MIT | risks: places real trades if wired to a broker: never with real money unasked; no push since 2026-05-11; needs LLM + exchange keys
+- application | HKUDS__Vibe-Trading | Plain-English trading research, strategy backtests and reports. Docker. 33.8k stars. | (not cloned) | MIT | risks: financial tool; backtests are not advice; needs LLM + data keys
+- application | cloudflare__agentic-inbox | Self-hosted email client with an AI agent on Cloudflare Workers. 8k stars. | (not cloned) | Apache-2.0 | risks: needs a Cloudflare account and email routing; no push since 2026-04-23
+

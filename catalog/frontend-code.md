@@ -1,0 +1,111 @@
+# frontend-code
+
+Generated: 2026-09-21 22:30 
+Count: 100
+
+Line format: `- kind | name | what it is | path` — and for kind `application` or
+`agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
+Kinds: skill, agent, plugin, mcp-mine, mcp-discovered, application, agent-tool.
+Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session-launch it.
+
+- agent | audit-amazon | "Amazon Ads evidence and controls specialist. Returns schema-valid findings for profiles and regions, portfolios, Sponso | agents/audit-amazon.md | 1804
+- agent | Persona Walkthrough Specialist | Simulate cognitive walkthroughs of web pages from a defined persona's psychological perspective — captures emotional rea | agents/design-persona-walkthrough.md | 16759
+- agent | UI Designer | Expert UI designer specializing in visual design systems, component libraries, and pixel-perfect interface creation. Cre | agents/design-ui-designer.md | 13339
+- agent | Drupal Shopping Cart Engineer | Expert Drupal e-commerce engineer specializing in Drupal Commerce for product catalog management, payment gateway integr | agents/engineering-drupal-shopping-cart.md | 21461
+- agent | Frontend Developer | Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and  | agents/engineering-frontend-developer.md | 9283
+- agent | Mobile App Builder | Specialized mobile application developer with expertise in native iOS/Android development and cross-platform frameworks | agents/engineering-mobile-app-builder.md | 17035
+- agent | Mobile Release Engineer | Expert mobile release and distribution engineer for iOS and Android — code signing, provisioning, fastlane pipelines, Ap | agents/engineering-mobile-release-engineer.md | 13642
+- agent | Network Engineer | Expert network engineer for Cisco IOS/IOS-XE, Cisco ASA/FTD, Juniper Junos, and Palo Alto PAN-OS routing, switching, fir | agents/engineering-network-engineer.md | 13365
+- agent | PDF Engine Architect | Architect and specialist in deterministic HTML-to-PDF document compilation, Playwright browser context pools, dynamic Eu | agents/engineering-pdf-engine-architect.md | 31446
+- agent | Rapid Prototyper | Specialized in ultra-fast proof-of-concept development and MVP creation using efficient tools and frameworks | agents/engineering-rapid-prototyper.md | 15492
+- agent | Realtime Collaboration Engineer | Expert realtime systems engineer for WebSocket/SSE infrastructure, presence, CRDT and OT-based collaborative editing, of | agents/engineering-realtime-collaboration-engineer.md | 14247
+- agent | Senior Developer | Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced CSS, Three.js integration | agents/engineering-senior-developer.md | 6252
+- agent | Software Architect | Expert software architect specializing in system design, domain-driven design, architectural patterns, and technical dec | agents/engineering-software-architect.md | 6485
+- agent | USWDS Developer | Expert U.S. Web Design System frontend developer specializing in USWDS components and design tokens, accessible-by-defau | agents/engineering-uswds-developer.md | 24213
+- agent | WebAssembly Engineer | Expert WebAssembly engineer — compiling Rust/C++/Go to Wasm, JS interop and the boundary marshalling cost, WASI and serv | agents/engineering-webassembly-engineer.md | 13110
+- agent | Solution Engineer | Hands-on GIS prototype builder who takes strategy from Technical Consultant and turns it into working demos, proof-of-co | agents/gis-solution-engineer.md | 4591
+- agent | Godot Shader Developer | Godot 4 visual effects specialist - Masters the Godot Shading Language (GLSL-like), VisualShader editor, CanvasItem and  | agents/godot-shader-developer.md | 13392
+- agent | Government Digital Presales Consultant | Presales expert for China's government digital transformation market (ToG), proficient in policy interpretation, solutio | agents/government-digital-presales-consultant.md | 22759
+- agent | macOS Spatial/Metal Engineer | Native Swift and Metal specialist building high-performance 3D rendering systems and spatial computing experiences for m | agents/macos-spatial-metal-engineer.md | 12141
+- agent | Carousel Growth Engine | Autonomous TikTok and Instagram carousel generation specialist. Analyzes any website URL with Playwright, generates vira | agents/marketing-carousel-growth-engine.md | 14840
+- agent | Email Marketing Strategist | Expert email marketing strategist for CRM-driven campaigns, lifecycle automation, segmentation architecture, and deliver | agents/marketing-email-strategist.md | 16198
+- agent | Private Domain Operator | Expert in building enterprise WeChat (WeCom) private domain ecosystems, with deep expertise in SCRM systems, segmented c | agents/marketing-private-domain-operator.md | 16176
+- agent | motion-graphics-builder | Build motion-graphics overlays, title cards, lower thirds, transitions, and end cards as renderable artifacts the editor | agents/motion-graphics-builder.md | 7083
+- agent | Personal Growth Mentor | Cross-domain personal development mentor for goal clarity, habit design, strategic decisions, and accountability without | agents/personal-growth-mentor.md | 7833
+- agent | Technical Artist | Art-to-engine pipeline specialist - Masters shaders, VFX systems, LOD pipelines, performance budgeting, and cross-engine | agents/technical-artist.md | 11220
+- agent | Terminal Integration Specialist | Terminal emulation, text rendering optimization, and SwiftTerm integration for modern Swift applications | agents/terminal-integration-specialist.md | 4121
+- agent | Test Automation Engineer | Expert end-to-end test automation engineer for Playwright and Cypress — resilient selectors, flake elimination, isolated | agents/testing-test-automation-engineer.md | 12254
+- agent | trailer-script-doctor | Write, critique, and tighten trailer scripts and beat sheets for short-form promotional video (30s–120s). Use when the u | agents/trailer-script-doctor.md | 6402
+- agent | Unity Architect | Data-driven modularity specialist - Masters ScriptableObjects, decoupled systems, and single-responsibility component de | agents/unity-architect.md | 12244
+- agent | Unity Shader Graph Artist | Visual effects and material specialist - Masters Unity Shader Graph, HLSL, URP/HDRP rendering pipelines, and custom pass | agents/unity-shader-graph-artist.md | 13080
+- agent | visionOS Spatial Engineer | Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Glass design implementation | agents/visionos-spatial-engineer.md | 3411
+- agent | XR Immersive Developer | Expert WebXR and immersive technology developer with specialization in browser-based AR/VR/XR applications | agents/xr-immersive-developer.md | 1847
+- agent | ZK Steward | "Knowledge-base steward in the spirit of Niklas Luhmann's Zettelkasten. Default perspective: Luhmann; switches to domain | agents/zk-steward.md | 10892
+- mcp-discovered | chrome-devtools | stdio | tools: ? | mcp/discovered/chrome-devtools.json
+- mcp-discovered | playwright | stdio | tools: ? | mcp/discovered/playwright.json
+- mcp-discovered | playwright | stdio | tools: ? | mcp/discovered/playwright__4788b4ea.json
+- mcp-discovered | xcodebuildmcp | stdio | tools: ? | mcp/discovered/xcodebuildmcp.json
+- skill | add-hand-tracking | Add hand-gesture cursor control to any existing website. Replaces or augments the mouse cursor with MediaPipe Hand Landm | skills/add-hand-tracking/SKILL.md
+- skill | animate-expo | Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right — s | skills/animate-expo/SKILL.md
+- skill | animate-legacy | Review a feature and enhance it with purposeful animations, micro-interactions, and motion effects that improve usabilit | skills/animate-legacy/SKILL.md
+- skill | animation-vocabulary | Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term ("the bou | skills/animation-vocabulary/SKILL.md
+- skill | apple-design | Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing  | skills/apple-design/SKILL.md
+- skill | ask-sonner | Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loa | skills/ask-sonner/SKILL.md
+- skill | blog-image | AI image generation and editing for blog content powered by Gemini via MCP. Claude acts as Creative Director - interpret | skills/blog/blog-image/SKILL.md
+- skill | chat-motion-overlay | Generate configurable chat motion overlays from a transcript or screenshot, including plain bubble scenes, app-style cha | skills/chat-motion-overlay/SKILL.md
+- skill | design-motion-principles | "Motion and interaction design expert based on Emil Kowalski, Jakub Krehel, and Jhey Tompkins' techniques. Two modes — b | skills/design-motion-principles/SKILL.md
+- skill | domain-modeling | Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, o | skills/domain-modeling/SKILL.md
+- skill | emil-design-eng | This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible det | skills/emil-design-eng/SKILL.md
+- skill | figma | Import Figma content into a HyperFrames composition — rendered assets, brand tokens, components, storyboard sections → r | skills/figma/SKILL.md
+- skill | find-animation-opportunities | Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it pr | skills/find-animation-opportunities/SKILL.md
+- skill | firecrawl-build-interact | Integrate Firecrawl `/interact` into product code for dynamic pages and browser actions after scraping. Use when a featu | skills/firecrawl-build-interact/SKILL.md
+- skill | firecrawl-dashboard-reporting | Pull metrics from analytics dashboards and internal web tools with Firecrawl browser. Use when the user needs dashboard  | skills/firecrawl-dashboard-reporting/SKILL.md
+- skill | firecrawl-demo-walkthrough | Walk through a product's key flows with Firecrawl browser and produce a structured UX/product walkthrough. Use for signu | skills/firecrawl-demo-walkthrough/SKILL.md
+- skill | firecrawl-interact | Control and interact with a live browser session on any scraped page — click buttons, fill forms, navigate flows, and ex | skills/firecrawl-interact/SKILL.md
+- skill | firecrawl-knowledge-ingest | Ingest public or authenticated knowledge bases and docs portals with Firecrawl browser. Use for JS-heavy docs, login-gat | skills/firecrawl-knowledge-ingest/SKILL.md
+- skill | firecrawl-lead-gen | Generate structured lead lists from prospect databases and web directories with Firecrawl browser. Use for finding prosp | skills/firecrawl-lead-gen/SKILL.md
+- skill | firecrawl-qa | QA test a live website with Firecrawl browser and scrape evidence. Use when the user wants exploratory QA, form testing, | skills/firecrawl-qa/SKILL.md
+- skill | firecrawl-scrape | Extract clean markdown from any URL, including JavaScript-rendered SPAs. Use this skill whenever the user provides a URL | skills/firecrawl-scrape/SKILL.md
+- skill | firecrawl-website-design-clone | Extract any website's design system into an agent-ready DESIGN.md using Firecrawl scrape evidence. Use when the user wan | skills/firecrawl-website-design-clone/SKILL.md
+- skill | frontend-slides | "Build a self-contained HTML presentation as a single zero-dependency file on a fixed 1920x1080 stage that scales whole  | skills/frontend-slides/SKILL.md
+- skill | gstack-browse | "Drive a real browser through Aside: open a page, read it, click through a flow, take screenshots, check console errors. | skills/gstack-browse/SKILL.md
+- skill | gstack-connect-chrome | Launch GStack Browser — AI-controlled Chromium with the sidebar extension baked in. | skills/gstack-connect-chrome/SKILL.md
+- skill | gstack-design-consultation | "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic,  | skills/gstack-design-consultation/SKILL.md
+- skill | gstack-ios-clean | "Remove the DebugBridge SPM package and all #if DEBUG wiring from an iOS app. (gstack)" allowed-tools: - Bash - Read - E | skills/gstack-ios-clean/SKILL.md
+- skill | gstack-ios-design-review | Visual design audit for iOS apps on real hardware. (gstack) allowed-tools: - Bash - Read - Glob - Grep - AskUserQuestion | skills/gstack-ios-design-review/SKILL.md
+- skill | gstack-ios-fix | Autonomous iOS bug fixer. (gstack) allowed-tools: - Bash - Read - Write - Edit - Grep - Glob - AskUserQuestion | skills/gstack-ios-fix/SKILL.md
+- skill | gstack-ios-qa | Live-device iOS QA for SwiftUI apps. (gstack) allowed-tools: - Bash - Read - Write - Edit - Grep - Glob - AskUserQuestio | skills/gstack-ios-qa/SKILL.md
+- skill | gstack-ios-sync | Regenerate the iOS debug bridge against the latest upstream gstack templates. (gstack) allowed-tools: - Bash - Read - Wr | skills/gstack-ios-sync/SKILL.md
+- skill | gstack-open-gstack-browser | Launch GStack Browser — AI-controlled Chromium with the sidebar extension baked in. | skills/gstack-open-gstack-browser/SKILL.md
+- skill | gstack-pair-agent | Pair a remote AI agent with your browser. (gstack) | skills/gstack-pair-agent/SKILL.md
+- skill | gstack-scrape | Pull data from a web page through the Aside browser — your real, already signed-in sessions. (gstack) allowed-tools: - B | skills/gstack-scrape/SKILL.md
+- skill | gstack-setup-browser-cookies | Import cookies from your real Chromium browser into the headless browse session. (gstack) | skills/gstack-setup-browser-cookies/SKILL.md
+- skill | gstack-skillify | Codify the most recent successful /scrape flow into a permanent browser-skill on disk. (gstack) allowed-tools: - Bash -  | skills/gstack-skillify/SKILL.md
+- skill | hyperframes-animation | "All animation knowledge for HyperFrames — atomic motion rules, multi-phase scene blueprints, scene transitions, broader | skills/hyperframes-animation/SKILL.md
+- skill | hyperframes-creative | Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes,  | skills/hyperframes-creative/SKILL.md
+- skill | hyperframes-registry | Search, install, and wire registry blocks and components into HyperFrames compositions. Use BEFORE hand-building any nam | skills/hyperframes-registry/SKILL.md
+- skill | img2threejs | Turn an object or character reference image into a quality-gated, animation-ready procedural Three.js model built in cod | skills/img2threejs/SKILL.md
+- skill | improve-animations | Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-cont | skills/improve-animations/SKILL.md
+- skill | interaction-design | Design and implement microinteractions, motion design, transitions, and user feedback patterns. Use when adding polish t | skills/interaction-design/SKILL.md
+- skill | magic-ui | Use this skill when users want to add, customize, or troubleshoot Magic UI components in React/Next.js projects. It cove | skills/magic-ui/SKILL.md
+- skill | migrate-to-shoehorn | Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to re | skills/migrate-to-shoehorn/SKILL.md
+- skill | mobile-native | Make a web app feel native on a phone — the small CSS and meta-tag fixes that separate "a website in a browser" from som | skills/mobile-native/SKILL.md
+- skill | motion-graphics | A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit,  | skills/motion-graphics/SKILL.md
+- skill | overdrive | Pushes interfaces past conventional limits with technically ambitious implementations — shaders, spring physics, scroll- | skills/overdrive/SKILL.md
+- skill | pick-ui-library | Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command | skills/pick-ui-library/SKILL.md
+- skill | prototype | Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip  | skills/prototype/SKILL.md
+- skill | prototype-legacy | Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model o | skills/prototype-legacy/SKILL.md
+- skill | remotion | Best practices for Remotion - Video creation in React | skills/remotion/SKILL.md
+- skill | remotion-to-hyperframes | 'Port an existing Remotion (React) composition''s source to HyperFrames HTML. Use ONLY on an explicit ask to port/conver | skills/remotion-to-hyperframes/SKILL.md
+- skill | review-animations | Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. D | skills/review-animations/SKILL.md
+- skill | scrapling-official | Scrape web pages using Scrapling with anti-bot bypass (like Cloudflare Turnstile), stealth headless browsing, spiders fr | skills/scrapling-official/SKILL.md
+- skill | Scrapling-Skill | Scrape web pages using Scrapling with anti-bot bypass (like Cloudflare Turnstile), stealth headless browsing, spiders fr | skills/scrapling-official/Scrapling-Skill/SKILL.md
+- skill | setup-matt-pocock-skills | "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layou | skills/setup-matt-pocock-skills/SKILL.md
+- skill | setup-ts-deep-modules | Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolder | skills/setup-ts-deep-modules/SKILL.md
+- skill | spline-interactive | Browser-based 3D design tool with visual editor, animation, and web export. Use this skill when creating 3D scenes witho | skills/spline-interactive/SKILL.md
+- skill | understand-diff | "Analyse a git diff or pull request against an EXISTING understand knowledge graph to surface affected components and ri | skills/understand-diff/SKILL.md
+- skill | understand-domain | Extract business domain knowledge from a codebase and generate an interactive domain flow graph. Works standalone (light | skills/understand-domain/SKILL.md
+- skill | understand-figma | Analyze a Figma file via the Figma REST API and generate an interactive design knowledge graph (pages, screens, componen | skills/understand-figma/SKILL.md
+- skill | video-shotcraft | Create cinematic product videos from shot recipe cards, a validated template, and code/audio assets (Remotion + real pag | skills/video-shotcraft/SKILL.md
+- skill | write-swift | How to write modern Swift well — modeling with value types, Swift 6 data-race safety and approachable concurrency (@conc | skills/write-swift/SKILL.md
+

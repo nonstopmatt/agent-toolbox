@@ -1,0 +1,10 @@
+{
+  "mobbin": {"status": "paywall", "reason": "MCP answers 'requires a paid plan'", "date": "2026-09-21"},
+  "higgsfield": {"status": "auth", "reason": "connector exposes only authenticate (signed out); API account out of credits 2026-09-18", "date": "2026-09-21"},
+  "gemini-direct": {"status": "cap", "reason": "Gemini API monthly spend cap (429); same models reachable via Replicate", "date": "2026-09-21"},
+  "transcript-api": {"status": "down", "reason": "MCP endpoint not found; use yt-dlp + mlx_whisper", "date": "2026-09-21"},
+  "firecrawl": {"status": "cap", "reason": "credits out per memory; WebSearch then Nimble", "date": "2026-09-14"},
+  "glif": {"status": "auth", "reason": "sign-in needed", "date": "2026-09-21"},
+  "claude_ai_Photoroom_MCP": {"status": "auth", "reason": "sign-in needed", "date": "2026-09-21"},
+  "posthog": {"status": "auth", "reason": "sign-in needed", "date": "2026-09-21"}
+}

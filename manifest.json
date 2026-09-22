@@ -1,0 +1,789 @@
+{
+  "generated": "2026-09-21",
+  "tools": [
+    {
+      "name": "public-apis__public-apis",
+      "kind": "reference-list",
+      "url": "https://github.com/public-apis/public-apis",
+      "commit": "4cfe04f70da070207b032eed62db76a0c82e11b7",
+      "license": "MIT",
+      "path": "sources/public-apis__public-apis",
+      "added": "2026-09-20",
+      "goals": [],
+      "risks": [
+        "list only; linked APIs may need keys or be dead"
+      ]
+    },
+    {
+      "name": "punkpeye__awesome-mcp-servers",
+      "kind": "reference-list",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "commit": "393b4e9fafb0348e5a1c2a4ef5a8719b0d85e061",
+      "license": "MIT",
+      "path": "sources/punkpeye__awesome-mcp-servers",
+      "added": "2026-09-20",
+      "goals": [],
+      "risks": [
+        "list only; each linked MCP may need keys or an install script"
+      ]
+    },
+    {
+      "name": "sindresorhus__awesome",
+      "kind": "reference-list",
+      "url": "https://github.com/sindresorhus/awesome",
+      "commit": "bc98e517ddca672f55f9857d714fc3ea3c3540b2",
+      "license": "CC0-1.0",
+      "path": "sources/sindresorhus__awesome",
+      "added": "2026-09-20",
+      "goals": [],
+      "risks": [
+        "meta-list of lists; nothing runnable"
+      ]
+    },
+    {
+      "name": "ripienaar__free-for-dev",
+      "kind": "reference-list",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "commit": null,
+      "license": "none found",
+      "path": "(not cloned)",
+      "added": "2026-09-20",
+      "goals": [
+        "SaaS builds"
+      ],
+      "risks": [
+        "NOT CLONED: no clear LICENSE file",
+        "listed free tiers may want a card"
+      ]
+    },
+    {
+      "name": "ollama__ollama",
+      "kind": "application",
+      "url": "https://github.com/ollama/ollama",
+      "commit": "6383a0fa9cbf97494b847226e189f6e36b401a08",
+      "license": "MIT",
+      "path": "parked/app-sources/ollama__ollama",
+      "added": "2026-09-20",
+      "categories": [
+        "agent-orchestration",
+        "research"
+      ],
+      "desc": "Run open LLMs locally. ALREADY INSTALLED at ~/.local/bin/ollama, daemon answering on 127.0.0.1:11434 (HTTP 200). Rung 1 of the free-LLM fallback chain.",
+      "goals": [
+        "content production",
+        "SaaS builds"
+      ],
+      "risks": [
+        "already installed: never re-run its install script",
+        "14B-class quality, not a Claude substitute for client work"
+      ]
+    },
+    {
+      "name": "nexu-io__open-design",
+      "kind": "agent-tool",
+      "url": "https://github.com/nexu-io/open-design",
+      "commit": "ac6115406f3f780ef5c624a9aad1a87cbbad882a",
+      "license": "Apache-2.0",
+      "path": "parked/app-sources/nexu-io__open-design",
+      "added": "2026-09-20",
+      "categories": [
+        "web-design",
+        "video-audio"
+      ],
+      "desc": "Local-first design workspace driven by coding agents. Ships 277 skill dirs (163 skills/, 114 design-templates/) and one MCP server. 11 skills extracted to toolbox/skills; borrow the rest by path.",
+      "goals": [
+        "client websites",
+        "content production"
+      ],
+      "risks": [
+        "its MCP server needs the `od` daemon on PATH (brew/npm/DMG) - not installed, do not install to use it",
+        "BYOK to model APIs; the agent gets terminal power",
+        "277 vendored skills, many are other people's work re-hosted: 11 duplicate skills the user already has",
+        "lookalike fork exists: bluemanta/open-design"
+      ],
+      "warn": "Its MCP server needs the `od` daemon on PATH (brew/npm/DMG). Not installed, and installing it is the user's call."
+    },
+    {
+      "name": "D4Vinci__Scrapling",
+      "kind": "agent-tool",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "commit": "2b160ee18bfee79bb0115e2d9e9c746c8d9bf4c9",
+      "license": "BSD-3-Clause",
+      "path": "parked/app-sources/D4Vinci__Scrapling",
+      "added": "2026-09-20",
+      "categories": [
+        "research",
+        "backend-data"
+      ],
+      "desc": "Adaptive scraping with anti-bot bypass (Cloudflare Turnstile), stealth headless browsing and a spiders framework. Ships its own agent skill, extracted as toolbox/skills/scrapling-official.",
+      "goals": [
+        "agency marketing"
+      ],
+      "risks": [
+        "anti-bot bypass carries ToS risk: not for client work without a decision",
+        "needs `pip install scrapling` plus browser binaries before anything runs",
+        "its MCP server is the `scrapling-mcp` console script from that same install"
+      ],
+      "warn": "ToS risk: the anti-bot bypass is the point of this tool. Fine for the user's own research; a decision to make before any client-facing use."
+    },
+    {
+      "name": "OpenHands__OpenHands",
+      "kind": "application",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "commit": "a07364828c8f202e7745c6bce3dcef3915ae7ac1",
+      "license": "MIT (enterprise/ may differ)",
+      "path": "parked/app-sources/OpenHands__OpenHands",
+      "added": "2026-09-20",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "desc": "Autonomous coding agent with an Agent Canvas UI. Not installed.",
+      "goals": [
+        "SaaS builds"
+      ],
+      "risks": [
+        "needs LLM API keys and a Docker runtime with shell and filesystem power",
+        "paid cloud and enterprise tiers exist",
+        "old org URL All-Hands-AI redirects here"
+      ]
+    },
+    {
+      "name": "langflow-ai__langflow",
+      "kind": "application",
+      "url": "https://github.com/langflow-ai/langflow",
+      "commit": "5621dcfd84e11108e4cc1ecb0c51f41053c4211c",
+      "license": "MIT",
+      "path": "parked/app-sources/langflow-ai__langflow",
+      "added": "2026-09-20",
+      "categories": [
+        "agent-orchestration",
+        "backend-data"
+      ],
+      "desc": "Visual builder for AI agent and RAG workflows. Not installed (358M clone).",
+      "goals": [
+        "SaaS builds"
+      ],
+      "risks": [
+        "stores provider API keys",
+        "can expose network services on the machine"
+      ]
+    },
+    {
+      "name": "Shubhamsaboo__awesome-llm-apps",
+      "kind": "application",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "commit": "9e860951aaf5c82801779e43e748dcf92042879a",
+      "license": "Apache-2.0",
+      "path": "parked/app-sources/Shubhamsaboo__awesome-llm-apps",
+      "added": "2026-09-20",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "desc": "Runnable agent and RAG example apps, read as reference rather than installed.",
+      "goals": [
+        "SaaS builds"
+      ],
+      "risks": [
+        "each example wants its own API keys and pip install",
+        "lookalike fork exists: stvn101/awesome-llm-apps"
+      ]
+    },
+    {
+      "name": "nexu-io__open-design/skills",
+      "kind": "agent-tool",
+      "url": "https://github.com/nexu-io/open-design",
+      "commit": "ac6115406f3f780ef5c624a9aad1a87cbbad882a",
+      "license": "Apache-2.0",
+      "path": "parked/app-sources/nexu-io__open-design/skills",
+      "added": "2026-09-21",
+      "categories": [
+        "web-design",
+        "video-audio"
+      ],
+      "desc": "266 design and content skills left in the repo, not copied into toolbox/skills. Borrow one by reading <path>/<name>/SKILL.md, or ../design-templates/<name>/SKILL.md. Decks, html-ppt, wireframes, posters, gsap, figma, fal/venice image and video wrappers.",
+      "warn": "Read-only borrow: most are standalone HTML/CSS recipes, but anything naming the `od` daemon or an MCP tool needs OpenDesign installed, which it is not. 11 duplicate skills the user already has.",
+      "goals": [
+        "client websites",
+        "content production"
+      ],
+      "risks": [
+        "277 vendored skills, much of it other people's work re-hosted: check the source credit before client use",
+        "11 duplicate names the user already has, incl. taste-skill, ui-ux-pro-max, hyperframes"
+      ]
+    },
+    {
+      "name": "msitarzewski__agency-agents",
+      "kind": "agent-tool",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "commit": "ad9264e309bd5e5422c04784372d7841b1e5d604",
+      "license": "MIT",
+      "path": "repos/msitarzewski__agency-agents",
+      "added": "2026-09-18",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "desc": "285 agent personas. The copies parked in agents/ came from this repo's installer (./scripts/install.sh --tool claude-code), moved out of the live agents folder.",
+      "goals": [],
+      "risks": [
+        "markdown only; installer is a plain copy",
+        "some specialized/ files install without their prefix"
+      ]
+    },
+    {
+      "name": "alibaba__open-code-review",
+      "kind": "agent-tool",
+      "license": "Apache-2.0",
+      "categories": [
+        "security-review"
+      ],
+      "goals": [
+        "client websites",
+        "SaaS builds"
+      ],
+      "desc": "AI code review CLI (`ocr`) from Alibaba: flags security and quality issues, can write an HTML report and run from a git hook. Ships 2 skills and a Claude Code plugin. 38.7k stars.",
+      "risks": [
+        "needs the `ocr` CLI (npm i -g @alibaba-group/open-code-review): not installed",
+        "wants an LLM key: OCR_LLM_TOKEN or ANTHROPIC_API_KEY",
+        "its slash commands tell the agent to npm-install the CLI if missing: agent-aimed install instruction",
+        "lookalike: spencermarx/open-code-review (367 stars), not chosen"
+      ],
+      "warn": "BORROW-ONLY: read the SKILL.md; never promote to live (no global npm install, no plugin/hook enable) without asking the user first. Skills are copied but do nothing until the ocr CLI and a key exist. Overlaps the live /code-review and /security-review.",
+      "url": "https://github.com/alibaba/open-code-review",
+      "commit": "070805f86cc6ae4b987bfe733dfc14ecd5bb803a",
+      "path": "repos/alibaba__open-code-review",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "ayghri__i-have-adhd",
+      "kind": "agent-tool",
+      "license": "MIT",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "One skill that makes the agent answer short and scannable, answer first. 49.4k stars.",
+      "risks": [
+        "plugin form adds an always-on SessionStart hook (node, every startup/resume/compact); borrow the SKILL.md instead",
+        "lookalike: leondebeer/i-have-adhd, not chosen"
+      ],
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "commit": "839872f9d1cd634fed642b4589ce7226199cc15f",
+      "path": "repos/ayghri__i-have-adhd",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)",
+      "warn": "BORROW-ONLY: read the SKILL.md; never promote to live (no global npm install, no plugin/hook enable) without asking the user first."
+    },
+    {
+      "name": "mksglu__context-mode",
+      "kind": "agent-tool",
+      "license": "Elastic-2.0 (source-available)",
+      "categories": [
+        "memory-context"
+      ],
+      "goals": [],
+      "desc": "Context-window saver: runs tool work in a sandbox MCP server and returns only the answer to the main session. 23.8k stars.",
+      "risks": [
+        "NOT CLONED on purpose: catalog line only. MCP server + hooks on SessionStart, UserPromptSubmit, PreToolUse, PostToolUse, PreCompact and Stop, the stacking that broke this setup on 9/20",
+        "Elastic License 2.0: source-available, not open source, not redistributable as a service",
+        "get it from the URL above only if the user decides to"
+      ],
+      "warn": "Never enable. If wanted, the user decides and installs it themselves.",
+      "url": "https://github.com/mksglu/context-mode",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "max-sixty__worktrunk",
+      "kind": "agent-tool",
+      "license": "MIT OR Apache-2.0",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "`wt` CLI for git worktrees so several agents can work on separate copies of one repo; ships 2 skills and a Claude Code plugin. 8.2k stars.",
+      "risks": [
+        "needs the `wt` binary (Rust; cargo or brew): not installed",
+        "plugin hooks 7 events and its PermissionRequest hook auto-approves entering worktrees",
+        "says it sends no telemetry"
+      ],
+      "warn": "BORROW-ONLY: read the SKILL.md; never promote to live (no global npm install, no plugin/hook enable) without asking the user first. Overlaps superpowers:using-git-worktrees, which is live.",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "commit": "abd7acaa6b23f8a540d5cf5c543630a78eb8c2b7",
+      "path": "repos/max-sixty__worktrunk",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "trainingsites__campus-ai-os",
+      "kind": "agent-tool",
+      "license": "MIT",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "\"AI staff\" pack for a course or coaching business: 45 skills (content scanner, course builder, email sequence, morning brief). 30 stars.",
+      "risks": [
+        "45 skills NOT extracted: niche to course businesses, catalogued at repo level only; borrow by path",
+        "several skills expect the buyer's CRM, analytics or payment connectors"
+      ],
+      "url": "https://github.com/trainingsites/campus-ai-os",
+      "commit": "4f169825890aa3c1df8a10347a3ee536794c78db",
+      "path": "repos/trainingsites__campus-ai-os",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "openai__plugins",
+      "kind": "agent-tool",
+      "license": "none found",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [],
+      "desc": "OpenAI's Codex plugin packs (62+: Figma, Temporal, Higgsfield and more), readable as skill references. 7.1k stars.",
+      "risks": [
+        "NO LICENSE: unlicensed, so nothing copied into skills/ and not for client reuse",
+        "built for Codex; Claude would need a converted copy",
+        "88 MB clone"
+      ],
+      "url": "https://github.com/openai/plugins",
+      "commit": "1dc195897af4161d039b80d8471ec0a10c9bbc89",
+      "path": "repos/openai__plugins",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "bilawalsidhu__gods-eye-view",
+      "kind": "application",
+      "license": "MIT",
+      "categories": [
+        "research"
+      ],
+      "goals": [],
+      "desc": "Browser map of live public data (traffic, CCTV, flights) on a 3D globe. Web app; also on Pinokio. https://maptheworld.ai/ 39.9k stars.",
+      "risks": [
+        "needs its own data API keys to be useful",
+        "lookalike: uhrichsam4/gods-eye-view (227 stars), not chosen"
+      ],
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "Tencent__WeKnora",
+      "kind": "application",
+      "license": "MIT (third-party parts differ)",
+      "categories": [
+        "memory-context"
+      ],
+      "goals": [],
+      "desc": "Document knowledge platform: RAG plus knowledge graph over your files. Docker app. 28.2k stars.",
+      "risks": [
+        "Docker stack; UI and docs largely Chinese",
+        "lookalike: xiaohuangpin/WeKnora-pro, not chosen"
+      ],
+      "url": "https://github.com/Tencent/WeKnora",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "SuperLogicAI__Logic-Loop",
+      "kind": "application",
+      "license": "GPL-3.0",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [],
+      "desc": "macOS app (Tauri) that groups agent terminals by project. Audience submission, 27 stars.",
+      "risks": [
+        "GPL-3.0",
+        "very new, tiny user base"
+      ],
+      "url": "https://github.com/SuperLogicAI/Logic-Loop",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "JonImmsWordpressDev__claude-dashboard",
+      "kind": "application",
+      "license": "MIT",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [],
+      "desc": "Local dashboard of Claude Code sessions, transcripts and costs. Audience submission, 19 stars.",
+      "risks": [
+        "ships install.sh: not run",
+        "reads local session transcripts"
+      ],
+      "url": "https://github.com/JonImmsWordpressDev/claude-dashboard",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "Codpal-Limited__deckgauge",
+      "kind": "application",
+      "license": "FSL-1.1-ALv2 (source-available)",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [],
+      "desc": "Engineering board over Jira, GitHub and Azure DevOps. Audience submission, 21 stars. https://deckgauge.com",
+      "risks": [
+        "FSL: source-available, converts to Apache-2.0 later",
+        "needs tokens for Jira/GitHub"
+      ],
+      "url": "https://github.com/Codpal-Limited/deckgauge",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "CaptainASIC__reckoner",
+      "kind": "application",
+      "license": "GPL-3.0",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [],
+      "desc": "Single-page dashboard of AI service credits and cloud spend. Audience submission, 63 stars.",
+      "risks": [
+        "GPL-3.0",
+        "needs a key per provider it tracks"
+      ],
+      "url": "https://github.com/CaptainASIC/reckoner",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)"
+    },
+    {
+      "name": "JCodesMore__ai-website-cloner-template",
+      "kind": "agent-tool",
+      "license": "MIT",
+      "categories": [
+        "web-design"
+      ],
+      "goals": [
+        "client websites"
+      ],
+      "desc": "Next.js template plus a clone-website skill: point an agent at a homepage and it rebuilds it as a working site. 34.7k stars.",
+      "risks": [
+        "skill only works inside this template repo: borrow by opening the repo, not copied",
+        "Docker/npm scaffold not installed"
+      ],
+      "warn": "Relevant to prospect redesign mockups; overlaps image-to-code and bad-to-good-website-redesign. Rival-skills rule: one per task.",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "commit": "0fc4dca34fcfcfd32108fb67118aa897a6045414",
+      "path": "repos/JCodesMore__ai-website-cloner-template",
+      "added": "2026-09-21",
+      "source": "Instagram Dcv9HtHDLDZ (@sebastianhardy_, carousel)"
+    },
+    {
+      "name": "hugohe3__ppt-master",
+      "kind": "agent-tool",
+      "license": "MIT",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Skill that turns a document or topic into a native PowerPoint deck (shapes, charts, animations). 55.7k stars.",
+      "risks": [
+        "254 MB clone; the skill folder alone is 121 MB, so it is borrowed in place, not copied",
+        "optional OPENAI/QWEN/DASHSCOPE/MINIMAX keys and Pexels/Pixabay keys for images"
+      ],
+      "url": "https://github.com/hugohe3/ppt-master",
+      "commit": "2a05498f4303229abf52d8fbded8c2d66dde544f",
+      "path": "repos/hugohe3__ppt-master",
+      "added": "2026-09-21",
+      "source": "Instagram Dcv9HtHDLDZ (@sebastianhardy_, carousel)"
+    },
+    {
+      "name": "AgriciDaniel__claude-ads",
+      "kind": "agent-tool",
+      "license": "MIT",
+      "categories": [
+        "marketing-copy"
+      ],
+      "goals": [
+        "agency marketing",
+        "client websites"
+      ],
+      "desc": "Paid-media skill pack for Claude Code: audit, plan, create and monitor campaigns across Google, Meta, Microsoft, LinkedIn, Reddit, X, TikTok, YouTube. 34 skills, 25 agents. 9.4k stars.",
+      "risks": [
+        "34 skills + 25 audit agents copied into skills/ and agents/",
+        "ads-launch requires explicit approval of the exact plan before anything goes live",
+        "wants platform tokens (META_API_TOKEN, GOOGLE_ADS_API_TOKEN) and image keys (Stability, Replicate, OpenAI) for some skills",
+        "ships install.sh: not run"
+      ],
+      "warn": "Rival to the parked marketing-skills ads skills: one per task. Never let it launch or spend without the user's yes.",
+      "url": "https://github.com/AgriciDaniel/claude-ads",
+      "commit": "ac21644933910419529bcf81efb95a9ca71edf81",
+      "path": "repos/AgriciDaniel__claude-ads",
+      "added": "2026-09-21",
+      "source": "Instagram Dc-zw_Vicxs (@syntaix.ai, carousel)"
+    },
+    {
+      "name": "nowork-studio__notfair-plugin",
+      "kind": "agent-tool",
+      "license": "MIT",
+      "categories": [
+        "marketing-copy"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "NotFair (formerly toprank): 96 SEO/GEO/ads skills for agents. Named \"Toprank\" in the post; repo renamed. 3.8k stars.",
+      "risks": [
+        "84 of 96 skills call the vendor-hosted NotFair MCP (notfair.co): account required, nothing copied",
+        "ships a self-upgrade skill that rewrites installed_plugins.json and prompts when UPGRADE_AVAILABLE appears: agent-aimed self-update",
+        "npm install -g notfair in its README: not run"
+      ],
+      "warn": "Vendor-coupled. Read for ideas only; never enable the plugin or its MCP without asking.",
+      "url": "https://github.com/nowork-studio/notfair-plugin",
+      "commit": "7270136d9887dc536a1ee247bd32415e4d93d130",
+      "path": "repos/nowork-studio__notfair-plugin",
+      "added": "2026-09-21",
+      "source": "Instagram Dc-zw_Vicxs (@syntaix.ai, carousel)"
+    },
+    {
+      "name": "ethanplusai__harvey",
+      "kind": "agent-tool",
+      "license": "MIT",
+      "categories": [
+        "marketing-copy"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Autonomous Claude Code sales agent: finds prospects, researches them, drafts cold emails, tracks replies, runs on a 24/7 loop via the claude CLI. 52 stars.",
+      "risks": [
+        "SENDS real email (Gmail, SMTP or Instantly); require_approval defaults to True: never turn it off",
+        "runs on the user's Claude subscription through the claude CLI in a loop: burns usage",
+        "wants Hunter, ZeroBounce, Reoon, Instantly, Gmail, Cloudflare keys",
+        "skills/ are playbook notes, not SKILL.md; nothing copied"
+      ],
+      "warn": "Conflicts with the draft-only outreach rule unless approval stays on. Reference only.",
+      "url": "https://github.com/ethanplusai/harvey",
+      "commit": "822e84e7c7ec665b781a92cd290a679e9166992d",
+      "path": "repos/ethanplusai__harvey",
+      "added": "2026-09-21",
+      "source": "Instagram reel DdfLtWFuETI (@seb.ai)"
+    },
+    {
+      "name": "every-app__open-seo",
+      "kind": "application",
+      "license": "MIT",
+      "categories": [
+        "marketing-copy"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Self-hosted Semrush/Ahrefs alternative: rank tracking, site audits, keyword research (Cloudflare Workers). 19.8k stars.",
+      "risks": [
+        "ambiguous kind: app that also ships a Claude plugin; catalogued as application",
+        "needs data provider keys for keyword volumes"
+      ],
+      "url": "https://github.com/every-app/open-seo",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "Instagram Dcv9HtHDLDZ (@sebastianhardy_, carousel)"
+    },
+    {
+      "name": "dgtlmoon__changedetection.io",
+      "kind": "application",
+      "license": "Apache-2.0",
+      "categories": [
+        "research"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Watches web pages and alerts on changes; sold as competitor and price monitoring. Docker. 34.4k stars.",
+      "risks": [
+        "self-hosted service; notifications need a channel config"
+      ],
+      "url": "https://github.com/dgtlmoon/changedetection.io",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "Instagram Dcv9HtHDLDZ (@sebastianhardy_, carousel)"
+    },
+    {
+      "name": "PaddlePaddle__PaddleOCR",
+      "kind": "application",
+      "license": "Apache-2.0",
+      "categories": [
+        "research"
+      ],
+      "goals": [],
+      "desc": "OCR toolkit that turns PDFs and scans into structured data; ships skills and an MCP server. 89.9k stars.",
+      "risks": [
+        "1.9 GB repo: not cloned",
+        "pip install + model downloads"
+      ],
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "Instagram Dcv9HtHDLDZ (@sebastianhardy_, carousel)"
+    },
+    {
+      "name": "The-Swarm-Corporation__AutoHedge",
+      "kind": "application",
+      "license": "MIT",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [],
+      "desc": "Multi-agent trading framework (analysis, risk, execution). 6.2k stars.",
+      "risks": [
+        "places real trades if wired to a broker: never with real money unasked",
+        "no push since 2026-05-11",
+        "needs LLM + exchange keys"
+      ],
+      "url": "https://github.com/The-Swarm-Corporation/AutoHedge",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "Instagram Dc-zw_Vicxs (@syntaix.ai, carousel)"
+    },
+    {
+      "name": "HKUDS__Vibe-Trading",
+      "kind": "application",
+      "license": "MIT",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [],
+      "desc": "Plain-English trading research, strategy backtests and reports. Docker. 33.8k stars.",
+      "risks": [
+        "financial tool; backtests are not advice",
+        "needs LLM + data keys"
+      ],
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "Instagram Dc-zw_Vicxs (@syntaix.ai, carousel)"
+    },
+    {
+      "name": "Fincept-Corporation__FinceptTerminal",
+      "kind": "application",
+      "license": "AGPL-3.0",
+      "categories": [
+        "research"
+      ],
+      "goals": [],
+      "desc": "Open financial terminal: market data, portfolio analysis, charts, news. 31.9k stars.",
+      "risks": [
+        "AGPL-3.0: network use triggers source-sharing",
+        "773 MB repo"
+      ],
+      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "Instagram Dc-zw_Vicxs (@syntaix.ai, carousel)"
+    },
+    {
+      "name": "cloudflare__agentic-inbox",
+      "kind": "application",
+      "license": "Apache-2.0",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [],
+      "desc": "Self-hosted email client with an AI agent on Cloudflare Workers. 8k stars.",
+      "risks": [
+        "needs a Cloudflare account and email routing",
+        "no push since 2026-04-23"
+      ],
+      "url": "https://github.com/cloudflare/agentic-inbox",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "Instagram Dc-zw_Vicxs (@syntaix.ai, carousel)"
+    },
+    {
+      "name": "jo-inc__camofox-browser",
+      "kind": "application",
+      "license": "MIT",
+      "categories": [
+        "research"
+      ],
+      "goals": [],
+      "desc": "Stealth headless browser for agents (Camoufox-based anti-detection), with an MCP server. 11.1k stars.",
+      "risks": [
+        "anti-bot evasion is the point: ToS risk, not for client work without a decision",
+        "ambiguous kind (app + MCP); catalogued as application"
+      ],
+      "url": "https://github.com/jo-inc/camofox-browser",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "Instagram Dc-zw_Vicxs (@syntaix.ai, carousel)"
+    },
+    {
+      "name": "Anil-matcha__Open-Generative-AI",
+      "kind": "application",
+      "license": "MIT",
+      "categories": [
+        "video-audio"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Self-hosted image/video generation studio over many models. Named \"Open Higgsfield AI\" in the post; repo renamed. 29k stars.",
+      "risks": [
+        "describes itself as \"Unrestricted\": check what that means before any client use",
+        "needs model provider keys"
+      ],
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "commit": null,
+      "path": "(not cloned)",
+      "added": "2026-09-21",
+      "source": "Instagram Dc-zw_Vicxs (@syntaix.ai, carousel)"
+    },
+    {
+      "name": "mnfst__awesome-free-llm-apis",
+      "kind": "reference-list",
+      "url": "https://github.com/mnfst/awesome-free-llm-apis",
+      "commit": "167013ff729e30f3a92bb8d416062d6c34a84507",
+      "license": "CC0-1.0",
+      "path": "sources/mnfst__awesome-free-llm-apis",
+      "added": "2026-09-21",
+      "goals": [
+        "OmniRoute model ladder",
+        "free LLM fallback"
+      ],
+      "risks": [
+        "list only; maintained by Manifest (manifest.build), which sells the gateway it points to",
+        "free-tier terms vary: some train on prompts, never send client work to those (see ~/.config/vb/free-llm.md)",
+        "ships scripts/; not run"
+      ]
+    }
+  ]
+}

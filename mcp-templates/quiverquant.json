@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "quiverquant": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.quiverquant.com/",
+        "--header",
+        "Authorization:${QUIVERQUANT_AUTH_HEADER}"
+      ],
+      "env": {
+        "QUIVERQUANT_AUTH_HEADER": "Bearer ${QUIVERQUANT_TOKEN}"
+      }
+    }
+  }
+}
