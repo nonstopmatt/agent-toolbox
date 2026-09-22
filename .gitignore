@@ -29,6 +29,7 @@ bin/*
 !bin/bootstrap.sh
 !bin/secret-allowlist.txt
 !bin/library.py
+!bin/validate-public-snapshot.sh
 
 # Local search index: holds memory-note text and embeddings, never committed
 index/
