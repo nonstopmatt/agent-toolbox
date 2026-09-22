@@ -1,7 +1,9 @@
-# Clean filters (configured by bin/sync.sh): the committed copy swaps home paths for ~,
-# hides plugin cache paths, drops license-restricted skills,
+# Clean filters (configured by bin/sync.sh): generated catalogs swap home paths for ~,
+# hide plugin cache paths and drop license-restricted skills. Executable source is never
+# rewritten: a personal path there must fail the staged-snapshot scan and be fixed by hand.
+catalog/*.md filter=public
+plugins/*.md filter=public
 # MCP templates get ${HOME} so they still expand, and TOOLS-MEMORY.md drops the
 # "last:" task text from Proven, which names clients. Local files are untouched.
-* filter=public
 mcp-templates/*.json filter=publicjson
 TOOLS-MEMORY.md filter=toolsmem

@@ -29,7 +29,7 @@ trap cleanup EXIT
 
 python_count=0
 while IFS= read -r -d '' file; do
-  python3 -m py_compile "$file"
+  python3 -c 'import pathlib, sys; p = pathlib.Path(sys.argv[1]); compile(p.read_bytes(), str(p), "exec")' "$file"
   python_count=$((python_count + 1))
 done < <(find "$SNAP" -type f -name '*.py' -print0)
 

@@ -31,7 +31,9 @@ PY
 # The clean filters .gitattributes names. required=true: a filter failure stops the add.
 # Every committed file: home path -> ~, plugin cache paths hidden, restricted skills dropped.
 DROP="{ /usr/bin/grep -vF -f '$EXCL'; test \$? -le 1; }"
-PLUG='s|~/\.claude/plugins/cache/[^ |\`]*|(local plugin cache)|g'
+# Match only path/glob characters. A broad "anything until whitespace" pattern once
+# consumed Python quotes and brackets, leaving the committed source invalid.
+PLUG='s|~/\.claude/plugins/cache/[A-Za-z0-9_./@*+%=:~-]*|(local plugin cache)|g'
 git config filter.public.clean "sed -e \"s|\$HOME|~|g\" -e '$PLUG' | $DROP"
 git config filter.publicjson.clean 'sed -e "s|$HOME|\${HOME}|g"'
 git config filter.toolsmem.clean "sed -e \"s|\$HOME|~|g\" -e 's/ — last: .*\$//' | $DROP"
@@ -71,6 +73,7 @@ git add -A
 git add --renormalize .   # re-run the filters on unchanged files too
 SNAP="$(mktemp -d)"; trap 'rm -rf "$SNAP"' EXIT
 git checkout-index -a --prefix="$SNAP/"   # the filtered blobs, i.e. what GitHub would get
+"$TB/bin/validate-public-snapshot.sh" "$SNAP"
 
 GL=""
 if command -v gitleaks >/dev/null; then
