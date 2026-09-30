@@ -29,6 +29,8 @@ bin/*
 !bin/bootstrap.sh
 !bin/secret-allowlist.txt
 !bin/library.py
+!bin/web_fetch.py
+!bin/scrapling_fetch.py
 
 # Local search index: holds memory-note text and embeddings, never committed
 index/

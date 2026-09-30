@@ -1,7 +1,7 @@
 # marketing-copy
 
-Generated: 2026-09-21 22:30 
-Count: 129
+Generated: 2026-09-30 05:55 
+Count: 132
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -101,6 +101,8 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | blog-strategy | Blog strategy development including topic cluster architecture with hub-and-spoke design, audience mapping, competitive  | skills/blog/blog-strategy/SKILL.md
 - skill | blog-taxonomy | Extract, suggest, and sync tags and categories for blog posts across all major CMS platforms. Supports WordPress REST AP | skills/blog/blog-taxonomy/SKILL.md
 - skill | blog-write | Write new blog articles from scratch optimized for Google rankings and AI citations. Generates full articles with templa | skills/blog/blog-write/SKILL.md
+- skill | chisle | Maximum-efficiency dev mode. Terse, precise prose with zero fluff combined with YAGNI/ladder-first code decisions. One p | skills/chisle/SKILL.md
+- skill | chisle-audit | One-shot efficiency audit of a file, diff, or whole repo across BOTH axes at once: over-engineered code (reinvented stdl | skills/chisle-audit/SKILL.md
 - skill | domain-modeling | Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, o | skills/domain-modeling/SKILL.md
 - skill | faceless-explainer | "Turn arbitrary text — an article, notes, a topic, a brief — into a faceless explainer video: there is no site or footag | skills/faceless-explainer/SKILL.md
 - skill | firecrawl-company-directories | Extract structured company lists from directories with Firecrawl. Use for scraping YC, Crunchbase, Product Hunt, G2, sta | skills/firecrawl-company-directories/SKILL.md
@@ -110,6 +112,7 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | firecrawl-search | Web search with full page content extraction. Use this skill whenever the user asks to search the web, find articles, re | skills/firecrawl-search/SKILL.md
 - skill | firecrawl-seo-audit | Audit a website's SEO with Firecrawl. Use when the user asks for an SEO audit, metadata and heading review, sitemap/site | skills/firecrawl-seo-audit/SKILL.md
 - skill | firecrawl-workflows | Run outcome-focused Firecrawl workflows that produce deliverables such as research reports, SEO audits, QA reports, lead | skills/firecrawl-workflows/SKILL.md
+- skill | fixing-metadata | Audit and fix HTML metadata including page titles, meta descriptions, canonical URLs, Open Graph tags, Twitter cards, fa | skills/fixing-metadata/SKILL.md
 - skill | gstack-landing-report | Read-only queue dashboard for workspace-aware ship. (gstack) | skills/gstack-landing-report/SKILL.md
 - skill | gstack-review | Pre-landing PR review. (gstack) allowed-tools: - Bash - Read - Edit - Write - Grep - Glob - Agent - AskUserQuestion - We | skills/gstack-review/SKILL.md
 - skill | ig-human | - Strip the machine fingerprint out of any draft - em dashes, AI slop words, invisible watermark characters - and score  | skills/ig-human/SKILL.md

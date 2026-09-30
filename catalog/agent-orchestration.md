@@ -1,7 +1,7 @@
 # agent-orchestration
 
-Generated: 2026-09-21 22:30 
-Count: 142
+Generated: 2026-09-30 05:55 
+Count: 148
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -62,11 +62,13 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | blog | Full-lifecycle blog engine with 21 commands, 12 content templates, 5-category 100-point scoring, and 4 specialized agent | skills/blog/blog/SKILL.md
 - skill | claude-handoff | Hand the current conversation off to a fresh background agent that picks up the work immediately. argument-hint: "What w | skills/claude-handoff/SKILL.md
 - skill | code-review | "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code fo | skills/code-review/SKILL.md
+- skill | evaluate-skill | Run, read, and diagnose a skill's Caliper eval — its success rate over k attempts, whether it fires, and whether it beat | skills/evaluate-skill/SKILL.md
 - skill | feature-research | Research existing architecture before implementing a complex feature. | skills/feature-research/SKILL.md
 - skill | firecrawl-agent | AI-powered autonomous data extraction that navigates complex sites and returns structured JSON. Use this skill when the  | skills/firecrawl-agent/SKILL.md
 - skill | firecrawl-build-search | Integrate Firecrawl `/search` into product code and agent workflows. Use when an app needs discovery before extraction,  | skills/firecrawl-build-search/SKILL.md
 - skill | git-guardrails-claude-code | Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execut | skills/git-guardrails-claude-code/SKILL.md
 - skill | grill-me | A relentless interview to sharpen a plan or design. disable-model-invocation: true | skills/grill-me/SKILL.md
+- skill | grill-skill | Interview the user to decide what a skill's eval should test, then build the spec and iterate until the skill ships. Use | skills/grill-skill/SKILL.md
 - skill | grilling | Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or u | skills/grilling/SKILL.md
 - skill | gstack-autoplan | Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with a | skills/gstack-autoplan/SKILL.md
 - skill | gstack-benchmark | Performance regression detection. (gstack) | skills/gstack-benchmark/SKILL.md
@@ -134,4 +136,8 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - agent-tool | openai__plugins | OpenAI's Codex plugin packs (62+: Figma, Temporal, Higgsfield and more), readable as skill references. 7.1k stars. | repos/openai__plugins | none found | risks: NO LICENSE: unlicensed, so nothing copied into skills/ and not for client reuse; built for Codex; Claude would need a converted copy; 88 MB clone
 - application | SuperLogicAI__Logic-Loop | macOS app (Tauri) that groups agent terminals by project. Audience submission, 27 stars. | (not cloned) | GPL-3.0 | risks: GPL-3.0; very new, tiny user base
 - application | JonImmsWordpressDev__claude-dashboard | Local dashboard of Claude Code sessions, transcripts and costs. Audience submission, 19 stars. | (not cloned) | MIT | risks: ships install.sh: not run; reads local session transcripts
+- agent-tool | reticlehq__reticle | Drives your real running web or desktop app from inside and returns pass / fail / couldn't tell with the file:line to fix. MCP server + 17 skills. 1.0k stars. | repos/reticlehq__reticle | mixed: Apache-2.0 SDK, FSL-1.1-ALv2 server, paid Enterprise license for ee features | WARN: SESSION-LAUNCH ONLY: never run install.sh or `setup mcp`; nothing copied into skills/ (all 17 need the MCP server). | risks: installer and `setup mcp` write the MCP server into every coding agent's config and pre-approve its tools in Claude Code: not run, session-launch mcp/mine/reticle.json instead; usage telemetry ON by default (the template sets RETICLE_TELEMETRY=0); SKILL.md tel
+- agent-tool | JayPokale__Chisle | Token-saver mode for coding agents: terse prose, YAGNI-first code, and a hook that trims tool output before the agent reads it. 4 skills + plugin. 581 stars. | repos/JayPokale__Chisle | MIT | WARN: BORROW-ONLY: read the SKILL.md; never promote to live (no installer, no plugin/hook enable, no global install) without asking the user first. 3 skills copied (chisle, chisle-audit, chisle-review). | risks: RIVAL of the live Ponytail plugin (same ladder, same 'stop X / normal mode' switch): never run both; plugin adds 3 hooks (SessionStart, UserPromptSubmit, PostToolUse); the PostToolUse one cuts long Bash/Grep/WebFetch/MCP output to head + tail, which can hide t
+- agent-tool | Q00__ouroboros | Spec-first loop: interviews you until the brief is unambiguous, writes an acceptance spec, builds, then evaluates the result against it and sends failures back. MCP server + 23 skills. 6.2k stars. | repos/Q00__ouroboros | MIT | WARN: SESSION-LAUNCH ONLY: never run scripts/install.sh or enable the plugin; nothing copied into skills/. | risks: skills tell the agent to star the repo with `gh api -X PUT /user/starred/Q00/ouroboros` and to self-upgrade with `uv tool upgrade`: agent-aimed, ignore; PostHog usage telemetry ON by default (the template sets OUROBOROS_TELEMETRY=0); plugin adds 3 hooks (Sessi
+- agent-tool | edonadei__caliper | Eval harness for skills, MCP servers and rules: runs your real agent k times with and without the thing, then reports success rate, activation and token cost. 2 skills + `caliper` CLI. 197 stars. | repos/edonadei__caliper | MIT | WARN: BORROW-ONLY: read the SKILL.md; never promote to live (no installer, no plugin/hook enable, no global install) without asking the user first. 2 skills copied (evaluate-skill, grill-skill). Rival of skill-creator's evals and ECC eval-harness. | risks: install-only value: needs the `caliper` CLI (`pipx install caliper-eval`), not installed; every run launches the real agent k times per task, with and without the skill: spends plan usage or API credits, ask first; runs load the user's own skills, plugins and 
 

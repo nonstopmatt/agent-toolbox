@@ -17,7 +17,7 @@ Sources (all optional, missing ones are skipped and reported):
 Embeddings come from a local Ollama model (default nomic-embed-text). If Ollama is down the
 search falls back to keyword scoring and says so, it never silently narrows.
 """
-import glob, hashlib, json, math, os, re, subprocess, sys, time, urllib.request
+import glob, hashlib, json, math, os, re, shutil, subprocess, sys, time, urllib.request
 
 TB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOME = os.path.expanduser("~")
@@ -25,7 +25,7 @@ IDX = os.path.join(TB, "index"); os.makedirs(IDX, exist_ok=True)
 LIB, EMB, HEALTH = (os.path.join(IDX, f) for f in ("library.jsonl", "embeddings.json", "health.json"))
 CFG_F = os.path.join(TB, "library-sources.json")
 DEFAULT_CFG = {
-    "skill_roots": ["~/.claude/skills", "(local plugin cache)
+    "skill_roots": ["~/.claude/skills", "~/.claude/plugins/cache"],
     "design_skill_roots": ["~/Design-Tools/open-design/skills",
                            # Open Design plugins sit one level deeper (plugins/_official/<group>/<name>,
                            # plugins/community/<name>); 431 skills here were invisible until 2026-09-21,
@@ -95,7 +95,10 @@ def items():
     # 2. live + extra skill roots
     for root in c["skill_roots"] + c["design_skill_roots"]:
         src = "design-skills" if root in c["design_skill_roots"] else "live-skills"
-        for f in glob.glob(os.path.join(ex(root), "*", "SKILL.md")):
+        # plugin caches nest skills at <plugin>/<pkg>/<version>/skills/<name>/SKILL.md, so walk them fully;
+        # add() dedupes by name, so older cached versions of the same skill collapse into one row.
+        deep = "plugins/cache" in root
+        for f in sorted(glob.glob(os.path.join(ex(root), "**" if deep else "*", "SKILL.md"), recursive=deep), reverse=deep):
             n, d, para = front(f); add("skill", n or os.path.basename(os.path.dirname(f)), d + " " + para, f, src)
     # 3. design systems
     for root in c["design_system_roots"]:
@@ -149,6 +152,7 @@ def text_of(it): return f"{it['kind']} {it['name']}: {it['desc']}"
 def h(s): return hashlib.sha1(s.encode()).hexdigest()[:16]
 
 def cmd_index(a):
+    if os.path.exists(LIB): shutil.copy(LIB, LIB + ".bak")  # index/ is gitignored: keep one previous copy
     c = cfg(); its, rep = items()
     with open(LIB, "w") as fh:
         for it in its: fh.write(json.dumps(it) + "\n")
@@ -229,7 +233,8 @@ def cmd_find(a):
             if set(tokens(head + " " + " ".join(rest[:2]))) & qt: caps.append("## " + head + "\n" + "\n".join(l for l in rest if l.startswith(("1.", "2.", "3.", "4.", "5.", "6.", "7."))))
     kinds = {}
     for it in its: kinds[it["kind"]] = kinds.get(it["kind"], 0) + 1
-    cov = f"COVERAGE searched {N} of {N} items ({', '.join(f'{k} {v}' for k, v in sorted(kinds.items()))}) | mode: {mode} | returned {len(picked)}"
+    age_h = (time.time() - os.path.getmtime(LIB)) / 3600
+    cov = f"COVERAGE searched {N} of {N} items ({', '.join(f'{k} {v}' for k, v in sorted(kinds.items()))}) | mode: {mode} | returned {len(picked)} | index built {age_h:.0f}h ago" + (" (STALE: run library.py index)" if age_h > 24 else "")
     if a.json:
         print(json.dumps({"coverage": cov, "candidates": [dict(it, score=round(score(it), 3), health=health.get(it["name"], {})) for it in picked], "capabilities": caps})); return
     print(cov)

@@ -1,5 +1,21 @@
 # toolbox CHANGELOG
 
+## 2026-09-30 — YouTube Ua0APTMVcb8, AI LABS "8 GitHub repos" (7 added, 1 already here)
+
+Full table and claim check: `inbox/youtube-Ua0APTMVcb8-2026-09-30.md`. Nothing installed, no install
+script run, nothing in a clone executed. Session-launch MCP configs written for three of them, with
+telemetry switched off.
+
+- agent-tool: `reticlehq__reticle` · **mixed license** (Apache-2.0 SDK, FSL-1.1-ALv2 server, paid Enterprise for `ee`) · pinned 96a4d7ab · nothing copied, `mcp-templates/reticle.json` · installer writes MCP config into every agent; SKILL.md says never ask the user, send vendor feedback, ask for a star
+- agent-tool: `JayPokale__Chisle` · MIT · pinned 0c21d856 · 3 skills copied · **rival of live Ponytail**; plugin has 3 hooks, one trims tool output, one pings npm
+- agent-tool: `ibelick__ui-skills` · MIT · pinned 2eec38c1 · 6 skills copied, `mcp-templates/ui-skills.json` · registry text comes from other authors at run time
+- agent-tool: `Q00__ouroboros` · MIT · pinned 9840dbf0 · nothing copied, `mcp-templates/ouroboros.json` · skills tell the agent to star the repo and self-upgrade; PostHog telemetry on by default; 3 hooks
+- agent-tool: `FloWritesCode__fwc-swiftui-skills` · MIT · pinned 69f95747 · 2 skills copied · markdown only
+- agent-tool: `edonadei__caliper` · MIT · pinned ff72f22b · 2 skills copied · needs the `caliper` CLI; every eval spends usage
+- agent-tool: `dmmulroy__anti-slop` · MIT · pinned c44ef22c · 1 skill copied with its rules · JS/TS only, adds dev dependencies to the target repo
+- have already: img2threejs (`skills/img2threejs`)
+- not added: Manufact (sponsor, hosted service), AI Labs Pro, The Roundup
+
 ## 2026-09-21 — whole-library sweep, fallback chains, health check
 
 - `bin/library.py`: `index` (every source, full descriptions, local Ollama embeddings), `health`, `find` (semantic + keyword, per-kind quota, `COVERAGE searched N of N`, `--named` tools never dropped)
@@ -118,3 +134,11 @@ commits.
 - F (@nick_saraev): names FreeLLMAPI, Claude Code, `#omniroute`. **Correction:** FreeLLMAPI is a real repo
   (`tashfeenahmed/freellmapi`, MIT, 27.7k stars), not a misnaming of the mnfst list. Fact-check redone; outcome
   still **discard**, since OmniRoute already does the job locally. Not catalogued.
+
+## 2026-09-29 — my-skills: vet-and-install-kit (new, live)
+Matt approved the skill review's recommendation. Source `my-skills/vet-and-install-kit/`, live copy
+`~/.claude/skills/vet-and-install-kit/`. Owns vetting, containment and proof for any third-party kit
+that will run or be launched, plus removal verification; `/toolbox-add` still owns catalogue-without-running.
+Built from observations #1 #6 #19 #21-#24 #37 #38 #40 #42 #45 #53 #54 #69.
+Also on 9/29: 20 parked skills in `skills/` got their 2026-09-19 review edits installed (backups in
+`~/.claude/skill-updates/2026-09-19-review2/_live-backup-2026-09-29/`).

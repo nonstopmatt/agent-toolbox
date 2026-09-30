@@ -1,7 +1,7 @@
 # frontend-code
 
-Generated: 2026-09-21 22:30 
-Count: 100
+Generated: 2026-09-30 05:55 
+Count: 107
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -67,6 +67,7 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | firecrawl-qa | QA test a live website with Firecrawl browser and scrape evidence. Use when the user wants exploratory QA, form testing, | skills/firecrawl-qa/SKILL.md
 - skill | firecrawl-scrape | Extract clean markdown from any URL, including JavaScript-rendered SPAs. Use this skill whenever the user provides a URL | skills/firecrawl-scrape/SKILL.md
 - skill | firecrawl-website-design-clone | Extract any website's design system into an agent-ready DESIGN.md using Firecrawl scrape evidence. Use when the user wan | skills/firecrawl-website-design-clone/SKILL.md
+- skill | fixing-motion-performance | Audit and fix animation performance issues including layout thrashing, compositor properties, scroll-linked motion, and  | skills/fixing-motion-performance/SKILL.md
 - skill | frontend-slides | "Build a self-contained HTML presentation as a single zero-dependency file on a fixed 1920x1080 stage that scales whole  | skills/frontend-slides/SKILL.md
 - skill | gstack-browse | "Drive a real browser through Aside: open a page, read it, click through a flow, take screenshots, check console errors. | skills/gstack-browse/SKILL.md
 - skill | gstack-connect-chrome | Launch GStack Browser — AI-controlled Chromium with the sidebar extension baked in. | skills/gstack-connect-chrome/SKILL.md
@@ -103,9 +104,15 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | setup-matt-pocock-skills | "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layou | skills/setup-matt-pocock-skills/SKILL.md
 - skill | setup-ts-deep-modules | Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolder | skills/setup-ts-deep-modules/SKILL.md
 - skill | spline-interactive | Browser-based 3D design tool with visual editor, animation, and web export. Use this skill when creating 3D scenes witho | skills/spline-interactive/SKILL.md
+- skill | swiftui-iphone-duo | - Adapts and reviews SwiftUI apps for iPhone Duo and continuously changing window sizes. Use when supporting the foldabl | skills/swiftui-iphone-duo/SKILL.md
+- skill | swiftui-liquid-glass | - Implement, review, and refactor SwiftUI features using the iOS 26+ Liquid Glass API. Use when adopting Liquid Glass in | skills/swiftui-liquid-glass/SKILL.md
 - skill | understand-diff | "Analyse a git diff or pull request against an EXISTING understand knowledge graph to surface affected components and ri | skills/understand-diff/SKILL.md
 - skill | understand-domain | Extract business domain knowledge from a codebase and generate an interactive domain flow graph. Works standalone (light | skills/understand-domain/SKILL.md
 - skill | understand-figma | Analyze a Figma file via the Figma REST API and generate an interactive design knowledge graph (pages, screens, componen | skills/understand-figma/SKILL.md
 - skill | video-shotcraft | Create cinematic product videos from shot recipe cards, a validated template, and code/audio assets (Remotion + real pag | skills/video-shotcraft/SKILL.md
 - skill | write-swift | How to write modern Swift well — modeling with value types, Swift 6 data-race safety and approachable concurrency (@conc | skills/write-swift/SKILL.md
+- agent-tool | reticlehq__reticle | Drives your real running web or desktop app from inside and returns pass / fail / couldn't tell with the file:line to fix. MCP server + 17 skills. 1.0k stars. | repos/reticlehq__reticle | mixed: Apache-2.0 SDK, FSL-1.1-ALv2 server, paid Enterprise license for ee features | WARN: SESSION-LAUNCH ONLY: never run install.sh or `setup mcp`; nothing copied into skills/ (all 17 need the MCP server). | risks: installer and `setup mcp` write the MCP server into every coding agent's config and pre-approve its tools in Claude Code: not run, session-launch mcp/mine/reticle.json instead; usage telemetry ON by default (the template sets RETICLE_TELEMETRY=0); SKILL.md tel
+- agent-tool | ibelick__ui-skills | Registry of design-engineering skills from many authors (~330 entries), reachable by a hosted MCP or the `npx ui-skills` CLI, plus 7 skills hosted in the repo. 9.3k stars. | repos/ibelick__ui-skills | MIT | WARN: BORROW-ONLY: read the SKILL.md; never promote to live (no installer, no plugin/hook enable, no global install) without asking the user first. 6 standalone skills copied. An older 1-file ui-skills copy sits in the Open Design skills folder. | risks: registry entries are other authors' SKILL.md files fetched at run time from ui-skills.com and GitHub: unvetted text, treat as data and read before following; hosted MCP (ui-skills.com/mcp) sees every query sent to it; `npx ui-skills` downloads the CLI from npm
+- agent-tool | FloWritesCode__fwc-swiftui-skills | Two SwiftUI skills for iOS 26+: native Liquid Glass APIs and layouts for the foldable iPhone Duo (hinge, fold-safe content, second display). 360 stars. | repos/FloWritesCode__fwc-swiftui-skills | MIT | WARN: 2 skills copied (swiftui-liquid-glass, swiftui-iphone-duo). | risks: pure markdown, no hooks, no scripts, no network; API names not checked against Apple's docs: verify in Xcode with the iOS 26 SDK; serves none of the five goals today (no iOS app in flight); rivals: ECC liquid-glass-design and Open Design swiftui-design
+- agent-tool | dmmulroy__anti-slop | Opinionated Oxlint rules (19 core + 5 Effect) that reject weak TypeScript and JavaScript patterns; meant to be copied into a repo and edited, not installed from npm. 1 skill. 5.0k stars. | repos/dmmulroy__anti-slop | MIT | WARN: BORROW-ONLY: read the SKILL.md; never promote to live (no installer, no plugin/hook enable, no global install) without asking the user first. 1 skill copied with its bundled rules (install-anti-slop). | risks: the skill copies rules into tools/oxlint/anti-slop and adds oxlint + @oxlint/plugins as dev dependencies of the target repo: per-project, ask first on a client repo; rules are one author's taste (no object parameters, no module mocking) and will flag working c
 

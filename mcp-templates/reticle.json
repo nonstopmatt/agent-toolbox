@@ -1,0 +1,17 @@
+{
+ "mcpServers": {
+  "reticle": {
+   "command": "npx",
+   "args": [
+    "-y",
+    "@reticlehq/server@3.3.0",
+    "mcp"
+   ],
+   "env": {
+    "RETICLE_TELEMETRY": "0",
+    "DO_NOT_TRACK": "1",
+    "RETICLE_FEEDBACK": "0"
+   }
+  }
+ }
+}

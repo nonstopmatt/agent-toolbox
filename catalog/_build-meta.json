@@ -1,25 +1,30 @@
 {
-  "generated": "2026-09-21T22:30:44.310472",
+  "generated": "2026-09-30T05:55:34.123258",
   "counts": {
-    "web-design": 179,
-    "frontend-code": 100,
+    "web-design": 190,
+    "frontend-code": 107,
     "backend-data": 131,
-    "marketing-copy": 129,
+    "marketing-copy": 132,
     "social-content": 53,
     "video-audio": 80,
-    "research": 124,
-    "security-review": 76,
+    "research": 125,
+    "security-review": 80,
     "memory-context": 59,
-    "agent-orchestration": 142,
+    "agent-orchestration": 148,
     "business-ops": 146,
-    "misc": 4
+    "misc": 9
   },
   "total_lines_tools_memory": 88,
-  "unmatched": 4,
+  "unmatched": 9,
   "unmatched_sample": [
+    "mcp-mine:ouroboros",
+    "mcp-mine:reticle",
+    "mcp-mine:scrapling",
     "mcp-discovered:ot",
     "mcp-discovered:tools",
+    "skill:chisle-review",
     "skill:i-have-adhd",
+    "skill:install-anti-slop",
     "skill:wt-switch-create"
   ]
 }

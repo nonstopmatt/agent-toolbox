@@ -1,7 +1,7 @@
 # research
 
-Generated: 2026-09-21 22:30 
-Count: 124
+Generated: 2026-09-30 05:55 
+Count: 125
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -121,6 +121,7 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | gstack-sync-gbrain | Keep gbrain current with this repo's code and refresh agent search guidance in CLAUDE.md. (gstack) | skills/gstack-sync-gbrain/SKILL.md
 - skill | hyperframes-registry | Search, install, and wire registry blocks and components into HyperFrames compositions. Use BEFORE hand-building any nam | skills/hyperframes-registry/SKILL.md
 - skill | ig-caption | - Write the Instagram caption - the line that survives the "... more" cut, the body, the single ask, the search terms an | skills/ig-caption/SKILL.md
+- skill | improve-ui | Audit an existing product surface against its own design evidence, identify verified UI problems, and write self-contain | skills/improve-ui/SKILL.md
 - skill | market-research | Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution | skills/market-research/SKILL.md
 - skill | marketing-psychology | "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when | skills/marketing-psychology/SKILL.md
 - skill | research | Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use w | skills/research/SKILL.md

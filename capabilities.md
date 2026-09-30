@@ -48,12 +48,14 @@ chain short, ordered by quality-for-cost, and mark paid or sign-in steps.
 6. Magic UI MCP (animated components)
 
 ## Web research and scraping
-1. WebSearch + WebFetch (built in)
-2. research-web skill (parallel investigators; medium depth unless asked)
-3. Firecrawl MCP (credits may be out)
-4. Nimble API
-5. claude-in-chrome for JS-heavy or logged-out pages
-6. agent-reach for X, Reddit, Instagram, LinkedIn
+DEFAULT for any scrape/crawl/page-fetch job (Matt, 2026-09-22: Firecrawl is out of credits, don't use it):
+1. `python3 ~/toolbox/bin/web_fetch.py <url>` = Scrapling (local, free) -> Jina Reader -> Nimble -> plain GET (prints who served it; exit 2 = NOT FETCHED)
+2. WebSearch for search (then web_fetch.py on the hits); WebFetch only for quick single pages
+3. research-web skill (parallel investigators; medium depth unless asked)
+4. claude-in-chrome for logged-in or interaction-heavy pages
+5. agent-reach for X, Reddit, Instagram, LinkedIn
+6. Scrapling directly for spiders / many pages / selectors: `~/toolbox/venvs/scrapling/bin/python` (skill ~/toolbox/skills/scrapling-official) or its MCP, session-launched from ~/toolbox/mcp/mine/scrapling.json. Its stealth mode bypasses anti-bot checks: fine for prospect research, decide before client-facing use
+7. Firecrawl MCP: only if Matt says credits are back
 
 ## Transcripts (YouTube, audio, video)
 1. yt_expert.py transcript (captions first, then mlx_whisper)

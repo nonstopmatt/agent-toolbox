@@ -1,0 +1,25 @@
+{
+ "mcpServers": {
+  "ouroboros": {
+   "command": "uvx",
+   "args": [
+    "--isolated",
+    "--python",
+    ">=3.12",
+    "--from",
+    "ouroboros-ai[mcp]==0.55.2",
+    "ouroboros",
+    "mcp",
+    "serve",
+    "--runtime",
+    "claude-cli",
+    "--llm-backend",
+    "claude_code"
+   ],
+   "env": {
+    "OUROBOROS_TELEMETRY": "0",
+    "DO_NOT_TRACK": "1"
+   }
+  }
+ }
+}

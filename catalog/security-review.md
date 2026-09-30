@@ -1,7 +1,7 @@
 # security-review
 
-Generated: 2026-09-21 22:30 
-Count: 76
+Generated: 2026-09-30 05:55 
+Count: 80
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -60,9 +60,12 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - agent | Test Results Analyzer | Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis, and actionabl | agents/testing-test-results-analyzer.md | 14602
 - mcp-discovered | codex-security | stdio | tools: ? | mcp/discovered/codex-security.json
 - skill | blog-audit | Full-site blog health assessment scanning all blog files for quality scores, orphan pages, topic cannibalization, stale  | skills/blog/blog-audit/SKILL.md
+- skill | chisle-audit | One-shot efficiency audit of a file, diff, or whole repo across BOTH axes at once: over-engineered code (reinvented stdl | skills/chisle-audit/SKILL.md
 - skill | code-review | "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code fo | skills/code-review/SKILL.md
 - skill | codebase-memory | "Run whole-repo structural audits against the codebase knowledge graph: dead code, unused functions, high fan-out, refac | skills/codebase-memory/SKILL.md
 - skill | diagnosing-bugs | Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports som | skills/diagnosing-bugs/SKILL.md
+- skill | evaluate-skill | Run, read, and diagnose a skill's Caliper eval — its success rate over k attempts, whether it fires, and whether it beat | skills/evaluate-skill/SKILL.md
+- skill | fixing-accessibility | Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, focus management, color contrast, an | skills/fixing-accessibility/SKILL.md
 - skill | gstack-cso | Chief Security Officer mode. (gstack) allowed-tools: - Bash - Read - Grep - Glob - Write - Agent - WebSearch - AskUserQu | skills/gstack-cso/SKILL.md
 - skill | gstack-design-review | "Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interacti | skills/gstack-design-review/SKILL.md
 - skill | gstack-devex-review | Live developer experience audit. (gstack) | skills/gstack-devex-review/SKILL.md
@@ -82,4 +85,5 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | wizard | Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infras | skills/wizard/SKILL.md
 - skill | yt-audit | - Audit a YouTube channel end to end - packaging, consistency, the first fifteen seconds, and what to fix first. Use for | skills/yt-audit/SKILL.md
 - agent-tool | alibaba__open-code-review | AI code review CLI (`ocr`) from Alibaba: flags security and quality issues, can write an HTML report and run from a git hook. Ships 2 skills and a Claude Code plugin. 38.7k stars. | repos/alibaba__open-code-review | Apache-2.0 | WARN: BORROW-ONLY: read the SKILL.md; never promote to live (no global npm install, no plugin/hook enable) without asking the user first. Skills are copied but do nothing until the ocr CLI and a key exist. Overlaps the live /code-review and /security-review. | risks: needs the `ocr` CLI (npm i -g @alibaba-group/open-code-review): not installed; wants an LLM key: OCR_LLM_TOKEN or ANTHROPIC_API_KEY; its slash commands tell the agent to npm-install the CLI if missing: agent-aimed install instruction; lookalike: spencermarx/op
+- agent-tool | dmmulroy__anti-slop | Opinionated Oxlint rules (19 core + 5 Effect) that reject weak TypeScript and JavaScript patterns; meant to be copied into a repo and edited, not installed from npm. 1 skill. 5.0k stars. | repos/dmmulroy__anti-slop | MIT | WARN: BORROW-ONLY: read the SKILL.md; never promote to live (no installer, no plugin/hook enable, no global install) without asking the user first. 1 skill copied with its bundled rules (install-anti-slop). | risks: the skill copies rules into tools/oxlint/anti-slop and adds oxlint + @oxlint/plugins as dev dependencies of the target repo: per-project, ask first on a client repo; rules are one author's taste (no object parameters, no module mocking) and will flag working c
 
