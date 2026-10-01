@@ -1,11 +1,14 @@
 ---
 name: toolbox-add
-description: 'Add a tool to ~/toolbox without installing it: decide the kind, clone shallow or just link it, write the catalog lines with license and risk notes, and record it in the manifest and changelog. Use when the user pastes a GitHub URL or a path and wants it in their toolbox.'
+description: 'Add a tool to ~/toolbox without installing it: decide the kind, clone shallow, just link it, or log a free website, write the catalog lines with license and risk notes, and record it in the manifest (or websites.json) and changelog. Use when the user pastes a GitHub URL, a path, a website, or a post that names tools and wants them in their toolbox.'
 ---
 
 # toolbox-add
 
-`/toolbox-add <github url | local path>`
+`/toolbox-add <github url | local path | website url | post or video that names tools>`
+
+A post or video usually names several tools. Pull every one out, then run the steps below
+once per tool: repos into the manifest, websites into `websites.json`.
 
 Puts a tool where `/tool-audit` can find it later. It **never installs anything**: no
 `npm install`, no `pip install`, no `brew`, no `npx skills add`, no setup or bootstrap
@@ -27,16 +30,19 @@ skill produces.
 | **agent-tool** | ships skills, agents, hooks, an MCP server, or a library an agent drives | shallow clone into `~/toolbox/repos/<owner>__<name>`, catalogued in detail |
 | **application** | a program the user would install and use themselves (Ollama, Langflow, OpenHands, a desktop app) | **never cloned.** One catalog line with the install link |
 | **reference-list** | an Awesome list, a link directory, a catalogue of other people's tools | clone into `~/toolbox/sources/<owner>__<name>`, contents never catalogued |
+| **website** | a web app or hosted API that does a job with no repo to clone (an image tool, a converter, a scheduler with a free API) | **never cloned, never signed up for.** One entry in `~/toolbox/websites.json` |
 
 If it is ambiguous, say which two it sits between and pick the cheaper one. A
 reference-list wrongly treated as an agent-tool floods the catalog with a thousand things
 the user does not have.
 
-**Not a repo at all?** A hosted website or AI wrapper that needs an account (a video site,
-a "free unlimited" generator, a SaaS dashboard) is not a toolbox tool. Don't add it and
-don't sign up for it. List it in the inbox file as "hosted service, not added" with its
-claim marked unverified. The toolbox is for things a terminal agent can scan and use, not
-more accounts to create and experiment with.
+**Not a repo at all?** It is a **website**. Free web tools often do a job no repo on the
+shelf can, so they are logged, not discarded. Log it in `websites.json` (Step 2d) when it
+has a free tier that does something real, even if that tier needs a free account. Don't
+sign up for it, start a trial, or enter a card: record what the free tier needs and leave
+that to the user. Discard only when nothing survives the fact-check below (a "free
+unlimited" claim that turns out to be a trial with a card, a wrapper with no free use, a
+sponsor plug with nothing behind it), and say so in the inbox file.
 
 ## Step 1b: fact-check the claim, then decide how it enters
 
@@ -124,9 +130,38 @@ line in `TOOLS-MEMORY.md`'s Sources section, which `bin/build-catalog.sh` genera
 build and a hand edit is lost). `/tool-audit` greps these only when the toolbox comes up
 empty for a goal.
 
+## Step 2d: website
+
+No clone, no account. Add one object to `~/toolbox/websites.json` under `sites`:
+
+```json
+{
+  "name": "Display name",
+  "url": "https://the-tool.example",
+  "does": "what it does, in the user's terms, one sentence",
+  "categories": ["web-design"],
+  "free": "free | freemium | trial | paid",
+  "account": "none | free account | paid account",
+  "api": true,
+  "limits": "what the free tier stops at; for an API, whether the API itself is free",
+  "verified": "YYYY-MM-DD pricing page | not checked",
+  "added": "YYYY-MM-DD",
+  "source": "where the user found it (post or video id)",
+  "risks": ["uploads client files to a third party", "free tier watermarks output"]
+}
+```
+
+`categories` use the job names from `bin/build-catalog.sh` (web-design, frontend-code,
+backend-data, marketing-copy, social-content, video-audio, research, security-review,
+memory-context, agent-orchestration, business-ops, misc). Check the free claim on the site's
+own pricing page and put the date in `verified`; if the page can't be reached, write
+`not checked`, never a guess. A site with an MCP server or a CLI as well gets both: the
+website entry here and the repo or template through the steps above.
+
 ## Step 3: always, for every kind
 
-1. **Update `~/toolbox/manifest.json`.** Create it if missing, with this shape:
+1. **Update `~/toolbox/manifest.json`** (repos and applications) **or
+   `~/toolbox/websites.json`** (websites, Step 2d). Create the manifest if missing, with this shape:
 
 ```json
 {

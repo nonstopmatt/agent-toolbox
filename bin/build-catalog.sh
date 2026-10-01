@@ -348,6 +348,37 @@ for cat in CATEGORIES:
     assert_clean(f"catalog/{cat}.md", out)
     (CATALOG / f"{cat}.md").write_text(out)
 
+# Websites: free web apps with no repo (websites.json, written by /toolbox-add). They get
+# their own file instead of joining the job categories, so a hosted tool is never mistaken
+# for something on the shelf. library.py indexes every line as kind `website`.
+web_lines = []
+wf = TB / "websites.json"
+if wf.exists():
+    try:
+        sites = json.loads(wf.read_text()).get("sites", [])
+    except Exception:
+        sites = []
+    for s in sorted(sites, key=lambda s: s.get("name", "").lower()):
+        does = re.sub(r"\s+", " ", s.get("does", "")).strip()
+        cats = s.get("categories") or categorize(s.get("name", ""), does)
+        meta = (f"free: {s.get('free', '?')} · account: {s.get('account', '?')} · "
+                f"api: {'yes' if s.get('api') else 'no'}"
+                + (f" · limits: {s['limits']}" if s.get("limits") else "")
+                + f" · verified: {s.get('verified', 'not checked')}")
+        risks = "; ".join(s.get("risks", []))
+        web_lines.append(f"- website | {s.get('name', '?')} | {does[:200]} · {meta} | {s.get('url', '?')} | "
+                         f"{', '.join(cats)}" + (f" | risks: {risks[:200]}" if risks else ""))
+        all_items.append((0, "website", s.get("name", "?"), cats, s.get("url", "?")))
+web_body = ["# websites", "", f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M %Z')}", f"Count: {len(web_lines)}", "",
+            "Free or freemium web apps with no repo. Source of truth: websites.json (edit that, not this file).",
+            "Line format: `- website | name | what it does · free · account · api · limits · verified | url | categories | risks`.",
+            "Use one by opening it (WebFetch, claude-in-chrome) or through its API. Never sign up, start a",
+            "trial or enter a card without the user's yes, and never upload client material under NDA.",
+            ""] + web_lines + [""]
+web_out = "\n".join(web_body) + "\n"
+assert_clean("catalog/websites.md", web_out)
+(CATALOG / "websites.md").write_text(web_out)
+
 # Write unmatched list for report
 (CATALOG / "_unmatched.txt").write_text("\n".join(unmatched) + ("\n" if unmatched else ""))
 
@@ -380,6 +411,7 @@ mem.append("## Categories")
 mem.append("")
 for cat in CATEGORIES:
     mem.append(f"- **{cat}** ({cat_counts.get(cat, 0)}): {blurb[cat]} → `catalog/{cat}.md`")
+mem.append(f"- **websites** ({len(web_lines)}): free web apps with no repo, any job. → `catalog/websites.md` (from websites.json)")
 mem.append("")
 mem.append("## Review dates")
 mem.append("")
@@ -477,7 +509,7 @@ assert_clean("TOOLS-MEMORY.md", mem_out)
 # meta
 meta = {
     "generated": datetime.now().isoformat(),
-    "counts": cat_counts,
+    "counts": dict(cat_counts, websites=len(web_lines)),
     "total_lines_tools_memory": len(mem),
     "unmatched": len(unmatched),
     "unmatched_sample": unmatched[:60],

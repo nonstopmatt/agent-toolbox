@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>Download every AI tool you find. Break nothing.</b><br>
-  A shelf for skills, agents, plugins and MCP servers. Your coding agent borrows only what each task needs.
+  A shelf for skills, agents, plugins, MCP servers and free web tools. Your coding agent borrows only what each task needs.
 </p>
 
 <p align="center">
@@ -57,7 +57,8 @@ flowchart LR
     B --> C[("~/toolbox<br>the shelf")]
     D["You give a task"] --> E["/tool-audit<br>searches the whole shelf by meaning"]
     C --> E
-    E --> F["Loadout<br>max 5 skills · 5 agents · 3 MCP · 2 plugins"]
+    W["Free websites<br>(no repo, logged in websites.json)"] --> E
+    E --> F["Loadout<br>up to 10 tools across kinds · max 3 MCP · 2 plugins"]
     F --> G["Borrowed for this<br>session only"]
     G --> H["Ledger<br>what worked, what didn't"]
     H -. "proven tools rise to the top" .-> E
@@ -102,10 +103,11 @@ The shelf, and the system for using it.
 - `bin/library.py` sweeps the **whole** library (about 2,150 items on my machine: skills, plugin skills, agents, MCP servers, connectors, design systems, notes about local tools, credential names) into one local index, then searches it by meaning with a local embedding model. Every audit starts with it and reports `COVERAGE searched N of N`, so a thin search is visible.
 - `capabilities.md` lists every job and every tool that can do it, in the order to try them. When one fails (paywall, spend cap, signed out, broken), the audit moves to the next instead of giving up.
 - `TOOLS-MEMORY.md` is the category index plus the Proven list. `catalog/` splits everything by job.
-- `my-skills/tool-audit` sweeps everything, shortlists with a subagent, then picks a small loadout per task with hard caps and a backup for every slot, borrows agents and skills by reading their files instead of installing them, launches MCP servers for one session only, and records how it went in a ledger.
-- `my-skills/toolbox-add` adds a repo without installing it: shallow clone into quarantine, no install scripts, no live-config writes, then it updates the manifest and the index.
+- `websites.json` is a knowledge base of free web apps that have no repo (image tools, converters, schedulers with free APIs). A lot of jobs are one upload on the right website, so the audit searches these alongside everything else. `catalog/websites.md` is generated from it.
+- `my-skills/tool-audit` sweeps everything, shortlists with a subagent, then picks a loadout of up to 10 tools across at least three kinds, with a backup for every slot, borrows agents and skills by reading their files instead of installing them, launches MCP servers for one session only, and records how it went in a ledger.
+- `my-skills/toolbox-add` adds a repo without installing it: shallow clone into quarantine, no install scripts, no live-config writes, then it updates the manifest and the index. A tool that is only a website goes into `websites.json` instead, with its free tier fact-checked and nothing signed up for.
 - `my-skills/skill-audit` and `my-skills/self-improvement-report` are smaller helpers.
-- `manifest.json` records every upstream with its URL, license and pinned commit. `bin/bootstrap.sh` rebuilds everything the manifest tracks on a new machine. `bin/sync.sh` rebuilds the catalog, scans for secrets and pushes.
+- `manifest.json` records every upstream with its URL, license and pinned commit. `bin/bootstrap.sh` rebuilds everything the manifest tracks on a new machine. `bin/sync.sh` rebuilds the catalog, scans for secrets and pushes. `bin/pull.sh` goes the other way: it pulls changes made on GitHub and refreshes the live copies of these skills, so run it before `sync.sh` when the repo changed somewhere else.
 - `docs/SETUP.md` explains the system to your coding agent, if you want to adopt it.
 
 Most of what the catalog lists is other people's work that I found and organized. None of their code is in this repo, only links back to them. The part I built is the system for using a lot of it without breaking your agent.

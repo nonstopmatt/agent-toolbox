@@ -12,7 +12,8 @@ Sources (all optional, missing ones are skipped and reported):
   toolbox catalog (full descriptions read from each SKILL.md / agent file, not the truncated line),
   live skills (~/.claude/skills), extra skill/design-system roots and memory dirs from
   library-sources.json, MCP servers (names only), connectors seen in the live session
-  (index/session.txt), API key NAMES (never contents), capabilities.md chains.
+  (index/session.txt), API key NAMES (never contents), capabilities.md chains, and free
+  websites (catalog/websites.md, generated from websites.json) as kind `website`.
 
 Embeddings come from a local Ollama model (default nomic-embed-text). If Ollama is down the
 search falls back to keyword scoring and says so, it never silently narrows.
@@ -42,7 +43,7 @@ DEFAULT_CFG = {
 }
 # per-kind quota in `find` so one kind can never crowd out the rest
 QUOTA = {"skill": 10, "agent": 6, "mcp": 4, "connector": 3, "plugin": 3, "design-system": 4,
-         "note": 6, "app": 3, "key": 3}
+         "note": 6, "app": 3, "key": 3, "website": 5}
 
 def cfg():
     c = dict(DEFAULT_CFG)
@@ -91,6 +92,8 @@ def items():
             if full and os.path.isfile(full):
                 _, d2, para = front(full); desc = (d2 or desc) + (" " + para if para else "")
             k = {"mcp-mine": "mcp", "mcp-discovered": "mcp", "application": "app", "agent-tool": "app"}.get(kind, kind)
+            if k == "website":   # path is the URL; the job categories sit in the next column
+                cat = parts[4] if len(parts) > 4 else cat
             add(k, name, f"[{cat}] {desc}", path, "catalog")
     # 2. live + extra skill roots
     for root in c["skill_roots"] + c["design_skill_roots"]:

@@ -19,7 +19,7 @@ recommendation was not worth the delay on every session. Do not reinstate either
 
 ## What changes
 
-**Scope.** Skills only, live and parked. Cap of 5 stands. Ignore the agent, MCP and plugin
+**Scope.** Skills only, live and parked. Up to 10 skills, the same ceiling as `/tool-audit`; fewer only when the goal does not need more, with one line saying why. Ignore the agent, MCP and plugin
 caps: if the answer to the goal is an MCP server or a plugin, say so in one line and hand
 over to `/tool-audit`, which can write a launcher. This skill never writes one.
 
@@ -32,7 +32,7 @@ python3 ~/toolbox/bin/library.py find "<goal + synonyms>" -n 60 --named "<skills
 ```
 
 Read its `COVERAGE searched N of N` line first. For anything beyond a quick lookup, hand the
-`--json` output to one sweep subagent that opens each plausible SKILL.md and returns 15 to 25
+`--json` output to one sweep subagent that opens each plausible SKILL.md and returns 20 to 30
 real skill candidates with what each would produce for this goal. The older keyword planner
 (`skill_audit.py plan`) is still useful for its safety tiers (auto vs ask) and the experiment
 pick: run it after the sweep and apply its tiers to the swept candidates.

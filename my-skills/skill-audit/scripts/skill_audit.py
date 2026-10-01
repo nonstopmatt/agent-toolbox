@@ -7,7 +7,7 @@ the ledger has learned, deliberately reserves slots for skills that have never b
 tried, and prints a run plan split into what may be run automatically and what has
 to be asked about first.
 
-  plan      --goal "..." [--situation tag] [-n 5] [--explore 1] [--cwd .]
+  plan      --goal "..." [--situation tag] [-n 10] [--explore 1] [--cwd .]
   record    --skill NAME --situation tag --outcome worked|mixed|failed|skipped
             [--goal "..."] [--note "..."] [--mode exploit|explore]
   report    [--situation tag]        scoreboard, also written to scoreboard.md
@@ -567,7 +567,7 @@ def main():
     p = sub.add_parser("plan")
     p.add_argument("--goal", required=True)
     p.add_argument("--situation", default="")
-    p.add_argument("-n", type=int, default=5)
+    p.add_argument("-n", type=int, default=10)
     p.add_argument("--explore", type=int, default=1)
     p.add_argument("--cwd", default=os.getcwd())
     p.add_argument("--session", default="", help="names visible in the live session (see build_inventory.py --session)")
@@ -581,7 +581,7 @@ def main():
     p.add_argument("--goal", default="")
     p.add_argument("--note", default="")
     p.add_argument("--kind", default="skill",
-                   choices=["skill", "agent", "mcp", "plugin", "cli", "note", "connector", "design-system", "app", "key"],
+                   choices=["skill", "agent", "mcp", "plugin", "cli", "note", "connector", "design-system", "app", "key", "website"],
                    help="what kind of tool this row is about (one ledger, all kinds)")
     p.add_argument("--loadout", default="", help="loadout name, when the row came from one")
     p.add_argument("--failure-type", default="", choices=["", "auth", "paywall", "cap", "missing", "bug", "output"],

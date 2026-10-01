@@ -31,6 +31,7 @@ bin/*
 !bin/library.py
 !bin/web_fetch.py
 !bin/scrapling_fetch.py
+!bin/pull.sh
 
 # Local search index: holds memory-note text and embeddings, never committed
 index/

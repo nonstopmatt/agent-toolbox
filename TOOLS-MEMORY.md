@@ -20,6 +20,7 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 - **agent-orchestration** (148): Agents, skills routing, multi-agent flows. → `catalog/agent-orchestration.md`
 - **business-ops** (146): CRM, sales, ops, billing, client work. → `catalog/business-ops.md`
 - **misc** (9): Uncategorized or cross-cutting tools. → `catalog/misc.md`
+- **websites** (15): free web apps with no repo, any job. → `catalog/websites.md` (from websites.json)
 
 ## Review dates
 

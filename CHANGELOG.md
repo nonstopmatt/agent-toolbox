@@ -1,5 +1,22 @@
 # toolbox CHANGELOG
 
+## 2026-10-01 — websites knowledge base, loadouts of up to 10 tools
+
+- `websites.json`: free web apps with no repo, with free tier, account, API, limits and a
+  `verified` date per site. Seeded with 15 common ones, all marked `not checked` (the cloud
+  session that wrote them couldn't reach the sites). `bin/build-catalog.sh` writes
+  `catalog/websites.md` from it; `bin/library.py` indexes each as kind `website` with its own
+  search quota, so websites show up in every audit
+- `/toolbox-add`: a tool that is only a website is now logged in `websites.json` (Step 2d)
+  instead of being turned away. Still no sign-ups, trials or cards
+- `/tool-audit`: a loadout is up to 10 tools across at least three kinds (was 2 to 4 picks
+  under per-kind caps of 5). Per-kind ceilings: skills 10, agents 10, websites 5, MCP 3,
+  plugins 2. A loadout under 10 has to say why. Shortlist widened to 30 to 40, discovery
+  proposes up to 10 and runs one web search for free web apps
+- `/skill-audit`: up to 10 skills; the ledger accepts `--kind website`
+- `bin/pull.sh`: pull repo changes made elsewhere and refresh the live skills before the next
+  `sync.sh`, which would otherwise copy the old live skills back over them
+
 ## 2026-09-30 — YouTube Ua0APTMVcb8, AI LABS "8 GitHub repos" (7 added, 1 already here)
 
 Full table and claim check: `inbox/youtube-Ua0APTMVcb8-2026-09-30.md`. Nothing installed, no install

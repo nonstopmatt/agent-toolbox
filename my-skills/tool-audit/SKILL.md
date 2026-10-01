@@ -1,12 +1,13 @@
 ---
 name: tool-audit
-description: 'The single front door for picking tools for a goal: reads ~/toolbox, recommends a capped loadout, borrows or session-launches it, records how it went. Use when the user types /tool-audit or asks what to run for a goal.'
+description: 'The single front door for picking tools for a goal: reads ~/toolbox (skills, agents, MCP, plugins, repos and free websites), recommends a loadout of up to 10 tools across kinds, borrows or session-launches it, records how it went. Use when the user types /tool-audit or asks what to run for a goal.'
 ---
 
 # Tool audit
 
 One front door for every kind of tool the user has: skills, agents, MCP servers, plugins,
-CLIs, local services, API keys and their own scripts. `/skill-audit` is this skill scoped
+CLIs, local services, API keys, their own scripts, and free websites that can do a job
+with nothing to install (`~/toolbox/websites.json`). `/skill-audit` is this skill scoped
 to skills only. There is no third tool, and there is **one ledger**:
 `~/.claude/skill-audit/ledger.jsonl`. Never start a second log.
 
@@ -28,18 +29,35 @@ Neither runs on its own. The user types them.
 4. **Search everything, run few.** Every audit sweeps the whole library (section 2). The caps
    below limit what runs, never what is considered.
 
-## Hard caps on a loadout
+## Loadout size: up to 10 tools
+
+A loadout holds **up to 10 tools in total**, mixed across kinds. Ten is a ceiling, not a
+quota: a one-step goal may need two. But past audits used too few tools and leaned on the
+same habits, so the default is to fill the loadout with variety whenever the goal has
+more than one step:
+
+- Use **at least three kinds** (for example skill + agent + website, or MCP + skill +
+  local CLI) unless the goal is a single quick lookup.
+- If the loadout has **fewer than 10**, add one line saying why the rest would not help.
+  "Covered already" is a reason; "kept it simple" is not.
+- Prefer a tool the toolbox has never tried for this situation over a third tool that
+  does the same thing as one already picked.
+
+Per-kind ceilings inside the 10, because some kinds cost context every turn:
 
 | kind | cap |
 |---|---|
-| agents | 5 |
-| skills | 5 |
+| skills | 10 |
+| agents | 10 |
+| websites | 5 |
 | MCP servers | 3 |
 | plugins | 2 |
 
-Over the cap is not a loadout, it is the problem the toolbox was built to fix. Anything
-good that does not fit goes under **Runners-up** by name, one line each. If what is
-already live covers the goal, say so and stop: no loadout, no launcher, no ledger row.
+Borrowed skills and agents only cost context when read, so they can fill most of the ten.
+MCP servers and plugins load every tool definition into the session, which is the problem
+the toolbox was built to fix, so their caps stay low. Anything good that does not fit goes
+under **Runners-up** by name, one line each. If what is already live covers the goal, say
+so and stop: no loadout, no launcher, no ledger row.
 
 ## 1. Pin the goal and tag the situation
 
@@ -56,16 +74,17 @@ vocabulary needs a new tag.
 
 The library is about 2,150 items: toolbox catalog, live and plugin skills, Open Design skills
 and systems, design-md brand systems, memory notes (local tools the catalog cannot see), MCP
-servers, session connectors and built-ins, API key names. Search all of it, every run:
+servers, session connectors and built-ins, API key names, and free websites
+(`catalog/websites.md`, kind `website`). Search all of it, every run:
 
 ```bash
 python3 ~/toolbox/bin/library.py health                      # what is usable right now
-python3 ~/toolbox/bin/library.py find "<goal + synonyms>" -n 60 --named "<every tool the user named>"
+python3 ~/toolbox/bin/library.py find "<goal + synonyms>" -n 80 --named "<every tool the user named>"
 ```
 
 - `find` ranks by meaning (local Ollama embeddings) plus keywords, over **full** descriptions,
   and gives each kind a quota so skills can never crowd out agents, MCP servers, design systems,
-  memory-note tools or built-ins. Its first line is `COVERAGE searched N of N`. If it says less
+  memory-note tools, websites or built-ins. Its first line is `COVERAGE searched N of N`. If it says less
   than the whole library, or `KEYWORD ONLY`, fix that before judging the list (`ollama serve`,
   then `library.py index`).
 - Rebuild the index when anything was added: `python3 ~/toolbox/bin/library.py index`. Refresh
@@ -73,18 +92,21 @@ python3 ~/toolbox/bin/library.py find "<goal + synonyms>" -n 60 --named "<every 
   Artifact types, signed-out servers) because no file scan can see those.
 - Built-ins count as tools: Artifact types (Claude Design, Design System, Slides, Docs), Agent,
   WebSearch, WebFetch.
+- Websites count as tools. A free web app that does the job in one upload often beats a
+  skill that needs a key, so check `catalog/websites.md` hits before declaring a gap.
 
 ## 3. Shortlist with a sweep subagent
 
 For any goal bigger than one quick lookup, spawn ONE `general-purpose` subagent to do the
 reading, so breadth costs nothing in this context:
 
-> Run `python3 ~/toolbox/bin/library.py find "<goal>" -n 60 --json --named "<named>"`. Open the
+> Run `python3 ~/toolbox/bin/library.py find "<goal>" -n 80 --json --named "<named>"`. Open the
 > file behind every candidate that could plausibly serve the goal (SKILL.md, agent file,
-> DESIGN.md, memory note). Return 20 to 30 real candidates across kinds, each with: what it
-> would produce for THIS goal, what it needs to run (key, CLI, sign-in, money), and its health
-> status. Flag anything the user named. Drop keyword-only false matches. Do not run or install
-> anything.
+> DESIGN.md, memory note; for a website, its line in `catalog/websites.md`). Return 30 to 40
+> real candidates across kinds, each with: what it would produce for THIS goal, what it needs
+> to run (key, CLI, sign-in, account, money), and its health status. Include every website
+> that could do part of the job. Flag anything the user named. Drop keyword-only false
+> matches. Do not run, install or sign up for anything.
 
 Then pick from that shortlist. The loadout caps above limit what RUNS at once, never what is
 searched.
@@ -103,8 +125,11 @@ searched.
 - **Tools the user names are mandatory.** Run them, or state exactly why they cannot run
   (signed out, paywalled, missing) and what ran instead. Never drop one silently.
 - **Cross-kind quota.** A real audit considers at least one skill, one agent, one MCP server or
-  connector, one local app or memory-note tool, and one design system or reference whenever the
-  goal is visual. Say which kinds had nothing relevant.
+  connector, one local app or memory-note tool, one website, and one design system or reference
+  whenever the goal is visual. Say which kinds had nothing relevant.
+- **Websites need no install but can still cost.** A website pick that needs an account, a
+  trial, a card, or an upload of client material goes under Gaps with what it needs, and
+  waits for the user's yes like any other spend or sign-in.
 - `FAILED TWICE` in Proven counts only real failures (`bug`, `output`); account problems
   (`auth`, `paywall`, `cap`, `missing`) never mark a tool as failed.
 
@@ -123,8 +148,9 @@ short — check with `zsh -lc` before calling something missing.
 
 ## 6. Report
 
-Markdown, not a code fence. Two to four items under "Run these first". Bullets 16 words
-or fewer. Under 400 words unless the user asks for the full map.
+Markdown, not a code fence. Up to 10 items under "Run these first", in the order to run
+them, across at least three kinds when the goal has more than one step. Bullets 16 words or
+fewer. Under 600 words unless the user asks for the full map.
 
 ```
 # Tool audit: <goal>  ·  [<situation tag>]
@@ -136,12 +162,14 @@ COVERAGE: searched N of N (from library.py find) · shortlist of K across kinds 
    - what to feed it
    - backup if it fails: <next tool in its chain>
 
-## Loadout
-- agents (n/5): name — one line each
-- skills (n/5): name — one line each
+## Loadout (n/10)
+- skills (n/10): name — one line each
+- agents (n/10): name — one line each
+- websites (n/5): name — url, what it does here, free tier / account needed
 - MCP (n/3): name — what it unlocks here
 - plugins (n/2): name — what it unlocks here
-Activation: BORROW <these> · SESSION LAUNCH <these>, one command below.
+Activation: BORROW <these> · OPEN <websites> · SESSION LAUNCH <these>, one command below.
+Under 10: <one line on why more tools would not help>
 
 ## Runners-up
 - name — why it lost to the pick above
@@ -160,6 +188,10 @@ Activation: BORROW <these> · SESSION LAUNCH <these>, one command below.
 ## 7. Activation
 
 **BORROW is the default, for every agent and skill.** No install, no copy into `~/.claude`.
+
+**OPEN is for websites.** Use the site through WebFetch, claude-in-chrome or its API, in this
+session. No account, trial, card or upload of client material without the user's yes. When a
+site needs a sign-in, hand the user the URL and what to do there instead.
 
 - parked skill: read `~/toolbox/skills/<name>/SKILL.md` and follow it in this session.
 - parked agent: spawn a `general-purpose` subagent whose instructions are the body of
@@ -182,7 +214,7 @@ TB="$HOME/toolbox"
 AGENTS=$(python3 - "$TB" <<'PY'
 import json, os, sys
 tb = sys.argv[1]
-names = ["<parked-agent-1>", "<parked-agent-2>"]        # max 5
+names = ["<parked-agent-1>", "<parked-agent-2>"]        # max 10
 out = {}
 for n in names:
     p = os.path.join(tb, "agents", n + ".md")
@@ -218,7 +250,7 @@ what worked, what didn't. Then write one row per tool that actually ran:
 
 ```bash
 python3 ~/.claude/skills/skill-audit/scripts/skill_audit.py record \
-  --skill <name> --kind skill|agent|mcp|plugin|cli|note --situation <tag> \
+  --skill <name> --kind skill|agent|mcp|plugin|cli|note|website --situation <tag> \
   --outcome worked|mixed|failed|skipped --mode exploit|explore \
   --loadout <name or empty> --goal "<goal>" --note "<one line: what it actually gave>" \
   [--failure-type auth|paywall|cap|missing|bug|output]   # required when outcome is failed
@@ -239,18 +271,20 @@ idea, wrong depth), **failed** (cost time, gave nothing), **skipped** (planned, 
 An inflated grade only lies to the next session. If the user says a pick missed, record
 `failed` even if it felt productive.
 
-## 9. Discovery, only when the toolbox comes up empty
+## 9. Discovery, only when the toolbox comes up thin
 
-`~/toolbox/sources/` holds reference lists (Awesome, Awesome MCP Servers, Public APIs).
-**They are not tools and are never read in a normal audit.** When nothing in the toolbox
-fits the goal, say so plainly, then offer to search the sources:
+`~/toolbox/sources/` holds reference lists (Awesome, Awesome MCP Servers, Public APIs, free-for-dev).
+**They are not tools and are never read in a normal audit.** When the toolbox has fewer than
+three real candidates for the goal, say so plainly, then offer to search the sources and the web:
 
 ```bash
-grep -ri -n "<noun>" ~/toolbox/sources/ | head -30
+grep -ri -n "<noun>" ~/toolbox/sources/ | head -40
 ```
 
-Grep only, never read a whole file. Propose up to 5 candidates with upstream URLs and one
-line each on what it would add. Run `/toolbox-add <url>` only on the ones the user approves.
+Grep only, never read a whole file. Also run one WebSearch for a free web app that does the
+job ("free online <job> no signup"). Propose up to 10 candidates with upstream URLs and one
+line each on what it would add, repos and websites mixed. Run `/toolbox-add <url>` only on
+the ones the user approves; a website goes into `websites.json` the same way.
 
 ## 10. Subcommands
 
@@ -277,6 +311,7 @@ needs the user's explicit yes, every time, however well it scored.
 | `~/toolbox/health-overrides.json` | hand-kept paywalls, caps, signed-out tools |
 | `~/toolbox/TOOLS-MEMORY.md` | category index + Proven. Generated |
 | `~/toolbox/catalog/<category>.md` | raw catalog; library.py reads all of it |
+| `~/toolbox/websites.json` | free web apps with no repo. `catalog/websites.md` is generated from it |
 | `~/toolbox/skills/`, `agents/`, `mcp/mine/`, `plugins/INDEX.md` | what gets borrowed or launched |
 | `~/toolbox/loadouts/<name>.sh` | session launchers. Written here, run by the user |
 | `~/toolbox/sources/` | reference lists. Grep only, and only on an empty result |
