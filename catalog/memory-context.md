@@ -1,7 +1,7 @@
 # memory-context
 
-Generated: 2026-09-30 05:55 
-Count: 59
+Generated: 2026-10-04 20:14 
+Count: 60
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -64,4 +64,5 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | vfx-text-cursor | "Cursor light trail, chromatic rays, and directional flares for word-by-word quote reveals in video intros." | skills/vfx-text-cursor/SKILL.md
 - agent-tool | mksglu__context-mode | Context-window saver: runs tool work in a sandbox MCP server and returns only the answer to the main session. 23.8k stars. | (not cloned) | Elastic-2.0 (source-available) | WARN: Never enable. If wanted, the user decides and installs it themselves. | risks: NOT CLONED on purpose: catalog line only. MCP server + hooks on SessionStart, UserPromptSubmit, PreToolUse, PostToolUse, PreCompact and Stop, the stacking that broke this setup on 9/20; Elastic License 2.0: source-available, not open source, not redistributabl
 - application | Tencent__WeKnora | Document knowledge platform: RAG plus knowledge graph over your files. Docker app. 28.2k stars. | (not cloned) | MIT (third-party parts differ) | risks: Docker stack; UI and docs largely Chinese; lookalike: xiaohuangpin/WeKnora-pro, not chosen
+- agent-tool | tamaratran__fast-jev-compaction | Claude Code function-hook plugin that replaces the compaction summary with Jev decisions: every tool call/result is scored keep/truncate/drop in fast requests, kept content stays verbatim, user and as | repos/tamaratran__fast-jev-compaction | MIT | WARN: DO NOT INSTALL GLOBALLY (replay verdict 2026-10-04). Local backend fails or is slower on real long sessions. Revisit only with hosted Jev (paid, 25k state) or if Ollama lifts its 64 KiB / 64-question caps. | risks: needs TYPESAFE_API_KEY (paid); sends the whole conversation (texts, tool inputs, abridged results) to api.typesafe.ai on every compaction; hooks/fast-jev.ts builds requests without baseUrl, so the hook cannot use a local System One server without a one-line pa
 

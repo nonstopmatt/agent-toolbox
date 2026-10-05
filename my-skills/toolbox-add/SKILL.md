@@ -63,7 +63,7 @@ Then pick one outcome and say why:
   a license that bars redistribution).
 - **discard**: nothing useful survives the fact-check. Say so in the inbox file and add nothing.
 
-**Default to $0.** Never sign up, subscribe, start a trial, top up credits or enter a card.
+**Default to free.** Never sign up, subscribe, start a trial, top up credits or enter a card.
 If the useful part needs a paid tier or a key, the catalog line says so, names the free path
 if there is one, and leaves the spend to the user.
 
@@ -185,9 +185,14 @@ website entry here and the repo or template through the steps above.
 
 2. **Rebuild:** `~/toolbox/bin/build-catalog.sh`. The write guard aborts the build if a
    credential-shaped value reached any catalog file: if it fires, find what leaked before
-   doing anything else.
+   doing anything else. Then `python3 ~/toolbox/bin/library.py profile && python3
+   ~/toolbox/bin/library.py index`: profile writes a card for each new skill, agent, plugin or
+   app from its full source, and the step is done when `library.py find "<what the new tool
+   does>" -n 20` lists the addition with a `DOES:` line. An MCP server that ships with no README,
+   manifest description or marketplace blurb gets a line in `~/toolbox/mcp-products.json`
+   saying what the product is.
 
-3. **Append to `~/toolbox/CHANGELOG.md`** (create if missing), one block per addition:
+3. **Add to the TOP of `~/toolbox/CHANGELOG.md`** (newest first: `sync.sh` takes the commit message from the first `## ` line), one block per addition:
 
 ```markdown
 ## 2026-09-21 — added owner__name (agent-tool)

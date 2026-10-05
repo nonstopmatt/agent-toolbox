@@ -105,3 +105,14 @@ DEFAULT for any scrape/crawl/page-fetch job (Matt, 2026-09-22: Firecrawl is out 
 1. expert-intel skill (local expert library, transcripts, web)
 2. gstack-office-hours (idea validation)
 3. Pricing Analyst / Proposal Strategist agents
+
+## Typed decisions, judging, classifying, reranking (Jev-style, probabilities not text)
+1. Ollama 0.35.1 decision model `tev1-16k` (tev1:4b with a 16k window) at http://127.0.0.1:11434/v1/systemone, free, local
+2. tinyjev 0.6B at http://127.0.0.1:8077/v1/systemone (~25 ms per judgment, weak judge), `library.py find --judge` auto-starts it
+3. jev-mcp session-launched with JEV_PROVIDER=compatible and JEV_API_BASE_URL set to step 1 (12 judgment tools as MCP), free
+4. Hosted TypeSafe Jev (paid key, sends the state to TypeSafe): ask first
+
+## Context compaction (keep sessions lean)
+1. Claude Code built-in summary (default, every session)
+2. `~/toolbox/loadouts/jev-compaction-local.sh`: fast-jev-compaction patched to local Ollama tev1-16k. Replay on 9 real long sessions: 6 failed, the rest 5-17x slower. Short sessions only
+3. fast-jev-compaction on hosted Jev (paid key, sends the whole conversation to TypeSafe): ask first

@@ -11,7 +11,8 @@ with nothing to install (`~/toolbox/websites.json`). `/skill-audit` is this skil
 to skills only. There is no third tool, and there is **one ledger**:
 `~/.claude/skill-audit/ledger.jsonl`. Never start a second log.
 
-Neither runs on its own. The user types them.
+`/skill-audit` runs only when the user types it. `/tool-audit` also runs once per session on
+the user's first task (see the tool-audit line in `~/.claude/CLAUDE.md`).
 
 ## The four rules that hold for every run
 
@@ -32,16 +33,16 @@ Neither runs on its own. The user types them.
 ## Loadout size: up to 10 tools
 
 A loadout holds **up to 10 tools in total**, mixed across kinds. Ten is a ceiling, not a
-quota: a one-step goal may need two. But past audits used too few tools and leaned on the
-same habits, so the default is to fill the loadout with variety whenever the goal has
-more than one step:
+quota: a one-step goal may need two. But audits used to pick too few tools and lean on the
+same habits (Matt, 2026-10-01), so the default is to fill the loadout with variety whenever
+the goal has more than one step:
 
 - Use **at least three kinds** (for example skill + agent + website, or MCP + skill +
   local CLI) unless the goal is a single quick lookup.
 - If the loadout has **fewer than 10**, add one line saying why the rest would not help.
   "Covered already" is a reason; "kept it simple" is not.
-- Prefer a tool the toolbox has never tried for this situation over a third tool that
-  does the same thing as one already picked.
+- Prefer a tool never tried for this situation over a third tool that does the same thing
+  as one already picked.
 
 Per-kind ceilings inside the 10, because some kinds cost context every turn:
 
@@ -72,41 +73,62 @@ vocabulary needs a new tag.
 
 ## 2. Sweep the WHOLE library (never a sample)
 
-The library is about 2,150 items: toolbox catalog, live and plugin skills, Open Design skills
-and systems, design-md brand systems, memory notes (local tools the catalog cannot see), MCP
-servers, session connectors and built-ins, API key names, and free websites
-(`catalog/websites.md`, kind `website`). Search all of it, every run:
+The library: toolbox catalog, live and plugin skills, Open Design skills and systems, design-md
+brand systems, memory notes, Matt's own scripts (every script a memory note names, its sibling
+scripts, `~/.claude/scripts`, `toolbox/bin`), MCP servers, session connectors and built-ins,
+tools only the ledger knows, API key names, and free websites (`catalog/websites.md`, kind
+`website`). Search all of it, every run:
 
 ```bash
 python3 ~/toolbox/bin/library.py health                      # what is usable right now
-python3 ~/toolbox/bin/library.py find "<goal + synonyms>" -n 80 --named "<every tool the user named>"
+python3 ~/toolbox/bin/library.py find "<goal + synonyms>" --named "<every tool the user named>" | head -2
 ```
 
-- `find` ranks by meaning (local Ollama embeddings) plus keywords, over **full** descriptions,
-  and gives each kind a quota so skills can never crowd out agents, MCP servers, design systems,
-  memory-note tools, websites or built-ins. Its first line is `COVERAGE searched N of N`. If it says less
-  than the whole library, or `KEYWORD ONLY`, fix that before judging the list (`ollama serve`,
-  then `library.py index`).
-- Rebuild the index when anything was added: `python3 ~/toolbox/bin/library.py index`. Refresh
-  `~/toolbox/index/session.txt` from the live session's tool list (connectors, built-ins such as
-  Artifact types, signed-out servers) because no file scan can see those.
+- **Cards are the understanding.** Every tool carries a card written from its FULL source by the
+  local model (`library.py profile`): `does`, `use_when`, `not_for`, `input`, `output`, `needs`,
+  and `basis` (what the card was read from: `full-file`, `plugin-tree`, `session-tools`,
+  `manifest`, `known-product`, `blurb`, `name-only`). `find` ranks by meaning over the cards, and
+  each hit also shows a `LEDGER` line: how that tool actually went in past runs. A `name-only`
+  or `blurb` card is a guess about the tool: open the source before relying on it.
+- The two header lines are the coverage report. `COVERAGE searched N of N` must cover the whole
+  library in `semantic+keyword` mode; `KEYWORD ONLY` means `ollama serve`, then `library.py
+  index`. `UNDERSTANDING profiled X of Y` must have no `UNPROFILED` count; when it does, start
+  `library.py profile` detached (it only writes cards for new or changed tools), run
+  `library.py index` when it finishes, and name the unprofiled count under Gaps for this run.
+- `--judge` adds a Jev-style rerank: every candidate gets a typed yes/no probability from a System
+  One endpoint (`judge_url` in library.py: local Ollama `tev1-16k` by default, hosted Jev with a
+  key, or any compatible server), about 20 s a search. Its eval gain is small but moves every
+  measure the same way (surfaced 41 to 45%, median rank 23 to 19), so run it once per audit, on
+  the whole-goal search, and leave the per-job searches unjudged. The mode line reads `+ judge
+  <model> (N judged in Xs)` or `JUDGE OFF (why)`; JUDGE OFF is a Gap, never a stop. A new backend
+  replaces the default only by beating the current one on `library.py eval --judge`.
+- Refresh `~/toolbox/index/session.txt` (names, built-in skills as `skill:<name>`) and
+  `index/session-tools.txt` (`server | tool names`) from the live session's tool list whenever a
+  server or connector is new, because no file scan can see those. An MCP server with no session
+  tools, manifest entry or marketplace blurb gets one line in `~/toolbox/mcp-products.json`
+  saying what the product is; its config file is never read.
 - Built-ins count as tools: Artifact types (Claude Design, Design System, Slides, Docs), Agent,
   WebSearch, WebFetch.
 - Websites count as tools. A free web app that does the job in one upload often beats a
-  skill that needs a key, so check `catalog/websites.md` hits before declaring a gap.
+  skill that needs a key, so check `website` hits before declaring a gap. They have no card:
+  their catalog line (free tier, account, API, limits, verified date) is the description.
 
 ## 3. Shortlist with a sweep subagent
 
 For any goal bigger than one quick lookup, spawn ONE `general-purpose` subagent to do the
 reading, so breadth costs nothing in this context:
 
-> Run `python3 ~/toolbox/bin/library.py find "<goal>" -n 80 --json --named "<named>"`. Open the
-> file behind every candidate that could plausibly serve the goal (SKILL.md, agent file,
-> DESIGN.md, memory note; for a website, its line in `catalog/websites.md`). Return 30 to 40
-> real candidates across kinds, each with: what it would produce for THIS goal, what it needs
-> to run (key, CLI, sign-in, account, money), and its health status. Include every website
-> that could do part of the job. Flag anything the user named. Drop keyword-only false
-> matches. Do not run, install or sign up for anything.
+> Split the goal into its 2 to 5 distinct jobs (for "proposal PDF + DM": price it, write it,
+> design the PDF, write the DM). Run `python3 ~/toolbox/bin/library.py find "<job>" -n 60 --json
+> --named "<named>"` once per job, and once for the whole goal with `--judge` added. Each candidate has a `card` (what
+> it does, use_when, not_for, needs, basis) and maybe a `ledger` line. Read every card and keep a
+> candidate only when you can name what it would produce for one of the jobs; drop it when the
+> job sits under its `not_for`. Open the source file behind each keeper whose card basis is
+> `name-only` or `blurb`, and behind your top 10, to confirm the card. Return 30 to 40 real
+> candidates across kinds, each with: the job it serves, what it would produce, what it needs to
+> run (key, CLI, sign-in, money), health status, ledger record, and whether you confirmed it from
+> source. Include every website that could do part of a job. Flag anything the user named.
+> Do not run, install or sign up for anything.
 
 Then pick from that shortlist. The loadout caps above limit what RUNS at once, never what is
 searched.
@@ -129,7 +151,8 @@ searched.
   whenever the goal is visual. Say which kinds had nothing relevant.
 - **Websites need no install but can still cost.** A website pick that needs an account, a
   trial, a card, or an upload of client material goes under Gaps with what it needs, and
-  waits for the user's yes like any other spend or sign-in.
+  waits for the user's yes like any other spend or sign-in. One marked `verified: not
+  checked` goes under Gaps until its free tier is confirmed.
 - `FAILED TWICE` in Proven counts only real failures (`bug`, `output`); account problems
   (`auth`, `paywall`, `cap`, `missing`) never mark a tool as failed.
 
@@ -154,11 +177,11 @@ fewer. Under 600 words unless the user asks for the full map.
 
 ```
 # Tool audit: <goal>  ·  [<situation tag>]
-COVERAGE: searched N of N (from library.py find) · shortlist of K across kinds · named tools: <status>
+COVERAGE: searched N of N · profiled X of Y (from library.py find) · shortlist of K across kinds · named tools: <status>
 
 ## Run these first
 1. `/skill` or agent `name` — what it produces
-   - why it fits (one sentence)
+   - why it fits (one sentence, from its card or source, not its name)
    - what to feed it
    - backup if it fails: <next tool in its chain>
 
@@ -189,9 +212,9 @@ Under 10: <one line on why more tools would not help>
 
 **BORROW is the default, for every agent and skill.** No install, no copy into `~/.claude`.
 
-**OPEN is for websites.** Use the site through WebFetch, claude-in-chrome or its API, in this
-session. No account, trial, card or upload of client material without the user's yes. When a
-site needs a sign-in, hand the user the URL and what to do there instead.
+**OPEN is for websites.** Use the site through `web_fetch.py`, claude-in-chrome or its API, in
+this session. No account, trial, card or upload of client material without the user's yes.
+When a site needs a sign-in, hand the user the URL and what to do there instead.
 
 - parked skill: read `~/toolbox/skills/<name>/SKILL.md` and follow it in this session.
 - parked agent: spawn a `general-purpose` subagent whose instructions are the body of
@@ -259,7 +282,7 @@ python3 ~/.claude/skills/skill-audit/scripts/skill_audit.py record \
 Then regenerate Proven from the ledger:
 
 ```bash
-~/toolbox/bin/build-catalog.sh
+~/toolbox/bin/build-catalog.sh && python3 ~/toolbox/bin/library.py index   # index attaches the new ledger rows to each tool
 ```
 
 Proven is written **by the generator, from the ledger** — never by hand into
@@ -273,12 +296,12 @@ An inflated grade only lies to the next session. If the user says a pick missed,
 
 ## 9. Discovery, only when the toolbox comes up thin
 
-`~/toolbox/sources/` holds reference lists (Awesome, Awesome MCP Servers, Public APIs, free-for-dev).
+`~/toolbox/sources/` holds reference lists (Awesome, Awesome MCP Servers, Public APIs).
 **They are not tools and are never read in a normal audit.** When the toolbox has fewer than
 three real candidates for the goal, say so plainly, then offer to search the sources and the web:
 
 ```bash
-grep -ri -n "<noun>" ~/toolbox/sources/ | head -40
+/usr/bin/grep -ri -n "<noun>" ~/toolbox/sources/ | head -40
 ```
 
 Grep only, never read a whole file. Also run one WebSearch for a free web app that does the
@@ -293,7 +316,7 @@ the ones the user approves; a website goes into `websites.json` the same way.
 | `/tool-audit <goal>` | the run above |
 | `/tool-audit save <name>` | write the current picks as `~/toolbox/loadouts/<name>.sh` |
 | `/tool-audit <name>` | print the command for a saved loadout (never runs it) |
-| `/tool-audit refresh` | `~/toolbox/bin/build-catalog.sh`, then `library.py index` and `library.py health` |
+| `/tool-audit refresh` | `~/toolbox/bin/build-catalog.sh`, `library.py profile` (detached; new or changed tools only), `library.py index`, `library.py health`, then `library.py eval` and report its number |
 | `/tool-audit prune` | list tools never picked in 30 days, plus duplicates. Recommend only, never move |
 | `/tool-audit park <tool>` | propose the move to `~/toolbox/`, show it, wait for yes |
 | `/tool-audit debrief` | section 8 |
@@ -305,9 +328,11 @@ needs the user's explicit yes, every time, however well it scored.
 
 | path | what it is |
 |---|---|
-| `~/toolbox/bin/library.py` | index / health / find over the whole library. Run every audit |
+| `~/toolbox/bin/library.py` | index / profile / health / find / eval over the whole library. Run every audit |
+| `library.py eval` | ledger replay: of the tools that worked for a goal, how many does `find` surface for that goal. The one score for whether the index understands the toolbox; rerun after any change to cards, prompts or ranking |
+| `~/toolbox/mcp-products.json` | hand-kept: what the product behind a name-only MCP server is |
 | `~/toolbox/capabilities.md` | fallback chains per job. Walk them on any failure |
-| `~/toolbox/index/` | library.jsonl, embeddings, health.json, session.txt (local, never committed) |
+| `~/toolbox/index/` | library.jsonl, embeddings, profiles.json (the cards), health.json, session.txt, session-tools.txt, profile.log (local, never committed) |
 | `~/toolbox/health-overrides.json` | hand-kept paywalls, caps, signed-out tools |
 | `~/toolbox/TOOLS-MEMORY.md` | category index + Proven. Generated |
 | `~/toolbox/catalog/<category>.md` | raw catalog; library.py reads all of it |

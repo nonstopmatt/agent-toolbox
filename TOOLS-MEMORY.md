@@ -9,15 +9,15 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 ## Categories
 
 - **web-design** (190): UI/UX, layouts, brand, CSS/design systems. → `catalog/web-design.md`
-- **frontend-code** (107): React/Next and browser UI implementation. → `catalog/frontend-code.md`
+- **frontend-code** (108): React/Next and browser UI implementation. → `catalog/frontend-code.md`
 - **backend-data** (131): APIs, databases, auth, server code. → `catalog/backend-data.md`
 - **marketing-copy** (132): SEO, campaigns, positioning, landing copy. → `catalog/marketing-copy.md`
 - **social-content** (53): Social posts and channel content. → `catalog/social-content.md`
 - **video-audio** (80): Video/audio edit, generation, voice. → `catalog/video-audio.md`
-- **research** (125): Search, scrape, investigate, papers. → `catalog/research.md`
+- **research** (128): Search, scrape, investigate, papers. → `catalog/research.md`
 - **security-review** (80): Audits, SAST, vuln review. → `catalog/security-review.md`
-- **memory-context** (59): Memory, compaction, RAG/context tools. → `catalog/memory-context.md`
-- **agent-orchestration** (148): Agents, skills routing, multi-agent flows. → `catalog/agent-orchestration.md`
+- **memory-context** (60): Memory, compaction, RAG/context tools. → `catalog/memory-context.md`
+- **agent-orchestration** (151): Agents, skills routing, multi-agent flows. → `catalog/agent-orchestration.md`
 - **business-ops** (146): CRM, sales, ops, billing, client work. → `catalog/business-ops.md`
 - **misc** (9): Uncategorized or cross-cutting tools. → `catalog/misc.md`
 - **websites** (15): free web apps with no repo, any job. → `catalog/websites.md` (from websites.json)
@@ -31,30 +31,30 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 ## Proven
 
 - cli `gpt-image-2.5` — 6 wins, 2 fail [design-visual, website-design]
-- skill `the-humanizer` — 4 wins [content-social, cold-outreach]
+- skill `the-humanizer` — 4 wins [content-social, cold-outreach, cold-outreach-copy]
+- skill `design-motion-principles` — 4 wins [website-design, website-build, design-visual]
 - skill `claude-in-chrome` — 3 wins [research]
+- skill `expert-intel` — 3 wins [planning-strategy, sales-call, cold-outreach]
 - skill `humanizer` — 3 wins [copywriting, sales-call, client-delivery]
 - agent `research-worker` — 3 wins [client-delivery, research]
 - skill `animate` — 3 wins [website-design, website-build]
-- skill `design-motion-principles` — 3 wins [website-design, website-build, design-visual]
 - cli `D4Vinci__Scrapling` — 3 wins [research]
-- skill `expert-intel` — 2 wins [planning-strategy, sales-call]
+- skill `writing-for-agents` — 2 wins [ops-automation, code-build]
 - skill `diagram-design` — 2 wins [client-delivery]
 - skill `artifact-capabilities` — 2 wins [client-delivery, design-visual]
 - cli `library.py` — 2 wins [website-design, code-debug]
 - skill `delight` — 2 wins [website-design, website-build]
 - skill `hyperframes-animation` — 2 wins [website-design, website-build]
+- skill `impeccable` — 2 wins [website-build, client-delivery]
 - skill `marketing-skills:customer-research` — 2 wins [planning-strategy]
+- skill `toolbox-add` — 2 wins [ops-automation, code-build]
+- agent `general-purpose` — 2 wins [research, code-build]
+- cli `mlx_whisper` — 2 wins [client-delivery]
+- skill `dataviz` — 2 wins [client-delivery]
 - skill `social` — 2 wins, 1 fail [content-social]
 - skill `task-observer` — 1 win [ops-automation]
 - skill `update-config` — 1 win [ops-automation]
-- skill `writing-for-agents` — 1 win [ops-automation]
 - skill `Pricing Analyst` — 1 win [planning-strategy]
-- agent `Pricing Analyst` — 1 win [client-delivery]
-- agent `Proposal Strategist` — 1 win [client-delivery]
-- skill `design-inspo` — 1 win [client-delivery, design-visual, website-build]
-- skill `copywriting` — 1 win [client-delivery]
-- skill `yt-script` — 1 win [content-social]
 
 ## Sources
 

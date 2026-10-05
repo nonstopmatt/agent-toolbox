@@ -31,9 +31,12 @@ python3 ~/toolbox/bin/library.py index                 # if anything was added s
 python3 ~/toolbox/bin/library.py find "<goal + synonyms>" -n 60 --named "<skills the user named>"
 ```
 
-Read its `COVERAGE searched N of N` line first. For anything beyond a quick lookup, hand the
-`--json` output to one sweep subagent that opens each plausible SKILL.md and returns 20 to 30
-real skill candidates with what each would produce for this goal. The older keyword planner
+Read its `COVERAGE` and `UNDERSTANDING` lines first (tool-audit section 2 says what to do when
+either falls short). For anything beyond a quick lookup, hand the sweep to one subagent, briefed
+as tool-audit section 3 briefs it: one `find --json` per job in the goal, judge each skill by its
+card (`does`, `use_when`, `not_for`, ledger record), confirm the top picks and any `name-only` or
+`blurb` card from the SKILL.md itself, and return 20 to 30 real skill candidates with what each
+would produce for this goal. The older keyword planner
 (`skill_audit.py plan`) is still useful for its safety tiers (auto vs ask) and the experiment
 pick: run it after the sweep and apply its tiers to the swept candidates.
 

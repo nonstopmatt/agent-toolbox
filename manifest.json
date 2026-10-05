@@ -68,7 +68,7 @@
         "agent-orchestration",
         "research"
       ],
-      "desc": "Run open LLMs locally. ALREADY INSTALLED at ~/.local/bin/ollama, daemon answering on 127.0.0.1:11434 (HTTP 200). Rung 1 of the free-LLM fallback chain.",
+      "desc": "Run open LLMs locally. ALREADY INSTALLED at ~/.local/bin/ollama, daemon answering on 127.0.0.1:11434 (HTTP 200). Rung 1 of the free-LLM fallback chain. Upgraded to 0.35.1 on 2026-10-03 (checksum-verified tarball; 0.34.2 kept at ~/.local/ollama-0.34.2 for rollback): serves decision models at /v1/systemone, the local Jev (tev1:4b, tev1-16k).",
       "goals": [
         "content production",
         "SaaS builds"
@@ -963,6 +963,121 @@
       "path": "repos/dmmulroy__anti-slop",
       "added": "2026-09-30",
       "source": "YouTube Ua0APTMVcb8 (AI LABS, 2026-09-14)"
+    },
+    {
+      "kind": "agent-tool",
+      "license": "MIT",
+      "added": "2026-10-03",
+      "source": "Matt, 2026-10-03 (Jev / TypeSafe System One)",
+      "name": "browser-use__jev-ultrafast",
+      "categories": [
+        "research",
+        "frontend-code"
+      ],
+      "goals": [
+        "client websites",
+        "agency marketing"
+      ],
+      "desc": "Fast browser agent: TypeSafe's Jev picks the next operation and target element from an indexed DOM table in one request; a small LLM writes only the text it types. 7.1s Google Flights demo. Python library + local inspector at 127.0.0.1:8766. Does NOT read or rank tools.",
+      "risks": [
+        "needs TYPESAFE_API_KEY (paid, hosted Jev; endpoint hardcoded to api.typesafe.ai) and TEXT_MODEL_API_KEY (OpenRouter or DeepSeek, paid)",
+        "drives the user's real Chrome through browser-harness remote debugging; owned tabs share the signed-in Chrome profile",
+        "`uv sync` installs browser-harness 0.1.13 and httpx: not run",
+        "README opens with a Browser Use Cloud waitlist link: vendor pitch, ignore",
+        "MVP limits per README: no shadow roots, frames, canvas, uploads, pop-ups; DONE needs independent verification",
+        "overlaps live claude-in-chrome and computer-agents"
+      ],
+      "warn": "CATALOG ONLY until a Jev key exists: nothing copied into skills/, nothing installed.",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "path": "repos/browser-use__jev-ultrafast"
+    },
+    {
+      "kind": "agent-tool",
+      "license": "MIT",
+      "added": "2026-10-03",
+      "source": "Matt, 2026-10-03 (Jev / TypeSafe System One)",
+      "name": "jkudish__jev-mcp",
+      "categories": [
+        "agent-orchestration",
+        "research"
+      ],
+      "goals": [
+        "client websites",
+        "agency marketing",
+        "SaaS builds",
+        "content production"
+      ],
+      "desc": "MCP server with 12 typed-judgment tools on Jev (verify claims vs evidence, screen fetched pages for injection, find/rerank/classify by meaning, decide, compare, extract, audit, review a diff, gate completion), each returning calibrated probabilities in ~150-500 ms. Ships one skill (skills/jev) on when to call which tool.",
+      "risks": [
+        "needs a paid Jev provider key: TYPESAFE_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_API_TOKEN+ACCOUNT_ID or AI_GATEWAY_API_KEY; none on this Mac 2026-10-03",
+        "JEV_PROVIDER=compatible + JEV_API_BASE_URL points it at any System One-compatible endpoint, the path to a local open server",
+        "launch is `npx -y @jkudish/jev-mcp` (npm download on launch, Node 22+); package verified on npm 0.13.0",
+        "skills/jev/SKILL.md tells the agent to call the verify/screen/review/gate tools 'even when the answer looks obvious': drives paid calls on every check, ignore that line",
+        "README carries a paste-into-your-agent install block: not followed",
+        ".agents/setup is a contributor build script (npm ci + build): not run",
+        "no telemetry or shell calls in src (grep 2026-10-03); outbound only to the chosen provider"
+      ],
+      "warn": "SESSION-LAUNCH ONLY once a provider exists; never `claude mcp add` at user scope. skills/jev not copied (useless without the server).",
+      "url": "https://github.com/jkudish/jev-mcp",
+      "commit": "d68763353b4bbe5e4d1ad841e4f74137281f3384",
+      "path": "repos/jkudish__jev-mcp"
+    },
+    {
+      "kind": "agent-tool",
+      "license": "MIT",
+      "added": "2026-10-03",
+      "source": "Matt, 2026-10-03 (Jev / TypeSafe System One)",
+      "name": "tamaratran__fast-jev-compaction",
+      "categories": [
+        "memory-context",
+        "agent-orchestration"
+      ],
+      "goals": [
+        "SaaS builds",
+        "content production"
+      ],
+      "desc": "Claude Code function-hook plugin that replaces the compaction summary with Jev decisions: every tool call/result is scored keep/truncate/drop in fast requests, kept content stays verbatim, user and assistant text is never rewritten. Falls back to the built-in summary on error or under 25% reduction.",
+      "risks": [
+        "needs TYPESAFE_API_KEY (paid); sends the whole conversation (texts, tool inputs, abridged results) to api.typesafe.ai on every compaction",
+        "hooks/fast-jev.ts builds requests without baseUrl, so the hook cannot use a local System One server without a one-line patch (src/client.ts supports baseUrl)",
+        "turn.complete hook forces compaction at 60% context (compactAtPercent): with no key every session compacts early and falls back to the slow built-in summary",
+        "needs CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 (early-access) wherever Claude Code runs; Claude Code 2.1.289 here meets the 2.1.274 floor",
+        "reads TYPESAFE_API_KEY from the plugin option, the environment, or settings.json env",
+        "no telemetry or shell calls in src or hooks (read 2026-10-03)",
+        "REPLAY 2026-10-04 on 9 real long-session compactions, local Ollama tev1-16k: 6/9 failed (4 history over the 10k budget Ollama's 64 KiB cap forces, 2 over Ollama's 64-questions-per-request limit; each falls back to the built-in summary); the 3 that ran took 68-140 s vs 4-16 s built-in on the same segments; 12% of deleted results were touched again later, 2 of 30 kept results ever used"
+      ],
+      "warn": "DO NOT INSTALL GLOBALLY (replay verdict 2026-10-04). Local backend fails or is slower on real long sessions. Revisit only with hosted Jev (paid, 25k state) or if Ollama lifts its 64 KiB / 64-question caps.",
+      "url": "https://github.com/tamaratran/fast-jev-compaction",
+      "commit": "e3f262a7f4d42bd8dd32ced30d26176f7cb545b0",
+      "path": "repos/tamaratran__fast-jev-compaction"
+    },
+    {
+      "name": "ankit-aglawe__tinyjev",
+      "kind": "agent-tool",
+      "license": "MIT (code); weights AnkitAI/TinyJev-0.6B MIT on Qwen3-0.6B-Base",
+      "categories": [
+        "agent-orchestration",
+        "research"
+      ],
+      "goals": [
+        "SaaS builds",
+        "agency marketing"
+      ],
+      "desc": "Tiny local Jev-style decision models: noul/choice/score questions answered in one forward pass with calibrated probabilities, served on 127.0.0.1:8077 as a TypeSafe System One endpoint (POST /v1/systemone). 0.6B runs in-process on MLX. Installed in ~/toolbox/venvs/tinyjev; library.py find --judge auto-starts it.",
+      "risks": [
+        "installed 2026-10-03 into ~/toolbox/venvs/tinyjev from the pinned clone (uv, Python 3.12, mlx extras); weights from HuggingFace AnkitAI/TinyJev-0.6B",
+        "server binds loopback with no auth: never expose it",
+        "measured here: ~25 ms per judgment, but a weak tool-relevance judge (cold-email ranked below Pricing Analyst for a cold-email goal); choice framing better than noul",
+        "rejects fast-jev-compaction's System One payload (422 'too many values to unpack'): not a compaction backend",
+        "README benchmark (its own harness, OpenDecision 500): 0.6B 88%, 4B v2 98% via Ollama 0.35.1+; asserted, not reproduced here"
+      ],
+      "warn": "LIVE as the default find --judge backend until the ledger eval picks a better one (Ollama 0.35 decision models).",
+      "url": "https://github.com/ankit-aglawe/tinyjev",
+      "commit": "fec868b6b44ac5fddac64ff87d318ccceaff27ea",
+      "path": "repos/ankit-aglawe__tinyjev",
+      "added": "2026-10-03",
+      "source": "research for a local open Jev, 2026-10-03"
     }
   ]
 }

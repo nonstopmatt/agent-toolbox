@@ -1,21 +1,40 @@
 # toolbox CHANGELOG
 
-## 2026-10-01 — websites knowledge base, loadouts of up to 10 tools
+## 2026-10-04 — websites knowledge base, loadouts of up to 10 tools
+- ported by hand from a 2026-10-01 cloud session, which had pushed them only to the public agent-toolbox repo
+- `websites.json`: free web apps with no repo (free tier, account, API, limits and a verified date per site). 15 starter sites, all `not checked`. `bin/build-catalog.sh` writes `catalog/websites.md` from it; `bin/library.py` indexes each as kind `website` (quota 5), with no card: the catalog line is the description
+- `/toolbox-add`: a tool that is only a website goes into `websites.json` (Step 2d) instead of being turned away. Still no sign-ups, trials or cards
+- `/tool-audit`: a loadout is up to 10 tools across at least three kinds (skills 10, agents 10, websites 5, MCP 3, plugins 2), and a loadout under 10 says why. Shortlist 30 to 40; discovery proposes up to 10 and runs one web search for free web apps
+- `/skill-audit`: up to 10 skills; the ledger takes `--kind website`
 
-- `websites.json`: free web apps with no repo, with free tier, account, API, limits and a
-  `verified` date per site. Seeded with 15 common ones, all marked `not checked` (the cloud
-  session that wrote them couldn't reach the sites). `bin/build-catalog.sh` writes
-  `catalog/websites.md` from it; `bin/library.py` indexes each as kind `website` with its own
-  search quota, so websites show up in every audit
-- `/toolbox-add`: a tool that is only a website is now logged in `websites.json` (Step 2d)
-  instead of being turned away. Still no sign-ups, trials or cards
-- `/tool-audit`: a loadout is up to 10 tools across at least three kinds (was 2 to 4 picks
-  under per-kind caps of 5). Per-kind ceilings: skills 10, agents 10, websites 5, MCP 3,
-  plugins 2. A loadout under 10 has to say why. Shortlist widened to 30 to 40, discovery
-  proposes up to 10 and runs one web search for free web apps
-- `/skill-audit`: up to 10 skills; the ledger accepts `--kind website`
-- `bin/pull.sh`: pull repo changes made elsewhere and refresh the live skills before the next
-  `sync.sh`, which would otherwise copy the old live skills back over them
+## 2026-10-04 — fast-jev-compaction replay verdict: not for global install
+- replayed 9 real long-session compactions through the plugin on local Ollama tev1-16k: 6 failed (history over the 10k budget forced by Ollama's 64 KiB cap; >64 questions per request), the 3 that ran were 68-140 s vs 4-16 s built-in
+- 12% of deleted tool results were touched again after the compaction; 2 of 30 kept results ever used
+- built-in history (140 compactions): manual /compact median 27 s vs auto 100 s; context size does not predict duration
+
+## 2026-10-03 — library.py understands every tool: cards from full source, qwen3 embeddings, ledger eval, local Jev judge
+- `library.py profile`: local gemma4:e4b writes a card per tool (does / use_when / not_for / input / output / needs) from its full source, cached by hash; 2,198 tools carded
+- index adds the user's scripts (every script a memory note names + siblings, ~/.claude/scripts, bin/) and ledger-only tools; each hit shows its ledger record
+- embeddings: qwen3-embedding:8b with an instruct query prefix; per-kind quota x2; find -n 120
+- `library.py eval`: ledger replay. Tool that worked, surfaced for its goal: 25% (9/21 index) -> 41% (cards + qwen3) -> 45% with `--judge`
+- `find --judge`: Jev-style rerank via any TypeSafe System One endpoint; default local Ollama 0.35.1 tev1-16k, batches of 8
+- capabilities.md: typed-decisions and compaction chains; loadouts/jev-compaction-local.sh; bin/patch-fast-jev-local.py
+
+## 2026-10-03 — added browser-use__jev-ultrafast, jkudish__jev-mcp, tamaratran__fast-jev-compaction (agent-tools)
+- https://github.com/browser-use/jev-ultrafast · 1231850a · MIT · fast browser agent on TypeSafe's Jev; does not read or rank tools
+- https://github.com/jkudish/jev-mcp · d6876335 · MIT · 12 typed-judgment MCP tools (verify, screen, find, rerank, classify, decide, compare, extract, audit, review, gate, noul)
+- https://github.com/tamaratran/fast-jev-compaction · e3f262a7 · MIT · Claude Code plugin: Jev-pruned verbatim compaction
+- serves: tool-audit rerank (jev-mcp), compaction (fast-jev-compaction), browser automation (jev-ultrafast)
+- ships: 1 skill (jev-mcp skills/jev, not copied), 1 MCP server, 1 function-hook plugin, 0 agents
+- risks: all three need a paid Jev provider key (none on this Mac); the compaction hook sends the whole conversation to api.typesafe.ai, ignores baseUrl, and forces compaction at 60% context; jev-mcp's skill says to call the paid verify tools "even when the answer looks obvious"; jev-ultrafast drives the signed-in Chrome profile
+- installed: nothing. fast-jev-compaction live install held for a backend decision
+
+## 2026-10-03 — added ankit-aglawe__tinyjev (agent-tool, installed in a toolbox venv)
+- https://github.com/ankit-aglawe/tinyjev · fec868b6 · MIT · local Jev-style decision server (System One API) on MLX
+- serves: tool-audit judging (library.py find --judge), any System One client
+- ships: python package + CLI; 0 skills, 0 agents, 0 MCP
+- risks: loopback server with no auth; 0.6B is fast (~25 ms per judgment) but a weak tool-relevance judge here; rejects fast-jev-compaction's payload
+- installed: ~/toolbox/venvs/tinyjev (uv, Python 3.12, mlx), weights in the HuggingFace cache. Nothing under ~/.claude
 
 ## 2026-09-30 — YouTube Ua0APTMVcb8, AI LABS "8 GitHub repos" (7 added, 1 already here)
 

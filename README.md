@@ -107,7 +107,7 @@ The shelf, and the system for using it.
 - `my-skills/tool-audit` sweeps everything, shortlists with a subagent, then picks a loadout of up to 10 tools across at least three kinds, with a backup for every slot, borrows agents and skills by reading their files instead of installing them, launches MCP servers for one session only, and records how it went in a ledger.
 - `my-skills/toolbox-add` adds a repo without installing it: shallow clone into quarantine, no install scripts, no live-config writes, then it updates the manifest and the index. A tool that is only a website goes into `websites.json` instead, with its free tier fact-checked and nothing signed up for.
 - `my-skills/skill-audit` and `my-skills/self-improvement-report` are smaller helpers.
-- `manifest.json` records every upstream with its URL, license and pinned commit. `bin/bootstrap.sh` rebuilds everything the manifest tracks on a new machine. `bin/sync.sh` rebuilds the catalog, scans for secrets and pushes. `bin/pull.sh` goes the other way: it pulls changes made on GitHub and refreshes the live copies of these skills, so run it before `sync.sh` when the repo changed somewhere else.
+- `manifest.json` records every upstream with its URL, license and pinned commit. `bin/bootstrap.sh` rebuilds everything the manifest tracks on a new machine. `bin/sync.sh` rebuilds the catalog, scans for secrets and pushes.
 - `docs/SETUP.md` explains the system to your coding agent, if you want to adopt it.
 
 Most of what the catalog lists is other people's work that I found and organized. None of their code is in this repo, only links back to them. The part I built is the system for using a lot of it without breaking your agent.

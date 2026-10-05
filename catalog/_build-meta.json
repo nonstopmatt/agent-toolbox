@@ -1,20 +1,21 @@
 {
-  "generated": "2026-09-30T05:55:34.123258",
+  "generated": "2026-10-04T20:14:39.481611",
   "counts": {
     "web-design": 190,
-    "frontend-code": 107,
+    "frontend-code": 108,
     "backend-data": 131,
     "marketing-copy": 132,
     "social-content": 53,
     "video-audio": 80,
-    "research": 125,
+    "research": 128,
     "security-review": 80,
-    "memory-context": 59,
-    "agent-orchestration": 148,
+    "memory-context": 60,
+    "agent-orchestration": 151,
     "business-ops": 146,
-    "misc": 9
+    "misc": 9,
+    "websites": 15
   },
-  "total_lines_tools_memory": 88,
+  "total_lines_tools_memory": 89,
   "unmatched": 9,
   "unmatched_sample": [
     "mcp-mine:ouroboros",
