@@ -6,6 +6,7 @@
 - `/toolbox-add`: a tool that is only a website goes into `websites.json` (Step 2d) instead of being turned away. Still no sign-ups, trials or cards
 - `/tool-audit`: a loadout is up to 10 tools across at least three kinds (skills 10, agents 10, websites 5, MCP 3, plugins 2), and a loadout under 10 says why. Shortlist 30 to 40; discovery proposes up to 10 and runs one web search for free web apps
 - `/skill-audit`: up to 10 skills; the ledger takes `--kind website`
+- `bin/patch-fast-jev-local.py` is now committed: `loadouts/jev-compaction-local.sh` runs it, so a fresh clone could not start that loadout
 
 ## 2026-10-04 — fast-jev-compaction replay verdict: not for global install
 - replayed 9 real long-session compactions through the plugin on local Ollama tev1-16k: 6 failed (history over the 10k budget forced by Ollama's 64 KiB cap; >64 questions per request), the 3 that ran were 68-140 s vs 4-16 s built-in

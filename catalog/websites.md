@@ -1,6 +1,6 @@
 # websites
 
-Generated: 2026-10-04 20:14 
+Generated: 2026-10-04 20:32 
 Count: 15
 
 Free or freemium web apps with no repo. Source of truth: websites.json (edit that, not this file).

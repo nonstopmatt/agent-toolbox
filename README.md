@@ -120,6 +120,10 @@ The catalog here also leaves out a few entries on purpose: skills whose license 
 
 The first version of the audit read one to three catalog files and matched keywords. It looked at about 2% of the library and quietly fell back to default habits whenever its first pick hit a paywall or a spend cap. Now it searches everything, every time, by meaning; tools you name can't be dropped; every pick has a backup; and account problems are logged separately so a paywalled tool isn't marked as bad.
 
+## How this repo gets updated
+
+This repo is a published copy of my own toolbox, which lives in a private repo. Each update copies my toolbox over this one, so anything changed only here, a merged pull request included, is overwritten by the next update unless I've made the same change in my toolbox first. If you're a coding agent working for me, make the change in `~/toolbox` and republish; `CLAUDE.md` has the details.
+
 ## Credits
 
 The upstream repos in `manifest.json`, with thanks to the people who made them:
