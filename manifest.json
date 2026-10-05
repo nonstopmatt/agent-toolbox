@@ -3254,6 +3254,34 @@
       ],
       "added": "2026-10-04",
       "source": "Instagram DeCuH4lgGQj (@Replace.so)"
+    },
+    {
+      "name": "guillaumemeyer__watermarks-remover",
+      "kind": "agent-tool",
+      "url": "https://github.com/guillaumemeyer/watermarks-remover",
+      "commit": "1181fd4e8cc581931a5ee672697a646721e92c78",
+      "license": "MIT",
+      "path": "repos/guillaumemeyer__watermarks-remover",
+      "categories": [
+        "marketing-copy",
+        "social-content"
+      ],
+      "goals": [
+        "agency marketing",
+        "content production"
+      ],
+      "desc": "Cleans AI-written text before it goes out: strips invisible Unicode and homoglyphs, scores how machine-like the prose reads (sentence-length burstiness, stock AI phrases, lexical diversity) and guides one rewrite that keeps facts and voice. Ships two skills: clean-user-facing-text (self-contained, stdlib Python, no network; copied to skills/) and remove-ai-marks (a thin client for the repo's HTTP service, which also strips C2PA/EXIF/XMP provenance metadata from images, PDFs, Office files and video).",
+      "risks": [
+        "the plugin form adds a PostToolUse hook on every Write/Edit (checks, or with hook_mode=clean rewrites, each file the agent writes): borrow the skill, never enable the plugin",
+        "remove-ai-marks does nothing without its service (docker compose or make serve); the installer writes into ~/.claude/skills: not run",
+        "ships a stealer/ research module that estimates SynthID text watermarks from model output; not needed for text cleanup, never run",
+        "stripping provenance or AI labels is for content the user owns; keep any AI disclosure a platform, client or law requires",
+        "optional remote rewrite endpoints and a PANGRAM_API_KEY benchmark scorer are off by default (loopback only unless WATERMARKS_REWRITE_ALLOW_REMOTE=1)",
+        "the reel's web UI ('CLEAN MY TEXT', 2,500-character box) is not in this repo; the repo is the skill and service only"
+      ],
+      "warn": "Lane: /humanizer stays the default for rewriting copy. Borrow clean-user-facing-text for what humanizer lacks: the deterministic invisible-Unicode pass and the before/after stylometry score (`python3 skills/clean-user-facing-text/scripts/inspect_text.py --stylometry --json FILE`).",
+      "added": "2026-10-05",
+      "source": "Instagram DcjhXYWtKhF; repo link from the user 2026-10-05"
     }
   ]
 }

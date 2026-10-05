@@ -10,9 +10,9 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 
 - **web-design** (219): UI/UX, layouts, brand, CSS/design systems. → `catalog/web-design.md`
 - **frontend-code** (138): React/Next and browser UI implementation. → `catalog/frontend-code.md`
-- **backend-data** (164): APIs, databases, auth, server code. → `catalog/backend-data.md`
-- **marketing-copy** (140): SEO, campaigns, positioning, landing copy. → `catalog/marketing-copy.md`
-- **social-content** (60): Social posts and channel content. → `catalog/social-content.md`
+- **backend-data** (165): APIs, databases, auth, server code. → `catalog/backend-data.md`
+- **marketing-copy** (142): SEO, campaigns, positioning, landing copy. → `catalog/marketing-copy.md`
+- **social-content** (62): Social posts and channel content. → `catalog/social-content.md`
 - **video-audio** (98): Video/audio edit, generation, voice. → `catalog/video-audio.md`
 - **research** (149): Search, scrape, investigate, papers. → `catalog/research.md`
 - **security-review** (90): Audits, SAST, vuln review. → `catalog/security-review.md`
@@ -20,7 +20,7 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 - **agent-orchestration** (186): Agents, skills routing, multi-agent flows. → `catalog/agent-orchestration.md`
 - **business-ops** (163): CRM, sales, ops, billing, client work. → `catalog/business-ops.md`
 - **misc** (27): Uncategorized or cross-cutting tools. → `catalog/misc.md`
-- **websites** (37): free web apps with no repo, any job. → `catalog/websites.md` (from websites.json)
+- **websites** (39): free web apps with no repo, any job. → `catalog/websites.md` (from websites.json)
 
 ## Review dates
 
@@ -68,6 +68,8 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 
 ## Recently added
 
+- skill: clean-user-facing-text [backend-data, marketing-copy] `skills/clean-user-facing-text/SKILL.md`
+- mcp-mine: omnisocials [social-content] `mcp/mine/omnisocials.json`
 - skill: upskill [social-content, agent-orchestration] `skills/upskill/SKILL.md`
 - skill: job-scraper [social-content, research] `skills/job-scraper/SKILL.md`
 - skill: job-application-assistant [marketing-copy, social-content] `skills/job-application-assistant/SKILL.md`
@@ -86,6 +88,4 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 - skill: replica-diff [web-design] `skills/replica-diff/SKILL.md`
 - skill: replica-design [web-design, frontend-code] `skills/replica-design/SKILL.md`
 - skill: replica-deploy [web-design, frontend-code] `skills/replica-deploy/SKILL.md`
-- skill: replica-build [research] `skills/replica-build/SKILL.md`
-- skill: replica-brand [web-design, frontend-code] `skills/replica-brand/SKILL.md`
 

@@ -1,7 +1,7 @@
 # marketing-copy
 
-Generated: 2026-10-04 23:35 
-Count: 140
+Generated: 2026-10-05 01:20 
+Count: 142
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -103,6 +103,7 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | blog-write | Write new blog articles from scratch optimized for Google rankings and AI citations. Generates full articles with templa | skills/blog/blog-write/SKILL.md
 - skill | chisle | Maximum-efficiency dev mode. Terse, precise prose with zero fluff combined with YAGNI/ladder-first code decisions. One p | skills/chisle/SKILL.md
 - skill | chisle-audit | One-shot efficiency audit of a file, diff, or whole repo across BOTH axes at once: over-engineered code (reinvented stdl | skills/chisle-audit/SKILL.md
+- skill | clean-user-facing-text | Clean and finalize authorized natural-language text intended for readers by auditing suspicious invisible Unicode and re | skills/clean-user-facing-text/SKILL.md
 - skill | domain-modeling | Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, o | skills/domain-modeling/SKILL.md
 - skill | faceless-explainer | "Turn arbitrary text — an article, notes, a topic, a brief — into a faceless explainer video: there is no site or footag | skills/faceless-explainer/SKILL.md
 - skill | firecrawl-company-directories | Extract structured company lists from directories with Firecrawl. Use for scraping YC, Crunchbase, Product Hunt, G2, sta | skills/firecrawl-company-directories/SKILL.md
@@ -147,4 +148,5 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - application | knadh__listmonk | Self-hosted, single-binary newsletter/mailing-list manager -- a Mailchimp alternative with no per-contact fee. Not on this machine. | (not cloned) | AGPL-3.0 | risks: AGPL-3.0: if modified and run as a network service for others, the source of those modifications must be made available
 - agent-tool | Automattic__harper | Offline, privacy-first grammar checker (Rust), a Grammarly replacement that never sends text to a server -- usable as a CLI/LSP Claude could shell out to for a grammar pass on cold emails or web copy. | repos/Automattic__harper | Apache-2.0 | risks: the the local inventory check hit on 'Harper' in the user's notes is a false positive (substring of 'sharper'), confirmed by direct grep -- not already installed
 - application | usenotra__notra | Self-hosted GEO (Generative Engine Optimization) tool: asks ChatGPT, Claude and Gemini the questions a brand's buyers ask and tracks whether/how the brand shows up in the answers, vs. competitors. Not | (not cloned) | AGPL-3.0 | risks: AGPL-3.0 copyleft applies if you modify and host it for clients; Running the actual brand-visibility checks burns your own OpenAI/Anthropic/Gemini API credits per query — not free at any real volume; Overlaps directly with the user's existing client AEO retain
+- agent-tool | guillaumemeyer__watermarks-remover | Cleans AI-written text before it goes out: strips invisible Unicode and homoglyphs, scores how machine-like the prose reads (sentence-length burstiness, stock AI phrases, lexical diversity) and guides | repos/guillaumemeyer__watermarks-remover | MIT | WARN: Lane: /humanizer stays the default for rewriting copy. Borrow clean-user-facing-text for what humanizer lacks: the deterministic invisible-Unicode pass and the before/after stylometry score (`python3 skills/clean-user-facing-text/scripts/inspect_text.py --stylometry --json FILE`). | risks: the plugin form adds a PostToolUse hook on every Write/Edit (checks, or with hook_mode=clean rewrites, each file the agent writes): borrow the skill, never enable the plugin; remove-ai-marks does nothing without its service (docker compose or make serve); the 
 

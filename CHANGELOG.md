@@ -1,5 +1,12 @@
 # toolbox CHANGELOG
 
+## 2026-10-05 — resolved 3 tools from the Instagram batch; OmniSocials launcher saved
+- agent-tool `guillaumemeyer__watermarks-remover` · 1181fd4 · MIT · serves: agency marketing, content production · ships 2 skills (clean-user-facing-text copied to skills/; remove-ai-marks needs the repo's service), 1 plugin hook (not enabled) · risks: PostToolUse hook in the plugin form, a SynthID watermark-stealing research module, keep required AI disclosures
+- website AI Model Watch (aimodelwatch.dev): free JSON API of model prices, context windows and deprecations, no key; the MIT dataset repo is cited, not cloned
+- website Ghost (gotghost.io): website-to-MCP-tools, 500 free generations a month; claims MIT but no public repo found. TryGhost/Ghost (the publishing platform) is a different product and was not added
+- an OmniSocials MCP session launcher in `loadouts/` (private, left out of the public snapshot); reads its key from a file, holds none
+- still unresolved from the batch: Swokei
+
 ## 2026-10-04 — i-have-adhd live; OpenClaude removed
 - `ayghri__i-have-adhd` promoted from borrow-only to live at the user's request: skill folder only (no plugin, no hook), `disable-model-invocation` kept, so it runs on `/i-have-adhd` until "stop adhd mode"; proven with one headless run from another folder
 - `Twigpine__openclaude` removed from the manifest at the user's request (its NOTICE says it derives from Anthropic's proprietary Claude Code)

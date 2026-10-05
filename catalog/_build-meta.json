@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-04T23:35:06.063922",
+  "generated": "2026-10-05T01:20:19.529805",
   "counts": {
     "web-design": 219,
     "frontend-code": 138,
-    "backend-data": 164,
-    "marketing-copy": 140,
-    "social-content": 60,
+    "backend-data": 165,
+    "marketing-copy": 142,
+    "social-content": 62,
     "video-audio": 98,
     "research": 149,
     "security-review": 90,
@@ -13,7 +13,7 @@
     "agent-orchestration": 186,
     "business-ops": 163,
     "misc": 27,
-    "websites": 37
+    "websites": 39
   },
   "total_lines_tools_memory": 91,
   "unmatched": 10,

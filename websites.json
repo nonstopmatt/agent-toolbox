@@ -524,6 +524,34 @@
       "added": "2026-10-04",
       "source": "Instagram DceWZsNNIkt (@baptisteodonovan)",
       "risks": []
+    },
+    {
+      "name": "AI Model Watch",
+      "url": "https://aimodelwatch.dev",
+      "does": "Daily-updated prices, context windows and deprecation dates for about 300 AI models across 12 providers, with compare, cost calculator, deprecation watch and email alerts",
+      "categories": ["research", "business-ops"],
+      "free": "free",
+      "account": "none",
+      "api": true,
+      "limits": "free JSON API, no key, no signup, no rate limit, CORS open: GET /api/models.json, /api/deprecations.json, /api/openapi.json; same data as the MIT dataset github.com/Khavel/ai-model-watch-data (models.json / models.csv)",
+      "verified": "2026-10-05 aimodelwatch.dev/api",
+      "added": "2026-10-05",
+      "source": "Instagram DceWZsNNIkt; dataset link from the user 2026-10-05",
+      "risks": ["compiled third-party data: check the provider's own pricing page before quoting a price to a client"]
+    },
+    {
+      "name": "Ghost (gotghost.io)",
+      "url": "https://gotghost.io",
+      "does": "Turns any website into typed MCP tools an agent can call (click, type, search, extract), generated from the live DOM, cached, with self-healing selectors; an alternative to screenshot-driven browser agents",
+      "categories": ["agent-orchestration", "research"],
+      "free": "freemium",
+      "account": "free account",
+      "api": true,
+      "limits": "500 tool generations a month free, then $0.05 each (Stripe); running a cached tool is always free; needs an account and API key",
+      "verified": "2026-10-05 gotghost.io/pricing",
+      "added": "2026-10-05",
+      "source": "Instagram Dc-7FLeDyXP",
+      "risks": ["says 'MIT open source' but no public repo was found (its sample GitHub link 404s), so treat it as hosted", "not the Ghost publishing platform (TryGhost/Ghost), a different product with the same name", "the agent's browsing goes through a third-party account; keep client logins out of it"]
     }
   ]
 }

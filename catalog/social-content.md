@@ -1,7 +1,7 @@
 # social-content
 
-Generated: 2026-10-04 23:35 
-Count: 60
+Generated: 2026-10-05 01:20 
+Count: 62
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -25,6 +25,7 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - agent | Incident Responder | Digital forensics and incident response specialist who leads breach investigations, contains active threats, coordinates | agents/security-incident-responder.md | 24298
 - agent | Unity Editor Tool Developer | Unity editor automation specialist - Masters custom EditorWindows, PropertyDrawers, AssetPostprocessors, ScriptedImporte | agents/unity-editor-tool-developer.md | 14889
 - mcp-mine | facebook-ads | stdio | tools: ? | mcp/mine/facebook-ads.json
+- mcp-mine | omnisocials | stdio | tools: ? | mcp/mine/omnisocials.json
 - mcp-mine | posthog | sse/http | tools: ? | mcp/mine/posthog.json
 - mcp-discovered | discord | stdio | tools: ? | mcp/discovered/discord.json
 - mcp-discovered | fakechat | stdio | tools: ? | mcp/discovered/fakechat.json
@@ -68,4 +69,5 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | upskill | Compares tracked job postings against the candidate profile to identify skill gaps and generate a prioritized learning p | skills/upskill/SKILL.md
 - application | inovector__mixpost | Self-hosted social media scheduler, a Buffer alternative (Laravel/PHP, Docker): calendar, media library, post versions. Not on this machine. | (not cloned) | MIT (Lite); Pro and Enterprise are commercial | WARN: For the user's podcast, free Lite cannot post to the channels the user's podcast uses; only Pro would replace Buffer. | risks: free Lite publishes only to Facebook Pages, Mastodon and X: no Instagram, LinkedIn, YouTube or TikTok; API, MCP, webhooks, posting queue and approval flow are Pro only ($299 one-time, 1 domain, 1 year of updates); self-hosting needs PHP, MySQL and Redis or the
 - application | FujiwaraChoki__MoneyPrinterV2 | Standalone Python bot that automates posting YouTube Shorts/tweets, Amazon affiliate links, and cold outreach to local businesses end to end. Not already on this machine. | (not cloned) | AGPL-3.0 | risks: AGPL-3.0: any hosted/modified version must share source -- fine for personal use, a blocker if ever offered as a client-facing service; automates unsupervised posting and cold outreach -- collides with the user's 'no unprompted cold sends' guardrail if run as-
+- agent-tool | guillaumemeyer__watermarks-remover | Cleans AI-written text before it goes out: strips invisible Unicode and homoglyphs, scores how machine-like the prose reads (sentence-length burstiness, stock AI phrases, lexical diversity) and guides | repos/guillaumemeyer__watermarks-remover | MIT | WARN: Lane: /humanizer stays the default for rewriting copy. Borrow clean-user-facing-text for what humanizer lacks: the deterministic invisible-Unicode pass and the before/after stylometry score (`python3 skills/clean-user-facing-text/scripts/inspect_text.py --stylometry --json FILE`). | risks: the plugin form adds a PostToolUse hook on every Write/Edit (checks, or with hook_mode=clean rewrites, each file the agent writes): borrow the skill, never enable the plugin; remove-ai-marks does nothing without its service (docker compose or make serve); the 
 

@@ -1,7 +1,7 @@
 # backend-data
 
-Generated: 2026-10-04 23:35 
-Count: 164
+Generated: 2026-10-05 01:20 
+Count: 165
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -116,6 +116,7 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | blog-notebooklm | Query Google NotebookLM notebooks for source-grounded, citation-backed answers from user-uploaded documents. Manages not | skills/blog/blog-notebooklm/SKILL.md
 - skill | blog-schema | Generate complete JSON-LD schema markup for blog posts including BlogPosting, Person, Organization, BreadcrumbList, FAQP | skills/blog/blog-schema/SKILL.md
 - skill | blog-taxonomy | Extract, suggest, and sync tags and categories for blog posts across all major CMS platforms. Supports WordPress REST AP | skills/blog/blog-taxonomy/SKILL.md
+- skill | clean-user-facing-text | Clean and finalize authorized natural-language text intended for readers by auditing suspicious invisible Unicode and re | skills/clean-user-facing-text/SKILL.md
 - skill | cli-anything-comfyui | - Command-line interface for ComfyUI - AI image generation workflow management via ComfyUI REST API. Designed for AI age | skills/cli-anything-comfyui/SKILL.md
 - skill | cli-anything-ollama | - Command-line interface for Ollama - Local LLM inference and model management via Ollama REST API. Designed for AI agen | skills/cli-anything-ollama/SKILL.md
 - skill | cli-anything-videocaptioner | - AI-powered video captioning — transcribe speech, optimize/translate subtitles, and burn them into video via the stable | skills/cli-anything-videocaptioner/SKILL.md
