@@ -274,7 +274,7 @@
       "path": "repos/ayghri__i-have-adhd",
       "added": "2026-09-21",
       "source": "YouTube 1fHsIveXRa8 (The Next New Thing, 2026-09-18)",
-      "warn": "BORROW-ONLY: read the SKILL.md; never promote to live (no global npm install, no plugin/hook enable) without asking the user first."
+      "warn": "LIVE since 2026-10-04 at the user's request: the skill folder is copied to ~/.claude/skills/i-have-adhd (agents/ dropped, a LANE line added to its description; re-apply both if it is ever re-copied from this repo). The plugin form and its SessionStart hook stay off."
     },
     {
       "name": "mksglu__context-mode",
@@ -1483,7 +1483,8 @@
         "most of these 16 skills are inert until the Stitch MCP + free API key is configured - copied as text regardless, for when the user sets it up"
       ],
       "added": "2026-10-04",
-      "source": "Instagram Dcy4HpXNSaR (@baptisteodonovan)"
+      "source": "Instagram Dcy4HpXNSaR (@baptisteodonovan)",
+      "warn": "Shelved by the user (2026-10-04): not setting up a Stitch API key. "
     },
     {
       "name": "greensock__gsap-skills",
@@ -1979,7 +1980,7 @@
         "pre-1.0: README says APIs, config and routing behavior can change release to release",
         "the exact '74% cheaper, 7% frontier, 145 tasks' figure from the Instagram post is not in the repo's own README, docs or benchmark reports -- see claims below"
       ],
-      "warn": "DO NOT INSTALL. Recommendation: skip for now, re-evaluate only if OmniRoute's free-tier pool stops being enough. Reasons: (1) Switchyard is a routing-only library/proxy -- it does the same conceptual job as the user's OmniRoute gateway (already live on 127.0.0.1, ANTHROPIC_BASE_URL-wired via ~/.local/bin/claude-omni, hardened, with real working free-tier provider connections -- Claude Code OAuth, Mistral, Gemini -- in a tested 'ladder' priority combo), but Switchyard brings no providers or free-tier pool of its own, so adopting it would mean re-doing the provider wiring OmniRoute already has working. (2) Switchyard's own component table rates the piece that would replace OmniRoute's role (`switchyard-server`) as 'Demo' stability, explicitly 'Not for production,' while OmniRoute is live, hardened and verified. (3) The token/cost-saving claim from the post ('74% cheaper, 7% of calls hit the frontier model, 145 tasks') could not be found anywhere in Switchyard's README, docs/, or its own benchmark reports -- the repo's actual published benchmark (benchmark/SWE_ATLAS_ESCALATION_REPORT.md, a 40-task paired sample) shows a much more modest ~24% cost cut in the best run and explicitly states the result 'does not show that routing beats the best fixed model on this sample'; the README itself warns 'a cheaper model call does not guarantee a cheaper successfully completed task.' Net: installing this now would add a second, less mature, self-admittedly-demo router duplicating a job OmniRoute already does, for a cost-saving claim this repo's own data does not support at the scale claimed.",
+      "warn": "The user decided not to install it (2026-10-04). DO NOT INSTALL. Recommendation: skip for now, re-evaluate only if OmniRoute's free-tier pool stops being enough. Reasons: (1) Switchyard is a routing-only library/proxy -- it does the same conceptual job as the user's OmniRoute gateway (already live on 127.0.0.1, ANTHROPIC_BASE_URL-wired via ~/.local/bin/claude-omni, hardened, with real working free-tier provider connections -- Claude Code OAuth, Mistral, Gemini -- in a tested 'ladder' priority combo), but Switchyard brings no providers or free-tier pool of its own, so adopting it would mean re-doing the provider wiring OmniRoute already has working. (2) Switchyard's own component table rates the piece that would replace OmniRoute's role (`switchyard-server`) as 'Demo' stability, explicitly 'Not for production,' while OmniRoute is live, hardened and verified. (3) The token/cost-saving claim from the post ('74% cheaper, 7% of calls hit the frontier model, 145 tasks') could not be found anywhere in Switchyard's README, docs/, or its own benchmark reports -- the repo's actual published benchmark (benchmark/SWE_ATLAS_ESCALATION_REPORT.md, a 40-task paired sample) shows a much more modest ~24% cost cut in the best run and explicitly states the result 'does not show that routing beats the best fixed model on this sample'; the README itself warns 'a cheaper model call does not guarantee a cheaper successfully completed task.' Net: installing this now would add a second, less mature, self-admittedly-demo router duplicating a job OmniRoute already does, for a cost-saving claim this repo's own data does not support at the scale claimed.",
       "added": "2026-10-04",
       "source": "Instagram DcURStsG5o8 (@buildwithneej)"
     },
@@ -3076,28 +3077,6 @@
       ],
       "added": "2026-10-04",
       "source": "Instagram DdMTK79xfzP (@buildwithneej)"
-    },
-    {
-      "name": "Twigpine__openclaude",
-      "kind": "application",
-      "url": "https://github.com/Twigpine/openclaude",
-      "commit": null,
-      "license": "NOASSERTION — see warning",
-      "path": "(not cloned)",
-      "categories": [
-        "agent-orchestration"
-      ],
-      "goals": [
-        "none of the five"
-      ],
-      "desc": "A Claude-Code-like coding-agent CLI advertised as running on any model (including free local ones) instead of being locked to Claude. Not already on this machine (checked `which`, /Applications, brew list).",
-      "risks": [
-        "Its own NOTICE file states the repo 'contains code derived from Anthropic's Claude Code CLI', describes the original Claude Code source as 'proprietary software... subject to Anthropic's Commercial Terms of Service', and offers only the contributors' own additions under MIT 'where legally permissible' — the base is not clean-room, so using or redistributing it carries real legal/ToS exposure, separate from ordinary open-source risk",
-        "No SPDX-recognized license for the repo as a whole despite being marketed as 'completely free'"
-      ],
-      "warn": "Do not install or run this. It is a derivative of Anthropic's proprietary Claude Code CLI per its own NOTICE file, not an independent clean implementation — using it risks violating Anthropic's Commercial Terms of Service. Catalogued and flagged only, per toolbox-add's rule for unclear/forbidding licenses; not recommended.",
-      "added": "2026-10-04",
-      "source": "Instagram DdEea0wiU1_ (@baptisteodonovan)"
     },
     {
       "name": "iv-org__invidious",

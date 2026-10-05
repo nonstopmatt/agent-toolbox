@@ -17,7 +17,7 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 - **research** (149): Search, scrape, investigate, papers. → `catalog/research.md`
 - **security-review** (90): Audits, SAST, vuln review. → `catalog/security-review.md`
 - **memory-context** (69): Memory, compaction, RAG/context tools. → `catalog/memory-context.md`
-- **agent-orchestration** (187): Agents, skills routing, multi-agent flows. → `catalog/agent-orchestration.md`
+- **agent-orchestration** (186): Agents, skills routing, multi-agent flows. → `catalog/agent-orchestration.md`
 - **business-ops** (163): CRM, sales, ops, billing, client work. → `catalog/business-ops.md`
 - **misc** (27): Uncategorized or cross-cutting tools. → `catalog/misc.md`
 - **websites** (37): free web apps with no repo, any job. → `catalog/websites.md` (from websites.json)
@@ -31,30 +31,30 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 ## Proven
 
 - cli `gpt-image-2.5` — 6 wins, 2 fail [design-visual, website-design]
+- skill `the-humanizer` — 5 wins [content-social, cold-outreach, cold-outreach-copy]
 - skill `humanizer` — 4 wins [copywriting, sales-call, client-delivery]
-- skill `the-humanizer` — 4 wins [content-social, cold-outreach, cold-outreach-copy]
 - skill `design-motion-principles` — 4 wins [website-design, website-build, design-visual]
+- cli `mlx_whisper` — 4 wins [client-delivery, ops-automation, content-social]
 - skill `claude-in-chrome` — 3 wins [research]
 - skill `expert-intel` — 3 wins [planning-strategy, sales-call, cold-outreach]
 - agent `research-worker` — 3 wins [client-delivery, research]
 - skill `animate` — 3 wins [website-design, website-build]
 - skill `impeccable` — 3 wins [website-build, client-delivery]
 - cli `D4Vinci__Scrapling` — 3 wins [research]
+- skill `toolbox-add` — 3 wins [ops-automation, code-build]
 - skill `dataviz` — 3 wins [client-delivery, website-build]
 - skill `writing-for-agents` — 2 wins [ops-automation, code-build]
 - skill `diagram-design` — 2 wins [client-delivery]
 - skill `artifact-capabilities` — 2 wins [client-delivery, design-visual]
+- skill `agent-reach` — 2 wins [research, ops-automation]
 - cli `library.py` — 2 wins [website-design, code-debug]
 - skill `delight` — 2 wins [website-design, website-build]
 - skill `hyperframes-animation` — 2 wins [website-design, website-build]
+- cli `web_fetch.py` — 2 wins [research, ops-automation]
 - skill `marketing-skills:customer-research` — 2 wins [planning-strategy]
-- skill `toolbox-add` — 2 wins [ops-automation, code-build]
 - skill `marketing-skills:copywriting` — 2 wins [cold-outreach-copy, copywriting]
 - agent `general-purpose` — 2 wins [research, code-build]
-- cli `mlx_whisper` — 2 wins [client-delivery]
-- skill `social` — 2 wins, 1 fail [content-social]
-- skill `task-observer` — 1 win [ops-automation]
-- skill `update-config` — 1 win [ops-automation]
+- mcp `claude-in-chrome` — 2 wins [ops-automation]
 
 ## Sources
 

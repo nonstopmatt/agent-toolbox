@@ -1,6 +1,11 @@
 # toolbox CHANGELOG
 
-## 2026-10-04 — added 101 repos/apps and 22 websites from 48 Instagram posts
+## 2026-10-04 — i-have-adhd live; OpenClaude removed
+- `ayghri__i-have-adhd` promoted from borrow-only to live at the user's request: skill folder only (no plugin, no hook), `disable-model-invocation` kept, so it runs on `/i-have-adhd` until "stop adhd mode"; proven with one headless run from another folder
+- `Twigpine__openclaude` removed from the manifest at the user's request (its NOTICE says it derives from Anthropic's proprietary Claude Code)
+- Switchyard: not installing; stitch-skills: shelved (no Stitch API key)
+
+## 2026-10-04 — added 100 repos/apps and 22 websites from 48 Instagram posts
 - source: 48 posts the user saved (47 links + 1 screenshot), read with agent-reach (OpenCLI), yt-dlp captions, local whisper and Vision OCR; full table in `inbox/instagram-batch-2026-10-04.md`
 - not added: 5 discarded (prank, novelty, ToS-risky, pirated font), 2 duplicates, 4 unresolved names, 14 set aside (gig marketplaces, piracy), 40 already on the shelf, 3 only named in memory notes
 - nothing installed; agent-tools shallow-cloned and pinned, applications catalogued only
@@ -96,7 +101,6 @@
 - application `janhq__jan` · not cloned · Apache-2.0 (per LICENSE file; GitHub API reports NOASSERTION) · GitHub shows the license as NOASSERTION, but the actual LICENSE file is a standard Apache-2.0 copyright notice from Menlo Research — worth n
 - application `OpenWhispr__openwhispr` · not cloned · MIT · none noted
 - application `tashfeenahmed__freellmapi` · not cloned · MIT · Its own repo description says 'Personal experimentation only' — read that before pointing any client-facing or paid workflow at it
-- application `Twigpine__openclaude` · not cloned · NOASSERTION — see warning · Its own NOTICE file states the repo 'contains code derived from Anthropic's Claude Code CLI', describes the original Claude Code source as '
 - application `iv-org__invidious` · not cloned · AGPL-3.0 · Requires Docker self-hosting; public instances exist but using someone else's instance isn't 'having' this tool
 - application `dream-num__univer` · not cloned · Apache-2.0 (core OSS); Univer Pro is a separate paid commercial license · This is a developer SDK/framework (like Univer Workspace is built on top of it) — there's no out-of-the-box 'point Claude at this' use, it's
 - application `CapSoftware__Cap` · not cloned · AGPL-3.0 (core) + MIT (cap-camera*/scap-* crates only) · AGPL-3.0 on the main codebase (camera-capture crates only are MIT) — copyleft applies if you modify and redistribute/host it
