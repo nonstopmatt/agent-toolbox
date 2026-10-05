@@ -1,7 +1,7 @@
 # marketing-copy
 
-Generated: 2026-10-05 01:20 
-Count: 142
+Generated: 2026-10-05 01:29 
+Count: 143
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -149,4 +149,5 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - agent-tool | Automattic__harper | Offline, privacy-first grammar checker (Rust), a Grammarly replacement that never sends text to a server -- usable as a CLI/LSP Claude could shell out to for a grammar pass on cold emails or web copy. | repos/Automattic__harper | Apache-2.0 | risks: the the local inventory check hit on 'Harper' in the user's notes is a false positive (substring of 'sharper'), confirmed by direct grep -- not already installed
 - application | usenotra__notra | Self-hosted GEO (Generative Engine Optimization) tool: asks ChatGPT, Claude and Gemini the questions a brand's buyers ask and tracks whether/how the brand shows up in the answers, vs. competitors. Not | (not cloned) | AGPL-3.0 | risks: AGPL-3.0 copyleft applies if you modify and host it for clients; Running the actual brand-visibility checks burns your own OpenAI/Anthropic/Gemini API credits per query — not free at any real volume; Overlaps directly with the user's existing client AEO retain
 - agent-tool | guillaumemeyer__watermarks-remover | Cleans AI-written text before it goes out: strips invisible Unicode and homoglyphs, scores how machine-like the prose reads (sentence-length burstiness, stock AI phrases, lexical diversity) and guides | repos/guillaumemeyer__watermarks-remover | MIT | WARN: Lane: /humanizer stays the default for rewriting copy. Borrow clean-user-facing-text for what humanizer lacks: the deterministic invisible-Unicode pass and the before/after stylometry score (`python3 skills/clean-user-facing-text/scripts/inspect_text.py --stylometry --json FILE`). | risks: the plugin form adds a PostToolUse hook on every Write/Edit (checks, or with hook_mode=clean rewrites, each file the agent writes): borrow the skill, never enable the plugin; remove-ai-marks does nothing without its service (docker compose or make serve); the 
+- application | TryGhost__Ghost | Open-source publishing platform for blogs, newsletters and paid memberships: editor, email newsletters, member sign-ups and Stripe subscriptions in one app, with an Admin and Content API. Self-host it | (not cloned) | MIT | WARN: Kept just in case at the user's request (2026-10-05). Install link: https://ghost.org/docs/install/ (self-host) or https://ghost.org/pricing/ (hosted). | risks: self-hosting means running a server and database and keeping it updated; nothing is installed here; hosted Ghost(Pro) is paid: Starter $18, Publisher $29, Business $199 a month (free trial); no free hosted tier; same name as Ghost (gotghost.io) in websites.jso
 

@@ -1,5 +1,11 @@
 # toolbox CHANGELOG
 
+## 2026-10-05 — added TryGhost__Ghost (application)
+- https://github.com/TryGhost/Ghost · not cloned · MIT
+- serves: client websites, content production, agency marketing
+- blog, newsletter and paid-membership platform; self-host free or Ghost(Pro) from $18 a month; kept just in case
+- risks: self-hosting needs a server and database; not the agent tool Ghost (gotghost.io)
+
 ## 2026-10-05 — resolved 3 tools from the Instagram batch; OmniSocials launcher saved
 - agent-tool `guillaumemeyer__watermarks-remover` · 1181fd4 · MIT · serves: agency marketing, content production · ships 2 skills (clean-user-facing-text copied to skills/; remove-ai-marks needs the repo's service), 1 plugin hook (not enabled) · risks: PostToolUse hook in the plugin form, a SynthID watermark-stealing research module, keep required AI disclosures
 - website AI Model Watch (aimodelwatch.dev): free JSON API of model prices, context windows and deprecations, no key; the MIT dataset repo is cited, not cloned

@@ -8,10 +8,10 @@ Agents are parked here; live ~/.claude/agents stays empty unless you copy a load
 
 ## Categories
 
-- **web-design** (219): UI/UX, layouts, brand, CSS/design systems. → `catalog/web-design.md`
+- **web-design** (220): UI/UX, layouts, brand, CSS/design systems. → `catalog/web-design.md`
 - **frontend-code** (138): React/Next and browser UI implementation. → `catalog/frontend-code.md`
 - **backend-data** (165): APIs, databases, auth, server code. → `catalog/backend-data.md`
-- **marketing-copy** (142): SEO, campaigns, positioning, landing copy. → `catalog/marketing-copy.md`
+- **marketing-copy** (143): SEO, campaigns, positioning, landing copy. → `catalog/marketing-copy.md`
 - **social-content** (62): Social posts and channel content. → `catalog/social-content.md`
 - **video-audio** (98): Video/audio edit, generation, voice. → `catalog/video-audio.md`
 - **research** (149): Search, scrape, investigate, papers. → `catalog/research.md`

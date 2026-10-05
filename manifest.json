@@ -3282,6 +3282,32 @@
       "warn": "Lane: /humanizer stays the default for rewriting copy. Borrow clean-user-facing-text for what humanizer lacks: the deterministic invisible-Unicode pass and the before/after stylometry score (`python3 skills/clean-user-facing-text/scripts/inspect_text.py --stylometry --json FILE`).",
       "added": "2026-10-05",
       "source": "Instagram DcjhXYWtKhF; repo link from the user 2026-10-05"
+    },
+    {
+      "name": "TryGhost__Ghost",
+      "kind": "application",
+      "url": "https://github.com/TryGhost/Ghost",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "web-design",
+        "marketing-copy"
+      ],
+      "goals": [
+        "client websites",
+        "content production",
+        "agency marketing"
+      ],
+      "desc": "Open-source publishing platform for blogs, newsletters and paid memberships: editor, email newsletters, member sign-ups and Stripe subscriptions in one app, with an Admin and Content API. Self-host it free (Node.js + MySQL, or Docker) or use hosted Ghost(Pro). Not on this Mac.",
+      "risks": [
+        "self-hosting means running a server and database and keeping it updated; nothing is installed here",
+        "hosted Ghost(Pro) is paid: Starter $18, Publisher $29, Business $199 a month (free trial); no free hosted tier",
+        "same name as Ghost (gotghost.io) in websites.json, a different product (website-to-MCP tools for agents)"
+      ],
+      "warn": "Kept just in case at the user's request (2026-10-05). Install link: https://ghost.org/docs/install/ (self-host) or https://ghost.org/pricing/ (hosted).",
+      "added": "2026-10-05",
+      "source": "the user, 2026-10-05"
     }
   ]
 }

@@ -1,7 +1,7 @@
 # web-design
 
-Generated: 2026-10-05 01:20 
-Count: 219
+Generated: 2026-10-05 01:29 
+Count: 220
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -225,4 +225,5 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - agent-tool | greensock__gsap-skills | GreenSock's own 8 official skills for using the GSAP animation library correctly: core tweens/easing, timelines, ScrollTrigger, React integration, framework patterns, plugins (Flip/Draggable), utility | repos/greensock__gsap-skills | MIT | risks: none found - pure MIT documentation/guidance skills, no install, no hooks, no network calls
 - agent-tool | barbajs__barba | JS library (npm package) that adds smooth page-transition animations between pages on a normal multi-page site, so it never flashes white -- a code dependency Claude would add to a client site's front | repos/barbajs__barba | MIT | risks: last pushed 2024-12-02 -- maintenance looks slow; verify it still works with current build tooling before using it in a client build
 - application | penpot__penpot | Open-source, self-hostable design tool positioned as a Figma alternative. Not already on this machine. | (not cloned) | MPL-2.0 | risks: self-hosted Docker stack to run it yourself; otherwise free hosted tier at penpot.app
+- application | TryGhost__Ghost | Open-source publishing platform for blogs, newsletters and paid memberships: editor, email newsletters, member sign-ups and Stripe subscriptions in one app, with an Admin and Content API. Self-host it | (not cloned) | MIT | WARN: Kept just in case at the user's request (2026-10-05). Install link: https://ghost.org/docs/install/ (self-host) or https://ghost.org/pricing/ (hosted). | risks: self-hosting means running a server and database and keeping it updated; nothing is installed here; hosted Ghost(Pro) is paid: Starter $18, Publisher $29, Business $199 a month (free trial); no free hosted tier; same name as Ghost (gotghost.io) in websites.jso
 

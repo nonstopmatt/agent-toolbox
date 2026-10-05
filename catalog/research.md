@@ -1,6 +1,6 @@
 # research
 
-Generated: 2026-10-05 01:20 
+Generated: 2026-10-05 01:29 
 Count: 149
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
