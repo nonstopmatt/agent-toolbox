@@ -1,7 +1,7 @@
 # marketing-copy
 
-Generated: 2026-10-04 20:32 
-Count: 132
+Generated: 2026-10-04 22:47 
+Count: 140
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -119,10 +119,13 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | ig-reply | - Handle the comments under the user's own reels and posts - draft replies to the ones worth answering, sorted by which  | skills/ig-reply/SKILL.md
 - skill | ig-repurpose | - Turn one long asset - a YouTube video, podcast, livestream, newsletter, blog post or client call - into a week of reel | skills/ig-repurpose/SKILL.md
 - skill | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing  | skills/interface-design/SKILL.md
+- skill | job-application-assistant | Assists with job applications: evaluating job postings, tailoring CVs, writing cover letters, and preparing for intervie | skills/job-application-assistant/SKILL.md
 - skill | lead-magnets | When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the u | skills/lead-magnets/SKILL.md
 - skill | market-research | Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution | skills/market-research/SKILL.md
 - skill | marketing-psychology | "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when | skills/marketing-psychology/SKILL.md
+- skill | no-ai-slop | Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns wi | skills/no-ai-slop/SKILL.md
 - skill | product-launch-video | "Turn a product or marketing URL, pasted script, or brief into a product launch / promo video — SaaS promos, feature rev | skills/product-launch-video/SKILL.md
+- skill | replica-launch | - Writes the launch for an app clone: the landing page built on the positioning angle, pricing set against the original' | skills/replica-launch/SKILL.md
 - skill | shape | Plan the UX and UI for a feature before writing code. Runs a structured discovery interview, then produces a design brie | skills/shape/SKILL.md
 - skill | signup | When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the use | skills/signup/SKILL.md
 - skill | source-command-interface-design | "This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing | skills/source-command-interface-design/SKILL.md
@@ -139,4 +142,9 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - agent-tool | nowork-studio__notfair-plugin | NotFair (formerly toprank): 96 SEO/GEO/ads skills for agents. Named "Toprank" in the post; repo renamed. 3.8k stars. | repos/nowork-studio__notfair-plugin | MIT | WARN: Vendor-coupled. Read for ideas only; never enable the plugin or its MCP without asking. | risks: 84 of 96 skills call the vendor-hosted NotFair MCP (notfair.co): account required, nothing copied; ships a self-upgrade skill that rewrites installed_plugins.json and prompts when UPGRADE_AVAILABLE appears: agent-aimed self-update; npm install -g notfair in it
 - agent-tool | ethanplusai__harvey | Autonomous Claude Code sales agent: finds prospects, researches them, drafts cold emails, tracks replies, runs on a 24/7 loop via the claude CLI. 52 stars. | repos/ethanplusai__harvey | MIT | WARN: Conflicts with the draft-only outreach rule unless approval stays on. Reference only. | risks: SENDS real email (Gmail, SMTP or Instantly); require_approval defaults to True: never turn it off; runs on the user's Claude subscription through the claude CLI in a loop: burns usage; wants Hunter, ZeroBounce, Reoon, Instantly, Gmail, Cloudflare keys; skills/
 - application | every-app__open-seo | Self-hosted Semrush/Ahrefs alternative: rank tracking, site audits, keyword research (Cloudflare Workers). 19.8k stars. | (not cloned) | MIT | risks: ambiguous kind: app that also ships a Claude plugin; catalogued as application; needs data provider keys for keyword volumes
+- agent-tool | petergyang__no-ai-slop | Skill pass that strips 20+ detectable AI-writing patterns ('It's not X, it's Y', fake stats, overused phrases) from any text. | repos/petergyang__no-ai-slop | MIT | risks: RIVAL of the user's existing stop-slop and humanizer/the-humanizer skills (same job: scrub AI prose tells) - per his rival-skills rule, rotate and score rather than stacking; also rivals the other anti-slop tool in this same batch (jalaalrd/anti-ai-slop-writin
+- agent-tool | jalaalrd__anti-ai-slop-writing | Blacklist-style skill that filters 50+ overused AI words, 35+ AI phrases, 16 AI sentence-openers and repetitive structures from generated text. | repos/jalaalrd__anti-ai-slop-writing | none found (no LICENSE file in repo; GitHub reports no SPDX id; confirmed by a 404 on /contents/LICENSE) | risks: no license file in the repo: catalogued but NOT copied into ~/toolbox/skills per the toolbox-add rule - not safe to reuse in client work without a license; RIVALS no-ai-slop (same batch) and the user's existing stop-slop/humanizer skills - now three to five to
+- application | knadh__listmonk | Self-hosted, single-binary newsletter/mailing-list manager -- a Mailchimp alternative with no per-contact fee. Not on this machine. | (not cloned) | AGPL-3.0 | risks: AGPL-3.0: if modified and run as a network service for others, the source of those modifications must be made available
+- agent-tool | Automattic__harper | Offline, privacy-first grammar checker (Rust), a Grammarly replacement that never sends text to a server -- usable as a CLI/LSP Claude could shell out to for a grammar pass on cold emails or web copy. | repos/Automattic__harper | Apache-2.0 | risks: the the local inventory check hit on 'Harper' in the user's notes is a false positive (substring of 'sharper'), confirmed by direct grep -- not already installed
+- application | usenotra__notra | Self-hosted GEO (Generative Engine Optimization) tool: asks ChatGPT, Claude and Gemini the questions a brand's buyers ask and tracks whether/how the brand shows up in the answers, vs. competitors. Not | (not cloned) | AGPL-3.0 | risks: AGPL-3.0 copyleft applies if you modify and host it for clients; Running the actual brand-visibility checks burns your own OpenAI/Anthropic/Gemini API credits per query — not free at any real volume; Overlaps directly with the user's existing client AEO retain
 

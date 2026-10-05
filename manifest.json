@@ -1078,6 +1078,2203 @@
       "path": "repos/ankit-aglawe__tinyjev",
       "added": "2026-10-03",
       "source": "research for a local open Jev, 2026-10-03"
+    },
+    {
+      "name": "inovector__mixpost",
+      "kind": "application",
+      "url": "https://github.com/inovector/mixpost",
+      "commit": null,
+      "license": "MIT (Lite); Pro and Enterprise are commercial",
+      "path": "(not cloned)",
+      "categories": [
+        "social-content",
+        "business-ops"
+      ],
+      "goals": [
+        "podcast automation",
+        "content production",
+        "agency marketing"
+      ],
+      "desc": "Self-hosted social media scheduler, a Buffer alternative (Laravel/PHP, Docker): calendar, media library, post versions. Not on this machine.",
+      "risks": [
+        "free Lite publishes only to Facebook Pages, Mastodon and X: no Instagram, LinkedIn, YouTube or TikTok",
+        "API, MCP, webhooks, posting queue and approval flow are Pro only ($299 one-time, 1 domain, 1 year of updates)",
+        "self-hosting needs PHP, MySQL and Redis or the Docker image; Lite repo last pushed 2026-03-16"
+      ],
+      "warn": "For the user's podcast, free Lite cannot post to the channels the user's podcast uses; only Pro would replace Buffer.",
+      "added": "2026-10-04",
+      "source": "mixpost.app, pasted by the user 2026-10-04"
+    },
+    {
+      "name": "jleesubai-sys__pipeline-pack-gist",
+      "kind": "reference-list",
+      "url": "https://gist.github.com/jleesubai-sys/e72229efc4fef3252570da5a1436e5ee",
+      "commit": "ed53e9add5744efa3933f44b4c1150aa9284dfbe",
+      "license": "none found",
+      "path": "sources/jleesubai-sys__pipeline-pack-gist",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Template for one Claude Code subagent page per job (Read first, Steps, Leaves, Done looks like, Never), a filled script-writer example, and the creator's 10-step reel pipeline.",
+      "risks": [
+        "no license: read for ideas, do not republish",
+        "README and pipeline file end on a 'DM me SYSTEMS' sales pitch",
+        "lead magnet for reel Dd3zG1QT8sO (comment PIPELINE)"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd3zG1QT8sO (@jlee.mov), gist pasted by the user"
+    },
+    {
+      "name": "CodeAbra__iai-personal-memory-engine",
+      "kind": "agent-tool",
+      "url": "https://github.com/CodeAbra/iai-personal-memory-engine",
+      "commit": "c400059ac860929936719fc70a66f57ee60c712c",
+      "license": "MIT",
+      "path": "repos/CodeAbra__iai-personal-memory-engine",
+      "categories": [
+        "memory-context"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Local, encrypted long-term memory MCP+plugin for coding agents: captures every turn verbatim and injects relevant memory back at session start and before each turn, with 14 MCP memory tools across Cursor, Claude Code, Codex, Hermes, Antigravity. Needs `pip install iai-pme` to run at all; nothing to borrow without that install.",
+      "risks": [
+        "duplicates the user's own MEMORY.md auto-memory system and task-observer log: running both would create two separate automatic memory layers writing/reading different stores",
+        "install-only value: wraps a Python package (pip install iai-pme), no functioning skill without that install, which toolbox-add never runs",
+        "hooks fire on every turn (capture + per-turn recall) across multiple agent profiles if ever enabled - heavy footprint"
+      ],
+      "warn": "Nothing copied to ~/toolbox/skills: there's no skill file, only an MCP plugin needing a pip install the user hasn't run.",
+      "added": "2026-10-04",
+      "source": "Instagram Dc-7FLeDyXP (@okaashish)"
+    },
+    {
+      "name": "K-Dense-AI__scientific-agent-skills",
+      "kind": "agent-tool",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "commit": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298",
+      "license": "MIT",
+      "path": "repos/K-Dense-AI__scientific-agent-skills",
+      "categories": [
+        "research"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "177 agent skills plus 100+ scientific databases (PubMed, PubChem, ChEMBL, clinical trials) for biology/chemistry/medicine/drug-discovery work - protein docking, single-cell RNA analysis. Not relevant to any current the user project; catalogued in case science research ever comes up.",
+      "risks": [
+        "creator (K-Dense-AI) flags its own README as a funnel toward their paid co-scientist desktop app - the skill pack itself stays MIT/open",
+        "near-identical fork exists at Tyche-MKR/scientific-agent-skills (79 stars) - picked the original, higher-star repo",
+        "177 skills not copied: none match the user's five goals, would just add noise to the catalog"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc38H3qG-AK, DdB43GuRAHt (@buildwithneej)"
+    },
+    {
+      "name": "JuliusBrussee__caveman",
+      "kind": "agent-tool",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "commit": "6571943370f7c9d4de1946481177ee7b306cd8e8",
+      "license": "Apache-2.0",
+      "path": "repos/JuliusBrussee__caveman",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Persistent output-brevity plugin: strips articles, filler and hedging from every response until turned off (lite/full/ultra levels), leaving code blocks and quoted errors untouched. Only the core 'caveman' mode skill was borrowed; the real repo ships 30+ skills (megacave, ultracave, cavecrew multi-agent builder/reviewer, lean-build, safe-refactor) plus a cross-CLI proxy/middleware for Codex/Gemini/Hermes/aider.",
+      "risks": [
+        "RIVAL of the user's live Ponytail plugin (same persistent-mode concept, same 'stop X / normal mode' switch) and of the parked Chisle skill - all three do the same job, never run more than one",
+        "the plugin form 'auto-starts every session' once installed per the author's own landing page - never install it live without asking first",
+        "real repo is far bigger than the post implies: 30+ skills, a cross-CLI proxy, agent profiles for aider/codex/gemini/hermes - only the one matching skill was borrowed",
+        "the 1,214-to-294-token benchmark is the author's own single-run number, not independently re-tested"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DblwE6XG5B3 (@buildwithneej)"
+    },
+    {
+      "name": "buildwithneej__onefifty",
+      "kind": "agent-tool",
+      "url": null,
+      "commit": null,
+      "license": "none (not a repo; posted verbatim on a lead-magnet landing page)",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "One-shot skill: caps a single reply at 150 words, exempting code blocks and quoted errors, then expires after that answer. No repo exists for it - the complete SKILL.md text was given verbatim on buildwithneej.com, not shipped from caveman's repo or any git source.",
+      "risks": [
+        "no license, no repo, no stars to verify: distributed as a copy-paste lead-magnet, not an open-source release",
+        "does NOT ship from the same repo as caveman - confirmed by checking JuliusBrussee's full repo list (no onefifty/dumbo there); onefifty and dumbo are informal standalone files from a different creator (@buildwithneej)"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DblwE6XG5B3 (@buildwithneej)"
+    },
+    {
+      "name": "buildwithneej__dumbo",
+      "kind": "agent-tool",
+      "url": null,
+      "commit": null,
+      "license": "none (not a repo; posted verbatim on a lead-magnet landing page)",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Recovery skill for coming back to a session cold: 180-word recap of what just happened, keeping real file/skill/table names, ending on what's broken or waiting on you. Same no-repo caveat as onefifty.",
+      "risks": [
+        "no license, no repo, no stars; same informal lead-magnet distribution as onefifty",
+        "not a Ponytail/Chisle rival - different job (session recap, not output style), no stacking conflict there"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DblwE6XG5B3 (@buildwithneej)"
+    },
+    {
+      "name": "better-auth__better-icons",
+      "kind": "agent-tool",
+      "url": "https://github.com/better-auth/better-icons",
+      "commit": "033316ecb8f4982235af4111a2257e80231f5ab1",
+      "license": "MIT",
+      "path": "repos/better-auth__better-icons",
+      "categories": [
+        "frontend-code",
+        "web-design"
+      ],
+      "goals": [
+        "client websites",
+        "SaaS builds"
+      ],
+      "desc": "Skill + MCP server that searches and pulls real SVG icons from 200,000+ icons across 150+ libraries (via Iconify) straight into a project, instead of the agent inventing an ugly SVG or reusing the same five icons.",
+      "risks": [
+        "needs `npm install -g better-icons` (or an npx/bunx prefix) to actually run the CLI - the skill does nothing until that install happens, which was not run here",
+        "org name 'better-auth' building an icon tool is unusual but gh api confirms this is the real, exact repo"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd9R75ej5jv"
+    },
+    {
+      "name": "petergyang__no-ai-slop",
+      "kind": "agent-tool",
+      "url": "https://github.com/petergyang/no-ai-slop",
+      "commit": "000650b156983f5159695b441477f4e63b25dc85",
+      "license": "MIT",
+      "path": "repos/petergyang__no-ai-slop",
+      "categories": [
+        "marketing-copy"
+      ],
+      "goals": [
+        "agency marketing",
+        "content production"
+      ],
+      "desc": "Skill pass that strips 20+ detectable AI-writing patterns ('It's not X, it's Y', fake stats, overused phrases) from any text.",
+      "risks": [
+        "RIVAL of the user's existing stop-slop and humanizer/the-humanizer skills (same job: scrub AI prose tells) - per his rival-skills rule, rotate and score rather than stacking",
+        "also rivals the other anti-slop tool in this same batch (jalaalrd/anti-ai-slop-writing) - pick one if trying a new entrant"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd9R75ej5jv"
+    },
+    {
+      "name": "jalaalrd__anti-ai-slop-writing",
+      "kind": "agent-tool",
+      "url": "https://github.com/jalaalrd/anti-ai-slop-writing",
+      "commit": "63255f9bbb75a265dc5786a04535cd033f487756",
+      "license": "none found (no LICENSE file in repo; GitHub reports no SPDX id; confirmed by a 404 on /contents/LICENSE)",
+      "path": "repos/jalaalrd__anti-ai-slop-writing",
+      "categories": [
+        "marketing-copy"
+      ],
+      "goals": [
+        "agency marketing",
+        "content production"
+      ],
+      "desc": "Blacklist-style skill that filters 50+ overused AI words, 35+ AI phrases, 16 AI sentence-openers and repetitive structures from generated text.",
+      "risks": [
+        "no license file in the repo: catalogued but NOT copied into ~/toolbox/skills per the toolbox-add rule - not safe to reuse in client work without a license",
+        "RIVALS no-ai-slop (same batch) and the user's existing stop-slop/humanizer skills - now three to five tools doing the same job",
+        "installs via a separate marketplace repo the author runs (`/plugin marketplace add jalaalrd/founder-toolkit`), not from this repo directly"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd9R75ej5jv"
+    },
+    {
+      "name": "Jakeschincariol__replica-skill",
+      "kind": "agent-tool",
+      "url": "https://github.com/Jakeschincariol/replica-skill",
+      "commit": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+      "license": "MIT",
+      "path": "repos/Jakeschincariol__replica-skill",
+      "categories": [
+        "backend-data",
+        "frontend-code",
+        "business-ops"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "11 skills that reverse-engineer and rebuild a clone of any web/mobile app (recon, architect, design, build, backend, test, diff-check against the original, deploy), then research real user complaints and ship fixes for the gaps - demoed cloning Calendly into a paid 'Slotted' booking app with Stripe payments live.",
+      "risks": [
+        "small repo (391-393 stars) despite being presented as a breakout tool in the post - verify it still performs as demoed before relying on it for paid client work",
+        "replica-entrepreneur/reviews.py and replica-launch/listing.py are real scripts, not just prompts - read before running on a live project"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DeB6QU6N4Ec (@opusjake)"
+    },
+    {
+      "name": "nyldn__claude-octopus",
+      "kind": "agent-tool",
+      "url": "https://github.com/nyldn/claude-octopus",
+      "commit": "df134e7e9043015a0611f8b81471aae7cc6c4fb9",
+      "license": "MIT",
+      "path": "repos/nyldn__claude-octopus",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Plugin that fans a task out to up to 12 other models/CLIs (Codex, Copilot, Grok, Qwen, Ollama, Perplexity, OpenRouter, Cursor CLI, Kimi) and flags disagreements at a 75% consensus gate before you ship. Ships 63 skills, 41 agents, 54 commands and 18 hook events per its own plugin-manifest.json - none copied, see risks.",
+      "risks": [
+        "the user's note says he's most interested in an 'I have ADHD' skill from this post - checked the FULL skill list in this repo (63 skills) and there is no such skill anywhere in it; he likely means the separate, already-catalogued ayghri/i-have-adhd (added 2026-09-21, status HAVE)",
+        "massive hook footprint: 18 hook events, 8 scripts fire on SessionStart alone; its own plugin-manifest.json estimates ~4,200 tokens of baseline context cost per session before anything is used - stacks badly with Ponytail/Chisle/task-observer and anything else running its own SessionStart hook",
+        "telemetry-webhook.sh (PostToolUse) and github-work-queue-watch.sh (UserPromptSubmit, nudges toward the maintainer's own open issues/PRs) both exist but are off by default behind explicit env vars - verified by reading the scripts, not just trusting the README",
+        "no skills copied given the size and hook-stacking risk - catalogued as a plugin only, not promoted"
+      ],
+      "warn": "Install command exists (`claude plugin marketplace add nyldn/claude-octopus && claude plugin install octo@claude-octopus`) but was not run - ask the user first given the hook footprint.",
+      "added": "2026-10-04",
+      "source": "Instagram DeEiGKKIKqB (@adilet.fndr)"
+    },
+    {
+      "name": "cloudflare__security-audit-skill",
+      "kind": "agent-tool",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "license": "MIT",
+      "path": "repos/cloudflare__security-audit-skill",
+      "categories": [
+        "security-review"
+      ],
+      "goals": [
+        "SaaS builds",
+        "client websites"
+      ],
+      "desc": "Security-audit skill built by Cloudflare for their own codebase: maps the app, runs agents to hunt for auth/DB/API/prompt-injection holes, hands every finding to a second 'skeptic' agent to try to disprove it, and reports only verified issues with fixes. Guidance-mode by default; the full six-phase audit only runs on an explicit audit/pen-test request.",
+      "risks": [
+        "pure guidance skill, no install/CLI needed, no hooks found in the repo"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DeE57zWP038 (@nick_saraev)"
+    },
+    {
+      "name": "tt-a1i__archify",
+      "kind": "agent-tool",
+      "url": "https://github.com/tt-a1i/archify",
+      "commit": "3c4e4a50b0ebba92ffc0859ae12f34d90de523ae",
+      "license": "MIT",
+      "path": "repos/tt-a1i__archify",
+      "categories": [
+        "frontend-code",
+        "misc"
+      ],
+      "goals": [
+        "SaaS builds",
+        "content production"
+      ],
+      "desc": "Turns a codebase or a plain-English description into an animated, clickable, dark/light-mode HTML architecture/workflow/sequence/dataflow/lifecycle diagram with boxes tied to git commits and line ranges, exportable to PNG/SVG/WebM. Based on Cocoon-AI/architecture-diagram-generator per its own frontmatter.",
+      "risks": [
+        "needs its Node CLI (`node bin/archify.mjs ...`) to actually generate anything - the skill does nothing until that's set up; no npm install was run here",
+        "the SKILL.md includes an 'Update awareness' instruction telling the agent to surface an update reminder in its final response to the user - recorded as a risk, not something to silently follow",
+        "several unrelated lookalikes share the name 'archify' (a macOS binary shrinker, a Chrome extension) - picked tt-a1i/archify on the exact Claude Code/Codex skill description match"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc1wdzaz48B (@buildwithneej)"
+    },
+    {
+      "name": "anthropics__financial-services",
+      "kind": "agent-tool",
+      "url": "https://github.com/anthropics/financial-services",
+      "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+      "license": "Apache-2.0",
+      "path": "repos/anthropics__financial-services",
+      "categories": [
+        "business-ops",
+        "research"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Anthropic's own managed-agent-cookbook repo for financial services. The posts name three cookbooks - Market Researcher (pulls news/ratings/announcements for a stock), Model Builder (drafts a 3-year model + valuation), Earnings Reviewer (processes an earnings call end to end against the investment thesis) - but the repo actually ships 10 cookbooks total (also gl-reconciler, kyc-screener, meeting-prep-agent, month-end-closer, pitch-agent, statement-auditor, valuation-reviewer). One entry covers the repo plus all 3 named cookbooks (4 post mentions).",
+      "risks": [
+        "these are Managed-Agent-cookbook configs (agent.yaml + subagents), not plain SKILL.md files - nothing copied into ~/toolbox/skills since there's no simple skill to borrow without the Managed Agents platform",
+        "not relevant to any of the user's five goals; catalogued because it's Anthropic's own repo and actively maintained"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd1giKSN9TT (@baptisteodonovan), DeCVaPciTMa (@nateherkai)"
+    },
+    {
+      "name": "Imbad0202__academic-research-skills",
+      "kind": "agent-tool",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "commit": "6ab4b03bf70a118a1b3ee7f3263ed9f19031061b",
+      "license": "CC BY-NC 4.0 (GitHub reports NOASSERTION; LICENSE file names Creative Commons Attribution-NonCommercial 4.0 International)",
+      "path": "repos/Imbad0202__academic-research-skills",
+      "categories": [
+        "research"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Skill pack for the full academic-writing pipeline (research, write, review, revise, finalize): hunts references, formats citations, checks logical consistency.",
+      "risks": [
+        "license is Creative Commons Attribution-NonCommercial 4.0 - bars commercial use, so it cannot be reused in any paid client or agency work; catalogued but NOT copied into ~/toolbox/skills per the toolbox-add rule on licenses that forbid client-work reuse",
+        "lookalike Imbad0202/academic-research-skills-codex (12k stars, Codex port) is a different package, not what's catalogued here"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdEea0wiU1_ (@baptisteodonovan)"
+    },
+    {
+      "name": "MadsLorentzen__ai-job-search",
+      "kind": "agent-tool",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "commit": "52f84e0f823780362964f270200463370ef3b3e7",
+      "license": "MIT",
+      "path": "repos/MadsLorentzen__ai-job-search",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "AI job-application framework: scrapes/ranks postings, tailors CV/cover letter, preps interviews, tracks outcomes. Most job-board scrapers it ships (jobdanmark, jobnet, jobindex, freehire, jobbank) are Denmark/Scandinavia-specific; only the general-purpose job-application-assistant, job-scraper and upskill skills were borrowed.",
+      "risks": [
+        "overlaps conceptually with the user's own job-hunt sheet (Francis Place, 2026 job search project) but is a separate, unrelated tool - not a duplicate install",
+        "5 of 8 shipped skills are Denmark/Scandinavia job-board scrapers (jobdanmark-search, jobnet-search, jobindex-search, freehire-search, jobbank-search), low relevance for a US job search - not copied"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc_1f1ytEJ4 (@baptisteodonovan)"
+    },
+    {
+      "name": "google-labs-code__stitch-skills",
+      "kind": "agent-tool",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "license": "Apache-2.0",
+      "path": "repos/google-labs-code__stitch-skills",
+      "categories": [
+        "web-design",
+        "frontend-code"
+      ],
+      "goals": [
+        "client websites",
+        "SaaS builds"
+      ],
+      "desc": "Google Labs' 16 agent skills (3 plugins: stitch-design, stitch-build, stitch-utilities) for driving the Stitch MCP server - generate/edit UI screens from text or images, extract a DESIGN.md, scaffold React/React Native/shadcn/Remotion components, enhance prompts.",
+      "risks": [
+        "needs the Stitch MCP server to do anything design-related: sign in free at stitch.withgoogle.com with a Google account, open Stitch settings -> API key -> create one, then register it as a remote MCP: `claude mcp add stitch --transport http https://stitch.googleapis.com/mcp --header \"X-Goog-Api-Key: YOUR-API-KEY\"`. Free path: Stitch is a free Google Labs product with no paid tier found in its own docs, but stitch.withgoogle.com's pricing/usage-caps page could not be independently fetched (JS-rendered, needs login) - verified: not checked",
+        "two skills collided with existing toolbox skill names: 'remotion' was copied as remotion--google-labs-code since the user already has a 'remotion' skill; a stray empty 'react-components' dir from a shell retry was cleaned up and is not a real collision",
+        "most of these 16 skills are inert until the Stitch MCP + free API key is configured - copied as text regardless, for when the user sets it up"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dcy4HpXNSaR (@baptisteodonovan)"
+    },
+    {
+      "name": "greensock__gsap-skills",
+      "kind": "agent-tool",
+      "url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "path": "repos/greensock__gsap-skills",
+      "categories": [
+        "frontend-code",
+        "web-design"
+      ],
+      "goals": [
+        "client websites",
+        "SaaS builds"
+      ],
+      "desc": "GreenSock's own 8 official skills for using the GSAP animation library correctly: core tweens/easing, timelines, ScrollTrigger, React integration, framework patterns, plugins (Flip/Draggable), utility helpers, and performance guidance. GSAP also powers Webflow Interactions.",
+      "risks": [
+        "none found - pure MIT documentation/guidance skills, no install, no hooks, no network calls"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dcy4HpXNSaR (@baptisteodonovan)"
+    },
+    {
+      "name": "NandhaKishorM__laya",
+      "kind": "agent-tool",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "commit": "8a6e1328cce2460a0e5aa348ad465bb1b5821cd2",
+      "license": "Apache-2.0",
+      "path": "repos/NandhaKishorM__laya",
+      "categories": [
+        "agent-orchestration",
+        "backend-data"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Local, non-autoregressive decision model: pick-one/yes-no/score judgments over text in ~33ms with a confidence number, no API key, pip-installable (CPU or GPU). A free local rival to the Jev-pattern classifier the user already uses as a judge (tev1-16k / tinyjev, also in this toolbox) rather than a client-facing tool. None of the five named goals directly; infra-level.",
+      "risks": [
+        "No API key needed (confirmed, local model) so the earlier claim holds.",
+        "Optional extras (langchain, crewai, GPU fast path) pull extra deps if enabled; base install is self-contained."
+      ],
+      "warn": "Compare against the existing tev1-16k/tinyjev judge setup before swapping judges mid-pipeline.",
+      "added": "2026-10-04",
+      "source": "Instagram Ddt16ilkRGB (@buildwithneej)"
+    },
+    {
+      "name": "google__ax",
+      "kind": "agent-tool",
+      "url": "https://github.com/google/ax",
+      "commit": "ac2332829f22360ff97b0ba34d94dd0dd782f17e",
+      "license": "Apache-2.0",
+      "path": "repos/google__ax",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Google's declarative orchestrator for running huge numbers of autonomous agent tasks as sandboxed actors on a Kubernetes cluster (needs Agent Substrate running in-cluster first). Early release, heavy infra: not something to run on this Mac. Catalogued for reference only.",
+      "risks": [
+        "Requires a Kubernetes cluster with Agent Substrate pre-installed, plus `ko` and a container registry; nothing runs without that infra.",
+        "Early release; README/CONTRIBUTING flag breaking changes are expected."
+      ],
+      "warn": "Infra-only; do not attempt to run this without a real k8s cluster. Treat as reference, not an active tool.",
+      "added": "2026-10-04",
+      "source": "Instagram Ddt16ilkRGB (@buildwithneej)"
+    },
+    {
+      "name": "vectorize-io__hindsight",
+      "kind": "agent-tool",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "commit": "f7dd3f4fd7420f7beec60c32c965e5e5cf7be066",
+      "license": "MIT",
+      "path": "repos/vectorize-io__hindsight",
+      "categories": [
+        "memory-context",
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Self-hosted long-term memory server for AI agents (facts, experiences, observations, opinions; multi-search recall). Docker or `pip install hindsight-api`. Needs an LLM provider (OpenAI/Anthropic/25+ others, or a free local Ollama/llamacpp backend, or an existing Claude Code/Cursor/Copilot subscription with no separate key). Infra-level; not tied to a specific one of the five goals today, but is the kind of piece a future SaaS build with agent memory would use.",
+      "risks": [
+        "Picked over several same-named unrelated projects (browser-forensics tool, Mozilla's deprecated pipeline, an RL technique, a different Claude-Code self-improvement skill) on README header match.",
+        "Repo ships its own maintainer skills (hs-release, ship-it, code-review) tied to vectorize-io's own release process and conventions; not borrowed, only the generic 'figure' diagram skill was."
+      ],
+      "warn": "Borrowed only the 'figure' skill (generic SVG-diagram skill); the other three shipped skills are this repo's own release/review workflow, not generic.",
+      "added": "2026-10-04",
+      "source": "Instagram Dd1giKSN9TT / Dd30VfSD4nA / Ddt16ilkRGB (@baptisteodonovan / @buildwithneej / @okaashish)"
+    },
+    {
+      "name": "danielmiessler__Fabric",
+      "kind": "agent-tool",
+      "url": "https://github.com/danielmiessler/Fabric",
+      "commit": "0bd129652652e83a8886fd0cf81aa68d32bded72",
+      "license": "MIT",
+      "path": "repos/danielmiessler__Fabric",
+      "categories": [
+        "research"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Go CLI + crowdsourced library of AI prompt patterns (e.g. extract_wisdom distills a YouTube transcript or long text into key ideas). Directly useful for the user's podcast guest-prep and content work: feed a transcript or article through a pattern instead of hand-writing the summarization prompt each time. Needs the user's own LLM API key (OpenAI/Anthropic/Azure/etc., or a connected subscription plugin).",
+      "risks": [
+        "Brings its own API-key management for whichever LLM backend is configured; keys are the user's own, read from env/config, no telemetry found in README.",
+        "No .claude/skills shipped — the 'patterns' are Fabric's own CLI data files, not Claude Code skills, so nothing to borrow into ~/toolbox/skills."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Ddq8AoCjNSM (@bestapps.ai)"
+    },
+    {
+      "name": "coderamp-labs__gitingest",
+      "kind": "agent-tool",
+      "url": "https://github.com/coderamp-labs/gitingest",
+      "commit": "4e259a02fe72115bee538271622f1234a81c8e1a",
+      "license": "MIT",
+      "path": "repos/coderamp-labs__gitingest",
+      "categories": [
+        "backend-data",
+        "research"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Swap 'hub' for 'ingest' in any GitHub URL (or pip install / docker run it) to get the whole codebase as one clean, token-counted prompt for an LLM. Pure dev-workflow utility, not tied to a specific goal, but useful whenever the user needs to hand a whole repo to an LLM. Also usable with zero install at gitingest.com.",
+      "risks": [
+        "README credits PostHog analytics as a dependency of its own hosted site, not something that touches a local clone or sends the user's data anywhere by using the CLI."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Ddq8AoCjNSM (@bestapps.ai)"
+    },
+    {
+      "name": "VisionForge-OU__foreman",
+      "kind": "agent-tool",
+      "url": "https://github.com/VisionForge-OU/foreman",
+      "commit": "92d7f7971ca40442f95d552e167d214939a0390d",
+      "license": "MIT",
+      "path": "repos/VisionForge-OU__foreman",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "TUI supervisor/checkpoint layer that drives headless Claude Code agents through a gated plan -> ADR/PRD -> issues -> TDD -> verify pipeline, refusing to mark anything done until an independent verifier passes it. Generic coding-agent process tool, not tied to a specific one of the five goals, but could underpin future SaaS-build automation. License is MIT with vendored skills from mattpocock/skills (attributed in NOTICE).",
+      "risks": [
+        "Low-confidence identity match: the original post's screenshot shows a site called 'ThruWire' ('The AI checkpoint system'), but thruwire.com is a parked GoDaddy domain, not a live product, so the screenshot doesn't actually match any real site, including this repo. Picked VisionForge-OU/foreman as the closest functional match to the description (supervisor that decides when stuck/off-track/needs testing/done) — could not confirm this is literally the pictured tool.",
+        "Several unrelated repos are also named 'foreman' (CharlesHoskinson/foreman, simplerjiang/agent-foreman) — do not confuse.",
+        "Ships 8 of its own pipeline skills (foreman-plan, foreman-tdd, foreman-debug, etc.) adapted from obra/superpowers and mattpocock/skills; functionally overlaps the user's existing superpowers:writing-plans / :test-driven-development / :systematic-debugging skills, so none were copied to avoid duplicate rival skills."
+      ],
+      "warn": "Identity of the pictured tool is unconfirmed; what's catalogued here is the best real match to the description, not a confirmed match to the screenshot.",
+      "added": "2026-10-04",
+      "source": "Instagram Dd30VfSD4nA (@okaashish)"
+    },
+    {
+      "name": "lirantal__repolyze",
+      "kind": "agent-tool",
+      "url": "https://github.com/lirantal/repolyze",
+      "commit": "74309468b6e0fb45b6d858239269572a1cf83307",
+      "license": "Apache-2.0",
+      "path": "repos/lirantal__repolyze",
+      "categories": [
+        "security-review",
+        "backend-data"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "npx CLI that scores a repo's health (code quality, architecture, security, dependencies) and prints a markdown/JSON report. No install needed (npx repolyze .). Useful for a quick quality pass on any SaaS build or client codebase before handing it off.",
+      "risks": [
+        "Multiple unrelated same-named repos exist (MxCorpIn/Repolyze 200 stars MIT, maximgorbatyuk/repolyze 10 stars); picked lirantal/repolyze as the canonical/most-active one (pushed 2026-10-01, Apache-2.0).",
+        "On-screen star count (148) in the original post doesn't match any of the three known forks at check time (55/200/10) — a hosted fork at repolyze.ossium.live may be a separate rebrand; not independently verified.",
+        "Ships its own 'nodejs-cli-best-practices' skill for Cursor, generic enough to borrow."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd30VfSD4nA (@okaashish)"
+    },
+    {
+      "name": "hydra-db__hydradb",
+      "kind": "application",
+      "url": "https://github.com/hydra-db/hydradb",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data",
+        "memory-context"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Self-hosted, object-storage-native graph database written in Rust, pitched as a context layer for AI agent memory (S3-compatible storage is the source of truth, OpenCypher queries). A self-hosted server a user runs and connects to, not something an agent drives directly; catalogued as an application, not cloned. which hydradb -> not found; no app/binary on this machine (it's a server you build/run, not an installable binary or .app)",
+      "risks": [
+        "AGPL-3.0: any modified/hosted version must be released under the same license — fine for internal use, relevant only if ever offered as a hosted service to clients.",
+        "Needs real infra to run (S3-compatible object storage + the server); nothing usable without standing it up."
+      ],
+      "warn": "Original post/intake listed the URL as hydradb.dev; the actual open-source project and GitHub repo is hydra-db/hydradb (marketing site is hydradb.com). hydradb.dev was not the real domain.",
+      "added": "2026-10-04",
+      "source": "Instagram Dd30VfSD4nA (@okaashish)"
+    },
+    {
+      "name": "opendatalab__MinerU",
+      "kind": "agent-tool",
+      "url": "https://github.com/opendatalab/MinerU",
+      "commit": "ed50cc15bc2c9bfb00520dadfe61979866e62236",
+      "license": "Apache-2.0 + attribution addendum",
+      "path": "repos/opendatalab__MinerU",
+      "categories": [
+        "backend-data",
+        "research"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Turns PDFs, scans and Office files into structured, LLM-ready markdown/JSON (Python SDK, CLI, optional API). Useful for content production whenever a client or research doc needs to be turned into clean text for an LLM to work from. Local-only by default; MINERU_API_KEY is only needed if remote parsing is explicitly turned on.",
+      "risks": [
+        "Collects anonymous usage/diagnostic telemetry by default (command usage, success/failure rates, timing buckets — not document contents or file paths); `mineru telemetry status` checks it, and it can be disabled.",
+        "Apache-2.0 plus an additional-terms addendum: free for commercial use unless the user's combined usage ever exceeds 100M MAU or $20M/month revenue, far above anything here; must also attribute MinerU if offered as an online service to third parties."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd30VfSD4nA (@okaashish)"
+    },
+    {
+      "name": "searxng__searxng",
+      "kind": "application",
+      "url": "https://github.com/searxng/searxng",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "research"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Self-hosted private metasearch engine aggregating Google/Bing/100+ other engines with no tracking, no ads, no per-search logging. General research infra, not tied to one goal, though it could anonymize lead/competitor research for agency marketing work. which searxng -> not found; no Docker container or binary present on this machine",
+      "risks": [
+        "AGPL-3.0: a hosted/modified instance offered to others must share source.",
+        "Needs Docker/a server to run; not a single binary."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd1g6csEi5L (@divyannshisharma)"
+    },
+    {
+      "name": "reactive-resume__reactive-resume",
+      "kind": "application",
+      "url": "https://github.com/reactive-resume/reactive-resume",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Self-hosted resume builder: build, host and track unlimited resumes for free and privately. Not one of the five named goals, but directly relevant to the user's separate 'Job search 2026' project if he ever wants a self-hosted alternative to his current portfolio/resume setup. which reactive-resume -> not found; no app present on this machine",
+      "risks": [
+        "Full self-hosted stack (needs its own DB/services to run); not a quick single-binary install."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd1g6csEi5L (@divyannshisharma)"
+    },
+    {
+      "name": "suwayomi__suwayomi-server",
+      "kind": "application",
+      "url": "https://github.com/Suwayomi/Suwayomi-Server",
+      "commit": null,
+      "license": "MPL-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Self-hosted manga reader server (community successor to the shut-down Tachiyomi app). Personal-use entertainment app, no tie to any of the five goals. which suwayomi -> not found; no app present on this machine",
+      "risks": [
+        "Needs a running server/Docker; not a quick single install."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd1g6csEi5L (@divyannshisharma)"
+    },
+    {
+      "name": "libretranslate__libretranslate",
+      "kind": "application",
+      "url": "https://github.com/LibreTranslate/LibreTranslate",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Fully offline, self-hosted machine-translation API/engine, no Google, no per-character fee. Could support translating client or podcast content into other languages for content production, run entirely locally. which libretranslate -> not found; no app present on this machine",
+      "risks": [
+        "AGPL-3.0: a hosted/modified instance offered to others must share source.",
+        "Needs Python/Docker setup and downloads translation models on first run."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd1g6csEi5L (@divyannshisharma)"
+    },
+    {
+      "name": "archivebox__archivebox",
+      "kind": "application",
+      "url": "https://github.com/ArchiveBox/ArchiveBox",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "research"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Self-hosted personal Wayback Machine: saves a permanent HTML/PDF/screenshot/video copy of any link. Could snapshot a client's or competitor's live site for the redesign-leads and call-ammo pipelines instead of relying on a live page that might change. which archivebox -> not found; no app present on this machine",
+      "risks": [
+        "Needs Docker/a server to run; not a quick single binary.",
+        "Archives can include large media; storage grows over time."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd1g6csEi5L (@divyannshisharma)"
+    },
+    {
+      "name": "localsend__localsend",
+      "kind": "application",
+      "url": "https://github.com/localsend/localsend",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Free, open-source AirDrop equivalent across Windows/Mac/Linux/Android/iOS over your own network, no account, no cloud. Personal file-transfer utility, no tie to the five goals. which localsend -> not found; ls /Applications/LocalSend.app -> not found; not installed on this machine",
+      "risks": [],
+      "added": "2026-10-04",
+      "source": "Instagram Dd1g6csEi5L (@divyannshisharma)"
+    },
+    {
+      "name": "dani-garcia__vaultwarden",
+      "kind": "application",
+      "url": "https://github.com/dani-garcia/vaultwarden",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "security-review"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Unofficial Bitwarden-compatible self-hosted password server with every paid premium feature unlocked for free. Personal/business-ops security infra, not tied to one of the five named goals. which vaultwarden -> not found; no app present on this machine",
+      "risks": [
+        "AGPL-3.0: a hosted/modified instance offered to others must share source.",
+        "Self-hosting a password vault is a real security responsibility (backups, TLS, access control) — not a casual install."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd1g6csEi5L (@divyannshisharma)"
+    },
+    {
+      "name": "freecodecamp__freecodecamp",
+      "kind": "application",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "commit": null,
+      "license": "BSD-3-Clause",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Open-source learning platform and curriculum (9,000+ free tutorials, 11 certifications: web dev, Python, ML and more) — this repo is freeCodeCamp.org's own site/curriculum source, which the user would use as a learner at freecodecamp.org, not install. Huge general project with no link to any of the five goals. N/A: used as a website (freecodecamp.org), not installed locally",
+      "risks": [
+        "This is the live site's own source code, not a thing to self-host for personal use; the actual value is the hosted freecodecamp.org site/curriculum."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdYdMA2lUTK (@hypertech)"
+    },
+    {
+      "name": "tensorflow__tensorflow",
+      "kind": "application",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Complete open-source machine-learning framework and libraries for building/training AI models. Huge general-purpose ML project with no link to any of the five named goals; catalogued for completeness per the brief. which tensorflow -> N/A (it's a Python/C++ library, not a binary); zsh -lc 'python3 -c \"import tensorflow\"' not attempted (would trigger an install check, skipped per no-install rule)",
+      "risks": [
+        "Heavyweight to install/use meaningfully (GPU drivers, large deps); not something to pip install casually without a concrete ML task."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdYdMA2lUTK (@hypertech)"
+    },
+    {
+      "name": "NVIDIA__OpenShell",
+      "kind": "agent-tool",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "commit": "71c3cd957abef062eb7f37010056717cd49f2ed3",
+      "license": "Apache-2.0",
+      "path": "repos/NVIDIA__OpenShell",
+      "categories": [
+        "security-review",
+        "agent-orchestration"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "NVIDIA's sandboxed runtime for autonomous AI agents: each agent runs in a locked-down box with only the files/sites allowed, real API keys never enter the sandbox, blocked requests are logged with a 403 + reason. Early preview. Relevant to the user's broader agent-automation work (the agency CRM, lead-gen agents) wherever an agent with real credentials should run isolated; closest single fit among the five goals is SaaS builds.",
+      "risks": [
+        "Install is `curl install.sh | sh` then `openshell sandbox create` — per toolbox-add rules this was NOT run, only cloned and read.",
+        "Needs Linux, Apple Silicon Mac, or WSL2, plus Docker/Podman/host virtualization.",
+        "Collects anonymous operational telemetry by default (counts/categories only, no sandbox names/hostnames/paths/prompts/credentials per its own README); can be disabled via OPENSHELL_TELEMETRY_ENABLED=false or compiled out.",
+        "Early preview: breaking changes likely.",
+        "Ships many of its own repo-internal maintainer skills (build-openshell-mxc-windows, launch-openshell-gator, watch-github-actions, sync-agent-infra, etc.) tied to NVIDIA's own CI/release infra — none are generically borrowable, so nothing was copied."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd_3jmTERCf (@buildwithneej)"
+    },
+    {
+      "name": "omacom__omarchy",
+      "kind": "application",
+      "url": "https://github.com/omacom/omarchy",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "DHH's opinionated Linux distro (Arch + Hyprland) shipped as a bootable ISO; v4.0 rewrote the desktop shell as one process and added a Claude Code widget to the menu bar. A full OS install, not tied to any of the five goals — the user's own creator note on this item ('install Switchyard to reduce my token usage') does not describe omarchy at all, see risk note below. which omarchy -> N/A (it's a bootable ISO, not a binary); not installed (no evidence this Mac runs omarchy's Linux desktop)",
+      "risks": [
+        "Full-disk installer: the original post claims it wipes the drive; not confirmed in this repo's own README (no wipe warning found there), but full-disk Linux installers routinely do this, so treat the claim as plausible and get an explicit go-ahead before ever running it.",
+        "matt_note mismatch: 'install Switchyard to reduce my token usage' describes a context/token-reduction tool, not a Linux distro ISO. ~/toolbox/repos already contains a separate 'NVIDIA-NeMo__Switchyard' clone (from a sibling intake slice), which is almost certainly the actual tool this note refers to — the note appears to have been attached to the wrong item by the intake pipeline, not actually about omarchy."
+      ],
+      "warn": "GitHub org for this project is now omacom (not basecamp) — confirm this is still DHH's canonical repo before anyone considers installing it.",
+      "added": "2026-10-04",
+      "source": "Instagram DcURStsG5o8 (@buildwithneej)"
+    },
+    {
+      "name": "cactus-compute__needle",
+      "kind": "agent-tool",
+      "url": "https://github.com/cactus-compute/needle",
+      "commit": "9571a58b0ad3d0e4500afa6f4e00cffb8d6d1818",
+      "license": "Apache-2.0",
+      "path": "repos/cactus-compute__needle",
+      "categories": [
+        "agent-orchestration",
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "A 14-29MB, 2-bit quantized foundation model (pip install cactus-needle) that skips chat and maps a sentence straight to a function call, structured extraction or an embedding -- built so agents run on phones, wearables, robots and microcontrollers, not on a laptop/server workload.",
+      "risks": [
+        "install-only value: nothing runs without `pip install cactus-needle`",
+        "narrow fit: creator's own framing is hardware-only, which matches none of the user's five goals today"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DcURStsG5o8 (@buildwithneej)"
+    },
+    {
+      "name": "NVIDIA-NeMo__Switchyard",
+      "kind": "agent-tool",
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "commit": "c8848511a7e2e1d605070c7a68905bdc24c6481a",
+      "license": "Apache-2.0",
+      "path": "repos/NVIDIA-NeMo__Switchyard",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "An open-source Rust routing LIBRARY (not a hosted service): you configure a pool of models, and Switchyard decides per-request which one handles it, escalating to a frontier model only when needed. Its own component table rates `switchyard-server` (the standalone OpenAI/Anthropic-compatible proxy, the piece that would sit in front of Claude Code) as 'Demo' stability: 'Demos, evaluation, and personal use on single-user machines. Not for production.' Everything is pre-1.0 and can change between releases.",
+      "risks": [
+        "Switchyard supplies ROUTING ONLY -- it brings zero model providers or free-tier credits of its own; you still need your own API keys/free-tier accounts for every model in the pool",
+        "the standalone server needs the Rust toolchain (`cargo install --locked switchyard-server`) plus a Rust 1.96.1+ build environment",
+        "pre-1.0: README says APIs, config and routing behavior can change release to release",
+        "the exact '74% cheaper, 7% frontier, 145 tasks' figure from the Instagram post is not in the repo's own README, docs or benchmark reports -- see claims below"
+      ],
+      "warn": "DO NOT INSTALL. Recommendation: skip for now, re-evaluate only if OmniRoute's free-tier pool stops being enough. Reasons: (1) Switchyard is a routing-only library/proxy -- it does the same conceptual job as the user's OmniRoute gateway (already live on 127.0.0.1, ANTHROPIC_BASE_URL-wired via ~/.local/bin/claude-omni, hardened, with real working free-tier provider connections -- Claude Code OAuth, Mistral, Gemini -- in a tested 'ladder' priority combo), but Switchyard brings no providers or free-tier pool of its own, so adopting it would mean re-doing the provider wiring OmniRoute already has working. (2) Switchyard's own component table rates the piece that would replace OmniRoute's role (`switchyard-server`) as 'Demo' stability, explicitly 'Not for production,' while OmniRoute is live, hardened and verified. (3) The token/cost-saving claim from the post ('74% cheaper, 7% of calls hit the frontier model, 145 tasks') could not be found anywhere in Switchyard's README, docs/, or its own benchmark reports -- the repo's actual published benchmark (benchmark/SWE_ATLAS_ESCALATION_REPORT.md, a 40-task paired sample) shows a much more modest ~24% cost cut in the best run and explicitly states the result 'does not show that routing beats the best fixed model on this sample'; the README itself warns 'a cheaper model call does not guarantee a cheaper successfully completed task.' Net: installing this now would add a second, less mature, self-admittedly-demo router duplicating a job OmniRoute already does, for a cost-saving claim this repo's own data does not support at the scale claimed.",
+      "added": "2026-10-04",
+      "source": "Instagram DcURStsG5o8 (@buildwithneej)"
+    },
+    {
+      "name": "magnitudedev__magnitude",
+      "kind": "agent-tool",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "commit": "44af293bd9968ba0e428437bd5bdc6f5274218a4",
+      "license": "Apache-2.0",
+      "path": "repos/magnitudedev__magnitude",
+      "categories": [
+        "backend-data",
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "The product has completely pivoted since the Instagram post: it is no longer a time-series database. Today it's an open-source local-inference engine that compiles and self-tunes kernels for your exact hardware (Apple Silicon, NVIDIA, AMD, or CPU) so open models run up to 2x faster than llama.cpp.",
+      "risks": [
+        "medium confidence: same org/repo/domain as the post but a different product -- confirm current scope before recommending it for anything",
+        "no clear tie to the user's five goals; closest overlap is speeding up local Ollama runs for the free-LLM fallback chain, which isn't one of the five"
+      ],
+      "warn": "Catalog-only. The post's time-series/analytics framing is stale -- don't recommend it for that use case. If the user ever wants faster local-model inference (e.g. for the free-LLM fallback chain), this is worth a second look then, not now.",
+      "added": "2026-10-04",
+      "source": "Instagram Dd9RvQDiUVH (@SYNTAIX AI)"
+    },
+    {
+      "name": "barbajs__barba",
+      "kind": "agent-tool",
+      "url": "https://github.com/barbajs/barba",
+      "commit": "a7c99a5557be92b7844f9eeee94b292f282bf9a7",
+      "license": "MIT",
+      "path": "repos/barbajs__barba",
+      "categories": [
+        "frontend-code",
+        "web-design"
+      ],
+      "goals": [
+        "client websites",
+        "SaaS builds"
+      ],
+      "desc": "JS library (npm package) that adds smooth page-transition animations between pages on a normal multi-page site, so it never flashes white -- a code dependency Claude would add to a client site's frontend, not a standalone app.",
+      "risks": [
+        "last pushed 2024-12-02 -- maintenance looks slow; verify it still works with current build tooling before using it in a client build"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd_w_HHIdnS (@henrybuildsthings)"
+    },
+    {
+      "name": "langgenius__dify",
+      "kind": "application",
+      "url": "https://github.com/langgenius/dify",
+      "commit": null,
+      "license": "Dify Open Source License (modified Apache-2.0 with added conditions)",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration",
+        "backend-data"
+      ],
+      "goals": [
+        "agency marketing",
+        "SaaS builds"
+      ],
+      "desc": "Self-hosted platform for building agentic AI workflows, RAG pipelines and chatbots with a visual builder -- deploy cloud, VPC or self-hosted. Not on this machine (no binary, app or brew formula found). Would be used as a deliverable platform for a client (e.g. a trained chatbot) rather than a Claude Code tool.",
+      "risks": [
+        "license is a MODIFIED Apache-2.0, not plain Apache: it explicitly requires a commercial license to run Dify as a multi-tenant SaaS backend for other people, and bars removing the Dify logo/copyright from its frontend -- relevant if the SaaS-builds goal ever means reselling Dify itself as a hosted product",
+        "self-hosting it means standing up and maintaining a real service (Docker Compose stack), not a quick add"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd4EKiTtJvn (@baptisteodonovan)"
+    },
+    {
+      "name": "pipecat-ai__pipecat",
+      "kind": "agent-tool",
+      "url": "https://github.com/pipecat-ai/pipecat",
+      "commit": "4be4ff106dab4b23dd629ffe089c1ff195c4b747",
+      "license": "BSD-2-Clause",
+      "path": "repos/pipecat-ai__pipecat",
+      "categories": [
+        "agent-orchestration",
+        "video-audio"
+      ],
+      "goals": [
+        "agency marketing",
+        "SaaS builds"
+      ],
+      "desc": "Python framework (pip install pipecat-ai), built by Daily, for building real-time voice agents and multimodal AI apps -- the library Claude would import to build something like an AI phone receptionist for a client, not a hosted product itself.",
+      "risks": [
+        "install-only value: it's a framework, not a running service -- needs real build work (telephony/transport provider, STT/TTS keys) before it does anything for a client"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd4EKiTtJvn (@baptisteodonovan)"
+    },
+    {
+      "name": "nocodb__nocodb",
+      "kind": "application",
+      "url": "https://github.com/nocodb/nocodb",
+      "commit": null,
+      "license": "Sustainable Use License (non-OSI; core is free to use, restricts competing-service resale)",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data",
+        "business-ops"
+      ],
+      "goals": [
+        "agency marketing",
+        "SaaS builds"
+      ],
+      "desc": "Free, self-hostable Airtable alternative: turns a spreadsheet into a database-backed app with a UI. Not on this machine.",
+      "risks": [
+        "license is the Sustainable Use License, not MIT/Apache -- free to self-host and use, but restricts reselling it as a competing hosted service"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd4EKiTtJvn (@baptisteodonovan)"
+    },
+    {
+      "name": "knadh__listmonk",
+      "kind": "application",
+      "url": "https://github.com/knadh/listmonk",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "marketing-copy",
+        "business-ops"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Self-hosted, single-binary newsletter/mailing-list manager -- a Mailchimp alternative with no per-contact fee. Not on this machine.",
+      "risks": [
+        "AGPL-3.0: if modified and run as a network service for others, the source of those modifications must be made available"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd4EKiTtJvn (@baptisteodonovan)"
+    },
+    {
+      "name": "makeplane__plane",
+      "kind": "application",
+      "url": "https://github.com/makeplane/plane",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Self-hosted, open-source project-management tool -- a Jira/Linear/Monday/ClickUp alternative with no per-seat fees. Not on this machine.",
+      "risks": [
+        "AGPL-3.0: modifications run as a network service for others must have their source made available"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd4EKiTtJvn (@baptisteodonovan)"
+    },
+    {
+      "name": "chatwoot__chatwoot",
+      "kind": "application",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "commit": null,
+      "license": "MIT (core); enterprise/ directory separately licensed",
+      "path": "(not cloned)",
+      "categories": [
+        "business-ops",
+        "agent-orchestration"
+      ],
+      "goals": [
+        "agency marketing",
+        "client websites"
+      ],
+      "desc": "Self-hosted customer support desk / live-chat -- an Intercom/Zendesk alternative you can drop an AI agent into for after-hours lead answering. Not on this machine.",
+      "risks": [
+        "core is MIT, but the enterprise/ directory ships under a separate, more restrictive license -- check which features fall there before promising a client 'free'"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdmPJ-IN9bD (@baptisteodonovan)"
+    },
+    {
+      "name": "activepieces__activepieces",
+      "kind": "application",
+      "url": "https://github.com/activepieces/activepieces",
+      "commit": null,
+      "license": "MIT (core); packages/ee/ directory separately licensed",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration",
+        "business-ops"
+      ],
+      "goals": [
+        "agency marketing",
+        "SaaS builds"
+      ],
+      "desc": "Self-hosted automation/workflow builder (a Zapier alternative) with roughly 400 built-in MCP server connectors. Not on this machine.",
+      "risks": [
+        "core is MIT, but packages/ee/ (enterprise) ships under a separate license -- check which pieces you actually need fall outside it"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdmPJ-IN9bD (@baptisteodonovan)"
+    },
+    {
+      "name": "documenso__documenso",
+      "kind": "application",
+      "url": "https://github.com/documenso/documenso",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Self-hosted, open-source e-signature tool -- a DocuSign alternative. Not on this machine.",
+      "risks": [
+        "AGPL-3.0: modifications run as a network service for others must have their source made available"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdmPJ-IN9bD (@baptisteodonovan)"
+    },
+    {
+      "name": "HKUDS__CLI-Anything",
+      "kind": "agent-tool",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "commit": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
+      "license": "Apache-2.0",
+      "path": "repos/HKUDS__CLI-Anything",
+      "categories": [
+        "agent-orchestration",
+        "video-audio"
+      ],
+      "goals": [
+        "content production",
+        "podcast automation"
+      ],
+      "desc": "Gives desktop apps a text-based CLI so Claude can drive them, via 70 ready-made skill wrappers in this repo (OBS, Audacity, Kdenlive, Shotcut, Blender, ComfyUI, Ollama, Inkscape, Zoom, a video captioner, and many more not relevant to the user's work) plus a generator (`cli-hub`) that can build a CLI for any other app's source.",
+      "risks": [
+        "install-only value: each skill wraps `pip install cli-anything-hub` + `cli-hub install <name>`, nothing runs until that's done",
+        "70 skills ship total; only the 10 clearly matching the user's current tools were borrowed into ~/toolbox/skills -- the rest sit uncatalogued in the repo clone if he ever wants one"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd9NdbFxJLo (@buildwithneej)"
+    },
+    {
+      "name": "jingyaogong__minimind",
+      "kind": "agent-tool",
+      "url": "https://github.com/jingyaogong/minimind",
+      "commit": "f659b55761b754d306bd140573493a6543cafd7f",
+      "license": "Apache-2.0",
+      "path": "repos/jingyaogong__minimind",
+      "categories": [
+        "backend-data",
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Educational repo and toolchain to pretrain/fine-tune a tiny (64M-parameter) LLM completely from scratch on a rented GPU -- a learning/research project, not a tool for any of the user's current goals.",
+      "risks": [
+        "needs real GPU rental and a full training run to produce anything -- install-only value",
+        "educational scope, no direct tie to the user's five goals"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdEea0wiU1_ (@baptisteodonovan)"
+    },
+    {
+      "name": "NVIDIA__SkillSpector",
+      "kind": "agent-tool",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "commit": "4a5506276795397c62ed4f0111c08f41c2b9f1b1",
+      "license": "Apache-2.0",
+      "path": "repos/NVIDIA__SkillSpector",
+      "categories": [
+        "security-review"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "NVIDIA's security scanner for AI agent skills (Claude Code/Codex/MCP): 71 vulnerability patterns across 17 categories (prompt injection, data exfiltration, supply-chain risk, MCP tool poisoning, etc.), with a risk score and SARIF/JSON/Markdown reports. Directly overlaps the user's own vet-and-install-kit workflow.",
+      "risks": [
+        "install notice in its own README: 'This project will download and install additional third-party open source software projects' -- real setup cost, not a zero-install drop-in",
+        "needs Python 3.12+ and a venv with uv/pip"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdrNeEUN63i (@baptisteodonovan)"
+    },
+    {
+      "name": "Automattic__harper",
+      "kind": "agent-tool",
+      "url": "https://github.com/Automattic/harper",
+      "commit": "51b843dc38501851031eb884ae73b759d82c048c",
+      "license": "Apache-2.0",
+      "path": "repos/Automattic__harper",
+      "categories": [
+        "marketing-copy",
+        "misc"
+      ],
+      "goals": [
+        "agency marketing",
+        "content production"
+      ],
+      "desc": "Offline, privacy-first grammar checker (Rust), a Grammarly replacement that never sends text to a server -- usable as a CLI/LSP Claude could shell out to for a grammar pass on cold emails or web copy.",
+      "risks": [
+        "the the local inventory check hit on 'Harper' in the user's notes is a false positive (substring of 'sharper'), confirmed by direct grep -- not already installed"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdZBoitjmMW (@baptisteodonovan)"
+    },
+    {
+      "name": "m-bain__whisperX",
+      "kind": "agent-tool",
+      "url": "https://github.com/m-bain/whisperX",
+      "commit": "771b4a14a9486f8fd5aef18ef49e35d639523dd3",
+      "license": "BSD-2-Clause",
+      "path": "repos/m-bain__whisperX",
+      "categories": [
+        "video-audio"
+      ],
+      "goals": [
+        "podcast automation",
+        "content production"
+      ],
+      "desc": "Automatic speech recognition with word-level timestamps and speaker diarization -- directly matches the user's own cut-points rule (forced-align + measure every edge, never clip a word) for the video-studio pipeline.",
+      "risks": [
+        "local run needs a real ASR model + alignment model download and a working PyTorch/CUDA or CPU setup -- not a zero-setup drop-in"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdZBoitjmMW (@baptisteodonovan)"
+    },
+    {
+      "name": "vercel-labs__skills",
+      "kind": "agent-tool",
+      "url": "https://github.com/vercel-labs/skills",
+      "commit": "18f96ea131dab3b0fcc9b27cf7c6f6cbb6174680",
+      "license": "MIT",
+      "path": "repos/vercel-labs__skills",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "CLI (`npx skills`) that lets Claude Code search an open skills registry mid-task and install whatever a job needs. Not the same thing as the user's existing (local plugin cache) -- that's a different Vercel repo; this one was not previously in the toolbox.",
+      "risks": [
+        "sends telemetry to add-skill.vercel.sh on every skill install/remove/update by default (src/telemetry.ts) -- phones home unless disabled",
+        "the Supabase MCP's own setup instructions already reference running `npx skills add supabase/agent-skills`, i.e. this same CLI, as a one-off ad-hoc command, separate from treating it as an installed toolbox tool"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc0-iSxEySk (@baptisteodonovan)"
+    },
+    {
+      "name": "public-api-lists__public-api-lists",
+      "kind": "reference-list",
+      "url": "https://github.com/public-api-lists/public-api-lists",
+      "commit": "6491e2fb2bc32dc7955b95ef6f64001d1b0db764",
+      "license": "MIT",
+      "path": "sources/public-api-lists__public-api-lists",
+      "categories": [
+        "research",
+        "backend-data"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Curated, searchable, community-maintained list of 730+ free public APIs across 48 categories, with its own free JSON API over the list. A reference-list, not catalogued in detail per toolbox-add rules.",
+      "risks": [],
+      "added": "2026-10-04",
+      "source": "Instagram DceWZsNNIkt (@baptisteodonovan)"
+    },
+    {
+      "name": "SWivid__F5-TTS",
+      "kind": "agent-tool",
+      "url": "https://github.com/SWivid/F5-TTS",
+      "commit": "283252563dbf91be625e0c27926acfaac449186c",
+      "license": "MIT",
+      "path": "repos/SWivid__F5-TTS",
+      "categories": [
+        "video-audio"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Voice-cloning text-to-speech model (Diffusion Transformer + flow matching) -- clones a voice from a short audio clip, run locally with no per-character fee.",
+      "risks": [
+        "the user's own OmniVoice narration / likeness-clone work is explicitly PAUSED with lip-sync spend UNAPPROVED per memory -- F5-TTS is a different, unrelated repo, but any voice-cloning use for a real person's likeness should route through that same approval gate before use",
+        "needs a real local GPU inference setup to run, not a drop-in"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd_jqzFtDlw (@baptisteodonovan)"
+    },
+    {
+      "name": "paperclipai__paperclip",
+      "kind": "application",
+      "url": "https://github.com/paperclipai/paperclip",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Self-hosted web app that organizes AI coding agents (Claude Code, Codex, Cursor, bash scripts) into an org chart with CEO/CTO/coder roles, bosses, budgets and tickets; ships its own skills (board, slack, agentmail) but they only work once the Paperclip server+API is running. Not already on this machine.",
+      "risks": [
+        "full stack (pnpm, Docker, server+UI+workers), needs Node 24.11+, not a quick drop-in",
+        "ships skills/ (agentmail, paperclip-board, slack, para-memory-files, paperclip-create-agent) but every one requires env vars from its own `paperclipai board setup` -- install-only value, not copied",
+        "GitHub description changed between post time and now (from a PDF-chat pitch to an agent-org-chart pitch) -- product has pivoted"
+      ],
+      "warn": "its skills need the Paperclip control plane running; not usable standalone",
+      "added": "2026-10-04",
+      "source": "Instagram Dd1giKSN9TT, Dd9RvQDiUVH, Ddt16ilkRGB (@SYNTAIX AI, @baptisteodonovan, @buildwithneej)"
+    },
+    {
+      "name": "FujiwaraChoki__MoneyPrinterV2",
+      "kind": "application",
+      "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "social-content"
+      ],
+      "goals": [
+        "content production",
+        "agency marketing"
+      ],
+      "desc": "Standalone Python bot that automates posting YouTube Shorts/tweets, Amazon affiliate links, and cold outreach to local businesses end to end. Not already on this machine.",
+      "risks": [
+        "AGPL-3.0: any hosted/modified version must share source -- fine for personal use, a blocker if ever offered as a client-facing service",
+        "automates unsupervised posting and cold outreach -- collides with the user's 'no unprompted cold sends' guardrail if run as-is",
+        "needs API keys for whichever platforms it posts to"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Ddq8AoCjNSM (@bestapps.ai)"
+    },
+    {
+      "name": "mvschwarz__openrig",
+      "kind": "agent-tool",
+      "url": "https://github.com/mvschwarz/openrig",
+      "commit": "bd82e1996049a7eb3ea84ddcba19d51d245e3970",
+      "license": "Apache-2.0",
+      "path": "repos/mvschwarz__openrig",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "CLI that defines a persistent team ('rig') of Claude Code/Codex/Pi agents in YAML with roles and shared context, then boots them with one command. Ships 25 of its own 'canonical' skills (pm/*, pods/*, process/*) describing how a rig operates. Not already on this machine (npm -g @openrig/cli not installed).",
+      "risks": [
+        "needs `npm install -g @openrig/cli`, Node 22/24, and tmux -- an install step, not run as-is",
+        "the 25 _canonical skills are OpenRig's own rig methodology (reference sibling_skills like control-plane-*), not standalone prompts -- several share names with the user's existing superpowers skills (systematic-debugging, verification-before-completion, test-driven-development), so copying would be a same-name rival; none copied",
+        "Apple Silicon specifically needs Node 22 per the post's own note"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd30VfSD4nA (@okaashish)"
+    },
+    {
+      "name": "jegly__Box",
+      "kind": "application",
+      "url": "https://github.com/jegly/Box",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Fully offline Android app bundling on-device chat, image generation, photo upscaling, transcription, voice chat and document Q&A. Android-only, so there is no 'already on this machine' check for the user's Mac; not installed here.",
+      "risks": [
+        "GitHub API reports license as NOASSERTION despite a LICENSE file in the repo; read the file directly: it is the standard Apache-2.0 text with a 2026 copyright by Jesse Li-Yates",
+        "ships a 'skills' folder (built-in/featured: qr-code, translator, mood-music, etc.) but these are the Android app's own in-app feature modules, not Claude-Code-compatible skills -- not an agent-tool",
+        "Android-only; not usable on the user's Mac without an emulator or device"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc-7FLeDyXP (@okaashish)"
+    },
+    {
+      "name": "eigent-ai__eigent",
+      "kind": "application",
+      "url": "https://github.com/eigent-ai/eigent",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Open-source Electron 'cowork' desktop app: give it one big task and its own agents research, browse, and handle files in parallel with a human kept in the loop. Not already on this machine.",
+      "risks": [
+        "README advertises 'MCP Integration' and 'Skill Integration' -- these mean Eigent can CONSUME external MCP servers/skills as a client, not that it ships one for Claude Code to borrow",
+        "full Electron app with its own backend/server -- an install, not a drop-in agent-tool"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc-7FLeDyXP (@okaashish)"
+    },
+    {
+      "name": "getmaxun__maxun",
+      "kind": "application",
+      "url": "https://github.com/getmaxun/maxun",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "research"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Self-hosted, no-code web scraping platform (Docker, Postgres, browser recorder): show it once how to collect data from a site and it repeats the steps automatically; exposes an MCP endpoint so an agent can drive an already-running instance. Not already on this machine.",
+      "risks": [
+        "AGPL-3.0, full Docker-compose stack with Postgres and a browser service -- a deployment, not a quick clone",
+        "the MCP support only works against an instance you've already stood up; it is not a standalone skill",
+        "overlaps the user's existing free local Google Maps scraper and getleads tooling -- check those first before standing up another scraping stack"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc-7FLeDyXP, DeFMBD7AMBD (@Replace.so, @okaashish)"
+    },
+    {
+      "name": "plausible__analytics",
+      "kind": "application",
+      "url": "https://github.com/plausible/analytics",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [
+        "client websites"
+      ],
+      "desc": "Open-source, privacy-first, cookie-free web analytics; self-hostable alternative to Google Analytics. Not already on this machine.",
+      "risks": [
+        "AGPL-3.0 self-hosted stack (Elixir/Postgres/Clickhouse) -- a deployment, not a quick install",
+        "no free hosted tier; self-host is the free path"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdYdMA2lUTK (@hypertech)"
+    },
+    {
+      "name": "AppFlowy-IO__AppFlowy",
+      "kind": "application",
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Open-source AI workspace (docs/tasks/wiki) positioned as a self-hostable Notion alternative with unlimited users. Not already on this machine.",
+      "risks": [
+        "AGPL-3.0",
+        "general workspace tool, not tied to any of the user's five named goals"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdYdMA2lUTK (@hypertech)"
+    },
+    {
+      "name": "penpot__penpot",
+      "kind": "application",
+      "url": "https://github.com/penpot/penpot",
+      "commit": null,
+      "license": "MPL-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "web-design"
+      ],
+      "goals": [
+        "client websites"
+      ],
+      "desc": "Open-source, self-hostable design tool positioned as a Figma alternative. Not already on this machine.",
+      "risks": [
+        "self-hosted Docker stack to run it yourself; otherwise free hosted tier at penpot.app"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdYdMA2lUTK (@hypertech)"
+    },
+    {
+      "name": "n8n-io__n8n",
+      "kind": "application",
+      "url": "https://github.com/n8n-io/n8n",
+      "commit": null,
+      "license": "Sustainable Use License 1.0 (source-available, not OSI open source)",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "agency marketing",
+        "SaaS builds"
+      ],
+      "desc": "Fair-code visual workflow/AI-agent automation platform with 400+ integrations, self-host or cloud. Not already on this machine.",
+      "risks": [
+        "GitHub reports license as NOASSERTION; the repo's own LICENSE.md is the 'Sustainable Use License' -- free to self-host and run, but restricts offering n8n itself as a competing hosted service, and .ee-suffixed files need a paid Enterprise license",
+        "self-hosted stack, not a quick clone"
+      ],
+      "warn": "license name on GitHub is misleading (NOASSERTION); it is source-available fair-code, not permissive open source",
+      "added": "2026-10-04",
+      "source": "Instagram DdYdMA2lUTK (@hypertech)"
+    },
+    {
+      "name": "calcom__cal.diy",
+      "kind": "application",
+      "url": "https://github.com/calcom/cal.diy",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "business-ops"
+      ],
+      "goals": [
+        "agency marketing"
+      ],
+      "desc": "Self-hosted community edition of Cal.com scheduling, explicitly a personal/non-production variant of the commercial product. Not already on this machine.",
+      "risks": [
+        "repo's own docs flag this as personal use only, not for commercial/enterprise deployment -- don't offer it to clients as a hosted booking tool"
+      ],
+      "warn": "personal/non-commercial use only, per the repo's own disclaimer",
+      "added": "2026-10-04",
+      "source": "Instagram DdYdMA2lUTK (@hypertech)"
+    },
+    {
+      "name": "bitwarden__clients",
+      "kind": "application",
+      "url": "https://github.com/bitwarden/clients",
+      "commit": null,
+      "license": "GPL-3.0 (default; code under /bitwarden_license uses the proprietary Bitwarden License v1.0)",
+      "path": "(not cloned)",
+      "categories": [
+        "security-review"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Open-source password manager clients (web, browser extension, desktop, CLI) with a free unlimited-password tier. Not already on this machine.",
+      "risks": [
+        "GitHub reports license as NOASSERTION; repo's own LICENSE.txt splits it: GPL-3.0 by default, proprietary Bitwarden License v1.0 only inside /bitwarden_license"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdYdMA2lUTK (@hypertech)"
+    },
+    {
+      "name": "Louis-CFM__coucou",
+      "kind": "application",
+      "url": "https://github.com/Louis-CFM/coucou",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "Native macOS/Windows/Linux notch companion app that watches Claude Code (also Codex, Cursor, Gemini CLI, Antigravity) sessions live: shows file edits, lets you Allow/Deny/Always permission requests and answer AskUserQuestion prompts from the notch instead of the terminal. No telemetry, keys in the OS keychain. Not already on this machine.",
+      "risks": [
+        "native desktop app installed from a Releases zip/DMG, not a skill/MCP/library -- cataloged as application even though it is tightly coupled to Claude Code specifically",
+        "needs macOS 15+ for the notch UI",
+        "optional integrations (Stripe, n8n, GitHub, Vercel, Resend, Notion, Cal.com) each want their own API key if enabled"
+      ],
+      "warn": "highly relevant to the user's actual Claude Code workflow even though it doesn't fit the agent-tool clone criteria",
+      "added": "2026-10-04",
+      "source": "Instagram Dd_3jmTERCf (@buildwithneej)"
+    },
+    {
+      "name": "t8y2__dbx",
+      "kind": "agent-tool",
+      "url": "https://github.com/t8y2/dbx",
+      "commit": "558b22b717ba9263cbc1b8dadbde4786efdd6653",
+      "license": "Apache-2.0",
+      "path": "repos/t8y2__dbx",
+      "categories": [
+        "backend-data"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "~25-40MB cross-platform database client (Postgres, MySQL, SQLite, Redis, MongoDB, 100+ others) with a built-in AI assistant, desktop app, CLI and its own MCP server; writes are blocked by default unless explicitly approved. Ships a Claude-Code-compatible skill (skills/dbx) that drives its CLI. Not already on this machine.",
+      "risks": [
+        "the skill requires the `dbx` CLI binary installed first (`brew install --cask dbx`) -- install-only without it",
+        "AI assistant and MCP server both talk to whatever databases dbx is configured to connect to; confirm connection scope before letting an agent query anything client-facing"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd_3jmTERCf (@buildwithneej)"
+    },
+    {
+      "name": "deepseek-ai__deepseek-harness",
+      "kind": "application",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "DeepSeek's free, open-source rival coding-agent harness to Claude Code: organizes files, crunches spreadsheets, fixes code in a chosen folder, plugin architecture, any model including local. Not already on this machine; a separate harness from Claude Code, not something Claude Code would load.",
+      "risks": [
+        "DeepSeek's own docs recommend a throwaway machine (no security audit yet) -- did not independently re-verify this specific wording, but a SAFETY.md exists in the repo",
+        "npx @deepseek-ai/dsh web is an install/run step, not a drop-in"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd_3jmTERCf (@buildwithneej)"
+    },
+    {
+      "name": "THU-MAIC__OpenMAIC",
+      "kind": "application",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Tsinghua MAIC lab's 'Open Multi-Agent Interactive Classroom': turns a topic or PDF into a full course with an AI teacher (voice/whiteboard) and AI classmates, plus quizzes. Not already on this machine.",
+      "risks": [
+        "self-hosted (pnpm dev) or hosted at open.maic.chat -- the hosted option avoids any local install but is a third-party service",
+        "course-generation is a narrow fit for the user's five goals; filed under content production loosely"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc38H3qG-AK, Dc6WqWaR1ZZ, Dd9RvQDiUVH, DdEea0wiU1_ (@SYNTAIX AI, @baptisteodonovan, @buildwithneej)"
+    },
+    {
+      "name": "debpalash__VoiceStudio",
+      "kind": "application",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "video-audio"
+      ],
+      "goals": [
+        "podcast automation",
+        "content production"
+      ],
+      "desc": "Open-source, fully-local ElevenLabs alternative: voice cloning from a 3-second clip, voice design from text, video dubbing in 646 languages, dictation and audiobook creation, no account or API key. Not already on this machine. Directly relevant to the user's paused OmniVoice narration work and his ElevenLabs narration note.",
+      "risks": [
+        "AGPL-3.0",
+        "default voice model is non-commercial licensed per the post -- check per-voice licensing before using cloned output in paid client work",
+        "star count in the slice's own notes is inconsistent across posts (12.4k vs 17.3k cards against a real 53.2k) -- treat any single post's star figure as stale"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc38H3qG-AK, Dd9RvQDiUVH (@SYNTAIX AI, @buildwithneej)"
+    },
+    {
+      "name": "oblien__openship",
+      "kind": "application",
+      "url": "https://github.com/oblien/openship",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "Self-hosted deployment platform (build, deploy, route, secure) with CI/CD, via desktop, web or CLI. Not already on this machine.",
+      "risks": [
+        "self-hosted PaaS stack -- a deployment, not a quick install"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Ddj6zP4gKi6 (@Replace.so)"
+    },
+    {
+      "name": "polarsource__polar",
+      "kind": "application",
+      "url": "https://github.com/polarsource/polar",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "Billing platform for AI-era startups: usage billing, subscriptions, credits, pricing models, metering, checkout, tax and payments. Not already on this machine.",
+      "risks": [
+        "billing/payments infra -- test thoroughly before touching real money",
+        "self-hosted or managed, check current pricing for the managed option before committing"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Ddj6zP4gKi6 (@Replace.so)"
+    },
+    {
+      "name": "pocketbase__pocketbase",
+      "kind": "application",
+      "url": "https://github.com/pocketbase/pocketbase",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "Open-source Go backend in a single file: embedded SQLite, realtime subscriptions, auth, file storage, admin dashboard. Not already on this machine.",
+      "risks": [
+        "single binary -- very low install friction if the user wants it (brew or direct download), but genuinely an application he'd run, not an agent-tool"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Ddj6zP4gKi6, DeFMBD7AMBD (@Replace.so)"
+    },
+    {
+      "name": "appwrite__appwrite",
+      "kind": "application",
+      "url": "https://github.com/appwrite/appwrite",
+      "commit": null,
+      "license": "BSD-3-Clause",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "Open-source backend platform for web, mobile and AI apps: auth, databases, storage, functions, messaging, realtime, hosting. Not already on this machine.",
+      "risks": [
+        "self-hosted Docker stack -- a deployment, not a quick clone; or use their managed cloud"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Ddj6zP4gKi6 (@Replace.so)"
+    },
+    {
+      "name": "stablyai__orca",
+      "kind": "application",
+      "url": "https://github.com/stablyai/orca",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned, per instruction -- do not download or install)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "Desktop 'agent development environment': runs Claude Code, Codex, OpenCode or Pi side by side, each in its own git worktree, with terminals, diffs, a browser and a CLI in one app, plus an iOS/Android mobile companion to monitor and steer agents remotely. Confirmed free and fully open source (MIT); runs any coding agent under your own subscription, so no extra per-token cost from Orca itself. Not already on this machine (checked `ls -d /Applications/Orca*.app`, no match). Ships its own skills/ (orca-cli, computer-use, orchestration, etc.) but per instruction this is catalogued only, not cloned.",
+      "risks": [
+        "has an 'Enterprise' nav item on its site; no pricing wall found on the core desktop download, but the enterprise tier itself was not characterized",
+        "ships skills/, skill-guides/, skill-stubs/ directories (genuinely agent-tool-shaped) -- not cloned or borrowed per instruction, catalogued as an application only"
+      ],
+      "warn": "the user's own note: 'use Orca to keep track of my sessions and files more easily' -- do not download or install, just know it exists and where to get it",
+      "added": "2026-10-04",
+      "source": "the user's note (not from the Instagram slice; added per explicit task instruction)"
+    },
+    {
+      "name": "syi0808__screenize",
+      "kind": "application",
+      "url": "https://github.com/syi0808/screenize",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "video-audio"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Open-source macOS screen recorder with automatic cursor zoom/effects and a timeline editor for export — a free Screen Studio alternative. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "Repo itself says development is currently paused — unclear if it still builds on current macOS; verify before relying on it."
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Ddj6zP4gKi6 (@Replace.so)"
+    },
+    {
+      "name": "LingyiChen-AI__DeepDiagram",
+      "kind": "application",
+      "url": "https://github.com/LingyiChen-AI/DeepDiagram",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "research"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Self-hosted AI tool that turns a sentence into mind maps, flowcharts, data charts and architecture diagrams via LangGraph/LangChain agents. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "AGPL-3.0: any modified version you deploy for others must also be open-sourced — a real constraint if this were ever white-labeled for a client",
+        "Needs your own OpenAI-compatible API key (OpenAI, DeepSeek, or custom) — it is not free to run at volume, only free to self-host",
+        "Requires Docker self-hosting; no hosted free tier"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Ddj6zP4gKi6 (@Replace.so)"
+    },
+    {
+      "name": "cline__cline",
+      "kind": "application",
+      "url": "https://github.com/cline/cline",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration",
+        "frontend-code"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "Open-source coding-agent runtime: VS Code extension, terminal CLI, or embeddable SDK that edits files, runs commands and uses tools against Claude, GPT or any OpenAI-compatible model. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "A direct alternative to Claude Code itself; running it means routing agentic coding work through a separate tool/ecosystem"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DeCuH4lgGQj (@Replace.so)"
+    },
+    {
+      "name": "aaif-goose__goose",
+      "kind": "application",
+      "url": "https://github.com/aaif-goose/goose",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "SaaS builds",
+        "agency marketing"
+      ],
+      "desc": "General-purpose open-source AI agent (desktop app, CLI and API) for code, research, writing, automation and data analysis; connects to 15+ model providers and 70+ MCP extensions. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "Repo recently moved orgs (was block/goose, now aaif-goose/goose under the Agentic AI Foundation) — bookmark the new URL, old links may redirect or go stale"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DeCuH4lgGQj (@Replace.so)"
+    },
+    {
+      "name": "Significant-Gravitas__AutoGPT",
+      "kind": "application",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "commit": null,
+      "license": "MIT (outside autogpt_platform/) + Polyform Shield License (inside autogpt_platform/)",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration",
+        "business-ops"
+      ],
+      "goals": [
+        "SaaS builds",
+        "agency marketing"
+      ],
+      "desc": "Platform to build, deploy and run AI-agent workflows from plain-language goals or a visual builder. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "GitHub reports license as NOASSERTION because the repo is split: the core agent code is MIT, but the newer 'autogpt_platform' folder (the actual build/deploy/run platform) is under the Polyform Shield License, which forbids using that code to compete commercially with AutoGPT — read it before building a competing product on that folder specifically"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DeCuH4lgGQj (@Replace.so)"
+    },
+    {
+      "name": "usenotra__notra",
+      "kind": "application",
+      "url": "https://github.com/usenotra/notra",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "marketing-copy",
+        "research",
+        "business-ops"
+      ],
+      "goals": [
+        "agency marketing",
+        "client websites"
+      ],
+      "desc": "Self-hosted GEO (Generative Engine Optimization) tool: asks ChatGPT, Claude and Gemini the questions a brand's buyers ask and tracks whether/how the brand shows up in the answers, vs. competitors. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "AGPL-3.0 copyleft applies if you modify and host it for clients",
+        "Running the actual brand-visibility checks burns your own OpenAI/Anthropic/Gemini API credits per query — not free at any real volume",
+        "Overlaps directly with the user's existing client AEO retainer work — worth a side-by-side against whatever that retainer already uses before adopting"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DeCuH4lgGQj (@Replace.so)"
+    },
+    {
+      "name": "openinterpreter__openinterpreter",
+      "kind": "application",
+      "url": "https://github.com/openinterpreter/openinterpreter",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "Open-source terminal coding agent, relaunched and rewritten in Rust, built to run cheaply on low-cost/open models (e.g. Kimi, GLM) instead of frontier APIs. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "This is a full relaunch/rewrite under the same name/repo slug — distinct from the older Python 'open-interpreter' project many people already know; don't assume old docs or plugins apply"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DeCuH4lgGQj (@Replace.so)"
+    },
+    {
+      "name": "open-webui__open-webui",
+      "kind": "application",
+      "url": "https://github.com/open-webui/open-webui",
+      "commit": null,
+      "license": "Open WebUI License (custom, BSD-3-style + branding lock)",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration",
+        "backend-data"
+      ],
+      "goals": [
+        "SaaS builds",
+        "content production"
+      ],
+      "desc": "Self-hosted ChatGPT-style chat interface over Ollama or any OpenAI-compatible API, with RAG and multi-model support. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "License is NOT a clean OSI license: it is BSD-3-style PLUS a clause that bars removing/altering 'Open WebUI' branding in any deployment or distribution over 50 end users in a rolling 30 days, unless you buy an enterprise license — relevant if this were ever skinned/white-labeled for a client, not just run privately"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd_jqzFtDlw + DeFMBD7AMBD (@Replace.so, @baptisteodonovan)"
+    },
+    {
+      "name": "janhq__jan",
+      "kind": "application",
+      "url": "https://github.com/janhq/jan",
+      "commit": null,
+      "license": "Apache-2.0 (per LICENSE file; GitHub API reports NOASSERTION)",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Open-source desktop app for running local LLMs privately, building custom assistants, with optional cloud model connections (OpenAI, Anthropic, Mistral, Groq, etc.) and a local OpenAI-compatible server. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "GitHub shows the license as NOASSERTION, but the actual LICENSE file is a standard Apache-2.0 copyright notice from Menlo Research — worth naming correctly since GitHub's badge alone would make this look riskier than it is"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdZBoitjmMW + DeFMBD7AMBD (@Replace.so, @baptisteodonovan)"
+    },
+    {
+      "name": "OpenWhispr__openwhispr",
+      "kind": "application",
+      "url": "https://github.com/OpenWhispr/openwhispr",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "video-audio"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Open-source, privacy-first voice-to-text desktop app (local or BYOK cloud models) for macOS/Windows/Linux. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [],
+      "added": "2026-10-04",
+      "source": "Instagram DeFMBD7AMBD (@Replace.so)"
+    },
+    {
+      "name": "tashfeenahmed__freellmapi",
+      "kind": "application",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "commit": null,
+      "license": "MIT",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data",
+        "agent-orchestration"
+      ],
+      "goals": [
+        "SaaS builds",
+        "agency marketing"
+      ],
+      "desc": "Local router/proxy (Docker, desktop app, or menu-bar app) that aggregates free tiers from 34 LLM providers behind one OpenAI-compatible /v1 endpoint, with automatic failover and encrypted keys. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "Its own repo description says 'Personal experimentation only' — read that before pointing any client-facing or paid workflow at it",
+        "The free tier's model catalog auto-updates itself from a signed feed pulled from freellmapi.co on its own schedule (phone-home/update-check behavior) — the $19/yr premium tier gets same-day catalog updates, free installs get them 30 days late",
+        "This is a DIFFERENT project from the user's existing ~/.claude/scripts/llm_fallback.py fallback chain (that one is built from raullenchai/free-llm-api-resources + mnfst/awesome-free-llm-apis, reference lists, not this router) — the two aren't redundant but also aren't the same thing; don't assume this replaces the existing setup without comparing them",
+        "Needs Docker, a desktop install, or a menu-bar app to actually run — does nothing from the repo alone"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdMTK79xfzP (@buildwithneej)"
+    },
+    {
+      "name": "Twigpine__openclaude",
+      "kind": "application",
+      "url": "https://github.com/Twigpine/openclaude",
+      "commit": null,
+      "license": "NOASSERTION — see warning",
+      "path": "(not cloned)",
+      "categories": [
+        "agent-orchestration"
+      ],
+      "goals": [
+        "none of the five"
+      ],
+      "desc": "A Claude-Code-like coding-agent CLI advertised as running on any model (including free local ones) instead of being locked to Claude. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "Its own NOTICE file states the repo 'contains code derived from Anthropic's Claude Code CLI', describes the original Claude Code source as 'proprietary software... subject to Anthropic's Commercial Terms of Service', and offers only the contributors' own additions under MIT 'where legally permissible' — the base is not clean-room, so using or redistributing it carries real legal/ToS exposure, separate from ordinary open-source risk",
+        "No SPDX-recognized license for the repo as a whole despite being marketed as 'completely free'"
+      ],
+      "warn": "Do not install or run this. It is a derivative of Anthropic's proprietary Claude Code CLI per its own NOTICE file, not an independent clean implementation — using it risks violating Anthropic's Commercial Terms of Service. Catalogued and flagged only, per toolbox-add's rule for unclear/forbidding licenses; not recommended.",
+      "added": "2026-10-04",
+      "source": "Instagram DdEea0wiU1_ (@baptisteodonovan)"
+    },
+    {
+      "name": "iv-org__invidious",
+      "kind": "application",
+      "url": "https://github.com/iv-org/invidious",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "video-audio",
+        "research"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Self-hosted alternative YouTube front-end: no ads, no tracking, no account required. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "Requires Docker self-hosting; public instances exist but using someone else's instance isn't 'having' this tool",
+        "Scraping/front-ending YouTube this way sits in a legal gray area against YouTube's own ToS — fine for personal ad-free viewing/research, don't build client-facing infrastructure on it",
+        "Not really an agent/AI tool — included because the post is centrally about this specific repo"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdEea0wiU1_ (@baptisteodonovan)"
+    },
+    {
+      "name": "dream-num__univer",
+      "kind": "application",
+      "url": "https://github.com/dream-num/univer",
+      "commit": null,
+      "license": "Apache-2.0 (core OSS); Univer Pro is a separate paid commercial license",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data",
+        "frontend-code"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "Open-source 'office harness' SDK for AI agents — spreadsheets, docs, slides, canvas and relational tables an agent can read and edit in one runtime, like Google Docs/Sheets/Slides but agent-native. A framework to build a product with, not a ready-made tool to point an agent at. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "This is a developer SDK/framework (like Univer Workspace is built on top of it) — there's no out-of-the-box 'point Claude at this' use, it's something you'd build a product on top of, which is why it's catalogued as an application/framework rather than cloned as an agent-tool",
+        "Advanced features gate behind 'Univer Pro', a separate paid commercial license — the core SDK is genuinely free, but don't assume the whole feature set is"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd1giKSN9TT (@baptisteodonovan)"
+    },
+    {
+      "name": "CapSoftware__Cap",
+      "kind": "application",
+      "url": "https://github.com/CapSoftware/Cap",
+      "commit": null,
+      "license": "AGPL-3.0 (core) + MIT (cap-camera*/scap-* crates only)",
+      "path": "(not cloned)",
+      "categories": [
+        "video-audio"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Open-source screen recorder with one-click shareable links; self-hostable storage on AWS S3/R2/MinIO — a Loom alternative. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "AGPL-3.0 on the main codebase (camera-capture crates only are MIT) — copyleft applies if you modify and redistribute/host it",
+        "Full shareable-link feature needs your own S3/R2/MinIO bucket to self-host, not zero-setup"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdZBoitjmMW (@baptisteodonovan)"
+    },
+    {
+      "name": "OpnForm__OpnForm",
+      "kind": "application",
+      "url": "https://github.com/OpnForm/OpnForm",
+      "commit": null,
+      "license": "AGPL-3.0 (except api/app/Enterprise, under its own license)",
+      "path": "(not cloned)",
+      "categories": [
+        "backend-data",
+        "business-ops"
+      ],
+      "goals": [
+        "client websites",
+        "agency marketing"
+      ],
+      "desc": "Open-source form builder for surveys, lead forms and quizzes — a Typeform alternative, self-hostable. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "AGPL-3.0 outside the Enterprise directory — copyleft applies to any modified, redistributed/hosted version",
+        "Directly overlaps with the user's existing the agency intake-form component work (~/vb-demos) — worth a feature comparison before adopting rather than assuming it's additive"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DdZBoitjmMW (@baptisteodonovan)"
+    },
+    {
+      "name": "usestrix__strix",
+      "kind": "application",
+      "url": "https://github.com/usestrix/strix",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "security-review"
+      ],
+      "goals": [
+        "SaaS builds"
+      ],
+      "desc": "Open-source AI agents that attack a just-built app like a real pentester (via Docker sandbox + your own LLM API key) and produce validated proof-of-concept exploits. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "Only ever point this at apps the user owns or has explicit authorization to test — running it against a client's live site without their sign-off would be unauthorized security testing, a real legal exposure, not just a tooling risk",
+        "Needs Docker running plus an LLM API key (OpenAI/Anthropic/Google) — scans spend real API credits, not free at volume"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dc0-iSxEySk (@baptisteodonovan)"
+    },
+    {
+      "name": "invoke-ai__InvokeAI",
+      "kind": "application",
+      "url": "https://github.com/invoke-ai/InvokeAI",
+      "commit": null,
+      "license": "Apache-2.0",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Local Stable-Diffusion-based image generator with a full editing canvas (inpainting, control layers, regional guidance) — generate images on your own machine instead of a monthly Midjourney-style subscription. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "Different tool from the user's existing local image stack (ComfyUI inside OpenMontage) — a genuine alternative, not already in use, would need its own setup/GPU time to evaluate"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd_jqzFtDlw (@baptisteodonovan)"
+    },
+    {
+      "name": "upscayl__upscayl",
+      "kind": "application",
+      "url": "https://github.com/upscayl/upscayl",
+      "commit": null,
+      "license": "AGPL-3.0",
+      "path": "(not cloned)",
+      "categories": [
+        "misc"
+      ],
+      "goals": [
+        "content production"
+      ],
+      "desc": "Free desktop app that AI-upscales and sharpens blurry images. Not already on this machine (checked `which`, /Applications, brew list).",
+      "risks": [
+        "AGPL-3.0 copyleft applies to any modified/redistributed version"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram Dd_jqzFtDlw (@baptisteodonovan)"
+    },
+    {
+      "name": "busabase__busabase",
+      "kind": "agent-tool",
+      "url": "https://github.com/busabase/busabase",
+      "commit": "e5e65fd9dc0badfef9891c4370216952d51c4f3e",
+      "license": "MIT",
+      "path": "repos/busabase__busabase",
+      "categories": [
+        "memory-context",
+        "agent-orchestration",
+        "backend-data"
+      ],
+      "goals": [
+        "SaaS builds",
+        "agency marketing"
+      ],
+      "desc": "Self-hosted database/workspace that gives Claude Code, Codex, Cursor and other agents one shared place for structured records (Bases), durable Markdown knowledge (Docs), reusable Skills, and runnable mini-apps (AirApps), with every agent write landing as a reviewable Change Request instead of landing silently. Ships a real MCP server plus OpenAPI/CLI, but it is only reachable once you run the Node server yourself (npx/Docker) — nothing works from the clone alone.",
+      "risks": [
+        "No static skill files exist in the repo to borrow: the 'Agent Skill' onboarding prompt it hands a connecting agent is generated at runtime and served from http://localhost:<port>/SETUP_SKILL.md by the running server, not a file on disk — there is nothing in ~/toolbox/skills to copy for this one",
+        "That onboarding prompt itself is a live instruction-fetch pattern ('Read and follow the Busabase Agent Skill — it is the single source of truth: http://localhost:15419/SETUP_SKILL.md') — if this is ever run, treat whatever that URL serves as untrusted input to review, not as something to auto-follow",
+        "Install-only value: cloning gets you the source, but the MCP server/CLI/skill only exist once you run `npx busabase server` or the Docker image — an install step this skill does not take",
+        "'Cloud Connect' links a local workspace to Busabase Cloud (busabase.com) via an authenticated tunnel — that is a hosted third-party service, not purely local-first, if ever enabled",
+        "Large pnpm monorepo (apps/ + packages/, Tauri desktop, mobile, CLI, SDK) — the useful MCP-server piece is a small fraction of what got cloned"
+      ],
+      "added": "2026-10-04",
+      "source": "Instagram DeCuH4lgGQj (@Replace.so)"
     }
   ]
 }

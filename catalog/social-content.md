@@ -1,7 +1,7 @@
 # social-content
 
-Generated: 2026-10-04 20:32 
-Count: 53
+Generated: 2026-10-04 22:47 
+Count: 60
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -40,6 +40,7 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | blog-repurpose | Repurpose blog posts for social media, email, YouTube, Reddit, and LinkedIn. Generates Twitter/X threads, LinkedIn artic | skills/blog/blog-repurpose/SKILL.md
 - skill | blog-rewrite | Rewrite and optimize existing blog posts for Google rankings (December 2025 Core Update, E-E-A-T) and AI citations (GEO/ | skills/blog/blog-rewrite/SKILL.md
 - skill | blog-seo-check | Post-writing SEO validation with pass/fail checklist covering title tag length and keyword placement, meta description q | skills/blog/blog-seo-check/SKILL.md
+- skill | cli-anything-videocaptioner | - AI-powered video captioning — transcribe speech, optimize/translate subtitles, and burn them into video via the stable | skills/cli-anything-videocaptioner/SKILL.md
 - skill | embedded-captions | Add captions or subtitles to an existing single-subject talking-head video without editing the footage. Use for plain ve | skills/embedded-captions/SKILL.md
 - skill | gstack-canary | Post-deploy canary monitoring. (gstack) allowed-tools: - Bash - Read - Write - Glob - AskUserQuestion | skills/gstack-canary/SKILL.md
 - skill | gstack-document-release | Post-ship documentation update. (gstack) allowed-tools: - Bash - Read - Write - Edit - Grep - Glob - AskUserQuestion | skills/gstack-document-release/SKILL.md
@@ -56,9 +57,15 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | ig-repurpose | - Turn one long asset - a YouTube video, podcast, livestream, newsletter, blog post or client call - into a week of reel | skills/ig-repurpose/SKILL.md
 - skill | ig-story | - Write the day's Instagram Stories - the frame-by-frame sequence, which stickers to use where, and the one that moves p | skills/ig-story/SKILL.md
 - skill | ig-viral | - Go and find the reels that are actually working right now in the user's niche, rank them by how far each beat its own  | skills/ig-viral/SKILL.md
+- skill | job-application-assistant | Assists with job applications: evaluating job postings, tailoring CVs, writing cover letters, and preparing for intervie | skills/job-application-assistant/SKILL.md
+- skill | job-scraper | Finds new job postings matching your profile via installed portal-search CLIs (LinkedIn, local job boards, and any skill | skills/job-scraper/SKILL.md
 - skill | onboarding | When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also us | skills/onboarding/SKILL.md
+- skill | replica-entrepreneur | - Researches the app being cloned and reads what its real users say in public reviews (App Store, Google Play, G2, Capte | skills/replica-entrepreneur/SKILL.md
 - skill | social-reddit-card | "Realistic Reddit post card with vote rail and comment count, suited to video overlays or story sharing." | skills/social-reddit-card/SKILL.md
 - skill | social-spotify-card | "Spotify Now Playing-style card with album art, progress bar, and playback controls, suited to video overlays or persona | skills/social-spotify-card/SKILL.md
 - skill | social-x-post-card | "Realistic X post card with engagement metrics (likes, reposts, views), suited to video overlays or shareable image card | skills/social-x-post-card/SKILL.md
 - skill | b2b-copywriting | Write B2B website copy, sales pages, landing pages, headlines, hooks, emails, ads, LinkedIn posts, cold outreach, case s | skills/synced/85db74e3-76a3-48a0-876f-c239652a5108_68586651-6f3d-4164-8a0f-076d8fc4ffed/b2b-copywriting/SKILL.md
+- skill | upskill | Compares tracked job postings against the candidate profile to identify skill gaps and generate a prioritized learning p | skills/upskill/SKILL.md
+- application | inovector__mixpost | Self-hosted social media scheduler, a Buffer alternative (Laravel/PHP, Docker): calendar, media library, post versions. Not on this machine. | (not cloned) | MIT (Lite); Pro and Enterprise are commercial | WARN: For the user's podcast, free Lite cannot post to the channels the user's podcast uses; only Pro would replace Buffer. | risks: free Lite publishes only to Facebook Pages, Mastodon and X: no Instagram, LinkedIn, YouTube or TikTok; API, MCP, webhooks, posting queue and approval flow are Pro only ($299 one-time, 1 domain, 1 year of updates); self-hosting needs PHP, MySQL and Redis or the
+- application | FujiwaraChoki__MoneyPrinterV2 | Standalone Python bot that automates posting YouTube Shorts/tweets, Amazon affiliate links, and cold outreach to local businesses end to end. Not already on this machine. | (not cloned) | AGPL-3.0 | risks: AGPL-3.0: any hosted/modified version must share source -- fine for personal use, a blocker if ever offered as a client-facing service; automates unsupervised posting and cold outreach -- collides with the user's 'no unprompted cold sends' guardrail if run as-
 

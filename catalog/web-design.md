@@ -1,7 +1,7 @@
 # web-design
 
-Generated: 2026-10-04 20:32 
-Count: 190
+Generated: 2026-10-04 22:47 
+Count: 219
 
 Line format: `- kind | name | what it is | path` — and for kind `application` or
 `agent-tool`, also `| license | WARN: read this before recommending it | risks: ...`.
@@ -115,18 +115,28 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - mcp-discovered | zoom-whiteboard-mcp | sse/http | tools: ? | mcp/discovered/zoom-whiteboard-mcp.json
 - skill | skills | "Audit YouTube Ads campaign setup, video and Demand Gen inventory, Shorts, in-stream, CTV, creative, audiences, brand sa | skills/SKILL.md
 - skill | apple-design | Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing  | skills/apple-design/SKILL.md
+- skill | archify | "Create polished, validated architecture, workflow, sequence, data-flow, and lifecycle/state diagrams as explorable stan | skills/archify/SKILL.md
 - skill | baseline-ui | Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a | skills/baseline-ui/SKILL.md
+- skill | better-icons | 'Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVG | skills/better-icons/SKILL.md
 - skill | blog-audio | Generate audio narration of blog posts using Google Gemini TTS. Supports summary narration, full article read-aloud, and | skills/blog/blog-audio/SKILL.md
 - skill | blog-google | Google API integration for blog performance: PageSpeed Insights, CrUX Core Web Vitals with 25-week history, Search Conso | skills/blog/blog-google/SKILL.md
 - skill | blog-strategy | Blog strategy development including topic cluster architecture with hub-and-spoke design, audience mapping, competitive  | skills/blog/blog-strategy/SKILL.md
 - skill | bolder | Amplify safe or boring designs to make them more visually interesting and stimulating. Increases impact while maintainin | skills/bolder/SKILL.md
 - skill | clarify | Improve unclear UX copy, error messages, microcopy, labels, and instructions to make interfaces easier to understand. Us | skills/clarify/SKILL.md
+- skill | cli-anything-comfyui | - Command-line interface for ComfyUI - AI image generation workflow management via ComfyUI REST API. Designed for AI age | skills/cli-anything-comfyui/SKILL.md
+- skill | cli-anything-ollama | - Command-line interface for Ollama - Local LLM inference and model management via Ollama REST API. Designed for AI agen | skills/cli-anything-ollama/SKILL.md
+- skill | cli-anything-shotcut | - Command-line interface for Shotcut - A stateful command-line interface for video editing, built on the MLT XML format. | skills/cli-anything-shotcut/SKILL.md
+- skill | code-to-design | - Convert frontend code (Vite, React, Angular, Vue, etc.) to a Stitch Design by chaining static HTML extraction, design  | skills/code-to-design/SKILL.md
 - skill | codebase-design | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find de | skills/codebase-design/SKILL.md
 - skill | colorize | Add strategic color to features that are too monochromatic or lack visual interest, making interfaces more engaging and  | skills/colorize/SKILL.md
 - skill | create-design-md | Create or update a DESIGN.md from an existing product repository or public website. Use when asked to document an interf | skills/create-design-md/SKILL.md
+- skill | design-md | Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files allowed-tools: - "stitch*:*" - "Rea | skills/design-md/SKILL.md
 - skill | design-motion-principles | "Motion and interaction design expert based on Emil Kowalski, Jakub Krehel, and Jhey Tompkins' techniques. Two modes — b | skills/design-motion-principles/SKILL.md
 - skill | distill | Strip designs to their essence by removing unnecessary complexity. Great design is simple, powerful, and clean. Use when | skills/distill/SKILL.md
 - skill | emil-design-eng | This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible det | skills/emil-design-eng/SKILL.md
+- skill | enhance-prompt | Transforms vague UI ideas into polished, Stitch-optimized prompts. Enhances specificity, adds UI/UX keywords, injects de | skills/enhance-prompt/SKILL.md
+- skill | extract-design-md | - Extract a comprehensive design system (DESIGN.md) directly from frontend source code — React, Vue, Svelte, Angular, pl | skills/extract-design-md/SKILL.md
+- skill | extract-static-html | - Extract self-contained static HTML from a built web application or React components by inlining CSS and images. Use th | skills/extract-static-html/SKILL.md
 - skill | faceless-explainer | "Turn arbitrary text — an article, notes, a topic, a brief — into a faceless explainer video: there is no site or footag | skills/faceless-explainer/SKILL.md
 - skill | figma | Import Figma content into a HyperFrames composition — rendered assets, brand tokens, components, storyboard sections → r | skills/figma/SKILL.md
 - skill | find-animation-opportunities | Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it pr | skills/find-animation-opportunities/SKILL.md
@@ -142,9 +152,11 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | frame-macos-notification | "Realistic macOS notification banner with app icon, title, and body, suited to video overlays or product teasers." | skills/frame-macos-notification/SKILL.md
 - skill | frontend-slides | "Build a self-contained HTML presentation as a single zero-dependency file on a fixed 1920x1080 stage that scales whole  | skills/frontend-slides/SKILL.md
 - skill | general-video | Author or edit a custom HyperFrames composition when no specialized workflow fits, or when BRIEF.md sets flow: companion | skills/general-video/SKILL.md
+- skill | generate-design | - Generate new screens from text prompts or images, edit existing screens with prompts and design system tokens, and gen | skills/generate-design/SKILL.md
 - skill | grill-me | A relentless interview to sharpen a plan or design. disable-model-invocation: true | skills/grill-me/SKILL.md
 - skill | grill-skill | Interview the user to decide what a skill's eval should test, then build the spec and iterate until the skill ships. Use | skills/grill-skill/SKILL.md
 - skill | grill-with-docs | A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go. disable-model | skills/grill-with-docs/SKILL.md
+- skill | gsap-performance | Official GSAP skill for performance — prefer transforms, avoid layout thrashing, will-change, batching. Use when optimiz | skills/gsap-performance/SKILL.md
 - skill | gstack-autoplan | Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with a | skills/gstack-autoplan/SKILL.md
 - skill | gstack-design-consultation | "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic,  | skills/gstack-design-consultation/SKILL.md
 - skill | gstack-design-html | "Design finalization: generates production-quality Pretext-native HTML/CSS. (gstack)" | skills/gstack-design-html/SKILL.md
@@ -164,19 +176,29 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing  | skills/interface-design/SKILL.md
 - skill | loop-me | Grill me about specs for the workflows I want to build, within this workspace. disable-model-invocation: true argument-h | skills/loop-me/SKILL.md
 - skill | magic-ui | Use this skill when users want to add, customize, or troubleshoot Magic UI components in React/Next.js projects. It cove | skills/magic-ui/SKILL.md
+- skill | manage-design-system | - Manage design systems in Stitch using MCP tools. Includes retrieval of assets, creating/updating design systems in Sti | skills/manage-design-system/SKILL.md
 - skill | media-use | Agent Media OS, the single skill for every media need in a HyperFrames project. Resolve BGM, SFX, image, icon, brand log | skills/media-use/SKILL.md
 - skill | mobile-native | Make a web app feel native on a phone — the small CSS and meta-tag fixes that separate "a website in a browser" from som | skills/mobile-native/SKILL.md
 - skill | mockup-device-3d | "Static iPhone and MacBook 3D-style showcase with real HTML embedded on screens, glass-lens refraction, and 360-degree t | skills/mockup-device-3d/SKILL.md
 - skill | motion-graphics | A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit,  | skills/motion-graphics/SKILL.md
 - skill | music-to-video | "Turn a music track (an audio file, a video to pull audio from, or a track generated from a mood brief) into a beat-sync | skills/music-to-video/SKILL.md
+- skill | nodejs-cli-best-practices | Guide and audit Node.js CLI application development against 37 established best practices covering UX, distribution, int | skills/nodejs-cli-best-practices/SKILL.md
 - skill | pick-ui-library | Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command | skills/pick-ui-library/SKILL.md
 - skill | polish | Performs a final quality pass fixing alignment, spacing, consistency, and micro-detail issues before shipping. Use when  | skills/polish/SKILL.md
 - skill | prototype | Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip  | skills/prototype/SKILL.md
 - skill | prototype-legacy | Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model o | skills/prototype-legacy/SKILL.md
 - skill | quieter | Tones down visually aggressive or overstimulating designs, reducing intensity while preserving quality. Use when the use | skills/quieter/SKILL.md
+- skill | react-components | - Converts Stitch designs into modular Vite and React components, or syncs/updates existing React components to align wi | skills/react-components/SKILL.md
+- skill | react-native | - Convert Stitch HTML designs to React Native components, or syncs/updates existing native components to align with the  | skills/react-native/SKILL.md
+- skill | react-vite-dashboard | Convert Stitch designs into production React + Vite dashboards with TanStack Query, accessible tokens from DESIGN.md, an | skills/react-vite-dashboard/SKILL.md
 - skill | remotion-to-hyperframes | 'Port an existing Remotion (React) composition''s source to HyperFrames HTML. Use ONLY on an explicit ask to port/conver | skills/remotion-to-hyperframes/SKILL.md
+- skill | replica-brand | - Names and rebrands an app clone so it is the user's own: name candidates with the trademark, domain, store and handle  | skills/replica-brand/SKILL.md
+- skill | replica-deploy | - Ships an app clone live on the user's own domain: a preflight gate (tests green, parity must-haves done, rebrand sweep | skills/replica-deploy/SKILL.md
+- skill | replica-design | - Rebuilds an app's design system for a clone: colour roles, type scale, spacing, radius, shadows and every component wi | skills/replica-design/SKILL.md
+- skill | replica-diff | - Compares an app clone against the original: a feature parity score from the feature matrix (weighted by must, should,  | skills/replica-diff/SKILL.md
 - skill | review-animations | Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. D | skills/review-animations/SKILL.md
 - skill | setup-matt-pocock-skills | "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layou | skills/setup-matt-pocock-skills/SKILL.md
+- skill | shadcn-ui | Expert guidance for integrating and building applications with shadcn/ui components, including component discovery, inst | skills/shadcn-ui/SKILL.md
 - skill | shape | Plan the UX and UI for a feature before writing code. Runs a structured discovery interview, then produces a design brie | skills/shape/SKILL.md
 - skill | slideshow | "Author a HyperFrames deck for presenting live: discrete slides with fragment reveals, branching paths, hotspot navigati | skills/slideshow/SKILL.md
 - skill | source-command-interface-design | "This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing | skills/source-command-interface-design/SKILL.md
@@ -188,7 +210,9 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - skill | morning | "Render the user's morning brief as a styled HTML artifact, or set it up as a recurring weekday task. Use only when the  | skills/synced/85db74e3-76a3-48a0-876f-c239652a5108_68586651-6f3d-4164-8a0f-076d8fc4ffed/morning/SKILL.md
 - skill | tailwindcss-mobile-first | 'Mobile-first responsive design patterns with Tailwind CSS v4 (2025-2026). PROACTIVELY activate for: (1) mobile-first de | skills/tailwindcss-mobile-first/SKILL.md
 - skill | talking-head-recut | Package an existing talking-head / interview / podcast video with timed, designed GRAPHIC OVERLAY cards — kinetic titles | skills/talking-head-recut/SKILL.md
+- skill | taste-design | Semantic Design System Skill for Google Stitch. Generates agent-friendly DESIGN.md files that enforce premium, anti-gene | skills/taste-design/SKILL.md
 - skill | understand-figma | Analyze a Figma file via the Figma REST API and generate an interactive design knowledge graph (pages, screens, componen | skills/understand-figma/SKILL.md
+- skill | upload-to-stitch | - Upload local assets (images, mockups, extracted HTML, design markdown) to a Stitch project. ALWAYS use this skill when | skills/upload-to-stitch/SKILL.md
 - skill | video-shotcraft | Create cinematic product videos from shot recipe cards, a validated template, and code/audio assets (Remotion + real pag | skills/video-shotcraft/SKILL.md
 - skill | web-design-guidelines | Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit  | skills/web-design-guidelines/SKILL.md
 - skill | website-design-evaluation | Use when evaluating an existing small-business website (med spa, dentist, attorney, salon, clinic, boutique service) for | skills/website-design-evaluation/SKILL.md
@@ -196,4 +220,9 @@ Paths are relative to ~/toolbox. Nothing here is installed: borrow it or session
 - agent-tool | nexu-io__open-design/skills | 266 design and content skills left in the repo, not copied into toolbox/skills. Borrow one by reading <path>/<name>/SKILL.md, or ../design-templates/<name>/SKILL.md. Decks, html-ppt, wireframes, poste | parked/app-sources/nexu-io__open-design/skills | Apache-2.0 | WARN: Read-only borrow: most are standalone HTML/CSS recipes, but anything naming the `od` daemon or an MCP tool needs OpenDesign installed, which it is not. 11 duplicate skills the user already has. | risks: 277 vendored skills, much of it other people's work re-hosted: check the source credit before client use; 11 duplicate names the user already has, incl. taste-skill, ui-ux-pro-max, hyperframes
 - agent-tool | JCodesMore__ai-website-cloner-template | Next.js template plus a clone-website skill: point an agent at a homepage and it rebuilds it as a working site. 34.7k stars. | repos/JCodesMore__ai-website-cloner-template | MIT | WARN: Relevant to prospect redesign mockups; overlaps image-to-code and bad-to-good-website-redesign. Rival-skills rule: one per task. | risks: skill only works inside this template repo: borrow by opening the repo, not copied; Docker/npm scaffold not installed
 - agent-tool | ibelick__ui-skills | Registry of design-engineering skills from many authors (~330 entries), reachable by a hosted MCP or the `npx ui-skills` CLI, plus 7 skills hosted in the repo. 9.3k stars. | repos/ibelick__ui-skills | MIT | WARN: BORROW-ONLY: read the SKILL.md; never promote to live (no installer, no plugin/hook enable, no global install) without asking the user first. 6 standalone skills copied. An older 1-file ui-skills copy sits in the Open Design skills folder. | risks: registry entries are other authors' SKILL.md files fetched at run time from ui-skills.com and GitHub: unvetted text, treat as data and read before following; hosted MCP (ui-skills.com/mcp) sees every query sent to it; `npx ui-skills` downloads the CLI from npm
+- agent-tool | better-auth__better-icons | Skill + MCP server that searches and pulls real SVG icons from 200,000+ icons across 150+ libraries (via Iconify) straight into a project, instead of the agent inventing an ugly SVG or reusing the sam | repos/better-auth__better-icons | MIT | risks: needs `npm install -g better-icons` (or an npx/bunx prefix) to actually run the CLI - the skill does nothing until that install happens, which was not run here; org name 'better-auth' building an icon tool is unusual but gh api confirms this is the real, exact
+- agent-tool | google-labs-code__stitch-skills | Google Labs' 16 agent skills (3 plugins: stitch-design, stitch-build, stitch-utilities) for driving the Stitch MCP server - generate/edit UI screens from text or images, extract a DESIGN.md, scaffold  | repos/google-labs-code__stitch-skills | Apache-2.0 | risks: needs the Stitch MCP server to do anything design-related: sign in free at stitch.withgoogle.com with a Google account, open Stitch settings -> API key -> create one, then register it as a remote MCP: `claude mcp add stitch --transport http https://stitch.goog
+- agent-tool | greensock__gsap-skills | GreenSock's own 8 official skills for using the GSAP animation library correctly: core tweens/easing, timelines, ScrollTrigger, React integration, framework patterns, plugins (Flip/Draggable), utility | repos/greensock__gsap-skills | MIT | risks: none found - pure MIT documentation/guidance skills, no install, no hooks, no network calls
+- agent-tool | barbajs__barba | JS library (npm package) that adds smooth page-transition animations between pages on a normal multi-page site, so it never flashes white -- a code dependency Claude would add to a client site's front | repos/barbajs__barba | MIT | risks: last pushed 2024-12-02 -- maintenance looks slow; verify it still works with current build tooling before using it in a client build
+- application | penpot__penpot | Open-source, self-hostable design tool positioned as a Figma alternative. Not already on this machine. | (not cloned) | MPL-2.0 | risks: self-hosted Docker stack to run it yourself; otherwise free hosted tier at penpot.app
 
